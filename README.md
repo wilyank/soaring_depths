@@ -1,0 +1,57 @@
+# soaring_depths
+a Minecraft modpack based around immersive tech and magic in a Skylands world
+Minecraft version: 1.16
+
+Mod list:
+- Tech:
+        - Create + some addons
+        - Tinker's Construct
+        - Simple Planes
+        - Farmer's Delight + addon (not sure about this one)
+- Magic:
+        - Forbidden & Arcanus
+        - Eidolon
+        - Blood Magic
+- Mobs mods
+       - Alex's Mobs
+       - Mowzie's Mobs
+       - Kobolds
+       - Mutant Beasts
+       - Mutant More
+       - Ender's Cataclysm
+       - Queen Bee (maybe not)
+       - Rubber Duck
+       - Stalwart Dungeons
+- Building mods:
+       - Macaw's Bridges
+- QOL mods
+        - Portable Beacons
+       - 3D Maneuver Gear
+       - Void Totem
+       - Curious Elytra
+       - Unactivated Totems
+      - Nether Portal Spread
+       - Lootr
+       - Magic Feather
+       - Akashic Tome
+       - Clumps
+       - Nature's Compass
+       - Explorer's Compass
+       - Fast Leaf Decay
+       - FTB Chunks
+      - Improved Backpacks
+      - JEI + addons
+      - Jade
+      - Cosmetic Armor
+- Mods for tweaking things
+      - CraftTweaker + addons
+      - WorldShape
+      - OpenTerrainGenerator
+       - FTB Quests
+      - Patchouli
+- Client side
+      - Not Enough Animations
+      - Controlling
+      - Overloaded Armor Bar
+      - Armor Toughness Bar
+      - Inventory HUD+ 
