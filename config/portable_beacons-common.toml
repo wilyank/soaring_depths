@@ -1,0 +1,64 @@
+
+#Common config for Portable Beacons
+["Beacon Backpack Config"]
+	#Whether effects can be copied from Beacons unto Beacon Backpacks
+	canCopyFromBeacon = true
+	#Whether the Conduit Power effect can be applied to Beacon Backpacks by right clicking a Conduit
+	canCopyFromConduit = true
+	#Whether effects can be copied from Netherite Beacons (from Netherite Plus mod) unto Beacon Backpacks 
+	canCopyFromNetheriteBeacon = true
+	#Whether the Beacon Backpack can only get effects from full (9x9) beacons
+	onlyCopyFromFullBeacon = false
+	#Parameter A in calculating the Beacon Backpack's range. Range = A*(Tier-1) + B. Vanilla Beacons have A = 10
+	#Range: 0.0 ~ 100.0
+	beaconRangeA = 5.0
+	#Parameter B in calculating the Beacon Backpack's range. Range = A*(Tier-1) + B. Vanilla Beacons have B = 10
+	#Range: 0.0 ~ 100.0
+	beaconRangeB = 5.0
+	#Whether the Beacon Backpack applies effects to the wearer
+	beaconSelf = true
+	#Whether the Beacon Backpack applies effects to players around the wearer
+	beaconOthers = true
+	#The time in ticks between refreshing the effects on a Beacon Backpack wearer
+	#Range: 2 ~ 10000
+	effectCooldown = 200
+	#The length in ticks of the effect applied by the Beacon Backpack
+	#Range: 1 ~ 10000
+	effectDuration = 400
+
+["Diffuser Config"]
+	#The range of the Diffuser
+	#Range: 1.0 ~ 128.0
+	diffuserRange = 50.0
+	#Whether the Diffuser applies effects to all mobs
+	diffuserMobs = false
+	#How fast the Diffuser applies effects
+	#Range: 1 ~ 6000
+	diffuserCooldown = 200
+	#How long the effect given by the Diffuser lasts
+	#Range: 0 ~ 600
+	diffuserDuration = 300
+
+["Weapons Config"]
+	#Base damage of the Bonk Stick
+	#Range: 0 ~ 500
+	bonkStickDamage = 0
+	#Base durability of the Bonk Stick
+	#Range: 1 ~ 1000000
+	bonkStickDurability = 100
+	#Base damage of the Bonk Stick
+	#Range: 0 ~ 500
+	infusedDaggerDamage = 3
+	#Base durability of the Infused Dagger
+	#Range: 1 ~ 1000000
+	infusedDaggerDurability = 100
+
+["Gameplay Config"]
+	#Whether the Witch applies potion effects to entities hitting it
+	witchArmor = true
+	#One in this many chance that witch armor activates.
+	#Range: 1 ~ 10000000
+	witchAmorChance = 3
+	#List of effects id's that the witch can apply to an attacker. The format is "effectId, duration, amplifier" or "effectId,duration", where the duration is in ticks.
+	witchArmorEffects = ["15,40", "24,400", "25,200,1", "4,400", "9,300", "19,40", "28,200", "18,200", "20,40", "4,500"]
+

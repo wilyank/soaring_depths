@@ -1,0 +1,21 @@
+{
+    "template": {
+        "type": "single",
+        "id": "pack:eidolon_lab"
+    },
+
+    "averageSpacing": 15,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -11,
+        "minY": 40,
+        "maxY": 150,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+
+}

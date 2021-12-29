@@ -1,0 +1,21 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "skyvillages:skyvillage",
+        "maxDepth": 7
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 40,
+        "minY": 70,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+}

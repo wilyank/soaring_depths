@@ -1,0 +1,41 @@
+
+[numbers]
+	#The damage dealt by sword blade attacks
+	#Range: 1.0 ~ 30.0
+	"Blade damage" = 10.0
+	#The maximum length of a cable, this defines how far grapples will fly before being automatically retracted if they don't hit anything.(must match on client and server)
+	#Range: 16 ~ 128
+	"Cable length" = 32
+	#The fraction of fall damage reduction factor when wearing fall boots
+	#Range: 0.0 ~ 1.0
+	"Fall boots damage reduction" = 0.85
+	#The number of attacks after which a sword blade breaks
+	#Range: 10 ~ 100
+	"Blade durability" = 64
+
+[content]
+	#Set to true to disable the fall boots
+	"Disable fall boots" = false
+	#Set to true to disable the music disc
+	"Disable music disc" = false
+	#The amount of xp it costs to apply fall boots to another pair of boots in an anvil
+	#Range: 0 ~ 100
+	"Fall boots imbue cost" = 10
+
+[debug]
+	#Set to true if you wish to enable debug mode
+	debug = false
+
+[client]
+	#The speed at which a grapple is reeled in while holding the hot key.(note that this is a client side config and does not need to match the server, can be tweaked to personal preference)
+	#Range: 5.0 ~ 50.0
+	"Retracting velocity" = 12.0
+	#This is the hotkey to toggle the retracting of the left cable.This will only work when 'Use config keybinds' is set to true.You can find a list of all keys and their numbering here: https://www.glfw.org/docs/3.3/group__keys.html(This is a client side only config and does not have to match the server)
+	#Range: 0 ~ 348
+	"Retract left cable hotkey" = 90
+	#This is the hotkey to toggle the retracting of the right cable.This will only work when 'Use config keybinds' is set to true.You can find a list of all keys and their numbering here: https://www.glfw.org/docs/3.3/group__keys.html(This is a client side only config and does not have to match the server)
+	#Range: 0 ~ 348
+	"Retract right cable hotkey" = 88
+	#Set this to false if you want to use the vanilla minecraft key bind system. This is set to true by default to avoid keybind clutterIf this is true, the in-game key binds will no longer work, so you can unbind them to make space for others, if you make them overlap, make sure they are overlapping with something that doesn't result in weird behaviour.(This is a client side only config and does not have to match the server)
+	"Use config keybinds" = true
+
