@@ -95,3 +95,25 @@ craftingTable.addShapeless("orange_sand_cast", <item:tconstruct:blank_red_sand_c
 <recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_melting", <item:outer_end:cobalt_crystal>, <fluid:tconstruct:molten_cobalt>*4, 950, 4);
 <recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_lamp_melting", <item:outer_end:cobalt_crystal_lamp>, <fluid:tconstruct:molten_cobalt>*4, 950, 4);
 
+// remove some of the metal barrels
+craftingTable.removeByModid("metalbarrels");
+smithing.removeByModid("metalbarrels");
+smithing.addRecipe("iron_barrel", <item:metalbarrels:iron_barrel>, <tag:items:forge:barrels/wooden>, <tag:items:forge:storage_blocks/iron>);
+smithing.addRecipe("golden_barrel", <item:metalbarrels:gold_barrel>, <tag:items:forge:barrels/iron>, <tag:items:forge:storage_blocks/gold>);
+smithing.addRecipe("diamond_barrel", <item:metalbarrels:diamond_barrel>, <tag:items:forge:barrels/gold>, <tag:items:forge:gems/diamond>);
+smithing.addRecipe("netherite_barrel", <item:metalbarrels:netherite_barrel>, <tag:items:forge:barrels/diamond>, <tag:items:forge:ingots/netherite>);
+
+smithing.addRecipe("iron_barrel_upgrade", <item:metalbarrels:wood_to_iron>, <tag:items:minecraft:planks>, <tag:items:forge:storage_blocks/iron>);
+smithing.addRecipe("gold_barrel_upgrade", <item:metalbarrels:iron_to_gold>, <tag:items:minecraft:planks>, <tag:items:forge:storage_blocks/gold>);
+smithing.addRecipe("diamond_barrel_upgrade", <item:metalbarrels:gold_to_diamond>, <tag:items:minecraft:planks>, <tag:items:forge:gems/diamond>);
+//smithing.addRecipe("netherite_barrel_upgrade", <item:metalbarrels:diamond_to_netherite>, <tag:items:minecraft:planks>, <tag:items:forge:ingots/netherite>);
+mods.jei.JEI.hideMod("metalbarrels", (name as string) => {
+    return (name == "metalbarrels:iron_barrel" 
+        || name == "metalbarrels:gold_barrel" 
+        || name == "metalbarrels:diamond_barrel" 
+        || name == "metalbarrels:netherite_barrel" 
+        || name == "metalbarrels:wood_to_iron" 
+        || name == "metalbarrels:iron_to_gold"
+        || name == "metalbarrels:gold_to_diamond"
+        || name == "metalbarrels:diamond_to_netherite");
+});
