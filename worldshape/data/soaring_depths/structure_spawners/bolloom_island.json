@@ -1,0 +1,19 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:bolloom_island"
+    },
+
+    "averageSpacing": 15,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 20,
+        "maxY": 220,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+}

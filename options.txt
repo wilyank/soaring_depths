@@ -27,7 +27,7 @@ renderDistance:12
 entityDistanceScaling:1.0
 guiScale:3
 particles:0
-maxFps:120
+maxFps:260
 difficulty:2
 graphicsMode:1
 ao:2
@@ -104,38 +104,27 @@ key_key.ftbchunks.map:key.keyboard.m
 key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
 key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
 key_bloodmagic.keybind.open_holding:key.keyboard.unknown
-key_Strip World:key.keyboard.delete
-key_Dress World:key.keyboard.insert
-key_Open Config:key.keyboard.home
-key_Add Block:key.keyboard.page.up
-key_Remove Block:key.keyboard.page.down
-key_Cycle Profile:key.keyboard.end
+key_key.storagenetwork.remote:key.keyboard.i
 key_key.plane_boost.desc:key.keyboard.space
 key_key.plane_engine_open.desc:key.keyboard.x
 key_bloodmagic.keybind.cycle_holding_pos:key.keyboard.unknown
 key_bloodmagic.keybind.cycle_holding_neg:key.keyboard.unknown
-key_key.refinedstorage.focusSearchBar:key.keyboard.tab
-key_key.refinedstorage.clearGridCraftingMatrix:key.keyboard.x:CONTROL
-key_key.refinedstorage.openWirelessGrid:key.keyboard.unknown
-key_key.refinedstorage.openWirelessFluidGrid:key.keyboard.unknown
-key_key.refinedstorage.openWirelessCraftingMonitor:key.keyboard.unknown
-key_key.refinedstorage.openPortableGrid:key.keyboard.unknown
-key_key.endergetic.booflo_vest:key.keyboard.space
-key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
 key_key.tconstruct.helmet_interact:key.keyboard.z
 key_key.tconstruct.leggings_interact:key.keyboard.i
+key_key.endergetic.booflo_vest:key.keyboard.space
+key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.curios.open.desc:key.keyboard.g
+key_maneuver_gear.key.retract_left:key.keyboard.z
+key_maneuver_gear.key.retract_right:key.keyboard.x
+key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_key.inventoryhud.toggle:key.keyboard.i
 key_key.inventoryhud.openconfig:key.keyboard.o
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
-key_maneuver_gear.key.retract_left:key.keyboard.z
-key_maneuver_gear.key.retract_right:key.keyboard.x
-key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt
 key_key.improvedbackpacks.open_backpack:key.keyboard.b
