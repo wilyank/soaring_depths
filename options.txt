@@ -33,8 +33,8 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:true
-resourcePacks:["vanilla","mod_resources","file/Infernal Resources.zip"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","mod_resources","file/Infernal Resources.zip","file/Created Storage Network 1.1.zip","file/Shield Corrections [Colored].zip"]
+incompatibleResourcePacks:["file/Shield Corrections [Colored].zip"]
 lastServer:
 lang:en_us
 chatVisibility:0
@@ -114,21 +114,27 @@ key_key.plane_boost.desc:key.keyboard.space
 key_key.plane_engine_open.desc:key.keyboard.x
 key_bloodmagic.keybind.cycle_holding_pos:key.keyboard.unknown
 key_bloodmagic.keybind.cycle_holding_neg:key.keyboard.unknown
+key_key.refinedstorage.focusSearchBar:key.keyboard.tab
+key_key.refinedstorage.clearGridCraftingMatrix:key.keyboard.x:CONTROL
+key_key.refinedstorage.openWirelessGrid:key.keyboard.unknown
+key_key.refinedstorage.openWirelessFluidGrid:key.keyboard.unknown
+key_key.refinedstorage.openWirelessCraftingMonitor:key.keyboard.unknown
+key_key.refinedstorage.openPortableGrid:key.keyboard.unknown
+key_key.endergetic.booflo_vest:key.keyboard.space
+key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.waila.config:key.keyboard.keypad.0
 key_key.waila.show_overlay:key.keyboard.keypad.1
 key_key.waila.toggle_liquid:key.keyboard.keypad.2
 key_key.tconstruct.helmet_interact:key.keyboard.z
 key_key.tconstruct.leggings_interact:key.keyboard.i
-key_key.endergetic.booflo_vest:key.keyboard.space
-key_key.endergetic.booflo_slam:key.keyboard.x
 key_key.curios.open.desc:key.keyboard.g
-key_maneuver_gear.key.retract_left:key.keyboard.z
-key_maneuver_gear.key.retract_right:key.keyboard.x
 key_key.inventoryhud.toggle:key.keyboard.i
 key_key.inventoryhud.openconfig:key.keyboard.o
 key_key.inventoryhud.togglepot:key.keyboard.unknown
 key_key.inventoryhud.togglearm:key.keyboard.unknown
 key_key.inventoryhud.toggleall:key.keyboard.unknown
+key_maneuver_gear.key.retract_left:key.keyboard.z
+key_maneuver_gear.key.retract_right:key.keyboard.x
 key_cos.key.opencosarmorinventory:key.keyboard.unknown
 key_create.keyinfo.toolmenu:key.keyboard.left.alt
 key_create.keyinfo.toolbelt:key.keyboard.left.alt

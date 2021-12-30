@@ -1,0 +1,133 @@
+{
+    "name": "soaring_depths:ruined_portal",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/giant_portal_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/giant_portal_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/giant_portal_3",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_1",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_2",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_3",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_4",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_5",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_6",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_7",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_8",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_9",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "minecraft:ruined_portal/portal_10",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  

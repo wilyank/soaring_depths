@@ -1,0 +1,21 @@
+{
+    "template": {
+        "type": "single",
+        "id": "mowziesmobs:wroughtnaut_chamber"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -25,
+        "minY": 50,
+        "maxY": 150,
+        "type": "surface",
+        "ceiling": true
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+}

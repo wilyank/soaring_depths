@@ -1,0 +1,22 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "kobolds:koboldsmalldenpool",
+        "max_depth": 1
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -20,
+        "minY": 50,
+        "maxY": 150,
+        "type": "surface",
+        "ceiling": true
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+}

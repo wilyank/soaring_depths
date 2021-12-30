@@ -1,0 +1,23 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "kobolds:koboldswamppool",
+        "max_depth": 1
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -4,
+        "terraform": 0,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#swamp"
+    ]
+}

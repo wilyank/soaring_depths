@@ -1,0 +1,21 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "soaring_depths:ruined_portal",
+        "maxDepth": 1
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+
+}

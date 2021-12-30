@@ -1,0 +1,30 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "soaring_depths:pillager_outpost",
+        "maxDepth": 7
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 1,
+        "minY": 70,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#plains",
+        "#savanna",
+        "#forest",
+        "#mushroom"
+    ]
+
+}

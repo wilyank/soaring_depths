@@ -1,0 +1,25 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "kobolds:kobolddesertpool",
+        "max_depth": 1
+    },
+
+    "averageSpacing": 20,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -8,
+        "terraform": 2,
+        "minY": 50,
+        "maxY": 150,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#desert"
+    ]
+}
