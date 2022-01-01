@@ -20,6 +20,11 @@
         "type": "REGISTRY_NAME",
         "negate": true,
         "value": "minecraft:bamboo_jungle_hills"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "biomesoplenty:fungal_jungle"
       }
     ]
   ]

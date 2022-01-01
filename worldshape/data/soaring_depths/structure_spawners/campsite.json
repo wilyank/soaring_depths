@@ -1,0 +1,21 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:campfire"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "type": "surface",
+        "followTerrain": true
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+
+}

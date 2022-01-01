@@ -117,3 +117,4 @@ mods.jei.JEI.hideMod("metalbarrels", (name as string) => {
         || name == "metalbarrels:gold_to_diamond"
         || name == "metalbarrels:diamond_to_netherite");
 });
+///setblock ~ ~-1 ~ spawner{SpawnData:{id:zombie,LeftHanded:1b,ArmorItems:[{Count:1,id:"forbidden_arcanus:mortem_boots"},{Count:1,id:"forbidden_arcanus:mortem_leggings"},{Count:1,id:"forbidden_arcanus:mortem_chestplate"},{Count:1,id:"forbidden_arcanus:mortem_helmet"}],ArmorDropChances:[0.1f,0.1f,0.1f,0.1f]},Delay:299} replace
