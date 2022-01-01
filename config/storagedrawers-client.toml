@@ -9,7 +9,7 @@
 	#Distance in blocks before quantity numbers stop rendering
 	quantityRenderDistance = 10.0
 	#Distance in blocks before item labels stop rendering
-	labelRenderDistance = 25.0
+	labelRenderDistance = 10.0
 
 [Integration]
 	#Enable extended data display in The One Probe if present
