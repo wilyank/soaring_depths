@@ -10,17 +10,36 @@ var _ = <item:minecraft:air>;
 
 // end portal
 craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
-craftingTable.addShaped("end_portal_frame", <item:minecraft:end_portal_frame>, [[<item:minecraft:air>, <item:minecraft:ender_pearl>, <item:minecraft:air>],[<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]]);
+craftingTable.addShaped("end_portal_frame", 
+    <item:minecraft:end_portal_frame>, 
+    [
+        [_, <item:minecraft:ender_pearl>, _],
+        [<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], 
+        [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]
+    ]);
 
 // oredictionary fixes
 var forge_gems = <tag:items:forge:gems>;
 forge_gems.add(<item:biomesoplenty:nether_crystal>);
 forge_gems.add(<item:betterendforge:amber_gem>);
+forge_gems.add(<item:astralsorcery:resonating_gem>);
+forge_gems.add(<item:eidolon:lesser_soul_gem>);
+forge_gems.add(<item:eidolon:shadow_gem>);
+forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
+forge_gems.add(<item:bloodmagic:lavacrystal>);
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
 // BOP sand casts
-craftingTable.addShapeless("wite_sand_cast", <item:tconstruct:blank_sand_cast>*4, [<item:biomesoplenty:white_sand>]);
-craftingTable.addShapeless("orange_sand_cast", <item:tconstruct:blank_red_sand_cast>*4, [<item:biomesoplenty:orange_sand>]);
+craftingTable.addShapeless("wite_sand_cast", 
+    <item:tconstruct:blank_sand_cast>*4, 
+    [
+        <item:biomesoplenty:white_sand>
+    ]);
+craftingTable.addShapeless("orange_sand_cast", 
+    <item:tconstruct:blank_red_sand_cast>*4, 
+    [
+        <item:biomesoplenty:orange_sand>
+    ]);
 
 // remove rail duping exploit with tinker's construct
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/iron/ingot_1");
@@ -28,15 +47,47 @@ craftingTable.addShapeless("orange_sand_cast", <item:tconstruct:blank_red_sand_c
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/gold/powered_rail");
 
 // add cobalt crystal melting into cobalt
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_shard_melting", <item:outer_end:cobalt_crystal_shard>, <fluid:tconstruct:molten_cobalt>, 950, 10);
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_melting", <item:outer_end:cobalt_crystal>, <fluid:tconstruct:molten_cobalt>*4, 950, 40);
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_lamp_melting", <item:outer_end:cobalt_crystal_lamp>, <fluid:tconstruct:molten_cobalt>*4, 950, 40);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_shard_melting", 
+    <item:outer_end:cobalt_crystal_shard>, 
+    <fluid:tconstruct:molten_cobalt>, 
+    950, 
+    10
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_melting", 
+    <item:outer_end:cobalt_crystal>, 
+    <fluid:tconstruct:molten_cobalt>*4, 
+    950, 
+    40
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_lamp_melting", 
+    <item:outer_end:cobalt_crystal_lamp>, 
+    <fluid:tconstruct:molten_cobalt>*4, 
+    950, 
+    40
+);
 
 // make soul sand and liquid soul automatable
-<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("sand_to_soul_sand", <item:minecraft:sand>, <fluid:tconstruct:blood> * 250, <item:minecraft:soul_sand>, 200, true, false);
-<recipetype:tconstruct:melting>.addMeltingRecipe("soul_melting", <item:forbidden_arcanus:soul>, <fluid:tconstruct:liquid_soul> * 1000, 200, 500);
-<recipetype:tconstruct:melting>.addMeltingRecipe("dark_soul_melting", <item:forbidden_arcanus:dark_soul>, <fluid:tconstruct:liquid_soul> * 2000, 200, 500);
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("sand_to_soul_sand", 
+    <item:minecraft:sand>, 
+    <fluid:tconstruct:blood> * 250, 
+    <item:minecraft:soul_sand>, 200, 
+    true, 
+    false
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("soul_melting", 
+    <item:forbidden_arcanus:soul>, 
+    <fluid:tconstruct:liquid_soul> * 1000, 
+    200, 
+    500
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("dark_soul_melting", 
+    <item:forbidden_arcanus:dark_soul>, 
+    <fluid:tconstruct:liquid_soul> * 2000, 
+    200, 
+    500
+);
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:soul>, ["Use a Soul Extracter on Soul Sand to get a soul."]);
+mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul Sand to get a soul."]);
 
 // fix villager infinte diamonds
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
@@ -84,7 +135,14 @@ var a = <item:create:andesite_alloy>;
 
 // bronze sheet
 <recipetype:create:pressing>.addRecipe("bronze_sheet", [s], i);
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("cast_bronze_sheet", <item:tconstruct:plate_cast>, <fluid:tconstruct:molten_tinkers_bronze> * 144, s, 40, false, false);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("cast_bronze_sheet", 
+    <item:tconstruct:plate_cast>, 
+    <fluid:tconstruct:molten_tinkers_bronze> * 144, 
+    s, 
+    40, 
+    false, 
+    false
+);
 
 
 // small bronze cogwheel
@@ -174,6 +232,25 @@ craftingTable.addShaped("bronze_boiler",
         [_, i, i, i, _],
     ]);
 
-
-
 // add steel?
+
+// tweak electron tube recipe
+craftingTable.removeRecipe(<item:create:rose_quartz>);
+craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>, 
+    [
+        <item:minecraft:quartz>, 
+        <item:minecraft:redstone>*4
+    ]);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("casting_rose_quartz",
+    <item:minecraft:redstone>,
+    <fluid:tconstruct:molten_quartz>*144,
+    <item:create:rose_quartz>,
+    40,
+    true,
+    false
+    );
+
+<recipetype:create:filling>.addRecipe("electron_tube", 
+    <item:create:electron_tube>, // output
+    <item:create:polished_rose_quartz>, // input item
+    <fluid:tconstruct:molten_iron>*16); // input fluid

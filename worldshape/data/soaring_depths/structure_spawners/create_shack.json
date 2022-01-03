@@ -8,7 +8,7 @@
     "avoidOthers": true,
     
     "placement": {
-        "offset": 20,
+        "offset": 30,
         "maxY": 220,
         "type": "surface"
     },

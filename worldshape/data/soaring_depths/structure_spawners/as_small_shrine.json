@@ -1,7 +1,7 @@
 {
     "template": {
         "type": "single",
-        "id": "astral_sorcery:desert_shrine"
+        "id": "astralsorcery:small_shrine"
     },
 
     "averageSpacing": 30,
@@ -11,13 +11,15 @@
         "offset": 0,
         "minY": 50,
         "maxY": 150,
-        "type": "surface"
+        "type": "surface",
+        "terraform": 0
     },
 
     "dimensions": [
         "minecraft:overworld"
     ],
     "biomes": [
-        "#desert"
+        "#forest",
+        "#taiga"
     ]
 }
