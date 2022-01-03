@@ -1,0 +1,24 @@
+{
+    "template": {
+        "type": "single",
+        "id": "astral_sorcery:small_shrine"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "minY": 50,
+        "maxY": 150,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#forest",
+        "#taiga"
+    ]
+}

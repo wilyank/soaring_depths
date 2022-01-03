@@ -6,6 +6,8 @@ import stdlib.List;
 
 // this scripts does random tweaks and fixes
 
+var _ = <item:minecraft:air>;
+
 // end portal
 craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
 craftingTable.addShaped("end_portal_frame", <item:minecraft:end_portal_frame>, [[<item:minecraft:air>, <item:minecraft:ender_pearl>, <item:minecraft:air>],[<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]]);
@@ -69,3 +71,109 @@ craftingTable.addShaped("totem_of_void_undying",
 // fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
 <tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
 <tag:items:forge:ingots/redstone_gold>.add(<item:eidolon:arcane_gold_ingot>);
+
+// fix bronze machines being crafted with brass
+var s = <item:steampowered:bronze_sheet>;
+var b = <item:minecraft:bricks>;
+var p = <item:create:fluid_pipe>;
+var i = <tag:items:forge:ingots/silicon_bronze>;
+var pl = <tag:items:minecraft:planks>;
+var c = <item:steampowered:bronze_cogwheel>;
+var sh = <item:create:shaft>;
+var a = <item:create:andesite_alloy>;
+
+// bronze sheet
+<recipetype:create:pressing>.addRecipe("bronze_sheet", [s], i);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("cast_bronze_sheet", <item:tconstruct:plate_cast>, <fluid:tconstruct:molten_tinkers_bronze> * 144, s, 40, false, false);
+
+
+// small bronze cogwheel
+craftingTable.removeRecipe(c);
+craftingTable.addShaped("bronze_cogwheel",
+    c,
+    [
+        [_, i, _],
+        [i, a, i],
+        [_, i, _]
+    ]
+    );
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_cogwheel",
+    c,
+    [
+        [_, i, _],
+        [i, a, i],
+        [_, i, _]
+    ]);
+// large bronze cogwheel
+craftingTable.removeRecipe(<item:steampowered:bronze_large_cogwheel>);
+craftingTable.addShaped("bronze_large_cogwheel",
+    <item:steampowered:bronze_large_cogwheel>,
+    [
+        [i, s, i],
+        [s, a, s],
+        [i, s, i]
+    ]
+    );
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_large_cogwheel",
+    <item:steampowered:bronze_large_cogwheel>,
+    [
+        [i, s, i],
+        [s, a, s],
+        [i, s, i]
+    ]);
+// bronze burner
+craftingTable.removeRecipe(<item:steampowered:bronze_burner>);
+craftingTable.addShaped("bronze_burner", 
+    <item:steampowered:bronze_burner>, 
+    [
+        [s, s, s],
+        [s, _, s],
+        [b, b, b]
+    ]);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_burner", 
+    <item:steampowered:bronze_burner>, 
+    [
+        [s, s, s],
+        [s, _, s],
+        [b, b, b]
+    ]);
+// bronze boiler
+craftingTable.removeRecipe(<item:steampowered:bronze_boiler>);
+craftingTable.addShaped("bronze_boiler",
+    <item:steampowered:bronze_boiler>,
+    [
+        [s, s, s],
+        [s, p, s],
+        [s, p, s]
+    ]);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_boiler", 
+    <item:steampowered:bronze_boiler>,
+    [
+        [s, s, s],
+        [s, p, s],
+        [s, p, s]
+    ]);
+// bronze steam engine
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:steampowered:bronze_steam_engine>);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_steam_engine", 
+    <item:steampowered:bronze_steam_engine>, 
+    [
+        [s, p, i],
+        [s, p, <item:minecraft:piston>],
+        [s, p, i]
+    ]);
+// bronze flywheel
+<recipetype:create:mechanical_crafting>.removeRecipe(<item:steampowered:bronze_flywheel>);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_flywheel", 
+    <item:steampowered:bronze_flywheel>,
+    [
+        [_, i, i, i, _],
+        [i, c, pl, c, i],
+        [i, pl, sh, pl, i],
+        [i, c, pl, c, i],
+        [_, i, i, i, _],
+    ]);
+
+
+
+// add steel?

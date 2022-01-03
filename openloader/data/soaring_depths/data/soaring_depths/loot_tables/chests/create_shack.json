@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 1,
+          "max": 4
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "create_confectionery:honey_candy"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "createaddition:copper_spool"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 10,
+            "name": "create:brass_sheet"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 6,
+            "name": "create:propeller"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 6,
+            "name": "create:whisk"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 6,
+            "name": "create:brass_hand"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "create:precision_mechanism"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 5,
+            "name": "create:polished_rose_quartz"
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 0,
+          "max": 1
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "create:goggles"
+          }
+        ]
+      }
+    ]
+  }
+  
