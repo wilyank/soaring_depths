@@ -1,0 +1,17 @@
+{
+    "template": {
+        "type": "single",
+        "id": "queen_bee:bee_nest"
+    },
+
+    "averageSpacing": 50,
+    "avoidOthers": true,
+    
+    "placement": {
+        "type": "underground"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ]
+}

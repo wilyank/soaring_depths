@@ -1,0 +1,10 @@
+
+#Server configuration
+[server]
+	#The currently active spawn algorithm.
+	#Valid types are VANILLA, SURFACE_PREF, SKYBLOCK, TWO_LAYER, SURFACE_ONLY.
+	#See curseforge for implementation details.
+	"spawn algorithm" = "SKYBLOCK"
+	#If the spawn algorithm is inverted (y = max height - y)
+	inverted = false
+

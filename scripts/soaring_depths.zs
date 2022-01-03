@@ -4,84 +4,19 @@ import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.MCItemDefinition;
 import stdlib.List;
 
+// this scripts does random tweaks and fixes
+
+// end portal
 craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
 craftingTable.addShaped("end_portal_frame", <item:minecraft:end_portal_frame>, [[<item:minecraft:air>, <item:minecraft:ender_pearl>, <item:minecraft:air>],[<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]]);
-
-
-// Simple Storage Network's blocks
-craftingTable.removeRecipe(<item:storagenetwork:inventory>);
-craftingTable.removeRecipe(<item:storagenetwork:master>);
-craftingTable.removeRecipe(<item:storagenetwork:request>);
-craftingTable.removeRecipe(<item:storagenetwork:kabel>);
-craftingTable.removeRecipe(<item:storagenetwork:storage_kabel>);
-craftingTable.removeRecipe(<item:storagenetwork:import_kabel>);
-craftingTable.removeRecipe(<item:storagenetwork:import_filter_kabel>);
-craftingTable.removeRecipe(<item:storagenetwork:filter_kabel>);
-craftingTable.removeRecipe(<item:storagenetwork:export_kabel>);
-
-craftingTable.removeRecipe(<item:storagenetwork:exchange>);
-craftingTable.removeRecipe(<item:storagenetwork:collector>);
-
-craftingTable.addShaped("storagenetwork_master", 
-    <item:storagenetwork:master>, 
-    [
-        [<item:storagenetwork:kabel>,<tag:items:forge:gems/diamond>, <item:storagenetwork:kabel>], 
-        [<tag:items:forge:gems/diamond>, <item:create:brass_casing>, <tag:items:forge:gems/diamond>], 
-        [<item:storagenetwork:kabel>, <tag:items:forge:gems/diamond>,<item:storagenetwork:kabel>]
-    ]);
-craftingTable.addShaped("storagenetwork_inventory", 
-    <item:storagenetwork:inventory>, 
-    [
-        [<item:storagenetwork:kabel>,<item:infernalexp:quartz_glass_pane>, <item:storagenetwork:kabel>], 
-        [<item:infernalexp:quartz_glass_pane>, <item:create:brass_casing>, <item:infernalexp:quartz_glass_pane>], 
-        [<item:storagenetwork:kabel>, <item:infernalexp:quartz_glass_pane>,<item:storagenetwork:kabel>]
-    ]);
-craftingTable.addShaped("storagenetwork_collector", 
-    <item:storagenetwork:collector>, 
-    [
-        [<item:storagenetwork:kabel>,<item:create:portable_storage_interface>, <item:storagenetwork:kabel>], 
-        [<item:create:portable_storage_interface>, <item:create:brass_casing>, <item:create:portable_storage_interface>], 
-        [<item:storagenetwork:kabel>, <item:create:portable_storage_interface>,<item:storagenetwork:kabel>]
-    ]);
-smithing.addRecipe("storagenetwork_request", <item:storagenetwork:request>, <item:storagenetwork:inventory>, <item:minecraft:crafting_table>);
-craftingTable.addShaped("storagenetwork_kabel", 
-    <item:storagenetwork:kabel>, 
-    [
-        [<tag:items:forge:rods/wooden>,<tag:items:forge:rods/wooden>,<tag:items:forge:rods/wooden>],
-        [<tag:items:forge:wires/iron>,<tag:items:forge:wires/iron>,<tag:items:forge:wires/iron>],
-        [<tag:items:forge:rods/wooden>,<tag:items:forge:rods/wooden>,<tag:items:forge:rods/wooden>]
-    ]);
-stoneCutter.addRecipe("storagenetwork_storage_cable", <item:storagenetwork:storage_kabel>, <item:storagenetwork:kabel>);
-stoneCutter.addRecipe("storagenetwork_import_cable", <item:storagenetwork:import_kabel>, <item:storagenetwork:kabel>);
-stoneCutter.addRecipe("storagenetwork_import_filter_cable", <item:storagenetwork:import_filter_kabel>, <item:storagenetwork:kabel>);
-stoneCutter.addRecipe("storagenetwork_filter_cable", <item:storagenetwork:filter_kabel>, <item:storagenetwork:kabel>);
-stoneCutter.addRecipe("storagenetwork_export_cable", <item:storagenetwork:export_kabel>, <item:storagenetwork:kabel>);
-
-// Simple Storage Network's items
-craftingTable.removeRecipe(<item:storagenetwork:inventory_remote>);
-craftingTable.addShaped(
-    "storagenetwork_inventory_remote",
-    <item:storagenetwork:inventory_remote>,
-    [
-        [<item:create:linked_controller>],
-        [<item:storagenetwork:inventory>]
-    ]);
-
-craftingTable.removeRecipe(<item:storagenetwork:crafting_remote>);
-smithing.addRecipe("storagenetwork_crafting_remote", <item:storagenetwork:crafting_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:crafting_table>);
-craftingTable.removeRecipe(<item:storagenetwork:collector_remote>);
-smithing.addRecipe("storagenetwork_collector_remote", <item:storagenetwork:collector_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:hopper>);
-craftingTable.removeRecipe(<item:storagenetwork:picker_remote>);
-smithing.addRecipe("storagenetwork_picker_remote", <item:storagenetwork:picker_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:ender_pearl>);
-craftingTable.removeRecipe(<item:storagenetwork:builder_remote>);
-smithing.addRecipe("storagenetwork_builder_remote", <item:storagenetwork:builder_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:ender_chest>);
 
 // oredictionary fixes
 var forge_gems = <tag:items:forge:gems>;
 forge_gems.add(<item:biomesoplenty:nether_crystal>);
-//forge_gems.add(<item:betterendforge:amber_gem>);
+forge_gems.add(<item:betterendforge:amber_gem>);
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
+// BOP sand casts
 craftingTable.addShapeless("wite_sand_cast", <item:tconstruct:blank_sand_cast>*4, [<item:biomesoplenty:white_sand>]);
 craftingTable.addShapeless("orange_sand_cast", <item:tconstruct:blank_red_sand_cast>*4, [<item:biomesoplenty:orange_sand>]);
 
@@ -91,30 +26,46 @@ craftingTable.addShapeless("orange_sand_cast", <item:tconstruct:blank_red_sand_c
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/gold/powered_rail");
 
 // add cobalt crystal melting into cobalt
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_shard_melting", <item:outer_end:cobalt_crystal_shard>, <fluid:tconstruct:molten_cobalt>, 950, 1);
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_melting", <item:outer_end:cobalt_crystal>, <fluid:tconstruct:molten_cobalt>*4, 950, 4);
-<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_lamp_melting", <item:outer_end:cobalt_crystal_lamp>, <fluid:tconstruct:molten_cobalt>*4, 950, 4);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_shard_melting", <item:outer_end:cobalt_crystal_shard>, <fluid:tconstruct:molten_cobalt>, 950, 10);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_melting", <item:outer_end:cobalt_crystal>, <fluid:tconstruct:molten_cobalt>*4, 950, 40);
+<recipetype:tconstruct:melting>.addMeltingRecipe("cobalt_crystal_lamp_melting", <item:outer_end:cobalt_crystal_lamp>, <fluid:tconstruct:molten_cobalt>*4, 950, 40);
 
-// remove some of the metal barrels
-craftingTable.removeByModid("metalbarrels");
-smithing.removeByModid("metalbarrels");
-smithing.addRecipe("iron_barrel", <item:metalbarrels:iron_barrel>, <tag:items:forge:barrels/wooden>, <tag:items:forge:storage_blocks/iron>);
-smithing.addRecipe("golden_barrel", <item:metalbarrels:gold_barrel>, <tag:items:forge:barrels/iron>, <tag:items:forge:storage_blocks/gold>);
-smithing.addRecipe("diamond_barrel", <item:metalbarrels:diamond_barrel>, <tag:items:forge:barrels/gold>, <tag:items:forge:gems/diamond>);
-smithing.addRecipe("netherite_barrel", <item:metalbarrels:netherite_barrel>, <tag:items:forge:barrels/diamond>, <tag:items:forge:ingots/netherite>);
+// make soul sand and liquid soul automatable
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("sand_to_soul_sand", <item:minecraft:sand>, <fluid:tconstruct:blood> * 250, <item:minecraft:soul_sand>, 200, true, false);
+<recipetype:tconstruct:melting>.addMeltingRecipe("soul_melting", <item:forbidden_arcanus:soul>, <fluid:tconstruct:liquid_soul> * 1000, 200, 500);
+<recipetype:tconstruct:melting>.addMeltingRecipe("dark_soul_melting", <item:forbidden_arcanus:dark_soul>, <fluid:tconstruct:liquid_soul> * 2000, 200, 500);
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:soul>, ["Use a Soul Extracter on Soul Sand to get a soul."]);
 
-smithing.addRecipe("iron_barrel_upgrade", <item:metalbarrels:wood_to_iron>, <tag:items:minecraft:planks>, <tag:items:forge:storage_blocks/iron>);
-smithing.addRecipe("gold_barrel_upgrade", <item:metalbarrels:iron_to_gold>, <tag:items:minecraft:planks>, <tag:items:forge:storage_blocks/gold>);
-smithing.addRecipe("diamond_barrel_upgrade", <item:metalbarrels:gold_to_diamond>, <tag:items:minecraft:planks>, <tag:items:forge:gems/diamond>);
-//smithing.addRecipe("netherite_barrel_upgrade", <item:metalbarrels:diamond_to_netherite>, <tag:items:minecraft:planks>, <tag:items:forge:ingots/netherite>);
-mods.jei.JEI.hideMod("metalbarrels", (name as string) => {
-    return (name == "metalbarrels:iron_barrel" 
-        || name == "metalbarrels:gold_barrel" 
-        || name == "metalbarrels:diamond_barrel" 
-        || name == "metalbarrels:netherite_barrel" 
-        || name == "metalbarrels:wood_to_iron" 
-        || name == "metalbarrels:iron_to_gold"
-        || name == "metalbarrels:gold_to_diamond"
-        || name == "metalbarrels:diamond_to_netherite");
-});
-///setblock ~ ~-1 ~ spawner{SpawnData:{id:zombie,LeftHanded:1b,ArmorItems:[{Count:1,id:"forbidden_arcanus:mortem_boots"},{Count:1,id:"forbidden_arcanus:mortem_leggings"},{Count:1,id:"forbidden_arcanus:mortem_chestplate"},{Count:1,id:"forbidden_arcanus:mortem_helmet"}],ArmorDropChances:[0.1f,0.1f,0.1f,0.1f]},Delay:299} replace
+// fix villager infinte diamonds
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/shovel");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/weapon");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/boots");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/leggings");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/chestplate");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/helmet");
+
+
+
+// change totem and void totem recipes
+craftingTable.removeRecipe(<item:minecraft:totem_of_undying>);
+craftingTable.removeRecipe(<item:voidtotem:totem_of_void_undying>);
+
+craftingTable.addShaped("totem_of_undying", 
+    <item:minecraft:totem_of_undying>,
+    [
+        [<item:forbidden_arcanus:soul>, <item:minecraft:glistering_melon_slice>, <item:forbidden_arcanus:soul>],
+        [<item:minecraft:ghast_tear>, <item:unactivatedtotems:unactivated_totem>, <item:minecraft:ghast_tear>],
+        [<item:eidolon:lesser_soul_gem>, <tag:items:forge:nether_stars>, <item:eidolon:lesser_soul_gem>]
+    ]);
+craftingTable.addShaped("totem_of_void_undying", 
+    <item:voidtotem:totem_of_void_undying>,
+    [
+        [<item:forbidden_arcanus:soul>, <item:minecraft:chorus_fruit>, <item:forbidden_arcanus:soul>],
+        [<tag:items:forge:ender_pearls>, <item:unactivatedtotems:unactivated_totem>, <tag:items:forge:ender_pearls>],
+        [<item:eidolon:lesser_soul_gem>, <tag:items:forge:nether_stars>, <item:eidolon:lesser_soul_gem>]
+    ]);
+
+// fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
+<tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
+<tag:items:forge:ingots/redstone_gold>.add(<item:eidolon:arcane_gold_ingot>);
