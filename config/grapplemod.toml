@@ -202,7 +202,7 @@ enchant_rarity_sliding = 0
 override_allowflight = true
 airstrafe_max_speed = 0.7
 airstrafe_acceleration = 0.015
-dont_override_movement_in_air = false
+dont_override_movement_in_air = true
 [clientOptions.camera]
 wallrun_camera_tilt_degrees = 10.0
 wallrun_camera_animation_s = 0.5

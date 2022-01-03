@@ -254,3 +254,14 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
     <item:create:electron_tube>, // output
     <item:create:polished_rose_quartz>, // input item
     <fluid:tconstruct:molten_iron>*16); // input fluid
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("rock_crystal_ore")
+    .transitionTo(<item:minecraft:diorite>)
+    .require(<tag:items:forge:ores>)
+    .loops(1)
+    .addOutput(<item:astralsorcery:rock_crystal_ore>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:wet_purifying_soap>))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:minecraft:water>*250))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_quartz>*144))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:portable_beacons:starberries>))
+);

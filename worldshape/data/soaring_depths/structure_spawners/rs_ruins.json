@@ -6,6 +6,7 @@
     },
 
     "averageSpacing": 30,
+    "minimumSpacing": 15,
     "avoidOthers": true,
     
     "placement": {
