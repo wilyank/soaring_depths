@@ -1,20 +1,23 @@
 {
     "template": {
-        "type": "single",
-        "id": "queen_bee:bee_nest"
+        "type": "pool",
+        "id": "repurposed_structures:witch_huts/taiga_start_pool"
     },
 
-    "averageSpacing": 50,
+    "averageSpacing": 30,
     "avoidOthers": true,
     
     "placement": {
         "offset": 0,
-        "minY": 50,
-        "maxY": 250,
+        "terraform": 0,
         "type": "surface"
     },
 
     "dimensions": [
         "minecraft:overworld"
+    ],
+    "biomes": [
+        "#taiga"
     ]
+
 }

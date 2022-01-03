@@ -1,0 +1,32 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "repurposed_structures:ruins/land_warm/start_pool",
+        "maxDepth": 7
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "minY": 50,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#jungle",
+        "#plains",
+        "#savanna",
+        "#forest",
+        "#swamp",
+        "#mushroom"
+    ]
+
+}

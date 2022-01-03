@@ -1,0 +1,24 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "repurposed_structures:witch_huts/oak_start_pool"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#swamp",
+        "#forest"
+    ]
+
+}
