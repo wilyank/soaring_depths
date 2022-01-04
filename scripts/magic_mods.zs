@@ -64,9 +64,59 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:golden_orchid_seeds>);
     80
 );
 
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 80);
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 20);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 80);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 20);
 
-// remove Mutant More's potion recipes
+// change Mutant chemical recipes
 brewing.removeRecipeByReagent(<item:minecraft:obsidian>);
 brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
+
+<recipetype:create:mixing>.addRecipe("chemical_x",
+     "superheated", 
+     <item:mutantbeasts:chemical_x>,
+     [
+        <item:forbidden_arcanus:dark_rune>, 
+        <item:forbidden_arcanus:xpetrified_orb>,
+        <item:minecraft:glass_bottle>
+    ],
+    [
+        <fluid:tconstruct:molten_pewter> * 144, 
+        <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
+    ]
+);
+<recipetype:create:mixing>.addRecipe("formula_y",
+     "superheated", 
+     <item:mutantmore:formula_y>,
+     [
+        <item:forbidden_arcanus:dark_rune>, 
+        <item:forbidden_arcanus:xpetrified_orb>,
+        <item:mutantbeasts:chemical_x>
+    ],
+    [
+        <fluid:tconstruct:molten_diamond> * 144, 
+        <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
+    ]
+);
+<recipetype:create:mixing>.addRecipe("compound_z",
+     "superheated", 
+     <item:mutantmore:compound_z>,
+     [
+        <item:forbidden_arcanus:dark_rune>, 
+        <item:forbidden_arcanus:eternal_stella>,
+        <item:mutantmore:formula_y>
+    ],
+    [
+        <fluid:tconstruct:molten_debris> * 144, 
+        <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
+    ]
+);
+
+
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:dark_runestone>, ["Right click with Runestone on an activated Runic Tenebris Core to obtain"]);
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:runic_tenebris_frame>, ["Activate with a Dark Nether Star"]);
+
+<recipetype:create:filling>.addRecipe("wetting_soap", <item:forbidden_arcanus:wet_purifying_soap>, <item:forbidden_arcanus:purifying_soap>, <fluid:minecraft:water>*250);
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:purifying_soap>, ["Becomes wet when in water"]);
+
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("wraith_liquid_interaction_failed", <item:minecraft:gunpowder>, <fluid:astralsorcery:liquid_starlight> * 1000, 100, <fluid:tconstruct:molten_lead> * 1000, 100, 80);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("wraith_liquid_interaction_success", <entityType:eidolon:wraith>, <fluid:astralsorcery:liquid_starlight> * 1000, 100, <fluid:tconstruct:molten_lead> * 1000, 100, 80);
