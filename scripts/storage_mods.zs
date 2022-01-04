@@ -1,3 +1,4 @@
+#priority 5
 // this scripts tweaks the storage mods (SSN, Drawers and Metal Barrels)
 
 // Simple Storage Network's blocks

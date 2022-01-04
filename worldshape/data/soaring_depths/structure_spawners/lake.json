@@ -1,0 +1,35 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:lake"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": -3,
+        "minY": 3,
+        "maxY": 255,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#taiga",
+        "#extreme_hills",
+        "#jungle",
+        "#mesa",
+        "#plains",
+        "#savanna",
+        "#icy",
+        "#beach",
+        "#forest",
+        "#ocean",
+        "#river",
+        "#swamp",
+        "#mushroom"
+    ]
+}

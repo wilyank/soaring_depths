@@ -1,3 +1,5 @@
+#priority 100
+
 import crafttweaker.api.tag.MCTag;
 import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
@@ -5,6 +7,21 @@ import crafttweaker.api.item.MCItemDefinition;
 import stdlib.List;
 
 // this scripts does random tweaks and fixes
+
+// oredictionary fixes
+var forge_gems = <tag:items:forge:gems>;
+forge_gems.add(<item:biomesoplenty:nether_crystal>);
+forge_gems.add(<item:betterendforge:amber_gem>);
+forge_gems.add(<item:astralsorcery:resonating_gem>);
+forge_gems.add(<item:eidolon:lesser_soul_gem>);
+forge_gems.add(<item:eidolon:shadow_gem>);
+forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
+forge_gems.add(<item:bloodmagic:lavacrystal>);
+<tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
+
+// fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
+<tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
+<tag:items:forge:ingots/redstone_gold>.add(<item:eidolon:arcane_gold_ingot>);
 
 var _ = <item:minecraft:air>;
 
@@ -18,16 +35,6 @@ craftingTable.addShaped("end_portal_frame",
         [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]
     ]);
 
-// oredictionary fixes
-var forge_gems = <tag:items:forge:gems>;
-forge_gems.add(<item:biomesoplenty:nether_crystal>);
-forge_gems.add(<item:betterendforge:amber_gem>);
-forge_gems.add(<item:astralsorcery:resonating_gem>);
-forge_gems.add(<item:eidolon:lesser_soul_gem>);
-forge_gems.add(<item:eidolon:shadow_gem>);
-forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
-forge_gems.add(<item:bloodmagic:lavacrystal>);
-<tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
 // BOP sand casts
 craftingTable.addShapeless("wite_sand_cast", 
@@ -119,9 +126,6 @@ craftingTable.addShaped("totem_of_void_undying",
         [<item:eidolon:lesser_soul_gem>, <tag:items:forge:nether_stars>, <item:eidolon:lesser_soul_gem>]
     ]);
 
-// fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
-<tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
-<tag:items:forge:ingots/redstone_gold>.add(<item:eidolon:arcane_gold_ingot>);
 
 // fix bronze machines being crafted with brass
 var s = <item:steampowered:bronze_sheet>;
@@ -254,14 +258,3 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
     <item:create:electron_tube>, // output
     <item:create:polished_rose_quartz>, // input item
     <fluid:tconstruct:molten_iron>*16); // input fluid
-
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("rock_crystal_ore")
-    .transitionTo(<item:minecraft:diorite>)
-    .require(<tag:items:forge:ores>)
-    .loops(1)
-    .addOutput(<item:astralsorcery:rock_crystal_ore>, 1)
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:wet_purifying_soap>))
-    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:minecraft:water>*250))
-    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_quartz>*144))
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:portable_beacons:starberries>))
-);

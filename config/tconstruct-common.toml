@@ -6,7 +6,7 @@
 	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
 	showAllTableVariants = true
 	#Set this to false to disable new players spawning with the Tinkers' Book.
-	shouldSpawnWithTinkersBook = true
+	shouldSpawnWithTinkersBook = false
 	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
 	#If empty, all materials will show
 	showOnlyToolMaterial = ""
@@ -24,7 +24,7 @@
 	#Makes the recipe to alloy netherite in the smeltery only cost 2 gold per netherite ingot. If false uses the vanilla rate of 4 gold per ingot. Disable if there are crafting duplications.
 	cheaperNetheriteAlloy = true
 	#Add a recipe that allows you to craft a piece of flint using 3 gravel
-	addGravelToFlintRecipe = true
+	addGravelToFlintRecipe = false
 	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod
 	glassRecipeFix = true
 	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
