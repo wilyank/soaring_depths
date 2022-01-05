@@ -77,6 +77,7 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
      [
         <item:forbidden_arcanus:dark_rune>, 
         <item:forbidden_arcanus:xpetrified_orb>,
+        <item:eidolon:fungus_sprouts>,
         <item:minecraft:glass_bottle>
     ],
     [
@@ -90,6 +91,7 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
      [
         <item:forbidden_arcanus:dark_rune>, 
         <item:forbidden_arcanus:xpetrified_orb>,
+        <item:eidolon:crimson_essence>,
         <item:mutantbeasts:chemical_x>
     ],
     [
@@ -102,7 +104,8 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
      <item:mutantmore:compound_z>,
      [
         <item:forbidden_arcanus:dark_rune>, 
-        <item:forbidden_arcanus:eternal_stella>,
+        <item:forbidden_arcanus:xpetrified_orb>,
+        <item:eidolon:warped_sprouts>,
         <item:mutantmore:formula_y>
     ],
     [

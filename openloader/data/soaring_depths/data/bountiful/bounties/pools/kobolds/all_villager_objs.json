@@ -1,0 +1,93 @@
+{
+    "modsRequired": ["kobolds"],
+    "content": [
+      {
+        "type": "entity",
+        "content": "kobolds:kobold",
+        "amountRange": {
+          "min": 1,
+          "max": 16
+        },
+        "unitWorth": 500,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_zombie",
+        "amountRange": {
+          "min": 1,
+          "max": 16
+        },
+        "unitWorth": 500,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_warrior",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 700,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_enchanter",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 700,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_engineer",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 700,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_skeleton",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 450,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_pirate",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 700,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "kobolds:kobold_pirate_captain",
+        "amountRange": {
+          "min": 1,
+          "max": 12
+        },
+        "unitWorth": 1000,
+        "weight": 1000,
+        "timeMult": 2.0
+      }
+    ]
+  }

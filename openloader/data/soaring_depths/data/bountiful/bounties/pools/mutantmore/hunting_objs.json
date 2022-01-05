@@ -1,0 +1,60 @@
+{
+    "modsRequired": ["mutantmore"],  
+    "content": [
+        {
+          "type": "entity",
+          "content": "mutantmore:mutant_blaze",
+          "amountRange": {
+            "min": 1,
+            "max": 5
+          },
+          "unitWorth": 100000,
+          "weight": 1000,
+          "timeMult": 64.0
+        },
+        {
+          "type": "entity",
+          "content": "mutantmore:mutant_hoglin",
+          "amountRange": {
+            "min": 1,
+            "max": 6
+          },
+          "unitWorth": 100000,
+          "weight": 1000,
+          "timeMult": 64.0
+        },
+        {
+          "type": "entity",
+          "content": "mutantmore:mutant_shulker",
+          "amountRange": {
+            "min": 1,
+            "max": 6
+          },
+          "unitWorth": 100000,
+          "weight": 1000,
+          "timeMult": 64.0
+        },
+        {
+          "type": "entity",
+          "content": "mutantmore:mutant_husk",
+          "amountRange": {
+            "min": 1,
+            "max": 6
+          },
+          "unitWorth": 100000,
+          "weight": 1000,
+          "timeMult": 64.0
+        },
+        {
+          "type": "entity",
+          "content": "mutantmore:mutant_wither_skeleton",
+          "amountRange": {
+            "min": 1,
+            "max": 6
+          },
+          "unitWorth": 100000,
+          "weight": 1000,
+          "timeMult": 64.0
+        }
+      ]
+    }

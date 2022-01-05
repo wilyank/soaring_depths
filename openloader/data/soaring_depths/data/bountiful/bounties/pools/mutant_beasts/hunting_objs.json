@@ -1,0 +1,71 @@
+{
+  "modsRequired": ["mutantbeasts"],  
+  "content": [
+      {
+        "type": "entity",
+        "content": "mutantbeasts:mutant_creeper",
+        "amountRange": {
+          "min": 1,
+          "max": 5
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      },
+      {
+        "type": "entity",
+        "content": "mutantbeasts:mutant_enderman",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      },
+      {
+        "type": "entity",
+        "content": "mutantbeasts:mutant_skeleton",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      },
+      {
+        "type": "entity",
+        "content": "mutantbeasts:mutant_snow_golem",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      },
+      {
+        "type": "entity",
+        "content": "mutantbeasts:mutant_zombie",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      },
+      {
+        "type": "entity",
+        "content": "mutantbeasts:spider_pig",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 100000,
+        "weight": 1000,
+        "timeMult": 64.0
+      }
+    ]
+  }

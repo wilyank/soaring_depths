@@ -1,0 +1,125 @@
+{
+    "content": [
+      {
+        "type": "entity",
+        "content": "alexsmobs:crimson_musquito",
+        "amountRange": {
+          "min": 1,
+          "max": 5
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:bone_serpent",
+        "amountRange": {
+          "min": 1,
+          "max": 2
+        },
+        "unitWorth": 800,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:dropbear",
+        "amountRange": {
+          "min": 1,
+          "max": 16
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 16.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:soul_vulture",
+        "amountRange": {
+          "min": 1,
+          "max": 2
+        },
+        "unitWorth": 450,
+        "weight": 1000,
+        "timeMult": 8.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:straddler",
+        "amountRange": {
+          "min": 1,
+          "max": 5
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:warped_mosco",
+        "amountRange": {
+          "min": 1,
+          "max": 1
+        },
+        "unitWorth": 10000,
+        "weight": 1000,
+        "timeMult": 40.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:warped_toad",
+        "amountRange": {
+          "min": 1,
+          "max": 5
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:crocodile",
+        "amountRange": {
+          "min": 1,
+          "max": 5
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:grizzly_bear",
+        "amountRange": {
+          "min": 1,
+          "max": 6
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 4.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:guster",
+        "amountRange": {
+          "min": 1,
+          "max": 16
+        },
+        "unitWorth": 225,
+        "weight": 1000,
+        "timeMult": 2.0
+      },
+      {
+        "type": "entity",
+        "content": "alexsmobs:tarantula_hawk",
+        "amountRange": {
+          "min": 1,
+          "max": 2
+        },
+        "unitWorth": 1000,
+        "weight": 1000,
+        "timeMult": 8.0
+      }
+    ]
+  }

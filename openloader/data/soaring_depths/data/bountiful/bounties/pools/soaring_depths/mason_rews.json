@@ -1,0 +1,65 @@
+{
+    "modsRequired": ["tconstruct", "biomesoplenty"],
+    "content": [
+      {
+        "type": "item",
+        "content": "minecraft:quartz_block",
+        "amountRange": {
+          "min": 4,
+          "max": 32
+        },
+        "unitWorth": 128,
+        "weight": 800
+      },
+      {
+        "type": "item",
+        "content": "biomesoplenty:nether_crystal",
+        "amountRange": {
+          "min": 1,
+          "max": 16
+        },
+        "unitWorth": 128,
+        "weight": 800
+      },
+      {
+        "type": "item",
+        "content": "minecraft:nether_bricks",
+        "amountRange": {
+          "min": 4,
+          "max": 32
+        },
+        "unitWorth": 128,
+        "weight": 800
+      },
+      {
+        "type": "item",
+        "content": "minecraft:red_nether_bricks",
+        "amountRange": {
+          "min": 4,
+          "max": 32
+        },
+        "unitWorth": 128,
+        "weight": 800
+      },
+      {
+        "type": "item",
+        "content": "minecraft:soul_soil",
+        "amountRange": {
+          "min": 4,
+          "max": 32
+        },
+        "unitWorth": 128,
+        "weight": 800
+      },
+      {
+        "type": "item",
+        "content": "tconstruct:soul_glass",
+        "amountRange": {
+          "min": 4,
+          "max": 32
+        },
+        "unitWorth": 128,
+        "weight": 800
+      }
+    ]
+  }
