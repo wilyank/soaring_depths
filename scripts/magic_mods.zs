@@ -1,5 +1,8 @@
 #priority 10
 
+import crafttweaker.api.util.text.MCTextComponent;
+
+
 // Astral Sorcery's ores
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("rock_crystal_ore")
     .transitionTo(<item:minecraft:diorite>)
@@ -45,6 +48,35 @@
     true, 
     200, 
     <resource:astralsorcery:evorsio>
+);
+
+// information on how to get xpetrified orb
+
+mods.jei.JEI.addDescription(
+    <item:forbidden_arcanus:xpetrified_orb>, 
+    MCTextComponent.createTranslationTextComponent("description.soaring_depths.xpetrified_orb")
+);
+mods.jei.JEI.addDescription(
+    <item:forbidden_arcanus:corrupti_dust>, 
+    MCTextComponent.createTranslationTextComponent("description.soaring_depths.corrupti_dust")
+);
+mods.jei.JEI.addDescription(
+    <item:forbidden_arcanus:dark_matter>, 
+    MCTextComponent.createTranslationTextComponent("description.soaring_depths.dark_matter")
+);
+// xpetrified ore from xpetrified orb
+craftingTable.addShaped("xpetrified_block",
+    <item:forbidden_arcanus:xpetrified_ore>,
+    [
+        [<item:forbidden_arcanus:xpetrified_orb>, <item:forbidden_arcanus:xpetrified_orb>],
+        [<item:forbidden_arcanus:xpetrified_orb>, <item:forbidden_arcanus:xpetrified_orb>]
+    ]    
+);
+<recipetype:astralsorcery:block_transmutation>.addRecipe("stella_arcanum",
+    <blockstate:forbidden_arcanus:stella_arcanum>,
+    <blockstate:forbidden_arcanus:xpetrified_ore>,
+    true,
+    200
 );
 
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:arcane_gold_nugget>, ["Can be grown from Golden Orchid Seeds."]);
@@ -123,3 +155,8 @@ mods.jei.JEI.addInfo(<item:forbidden_arcanus:purifying_soap>, ["Becomes wet when
 
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("wraith_liquid_interaction_failed", <item:minecraft:gunpowder>, <fluid:astralsorcery:liquid_starlight> * 1000, 100, <fluid:tconstruct:molten_lead> * 1000, 100, 80);
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("wraith_liquid_interaction_success", <entityType:eidolon:wraith>, <fluid:astralsorcery:liquid_starlight> * 1000, 100, <fluid:tconstruct:molten_lead> * 1000, 100, 80);
+
+// some help for F&A
+<item:forbidden_arcanus:runic_chiseled_polished_darkstone>.addTooltip("tooltip.forbidden_arcanus.runic_chiseled_polished_darkstone");
+<item:forbidden_arcanus:shiny_zombie_arm>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.forbidden_arcanus.zombie_arm"));
+<item:forbidden_arcanus:zombie_arm>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.forbidden_arcanus.zombie_arm"));

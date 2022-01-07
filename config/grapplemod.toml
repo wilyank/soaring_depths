@@ -186,7 +186,7 @@ wallrun_speed = 0.1
 wallrun_max_speed = 0.7
 wallrun_drag = 0.01
 wallrun_min_speed = 0.0
-enchant_rarity_wallrun = 0
+enchant_rarity_wallrun = 10
 [options.enchantments.doublejump]
 doublejumpforce = 0.8
 doublejump_relative_to_falling = false
@@ -197,7 +197,7 @@ slidingjumpforce = 0.6
 sliding_friction = 0.006666666828095913
 sliding_min_speed = 0.15
 sliding_end_min_speed = 0.01
-enchant_rarity_sliding = 0
+enchant_rarity_sliding = 10
 [options.other]
 override_allowflight = true
 airstrafe_max_speed = 0.7

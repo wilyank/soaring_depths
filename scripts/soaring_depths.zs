@@ -5,6 +5,9 @@ import crafttweaker.api.item.IItemStack;
 import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.MCItemDefinition;
 import stdlib.List;
+import crafttweaker.api.util.text.MCTextComponent;
+import crafttweaker.api.events.CTEventManager;
+import crafttweaker.api.server.MCServer;
 
 // this scripts does random tweaks and fixes
 
@@ -15,7 +18,7 @@ forge_gems.add(<item:betterendforge:amber_gem>);
 forge_gems.add(<item:astralsorcery:resonating_gem>);
 forge_gems.add(<item:eidolon:lesser_soul_gem>);
 forge_gems.add(<item:eidolon:shadow_gem>);
-forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
+//forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
 forge_gems.add(<item:bloodmagic:lavacrystal>);
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
@@ -258,3 +261,66 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
     <item:create:electron_tube>, // output
     <item:create:polished_rose_quartz>, // input item
     <fluid:tconstruct:molten_iron>*16); // input fluid
+
+// ore hiding and descriptions
+mods.jei.JEI.hideIngredient(<item:tconstruct:copper_ore>);
+mods.jei.JEI.hideCategory("jeresources:worldgen");
+
+<item:create:copper_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.copper"));
+<item:create:zinc_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.zinc"));
+
+<item:minecraft:coal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.coal"));
+<item:minecraft:iron_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.iron"));
+<item:minecraft:gold_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.gold"));
+<item:minecraft:redstone_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.redstone"));
+<item:minecraft:diamond_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.diamond"));
+<item:minecraft:lapis_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lapis"));
+<item:eidolon:lead_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lead"));
+<item:forbidden_arcanus:arcane_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.arcane_crystal"));
+
+
+// Force using alloying or mixing for making pewter
+craftingTable.removeRecipe(<item:eidolon:pewter_blend>);
+furnace.removeRecipe(<item:eidolon:pewter_ingot>);
+blastFurnace.removeRecipe(<item:eidolon:pewter_ingot>);
+
+<recipetype:create:mixing>.addRecipe("pewter_mixing",
+    "heated",
+    <item:eidolon:pewter_ingot>*2,
+    [<tag:items:forge:ingots/iron>, <tag:items:forge:ingots/lead>]
+);
+
+// banana milk shake
+<recipetype:create:mixing>.addRecipe("banana_milkshake",
+    "none",
+    <item:minecraft:potion>.withTag({display:{Name:'{"text":"Banana Milk Shake","color":"white","italic":false}'},CustomPotionEffects:[{Id:3,Amplifier:0,Duration:1200},{Id:23,Amplifier:0,Duration:200}],CustomPotionColor:16772611}),
+    [<item:minecraft:ice>, <item:alexsmobs:banana>],
+    [<fluid:minecraft:milk>*250]
+);
+mods.jei.JEI.addItem(<item:minecraft:potion>.withTag({display:{Name:'{"text":"Banana Milk Shake","color":"white","italic":false}'},CustomPotionEffects:[{Id:3,Amplifier:0,Duration:1200},{Id:23,Amplifier:0,Duration:200}],CustomPotionColor:16772611}));
+
+craftingTable.addShaped("banana_pickaxe", <item:eidolon:pewter_blend>, [[<item:alexsmobs:banana>],[<item:minecraft:stick>]]);
+
+// make turtle eggs obtainable
+villagerTrades.addWanderingTrade(1, <item:rubber_duck:rubber_duck_item>, <item:minecraft:turtle_egg>, 4, 2);
+
+
+
+
+
+
+// CTEventManager.register<crafttweaker.api.event.entity.player.interact.MCLeftClickBlockEvent>((event) => {
+//     if (<item:eidolon:pewter_blend>.matches(event.itemStack)) {
+//         println("player left clicked with " + event.itemStack.toString());
+//         if (!event.player.world.remote) {
+//             event.player.world.asServerWorld().server.executeCommand("say hello", false);
+//             var count = event.itemStack.amount;
+//             if (count > 1) {
+//                 event.player.world.asServerWorld().server.executeCommand("replaceitem @p weapon eidolon:pewter_blend " + 1, false);
+//             }
+//             else {
+//                 event.player.world.asServerWorld().server.executeCommand("replaceitem @p weapon minecraft:air", false);
+//             }
+//         }
+//     }
+// });
