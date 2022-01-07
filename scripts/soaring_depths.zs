@@ -99,6 +99,12 @@ craftingTable.addShapeless("orange_sand_cast",
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:soul>, ["Use a Soul Extracter on Soul Sand to get a soul."]);
 mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul Sand to get a soul."]);
 
+// make marble automatable
+<recipetype:create:mixing>.addRecipe("marble",
+    "heated",
+    <item:astralsorcery:marble_raw>*2,
+    [<item:minecraft:diorite>, <item:create:limesand>]);
+
 // fix villager infinte diamonds
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/shovel");
