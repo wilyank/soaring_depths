@@ -2,7 +2,7 @@
     "template": {
         "type": "pool",
         "id": "soaring_depths:ruins/any",
-        "maxDepth": 7
+        "maxDepth": 5
     },
 
     "averageSpacing": 30,

@@ -6,6 +6,7 @@ import crafttweaker.api.item.IIngredient;
 import crafttweaker.api.item.MCItemDefinition;
 import stdlib.List;
 import crafttweaker.api.util.text.MCTextComponent;
+import crafttweaker.api.util.text.MCStyle;
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.server.MCServer;
 
@@ -272,17 +273,19 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
 mods.jei.JEI.hideIngredient(<item:tconstruct:copper_ore>);
 mods.jei.JEI.hideCategory("jeresources:worldgen");
 
-<item:create:copper_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.copper"));
-<item:create:zinc_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.zinc"));
+var style = new MCStyle;
+style.setFormatting(<formatting:gray>);
+<item:create:copper_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.copper").setStyle(style));
+<item:create:zinc_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.zinc").setStyle(style));
 
-<item:minecraft:coal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.coal"));
-<item:minecraft:iron_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.iron"));
-<item:minecraft:gold_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.gold"));
-<item:minecraft:redstone_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.redstone"));
-<item:minecraft:diamond_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.diamond"));
-<item:minecraft:lapis_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lapis"));
-<item:eidolon:lead_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lead"));
-<item:forbidden_arcanus:arcane_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.arcane_crystal"));
+<item:minecraft:coal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.coal").setStyle(style));
+<item:minecraft:iron_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.iron").setStyle(style));
+<item:minecraft:gold_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.gold").setStyle(style));
+<item:minecraft:redstone_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.redstone").setStyle(style));
+<item:minecraft:diamond_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.diamond").setStyle(style));
+<item:minecraft:lapis_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lapis").setStyle(style));
+<item:eidolon:lead_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lead").setStyle(style));
+<item:forbidden_arcanus:arcane_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.arcane_crystal").setStyle(style));
 
 
 // Force using alloying or mixing for making pewter
@@ -310,6 +313,24 @@ craftingTable.addShaped("banana_pickaxe", <item:eidolon:pewter_blend>, [[<item:a
 // make turtle eggs obtainable
 villagerTrades.addWanderingTrade(1, <item:rubber_duck:rubber_duck_item>, <item:minecraft:turtle_egg>, 4, 2);
 
+
+// remove distracting Mowzie's Mobs items from JEI
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_fury>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_fear>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_rage>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_bliss>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_misery>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barakoa_mask_faith>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:barako_mask>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:grant_suns_blessing>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:earth_talisman>);
+mods.jei.JEI.hideIngredient(<item:mowziesmobs:mob_remover>);
+craftingTable.addShapeless("painted_acacia_wood",
+    <item:mowziesmobs:painted_acacia>,
+    [<item:minecraft:acacia_planks>,<tag:items:forge:dyes>]
+);
+
+mods.jei.JEI.hideIngredient(<item:ftblibrary:fluid_container>);
 
 
 
