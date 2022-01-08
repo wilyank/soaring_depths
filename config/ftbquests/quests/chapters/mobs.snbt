@@ -1,23 +1,12 @@
 {
 	id: "7721277CB4BB2E39"
 	group: ""
-	order_index: 3
+	order_index: 0
 	filename: "mobs"
-	title: "Mobs"
+	title: "Soaring Depths"
+	icon: "minecraft:oak_boat"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	images: [{
-		x: -1.0d
-		y: -6.0d
-		width: 1.0d
-		height: 1.0d
-		rotation: 0.0d
-		image: "minecraft:textures/gui/presets/isles.png"
-		hover: [ ]
-		click: ""
-		dev: false
-		corner: false
-	}]
 	quests: [
 		{
 			title: "Kill mutants"
@@ -146,8 +135,8 @@
 			}]
 		}
 		{
-			x: -3.5d
-			y: -4.5d
+			x: -0.5d
+			y: -3.5d
 			id: "3BBAF18EE6AAE417"
 			tasks: [{
 				id: "3E2147D8CD167C02"
@@ -155,6 +144,17 @@
 				icon: "minecraft:wither_skeleton_skull"
 				entity: "minecraft:wither"
 				value: 1L
+			}]
+			rewards: [{
+				id: "7ABECB14C1808DDF"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "portable_beacons:beacon_book"
+					}
+				}
 			}]
 		}
 		{
@@ -180,8 +180,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -4.5d
+			x: -5.5d
+			y: -2.5d
 			id: "775B223DF1A287F2"
 			tasks: [{
 				id: "014FC22D88ABC691"
@@ -191,8 +191,8 @@
 			}]
 		}
 		{
-			x: 0.5d
-			y: -4.5d
+			x: -4.5d
+			y: -2.5d
 			id: "033284DC7639CB84"
 			tasks: [{
 				id: "2D6C73B0683E33F6"
@@ -202,14 +202,668 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -4.5d
+			x: -1.5d
+			y: -3.5d
 			id: "34F81664609853C2"
 			tasks: [{
 				id: "4DA459830FE1EA68"
 				type: "kill"
 				entity: "minecraft:evoker"
 				value: 1L
+			}]
+			rewards: [{
+				id: "33952232D650ED20"
+				type: "item"
+				item: "unactivatedtotems:unactivated_totem"
+			}]
+		}
+		{
+			title: "Toolmaking"
+			x: -7.0d
+			y: 0.0d
+			subtitle: "All a tool shop needs"
+			id: "103BBB9EE1DB0526"
+			tasks: [
+				{
+					id: "510804F3EAF020D6"
+					type: "item"
+					item: "tconstruct:crafting_station"
+				}
+				{
+					id: "3811694A7651E346"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+				{
+					id: "5082E28C3D0B6BA4"
+					type: "item"
+					item: "tconstruct:part_builder"
+				}
+				{
+					id: "42D6F1330E672419"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+				{
+					id: "19CD3DC0581FB684"
+					type: "item"
+					item: "tconstruct:pattern"
+				}
+			]
+			rewards: [{
+				id: "5E8E7E981A11699B"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+		}
+		{
+			title: "Advanced Toolmaking"
+			x: -6.0d
+			y: 1.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "1B53FF2AB247D673"
+			tasks: [
+				{
+					id: "5ED4334AE1C71622"
+					type: "item"
+					item: "tconstruct:tinkers_chest"
+				}
+				{
+					id: "0008D1FC93CCD6DA"
+					type: "item"
+					title: "Tinker's Anvil"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tinkers_anvil"
+									Count: 1b
+								}
+								{
+									id: "tconstruct:scorched_anvil"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: 0.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "0F828792BEE1DC4F"
+			tasks: [
+				{
+					id: "3C1665596335FEBD"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "398CF8A53DB33294"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "24CF7FBD438F241F"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "04CCB4A489B3C6E5"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "6B647BDE8E7C14E2"
+					type: "item"
+					title: "Any #tconstruct:casts"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:casts"
+						}
+					}
+				}
+				{
+					id: "5D1D0D7FCA17219C"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: ["0F828792BEE1DC4F"]
+			id: "3409F08778C9EC83"
+			tasks: [
+				{
+					id: "4EBDB1953A484086"
+					type: "item"
+					item: "tconstruct:scorched_alloyer"
+				}
+				{
+					id: "4F789221A1A17B60"
+					type: "item"
+					title: "Any #tconstruct:scorched_tanks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:scorched_tanks"
+						}
+					}
+				}
+				{
+					id: "1DDA13257CE71F67"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+				}
+				{
+					id: "674FC2A16779C2B4"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "4D1DF0794A1314A7"
+					type: "item"
+					title: "Any #tconstruct:casts"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:casts"
+						}
+					}
+				}
+				{
+					id: "0E5126008B1074FD"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+			]
+		}
+		{
+			title: "Smeltery"
+			x: -5.0d
+			y: 0.0d
+			dependencies: ["0F828792BEE1DC4F"]
+			id: "530392498F50A2AE"
+			tasks: [
+				{
+					id: "469EB3E4F2DD4E1F"
+					type: "item"
+					item: "tconstruct:smeltery_controller"
+				}
+				{
+					id: "596BEC7CF9F632C0"
+					type: "item"
+					item: "tconstruct:seared_bricks"
+				}
+				{
+					id: "69554D43BABA20DE"
+					type: "item"
+					item: "tconstruct:seared_chute"
+				}
+				{
+					id: "57C3FE7CA8EB9614"
+					type: "item"
+					title: "Any #tconstruct:seared_tanks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:seared_tanks"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Basic Storage Network"
+			x: -7.0d
+			y: 2.0d
+			id: "5160A319C6E43EA0"
+			tasks: [
+				{
+					id: "7D6E568DF6F7473D"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "5BE7555B44079757"
+					type: "item"
+					item: "storagenetwork:inventory"
+				}
+				{
+					id: "355923547DEEC24E"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+				}
+			]
+		}
+		{
+			title: "Advanced Storage Network"
+			x: -6.0d
+			y: 2.0d
+			description: ["Fancy some automatic inputs and outputs?"]
+			dependencies: ["5160A319C6E43EA0"]
+			id: "12201FDC25F41EC4"
+			tasks: [
+				{
+					id: "21225B3AE8C3F35F"
+					type: "item"
+					item: "storagenetwork:request"
+				}
+				{
+					id: "59CCE2EDD6B1481A"
+					type: "item"
+					item: "storagenetwork:import_kabel"
+				}
+				{
+					id: "50317FCB5B653E7A"
+					type: "item"
+					item: "storagenetwork:export_kabel"
+				}
+				{
+					id: "75D43C452DB68BB4"
+					type: "item"
+					item: "storagenetwork:collector"
+				}
+				{
+					id: "19F012C74C225F09"
+					type: "item"
+					item: "storagenetwork:stack_upgrade"
+				}
+				{
+					id: "2157C5F6DDBF3F2D"
+					type: "item"
+					item: "storagenetwork:speed_upgrade"
+				}
+			]
+		}
+		{
+			title: "Master Storage System"
+			x: -5.0d
+			y: 2.0d
+			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
+			dependencies: ["12201FDC25F41EC4"]
+			id: "45B064317F8E62A0"
+			tasks: [
+				{
+					id: "61B06F7E71FDA2CC"
+					type: "item"
+					item: "storagenetwork:import_filter_kabel"
+				}
+				{
+					id: "0AC71E5007366007"
+					type: "item"
+					item: "storagenetwork:filter_kabel"
+				}
+				{
+					id: "1885A28330CBE411"
+					type: "item"
+					item: "storagenetwork:inventory_remote"
+				}
+				{
+					id: "4B843B1A96C41044"
+					type: "item"
+					item: "storagenetwork:crafting_remote"
+				}
+				{
+					id: "153561553AE613EE"
+					type: "item"
+					item: "storagenetwork:picker_remote"
+				}
+				{
+					id: "123DED55BB8E13EB"
+					type: "item"
+					item: "storagenetwork:collector_remote"
+				}
+				{
+					id: "1929AF2D4888747B"
+					type: "item"
+					item: "storagenetwork:builder_remote"
+				}
+			]
+		}
+		{
+			title: "Magical Ores"
+			x: -1.0d
+			y: -1.0d
+			id: "6C27D59380778FF1"
+			tasks: [
+				{
+					id: "00C2DBE8CAEEA7C6"
+					type: "item"
+					item: "forbidden_arcanus:arcane_crystal"
+				}
+				{
+					id: "044082A2056F563A"
+					type: "item"
+					item: "create:crushed_lead_ore"
+				}
+				{
+					id: "5F3328DD14085DE6"
+					type: "item"
+					title: "Rune"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "forbidden_arcanus:rune"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:dark_rune"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Eidolon"
+			x: -2.5d
+			y: -1.0d
+			subtitle: "The road to power is paved with corpses"
+			dependencies: ["6C27D59380778FF1"]
+			id: "230D36713B063759"
+			tasks: [
+				{
+					id: "07B0D92C3477C3BB"
+					type: "item"
+					item: "eidolon:crucible"
+				}
+				{
+					id: "5755514CA9A2BC48"
+					type: "item"
+					item: "eidolon:worktable"
+				}
+			]
+			rewards: [{
+				id: "78B364B0D5FA05F3"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["3BBAF18EE6AAE417"]
+			id: "595DE98379F6280C"
+			tasks: [{
+				id: "10C940068F01E02F"
+				type: "item"
+				item: "portable_beacons:starberries"
+			}]
+		}
+		{
+			title: "Astral Sorcery"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "Stargazing time"
+			dependencies: ["5CA75B15FF7EFF4D"]
+			id: "567200F26E42CA7F"
+			tasks: [
+				{
+					id: "245E57F2B5D8B659"
+					type: "structure"
+					title: "Find an Ancient Shrine"
+					icon: {
+						id: "astralsorcery:rock_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+						}
+					}
+					structure: "worldshape:soaring_depths/as_ancient_shrine"
+				}
+				{
+					id: "2832BC16E35A1D89"
+					type: "structure"
+					title: "Find a lake with Aquamarine Shale"
+					icon: "astralsorcery:aquamarine_sand_ore"
+					structure: "worldshape:soaring_depths/lake"
+				}
+			]
+			rewards: [{
+				id: "7F04EC1F9D71FEB2"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+		}
+		{
+			title: "Totems"
+			x: -1.0d
+			y: -2.5d
+			dependencies: [
+				"3BBAF18EE6AAE417"
+				"34F81664609853C2"
+				"6C27D59380778FF1"
+				"230D36713B063759"
+			]
+			id: "52991EE4099F1253"
+			tasks: [{
+				id: "175BEB40CD021966"
+				type: "item"
+				title: "Any Totem"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "minecraft:totem_of_undying"
+								Count: 1b
+							}
+							{
+								id: "voidtotem:totem_of_void_undying"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			dependencies: ["6C27D59380778FF1"]
+			id: "6D19DBB61E7BA7DE"
+			tasks: [{
+				id: "78001BF43773D39A"
+				type: "item"
+				item: "forbidden_arcanus:edelwood_log"
+				count: 16L
+			}]
+		}
+		{
+			title: "Black Hole Shenanigans"
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["6D19DBB61E7BA7DE"]
+			id: "6ED5B14AFEF8AA44"
+			tasks: [
+				{
+					id: "3C16C5259E9D9513"
+					type: "item"
+					item: "forbidden_arcanus:dark_matter"
+				}
+				{
+					id: "31BDF59863079600"
+					type: "item"
+					item: "forbidden_arcanus:corrupti_dust"
+				}
+			]
+			rewards: [{
+				id: "04D7D2E3358260FD"
+				type: "item"
+				item: "minecraft:experience_bottle"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			dependencies: ["6ED5B14AFEF8AA44"]
+			id: "1224891D38AFE539"
+			tasks: [{
+				id: "185D12A403AFB243"
+				type: "item"
+				item: "forbidden_arcanus:xpetrified_ore"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Magic + Starlight = Magical Star"
+			dependencies: [
+				"1224891D38AFE539"
+				"01B8946F3D2BBB1B"
+			]
+			id: "28E747E8DD63BA1F"
+			tasks: [{
+				id: "7D69CD5ED7DC4A97"
+				type: "item"
+				item: "forbidden_arcanus:stella_arcanum"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			dependencies: ["567200F26E42CA7F"]
+			id: "0BED126A098F5636"
+			tasks: [
+				{
+					id: "1B10053E1E179456"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "7AA1D858A105FE7A"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -1.0d
+			dependencies: ["436B7F15C6A13C48"]
+			id: "5E049F73506FFBE5"
+			tasks: [{
+				id: "6A98CA8BDA71E769"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			title: "Trapping the light"
+			x: 3.0d
+			y: -1.0d
+			dependencies: ["0BED126A098F5636"]
+			id: "436B7F15C6A13C48"
+			tasks: [{
+				id: "55993A5B716B965F"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [{
+				id: "338B3C4851DFBE2C"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			dependencies: ["5E049F73506FFBE5"]
+			id: "01B8946F3D2BBB1B"
+			tasks: [{
+				id: "5CBE4CE5112980F2"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -1.0d
+			dependencies: [
+				"595DE98379F6280C"
+				"6C27D59380778FF1"
+			]
+			id: "5CA75B15FF7EFF4D"
+			tasks: [{
+				id: "4402FF20DD09E542"
+				type: "item"
+				item: "astralsorcery:rock_crystal_ore"
+			}]
+			rewards: [{
+				id: "49327AA6D10773E7"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal"
+				count: 16
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.5d
+			id: "0A6A7255ABA1A0DF"
+			tasks: [{
+				id: "3BB34EF83FD90999"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.5d
+			id: "320A5562AD11FF54"
+			tasks: [{
+				id: "2485BA3350C93784"
+				type: "item"
+				item: "minecraft:conduit"
 			}]
 		}
 	]

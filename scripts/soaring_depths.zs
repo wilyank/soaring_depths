@@ -30,6 +30,10 @@ forge_gems.add(<item:bloodmagic:lavacrystal>);
 
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
+// remove distracting item filters
+mods.jei.JEI.hideMod("itemfilters");
+
+
 // fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
 <tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
 <tag:items:forge:ingots/redstone_gold>.add(<item:eidolon:arcane_gold_ingot>);
@@ -112,7 +116,8 @@ mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul 
 <recipetype:create:mixing>.addRecipe("marble",
     "heated",
     <item:astralsorcery:marble_raw>*2,
-    [<item:minecraft:diorite>, <item:create:limesand>]);
+    [<item:minecraft:diorite>, <item:create:limesand>]
+);
 
 // fix villager infinte diamonds
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
@@ -334,6 +339,7 @@ mods.jei.JEI.hideIngredient(<item:mowziesmobs:barako_mask>);
 mods.jei.JEI.hideIngredient(<item:mowziesmobs:grant_suns_blessing>);
 mods.jei.JEI.hideIngredient(<item:mowziesmobs:earth_talisman>);
 mods.jei.JEI.hideIngredient(<item:mowziesmobs:mob_remover>);
+
 craftingTable.addShapeless("painted_acacia_wood",
     <item:mowziesmobs:painted_acacia>,
     [<item:minecraft:acacia_planks>,<tag:items:forge:dyes>]
@@ -358,7 +364,11 @@ craftingTable.addShaped("mining_helmet",
     ]
 );
 
-
+<recipetype:create:filling>.addRecipe("brass_casing",
+    <item:create:brass_casing>,
+    <tag:items:minecraft:logs>,
+    <fluid:tconstruct:molten_brass>  
+);
 
 // CTEventManager.register<crafttweaker.api.event.entity.player.interact.MCLeftClickBlockEvent>((event) => {
 //     if (<item:eidolon:pewter_blend>.matches(event.itemStack)) {
