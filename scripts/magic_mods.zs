@@ -150,6 +150,26 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:dark_runestone>, ["Right click with Runestone on an activated Runic Tenebris Core to obtain"]);
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:runic_tenebris_frame>, ["Activate with a Dark Nether Star"]);
 
+craftingTable.removeRecipe(<item:forbidden_arcanus:purifying_soap>);
+craftingTable.addShapeless("soap",
+    <item:forbidden_arcanus:purifying_soap>,
+    [
+        <tag:items:forge:dusts/arcane_crystal>, 
+        <item:forbidden_arcanus:wax>, 
+        <tag:items:forge:slimeballs>,
+        <tag:items:minecraft:small_flowers>
+    ]
+);
+<recipetype:create:mixing>.addRecipe("mixing_soap",
+    "none",
+    <item:forbidden_arcanus:purifying_soap>,
+    [
+        <tag:items:forge:dusts/arcane_crystal>, 
+        <item:forbidden_arcanus:wax>, 
+        <tag:items:forge:slimeballs>,
+        <tag:items:minecraft:small_flowers>
+    ]
+);
 <recipetype:create:filling>.addRecipe("wetting_soap", <item:forbidden_arcanus:wet_purifying_soap>, <item:forbidden_arcanus:purifying_soap>, <fluid:minecraft:water>*250);
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:purifying_soap>, ["Becomes wet when in water"]);
 

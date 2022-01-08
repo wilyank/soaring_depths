@@ -1,0 +1,133 @@
+{
+	id: "26FB20EBE6D9138B"
+	group: ""
+	order_index: 4
+	filename: "magicks"
+	title: "Magicks"
+	icon: {
+		id: "forbidden_arcanus:eternal_stella"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "...and NOW we can start"
+			x: 2.0d
+			y: -0.5d
+			subtitle: "The essential ores for Astral Sorcery"
+			dependencies: ["6509B6786D02B3D8"]
+			id: "470D64ECD39978B2"
+			tasks: [
+				{
+					id: "050417572387A6EE"
+					type: "item"
+					item: "astralsorcery:rock_crystal_ore"
+				}
+				{
+					id: "4F0DCB8DFBE7807C"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+				}
+			]
+			rewards: [
+				{
+					id: "38F2D7AFCDF5F454"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "7719CBCECAD7769D"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			subtitle: "Sweetberries take nutrients from the soil they grow on"
+			id: "6509B6786D02B3D8"
+			tasks: [{
+				id: "29B736C39ECB0386"
+				type: "item"
+				item: "portable_beacons:starberries"
+			}]
+		}
+		{
+			title: "Eidolon"
+			x: -1.0d
+			y: -2.0d
+			subtitle: "The road to power is paved with corpses"
+			id: "40FA58019519C2B0"
+			tasks: [
+				{
+					id: "7F9FAD7F7094D319"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "3D0F96AA9A90D9E3"
+					type: "item"
+					item: "eidolon:enchanted_ash"
+				}
+			]
+			rewards: [{
+				id: "39EBA2A875AFDAE5"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+		}
+		{
+			title: "Forbidden \\& Arcanus"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Forbidden Magic"
+			description: ["No guide book, sorry. Still being worked on by the mod developer"]
+			id: "4DC2B955F74600B2"
+			tasks: [{
+				id: "0CFA32E220A8C033"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.0d
+			id: "554EAB3DACE71AE6"
+			tasks: [{
+				id: "37D9C4FD6CAC953E"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			id: "5A69890231357F8D"
+			tasks: [{
+				id: "5D6EA489531C44D2"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["5A69890231357F8D"]
+			id: "4E62C017BC9D05F3"
+			tasks: [{
+				id: "04C85C583D4815CC"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+	]
+}

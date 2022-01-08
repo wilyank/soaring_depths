@@ -19,8 +19,15 @@ forge_gems.add(<item:betterendforge:amber_gem>);
 forge_gems.add(<item:astralsorcery:resonating_gem>);
 forge_gems.add(<item:eidolon:lesser_soul_gem>);
 forge_gems.add(<item:eidolon:shadow_gem>);
-//forge_gems.add(<tag:items:forge:gems/end_crystal_gem>);
 forge_gems.add(<item:bloodmagic:lavacrystal>);
+
+<tag:items:forge:lanterns>.add(<item:minecraft:lantern>);
+<tag:items:forge:lanterns>.add(<item:minecraft:soul_lantern>);
+<tag:items:forge:lanterns>.add(<item:infernalexp:glow_lantern>);
+<tag:items:forge:lanterns>.add(<item:endergetic:ender_lantern>);
+<tag:items:forge:lanterns>.add(<item:tconstruct:scorched_lantern>);
+<tag:items:forge:lanterns>.add(<item:tconstruct:seared_lantern>);
+
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
 // fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
@@ -81,7 +88,8 @@ craftingTable.addShapeless("orange_sand_cast",
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("sand_to_soul_sand", 
     <item:minecraft:sand>, 
     <fluid:tconstruct:blood> * 250, 
-    <item:minecraft:soul_sand>, 200, 
+    <item:minecraft:soul_sand>, 
+    200, 
     true, 
     false
 );
@@ -271,8 +279,9 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
 
 // ore hiding and descriptions
 mods.jei.JEI.hideIngredient(<item:tconstruct:copper_ore>);
-mods.jei.JEI.hideCategory("jeresources:worldgen");
-
+if (loadedMods.isModLoaded("jeresources")) {
+    mods.jei.JEI.hideCategory("jeresources:worldgen");
+}
 var style = new MCStyle;
 style.setFormatting(<formatting:gray>);
 <item:create:copper_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.copper").setStyle(style));
@@ -332,7 +341,22 @@ craftingTable.addShapeless("painted_acacia_wood",
 
 mods.jei.JEI.hideIngredient(<item:ftblibrary:fluid_container>);
 
-
+craftingTable.addShaped("copper_bucket",
+    <item:minecraft:bucket>,
+    [
+        [<tag:items:forge:ingots/copper>, _, <tag:items:forge:ingots/copper>],
+        [_, <tag:items:forge:ingots/copper>, _]
+    ]
+);
+craftingTable.removeRecipe(<item:mining_helmet:mining_helmet>);
+craftingTable.addShaped("mining_helmet",
+    <item:mining_helmet:mining_helmet>,
+    [
+        [<tag:items:forge:dyes/red>, <tag:items:forge:lanterns>, <tag:items:forge:dyes/red>],
+        [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>],
+        [<item:create:andesite_alloy>, _, <item:create:andesite_alloy>]
+    ]
+);
 
 
 
