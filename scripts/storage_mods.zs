@@ -1,6 +1,16 @@
 #priority 5
 // this scripts tweaks the storage mods (SSN, Drawers and Metal Barrels)
 
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:oak_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:birch_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:spruce_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:dark_oak_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:acacia_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:jungle_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:warped_trim>);
+<tag:items:storagedrawers:drawer_trims>.add(<item:storagedrawers:crimson_trim>);
+
+
 // Simple Storage Network's blocks
 craftingTable.removeRecipe(<item:storagenetwork:inventory>);
 craftingTable.removeRecipe(<item:storagenetwork:master>);
@@ -154,7 +164,7 @@ stoneCutter.addRecipe("dark_oak_drawer_2", <item:storagedrawers:dark_oak_full_dr
 stoneCutter.addRecipe("dark_oak_drawer_4", <item:storagedrawers:dark_oak_full_drawers_4>, <item:storagedrawers:dark_oak_trim>);
 stoneCutter.addRecipe("dark_oak_drawer_half_1", <item:storagedrawers:dark_oak_half_drawers_1>*2, <item:storagedrawers:dark_oak_trim>);
 stoneCutter.addRecipe("dark_oak_drawer_half_2", <item:storagedrawers:dark_oak_half_drawers_2>*2, <item:storagedrawers:dark_oak_trim>);
-stoneCutter.addRecipe("dark_oak_drawer_half_4", <item:storagedrawers:dark_oak_half_drawers_4>*2, <item:storagedrawers:oak_trim>);
+stoneCutter.addRecipe("dark_oak_drawer_half_4", <item:storagedrawers:dark_oak_half_drawers_4>*2, <item:storagedrawers:dark_oak_trim>);
 
 craftingTable.removeRecipe(<item:storagedrawers:crimson_full_drawers_1>);
 craftingTable.removeRecipe(<item:storagedrawers:crimson_full_drawers_2>);
@@ -182,7 +192,7 @@ stoneCutter.addRecipe("warped_drawer_2", <item:storagedrawers:warped_full_drawer
 stoneCutter.addRecipe("warped_drawer_4", <item:storagedrawers:warped_full_drawers_4>, <item:storagedrawers:warped_trim>);
 stoneCutter.addRecipe("warped_drawer_half_1", <item:storagedrawers:warped_half_drawers_1>*2, <item:storagedrawers:warped_trim>);
 stoneCutter.addRecipe("warped_drawer_half_2", <item:storagedrawers:warped_half_drawers_2>*2, <item:storagedrawers:warped_trim>);
-stoneCutter.addRecipe("warped_drawer_half_4", <item:storagedrawers:warped_half_drawers_4>*2, <item:storagedrawers:oak_trim>);
+stoneCutter.addRecipe("warped_drawer_half_4", <item:storagedrawers:warped_half_drawers_4>*2, <item:storagedrawers:warped_trim>);
 
 
 // templates
@@ -195,6 +205,26 @@ stoneCutter.addRecipe("acacia_template", <item:storagedrawers:upgrade_template> 
 stoneCutter.addRecipe("dark_oak_template", <item:storagedrawers:upgrade_template> * 4, <item:storagedrawers:dark_oak_trim>);
 stoneCutter.addRecipe("crimson_template", <item:storagedrawers:upgrade_template> * 4, <item:storagedrawers:crimson_trim>);
 stoneCutter.addRecipe("warped_template", <item:storagedrawers:upgrade_template> * 4, <item:storagedrawers:warped_trim>);
+
+// drawer controller
+craftingTable.removeRecipe(<item:storagedrawers:controller>);
+<recipetype:create:filling>.addRecipe("drawer_controller",
+    <item:storagedrawers:controller>,
+    <item:storagedrawers:controller_slave>,
+    <fluid:tconstruct:molten_diamond>*576
+);
+craftingTable.removeRecipe(<item:storagedrawers:controller_slave>);
+<recipetype:create:filling>.addRecipe("drawer_controller_slave",
+    <item:storagedrawers:controller_slave>,
+    <item:storagedrawers:compacting_drawers_3>,
+    <fluid:tconstruct:molten_gold>*576
+);
+craftingTable.removeRecipe(<item:storagedrawers:compacting_drawers_3>);
+<recipetype:create:filling>.addRecipe("drawer_compacting_drawers",
+    <item:storagedrawers:compacting_drawers_3>,
+    <tag:items:storagedrawers:drawer_trims>,
+    <fluid:tconstruct:molten_iron>*576
+);
 
 // remove some of the metal barrels
 craftingTable.removeByModid("metalbarrels");

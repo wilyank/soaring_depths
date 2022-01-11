@@ -119,6 +119,26 @@ mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul 
     [<item:minecraft:diorite>, <item:create:limesand>]
 );
 
+craftingTable.removeRecipe(<item:minecraft:granite>);
+craftingTable.addShapeless("granite",
+    <item:minecraft:granite>,
+    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
+);
+<recipetype:create:mixing>.addRecipe("granite_mixing",
+    "none",
+    <item:minecraft:granite>,
+    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
+);
+<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/granite");
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("casting_granite",
+    <item:minecraft:cobblestone>,
+    <fluid:tconstruct:molten_iron>*4,
+    <item:minecraft:granite>,
+    10,
+    true,
+    false
+);
+
 // fix villager infinte diamonds
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/shovel");
@@ -300,7 +320,7 @@ style.setFormatting(<formatting:gray>);
 <item:minecraft:lapis_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lapis").setStyle(style));
 <item:eidolon:lead_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.lead").setStyle(style));
 <item:forbidden_arcanus:arcane_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.arcane_crystal").setStyle(style));
-
+<item:astralsorcery:rock_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.rock_crystal").setStyle(style));
 
 // Force using alloying or mixing for making pewter
 craftingTable.removeRecipe(<item:eidolon:pewter_blend>);
@@ -370,18 +390,48 @@ craftingTable.addShaped("mining_helmet",
     <fluid:tconstruct:molten_brass>  
 );
 
-// CTEventManager.register<crafttweaker.api.event.entity.player.interact.MCLeftClickBlockEvent>((event) => {
-//     if (<item:eidolon:pewter_blend>.matches(event.itemStack)) {
-//         println("player left clicked with " + event.itemStack.toString());
-//         if (!event.player.world.remote) {
-//             event.player.world.asServerWorld().server.executeCommand("say hello", false);
-//             var count = event.itemStack.amount;
-//             if (count > 1) {
-//                 event.player.world.asServerWorld().server.executeCommand("replaceitem @p weapon eidolon:pewter_blend " + 1, false);
-//             }
-//             else {
-//                 event.player.world.asServerWorld().server.executeCommand("replaceitem @p weapon minecraft:air", false);
-//             }
-//         }
-//     }
-// });
+
+
+// crushed ores
+furnace.removeByName("minecraft:iron_ingot");
+furnace.removeByName("minecraft:gold_ingot");
+furnace.removeByName("minecraft:quartz");
+furnace.removeByName("minecraft:diamond_from_smelting");
+furnace.removeByName("minecraft:coal_from_smelting");
+furnace.removeByName("minecraft:lapis_from_smelting");
+furnace.removeByName("minecraft:emerald_from_smelting");
+furnace.removeByName("eidolon:smelt_lead_ore");
+furnace.removeByName("create:smelting/copper_ingot_from_ore");
+furnace.removeByName("create:smelting/zinc_ingot_from_ore");
+furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
+
+<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal", [<item:forbidden_arcanus:arcane_crystal>, <item:forbidden_arcanus:arcane_crystal>%20], <item:forbidden_arcanus:arcane_crystal_ore>);
+<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal_dust", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
+
+<recipetype:create:crushing>.removeRecipe(<item:create:crushed_copper_ore>);
+<recipetype:create:crushing>.addRecipe("crushed_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore>*2 % 30, <item:minecraft:cobblestone> % 12], <tag:items:forge:ores/copper>);
+<recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
+<recipetype:create:crushing>.addRecipe("crushed_zinc_ore", [<item:create:crushed_zinc_ore>, <item:create:crushed_zinc_ore>*2 % 30, <item:minecraft:cobblestone> % 12], <tag:items:forge:ores/zinc>);
+
+
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/gold/ore");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/iron/ore");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/zinc/ore");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/copper/ore");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/lead/ore");
+
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/ore");
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/emerald/ore");
+
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("iron_ore", <item:create:crushed_iron_ore>, <fluid:tconstruct:molten_iron> * 144, 800, 440, [<fluid:tconstruct:molten_copper> * 48]);
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("gold_ore", <item:create:crushed_gold_ore>, <fluid:tconstruct:molten_gold> * 144, 700, 420, [<fluid:tconstruct:molten_copper> * 48]);
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("zinc_ore", <item:create:crushed_zinc_ore>, <fluid:tconstruct:molten_zinc> * 144, 420, 340, [<fluid:tconstruct:molten_copper> * 48]);
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("copper_ore", <item:create:crushed_copper_ore>, <fluid:tconstruct:molten_copper> * 144, 500, 360, [<fluid:tconstruct:molten_gold> * 16]);
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("lead_ore", <item:create:crushed_lead_ore>, <fluid:tconstruct:molten_lead> * 144, 330, 320, [<fluid:tconstruct:molten_gold> * 48]);
+
+<recipetype:create:filling>.addRecipe("auto_redstone",
+    <item:minecraft:redstone>,
+    <item:create:cinder_flour>,
+    <fluid:tconstruct:blood>*25
+);
+

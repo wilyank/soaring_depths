@@ -9,218 +9,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Kill mutants"
-			x: -5.5d
-			y: -3.5d
-			id: "4C6C750EC3215A1D"
-			tasks: [
-				{
-					id: "3ACAF85E4D99FD11"
-					type: "kill"
-					entity: "mutantbeasts:mutant_creeper"
-					value: 1L
-				}
-				{
-					id: "08C1A76D3D75AA40"
-					type: "kill"
-					entity: "mutantbeasts:mutant_enderman"
-					value: 1L
-				}
-				{
-					id: "032EB05A156D3B08"
-					type: "kill"
-					entity: "mutantbeasts:mutant_skeleton"
-					value: 1L
-				}
-				{
-					id: "129FD5B7B67DC3A4"
-					type: "kill"
-					entity: "mutantbeasts:mutant_snow_golem"
-					value: 1L
-				}
-				{
-					id: "38AB24063A8D605A"
-					type: "kill"
-					entity: "mutantbeasts:mutant_zombie"
-					value: 1L
-				}
-			]
-			rewards: [{
-				id: "5827E630AE9EF143"
-				type: "item"
-				item: "mutantbeasts:chemical_x"
-			}]
-		}
-		{
-			title: "Kill more mutants"
-			x: -4.5d
-			y: -3.5d
-			id: "7110845B18AC2364"
-			tasks: [
-				{
-					id: "0602E1E110448383"
-					type: "kill"
-					entity: "mutantmore:mutant_blaze"
-					value: 1L
-				}
-				{
-					id: "7514B1F717B70B8D"
-					type: "kill"
-					entity: "mutantmore:mutant_hoglin"
-					value: 1L
-				}
-				{
-					id: "1898BEB872E7F7CD"
-					type: "kill"
-					entity: "mutantmore:mutant_husk"
-					value: 1L
-				}
-				{
-					id: "115F00E7B9FBD49A"
-					type: "kill"
-					entity: "mutantmore:mutant_shulker"
-					value: 1L
-				}
-				{
-					id: "79BE444BFCD4C12A"
-					type: "kill"
-					entity: "mutantmore:mutant_wither_skeleton"
-					value: 1L
-				}
-			]
-			rewards: [{
-				id: "1293E706308DB618"
-				type: "item"
-				item: "mutantmore:formula_y"
-			}]
-		}
-		{
-			title: "Practice Round"
-			x: -5.5d
-			y: -4.5d
-			id: "6FE0A65D1C10481A"
-			tasks: [
-				{
-					id: "648ADF0806CEBE30"
-					type: "kill"
-					icon: "minecraft:iron_block"
-					entity: "minecraft:iron_golem"
-					value: 1L
-				}
-				{
-					id: "3BE2049781350BF1"
-					type: "kill"
-					icon: "minecraft:snowball"
-					entity: "minecraft:snow_golem"
-					value: 10L
-				}
-			]
-			rewards: [{
-				id: "49F8E78FB69B8029"
-				type: "item"
-				item: "minecraft:iron_block"
-				count: 5
-			}]
-		}
-		{
-			title: "Dragon"
-			x: -4.5d
-			y: -4.5d
-			id: "695F8E068833D282"
-			tasks: [{
-				id: "0B2EFD176CDC61E3"
-				type: "advancement"
-				advancement: "minecraft:end/kill_dragon"
-				criterion: ""
-			}]
-		}
-		{
-			x: -0.5d
-			y: -3.5d
-			id: "3BBAF18EE6AAE417"
-			tasks: [{
-				id: "3E2147D8CD167C02"
-				type: "kill"
-				icon: "minecraft:wither_skeleton_skull"
-				entity: "minecraft:wither"
-				value: 1L
-			}]
-			rewards: [{
-				id: "7ABECB14C1808DDF"
-				type: "item"
-				item: {
-					id: "patchouli:guide_book"
-					Count: 1b
-					tag: {
-						"patchouli:book": "portable_beacons:beacon_book"
-					}
-				}
-			}]
-		}
-		{
-			x: -2.5d
-			y: -4.5d
-			id: "630BFE2533975633"
-			tasks: [{
-				id: "04CE38BC8BED3FF3"
-				type: "kill"
-				entity: "cataclysm:netherite_monstrosity"
-				value: 1L
-			}]
-		}
-		{
-			x: -1.5d
-			y: -4.5d
-			id: "725D7C0935B97216"
-			tasks: [{
-				id: "5182A38A8EA6B11D"
-				type: "kill"
-				entity: "cataclysm:ender_guardian"
-				value: 1L
-			}]
-		}
-		{
-			x: -5.5d
-			y: -2.5d
-			id: "775B223DF1A287F2"
-			tasks: [{
-				id: "014FC22D88ABC691"
-				type: "kill"
-				entity: "mowziesmobs:naga"
-				value: 1L
-			}]
-		}
-		{
-			x: -4.5d
-			y: -2.5d
-			id: "033284DC7639CB84"
-			tasks: [{
-				id: "2D6C73B0683E33F6"
-				type: "kill"
-				entity: "mowziesmobs:ferrous_wroughtnaut"
-				value: 1L
-			}]
-		}
-		{
-			x: -1.5d
-			y: -3.5d
-			id: "34F81664609853C2"
-			tasks: [{
-				id: "4DA459830FE1EA68"
-				type: "kill"
-				entity: "minecraft:evoker"
-				value: 1L
-			}]
-			rewards: [{
-				id: "33952232D650ED20"
-				type: "item"
-				item: "unactivatedtotems:unactivated_totem"
-			}]
-		}
-		{
 			title: "Toolmaking"
-			x: -7.0d
-			y: 0.0d
+			x: -2.0d
+			y: -1.0d
+			shape: "hexagon"
 			subtitle: "All a tool shop needs"
 			id: "103BBB9EE1DB0526"
 			tasks: [
@@ -258,43 +50,9 @@
 			}]
 		}
 		{
-			title: "Advanced Toolmaking"
-			x: -6.0d
+			x: -3.0d
 			y: 1.0d
-			dependencies: ["103BBB9EE1DB0526"]
-			id: "1B53FF2AB247D673"
-			tasks: [
-				{
-					id: "5ED4334AE1C71622"
-					type: "item"
-					item: "tconstruct:tinkers_chest"
-				}
-				{
-					id: "0008D1FC93CCD6DA"
-					type: "item"
-					title: "Tinker's Anvil"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "tconstruct:tinkers_anvil"
-									Count: 1b
-								}
-								{
-									id: "tconstruct:scorched_anvil"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-		}
-		{
-			x: -6.0d
-			y: 0.0d
+			subtitle: "Great for Melting Stuff"
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "0F828792BEE1DC4F"
 			tasks: [
@@ -333,13 +91,14 @@
 				{
 					id: "5D1D0D7FCA17219C"
 					type: "item"
-					item: "tconstruct:scorched_basin"
+					item: "tconstruct:seared_basin"
 				}
 			]
 		}
 		{
-			x: -5.0d
-			y: 1.0d
+			title: "Smeltery Side-grade"
+			x: -7.0d
+			y: 2.0d
 			dependencies: ["0F828792BEE1DC4F"]
 			id: "3409F08778C9EC83"
 			tasks: [
@@ -387,12 +146,23 @@
 					type: "item"
 					item: "tconstruct:scorched_basin"
 				}
+				{
+					id: "2B2339300839115F"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "5A7F205C9A4052F7"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
 			]
 		}
 		{
 			title: "Smeltery"
-			x: -5.0d
-			y: 0.0d
+			x: -7.0d
+			y: 1.0d
+			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
 			id: "530392498F50A2AE"
 			tasks: [
@@ -423,12 +193,22 @@
 						}
 					}
 				}
+				{
+					id: "03D4633A9DE90F1F"
+					type: "item"
+					item: "tconstruct:cast_chest"
+				}
 			]
 		}
 		{
 			title: "Basic Storage Network"
-			x: -7.0d
-			y: 2.0d
+			x: -8.0d
+			y: -1.0d
+			dependencies: [
+				"3441145CEBF76F0C"
+				"530392498F50A2AE"
+			]
+			dependency_requirement: "one_completed"
 			id: "5160A319C6E43EA0"
 			tasks: [
 				{
@@ -450,8 +230,8 @@
 		}
 		{
 			title: "Advanced Storage Network"
-			x: -6.0d
-			y: 2.0d
+			x: -9.0d
+			y: -1.0d
 			description: ["Fancy some automatic inputs and outputs?"]
 			dependencies: ["5160A319C6E43EA0"]
 			id: "12201FDC25F41EC4"
@@ -490,8 +270,8 @@
 		}
 		{
 			title: "Master Storage System"
-			x: -5.0d
-			y: 2.0d
+			x: -10.0d
+			y: -1.0d
 			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
 			dependencies: ["12201FDC25F41EC4"]
 			id: "45B064317F8E62A0"
@@ -537,6 +317,7 @@
 			title: "Magical Ores"
 			x: -1.0d
 			y: -1.0d
+			shape: "hexagon"
 			id: "6C27D59380778FF1"
 			tasks: [
 				{
@@ -574,9 +355,10 @@
 		}
 		{
 			title: "Eidolon"
-			x: -2.5d
-			y: -1.0d
+			x: 0.0d
+			y: -3.0d
 			subtitle: "The road to power is paved with corpses"
+			description: ["Use this guide well"]
 			dependencies: ["6C27D59380778FF1"]
 			id: "230D36713B063759"
 			tasks: [
@@ -590,30 +372,27 @@
 					type: "item"
 					item: "eidolon:worktable"
 				}
+				{
+					id: "6EBFFB350D041B62"
+					type: "item"
+					item: "eidolon:brazier"
+				}
 			]
 			rewards: [{
-				id: "78B364B0D5FA05F3"
+				id: "0041EC476A0A0A23"
 				type: "item"
 				item: "eidolon:codex"
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.5d
-			dependencies: ["3BBAF18EE6AAE417"]
-			id: "595DE98379F6280C"
-			tasks: [{
-				id: "10C940068F01E02F"
-				type: "item"
-				item: "portable_beacons:starberries"
-			}]
-		}
-		{
 			title: "Astral Sorcery"
-			x: 1.0d
+			x: 2.5d
 			y: -1.0d
 			subtitle: "Stargazing time"
-			dependencies: ["5CA75B15FF7EFF4D"]
+			dependencies: [
+				"114A4DD936FEE504"
+				"6C27D59380778FF1"
+			]
 			id: "567200F26E42CA7F"
 			tasks: [
 				{
@@ -667,6 +446,11 @@
 					icon: "astralsorcery:aquamarine_sand_ore"
 					structure: "worldshape:soaring_depths/lake"
 				}
+				{
+					id: "27A76E69AF833A40"
+					type: "item"
+					item: "astralsorcery:rock_crystal_ore"
+				}
 			]
 			rewards: [{
 				id: "7F04EC1F9D71FEB2"
@@ -676,14 +460,8 @@
 		}
 		{
 			title: "Totems"
-			x: -1.0d
-			y: -2.5d
-			dependencies: [
-				"3BBAF18EE6AAE417"
-				"34F81664609853C2"
-				"6C27D59380778FF1"
-				"230D36713B063759"
-			]
+			x: -1.5d
+			y: -6.0d
 			id: "52991EE4099F1253"
 			tasks: [{
 				id: "175BEB40CD021966"
@@ -708,8 +486,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 0.0d
+			x: 0.0d
+			y: 1.0d
 			dependencies: ["6C27D59380778FF1"]
 			id: "6D19DBB61E7BA7DE"
 			tasks: [{
@@ -721,7 +499,7 @@
 		}
 		{
 			title: "Black Hole Shenanigans"
-			x: -1.0d
+			x: 4.5d
 			y: 1.0d
 			dependencies: ["6D19DBB61E7BA7DE"]
 			id: "6ED5B14AFEF8AA44"
@@ -744,8 +522,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 2.0d
+			x: 5.0d
+			y: 0.0d
 			dependencies: ["6ED5B14AFEF8AA44"]
 			id: "1224891D38AFE539"
 			tasks: [{
@@ -755,22 +533,25 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.0d
-			subtitle: "Magic + Starlight = Magical Star"
+			title: "Stella Arcanum"
+			icon: "forbidden_arcanus:stella_arcanum"
+			x: 7.0d
+			y: 0.0d
+			subtitle: "Solidified Magic + Starlight = Magical Star"
 			dependencies: [
 				"1224891D38AFE539"
 				"01B8946F3D2BBB1B"
 			]
 			id: "28E747E8DD63BA1F"
 			tasks: [{
-				id: "7D69CD5ED7DC4A97"
+				id: "451CCB705B4CFB9F"
 				type: "item"
-				item: "forbidden_arcanus:stella_arcanum"
+				title: "Stellarite Piece (Drops from Stella Arcanum)"
+				item: "forbidden_arcanus:stellarite_piece"
 			}]
 		}
 		{
-			x: 2.0d
+			x: 3.5d
 			y: -1.0d
 			dependencies: ["567200F26E42CA7F"]
 			id: "0BED126A098F5636"
@@ -788,7 +569,7 @@
 			]
 		}
 		{
-			x: 4.0d
+			x: 5.5d
 			y: -1.0d
 			dependencies: ["436B7F15C6A13C48"]
 			id: "5E049F73506FFBE5"
@@ -800,7 +581,7 @@
 		}
 		{
 			title: "Trapping the light"
-			x: 3.0d
+			x: 4.5d
 			y: -1.0d
 			dependencies: ["0BED126A098F5636"]
 			id: "436B7F15C6A13C48"
@@ -816,7 +597,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 6.5d
 			y: -1.0d
 			dependencies: ["5E049F73506FFBE5"]
 			id: "01B8946F3D2BBB1B"
@@ -827,43 +608,866 @@
 			}]
 		}
 		{
-			x: 0.0d
+			title: "Questionable Friends"
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["230D36713B063759"]
+			id: "058442E9170FB612"
+			tasks: [
+				{
+					id: "32753EF974DB8174"
+					type: "item"
+					item: "eidolon:wooden_altar"
+				}
+				{
+					id: "2D7454E41D5AC91C"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+				{
+					id: "0A5DA0479FEA7C2B"
+					type: "item"
+					item: "eidolon:goblet"
+				}
+			]
+		}
+		{
+			title: "Calling Favours"
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["058442E9170FB612"]
+			id: "114A4DD936FEE504"
+			tasks: [{
+				id: "7FF93BE02B333341"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+			}]
+		}
+		{
+			title: "Gone Cackling"
+			x: 2.5d
+			y: -4.0d
+			dependencies: ["114A4DD936FEE504"]
+			id: "62ED5A7BBE82E81E"
+			tasks: [
+				{
+					id: "45113D898DA1BC44"
+					type: "item"
+					item: {
+						id: "eidolon:reaper_scythe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "516CA299D9B0DC2C"
+					type: "item"
+					item: {
+						id: "eidolon:cleaving_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7182EFC219166664"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "49C6200EB1498398"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5DE97A908DB1F25F"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C3A67E8C48C9671"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+			]
+		}
+		{
+			title: "Bloodying Your Hands"
+			x: 1.0d
+			y: -5.0d
+			dependencies: ["5180661B35362BD1"]
+			id: "2FBBF90641C30260"
+			tasks: [
+				{
+					id: "406794C99A17FD35"
+					type: "item"
+					item: {
+						id: "eidolon:sapping_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "38D6D48C36A1DB29"
+					type: "item"
+					item: "eidolon:sanguine_amulet"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 1.0d
+			description: ["Use this to turn your Runes dark"]
+			dependencies: [
+				"6ED5B14AFEF8AA44"
+				"5F9B898EE8166C73"
+			]
+			id: "5859321EFF72D0D5"
+			tasks: [
+				{
+					id: "3B8BF2ECFD371415"
+					type: "item"
+					item: "forbidden_arcanus:runic_tenebris_frame"
+				}
+				{
+					id: "64B396A32D15823E"
+					type: "item"
+					item: "forbidden_arcanus:dark_nether_star"
+				}
+			]
+		}
+		{
+			title: "A Basis for Baubles"
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["230D36713B063759"]
+			id: "5180661B35362BD1"
+			tasks: [
+				{
+					id: "6FFF259AA8766520"
+					type: "item"
+					item: "eidolon:basic_belt"
+				}
+				{
+					id: "50EC1A53F64764AA"
+					type: "item"
+					item: "eidolon:basic_ring"
+				}
+				{
+					id: "744EE3A733D0B2C1"
+					type: "item"
+					item: "eidolon:basic_amulet"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			dependencies: ["4CDD8725B9F5571B"]
+			id: "061E5BF316C8B69E"
+			tasks: [{
+				id: "0E5C2628B2961A53"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.0d
+			dependencies: ["061E5BF316C8B69E"]
+			id: "5F9B898EE8166C73"
+			tasks: [{
+				id: "0F8953BE5D45F9CA"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+		}
+		{
+			title: "Grow Your Own Crystal DIY Kit"
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["01B8946F3D2BBB1B"]
+			id: "4CDD8725B9F5571B"
+			tasks: [
+				{
+					id: "3FB184ABBB15D9FC"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "77FD455084FBDFB0"
+					type: "item"
+					item: "astralsorcery:liquid_starlight_bucket"
+				}
+				{
+					id: "0C87CCB14794AA21"
+					type: "item"
+					item: "astralsorcery:stardust"
+				}
+			]
+			rewards: [{
+				id: "72AE761E288D02C5"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.0d
+			dependencies: ["5F9B898EE8166C73"]
+			id: "66EDA6545CA4149A"
+			tasks: [{
+				id: "0550B3AE83AF6419"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+		{
+			x: 11.5d
+			y: -1.0d
+			dependencies: ["66EDA6545CA4149A"]
+			id: "6BDAB55CE5D502C9"
+			tasks: [{
+				id: "404E5846FD3EE8CD"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+		}
+		{
+			title: "Shulker Farming"
+			x: 12.0d
+			y: -2.0d
+			dependencies: ["6BDAB55CE5D502C9"]
+			id: "6C9AAA13C36D0C6F"
+			tasks: [{
+				id: "51D8670383DEA0A5"
+				type: "item"
+				item: "minecraft:shulker_shell"
+				count: 64L
+			}]
+		}
+		{
+			title: "Mundane is Not Boring"
+			x: -3.0d
+			y: -3.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "10B47CA6C72372F3"
+			tasks: [
+				{
+					id: "00CD93522FC067C0"
+					type: "item"
+					item: "create:crushed_copper_ore"
+					count: 16L
+				}
+				{
+					id: "07FD99C89CBE76D9"
+					type: "item"
+					item: "create:crushed_zinc_ore"
+					count: 16L
+				}
+				{
+					id: "7B6E9EDE11597C4C"
+					type: "item"
+					item: "minecraft:andesite"
+					count: 64L
+				}
+				{
+					id: "4182E11F308D3A3A"
+					type: "item"
+					item: "create:crushed_iron_ore"
+					count: 16L
+				}
+			]
+		}
+		{
+			title: "Ready to Get Creative"
+			x: -4.0d
+			y: -3.0d
+			dependencies: ["10B47CA6C72372F3"]
+			id: "771A22A8D5C1F2C5"
+			tasks: [
+				{
+					id: "6183D76641DC2AC3"
+					type: "item"
+					item: "create:wrench"
+				}
+				{
+					id: "266CD866683B4D8B"
+					type: "item"
+					item: "create:hand_crank"
+				}
+				{
+					id: "2087652780F27860"
+					type: "item"
+					item: "create:goggles"
+				}
+				{
+					id: "40B24C4E460DEA8E"
+					type: "item"
+					title: "Any #forge:cogwheels"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cogwheels"
+						}
+					}
+				}
+				{
+					id: "771091B32AA8A672"
+					type: "item"
+					item: "create:shaft"
+				}
+			]
+		}
+		{
+			title: "Advanced Processing"
+			x: -7.0d
+			y: -3.0d
+			dependencies: ["6FB843E23682C2DA"]
+			id: "3441145CEBF76F0C"
+			tasks: [
+				{
+					id: "496AD79484905F26"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "0BDEE7911D0B5298"
+					type: "item"
+					item: "create:deployer"
+				}
+				{
+					id: "259C33C739DBEEA4"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+				{
+					id: "361BC715BE6EBA77"
+					type: "item"
+					item: "createaddition:tesla_coil"
+				}
+				{
+					id: "4E46DC3FE1BCD70A"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+			]
+		}
+		{
+			title: "Basic Processing"
+			x: -6.0d
+			y: -3.0d
+			dependencies: ["4EB93D58A62C90CA"]
+			id: "6FB843E23682C2DA"
+			tasks: [
+				{
+					id: "7D2BCC51E8EB360E"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "2DD838FB4F9A78AE"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+				{
+					id: "67CBF8B981173F6D"
+					type: "item"
+					item: "create:depot"
+				}
+				{
+					id: "1D3B4586AA6E9CF5"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "Liquid Processing"
+			x: -6.5d
+			y: -2.0d
+			dependencies: ["6FB843E23682C2DA"]
+			id: "56923B891152AA07"
+			tasks: [
+				{
+					id: "127C8595AAA2AFFD"
+					type: "item"
+					item: "create:spout"
+				}
+				{
+					id: "256CE09181FCB767"
+					type: "item"
+					item: "create:item_drain"
+				}
+				{
+					id: "3CA364E235F18EAD"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "079C16F2F90B651E"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "6CC90DC00E7272A8"
+					type: "item"
+					item: "create:fluid_tank"
+				}
+				{
+					id: "00BE8C146D0EAD51"
+					type: "item"
+					item: "create:hose_pulley"
+				}
+			]
+		}
+		{
+			title: "The Power To Change The World"
+			x: -6.5d
+			y: -4.0d
+			dependencies: ["6FB843E23682C2DA"]
+			id: "6D8255565710100F"
+			tasks: [
+				{
+					id: "0998C4274AADDEC9"
+					type: "item"
+					item: "create:mechanical_drill"
+				}
+				{
+					id: "187702B6A3D9198A"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+				{
+					id: "0DCBAD3245BC7F06"
+					type: "item"
+					item: "create:mechanical_harvester"
+				}
+				{
+					id: "00D20A0EA204AE4E"
+					type: "item"
+					item: "create:mechanical_plough"
+				}
+				{
+					id: "1A7488E6D0FFCEED"
+					type: "item"
+					item: "create:portable_storage_interface"
+				}
+				{
+					id: "2BD257AF88084F2E"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Personal Improvement"
+			x: -8.5d
+			y: -4.0d
+			dependencies: ["38594CB73913C20B"]
+			id: "4B592B561F7D8917"
+			tasks: [
+				{
+					id: "0353FBCF87A4FAA8"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F300404AC2C0B9C"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "0C7C01B5042D5089"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00E865782C14DD2A"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0427DB61746D6D7E"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E9E933FB56FCF89"
+					type: "item"
+					item: "create:linked_controller"
+				}
+				{
+					id: "001F50DB0D744B30"
+					type: "item"
+					item: "create:wand_of_symmetry"
+				}
+				{
+					id: "4EBC5912C7B1B6F1"
+					type: "item"
+					item: {
+						id: "createaddition:overcharged_hammer"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "How do you make these?"
+			x: -7.5d
+			y: -4.0d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "38594CB73913C20B"
+			tasks: [
+				{
+					id: "62DE026EA5301319"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "239301FA017B5C3C"
+					type: "item"
+					item: "create:refined_radiance"
+				}
+				{
+					id: "1E6D9F32BF2C506E"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+				{
+					id: "61D00A3401CBAC13"
+					type: "item"
+					item: "createaddition:overcharged_alloy"
+				}
+			]
+		}
+		{
+			title: "Early-Game Power"
+			x: -5.0d
+			y: -3.0d
+			dependencies: ["771A22A8D5C1F2C5"]
+			id: "4EB93D58A62C90CA"
+			tasks: [
+				{
+					id: "6B2EAB27D1F48F64"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "6C441179A265BFA0"
+					type: "item"
+					item: "create:windmill_bearing"
+				}
+				{
+					id: "2DDEF96B8C6E7A7C"
+					type: "item"
+					item: "create:sail_frame"
+					count: 8L
+				}
+				{
+					id: "55B1B412E9D3E531"
+					type: "item"
+					item: "create:encased_fan"
+				}
+				{
+					id: "37C2F9B11060772C"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:and"
+									Count: 1b
+									tag: {
+										items: [
+											{
+												id: "itemfilters:or"
+												Count: 1b
+												tag: {
+													items: [
+														{
+															id: "create:white_sail"
+															Count: 1b
+														}
+														{
+															id: "create:sail_frame"
+															Count: 1b
+														}
+													]
+												}
+											}
+											{
+												id: "create:windmill_bearing"
+												Count: 1b
+											}
+										]
+									}
+								}
+								{
+									id: "create:encased_fan"
+									Count: 1b
+								}
+								{
+									id: "create:water_wheel"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Better Power"
+			x: -8.0d
+			y: -3.0d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "2840D6EFB5DE5254"
+			tasks: [
+				{
+					id: "070EB4EDB974A059"
+					type: "item"
+					item: "create:flywheel"
+				}
+				{
+					id: "161E1EB496559BA9"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+				{
+					id: "55A887E68DFA15E5"
+					type: "item"
+					title: "Burner"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "createaddition:furnace_burner"
+									Count: 1b
+								}
+								{
+									id: "createaddition:crude_burner"
+									Count: 1b
+								}
+								{
+									id: "minecraft:furnace"
+									Count: 1b
+								}
+								{
+									id: "minecraft:blast_furnace"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Best Power"
+			x: -9.0d
+			y: -3.0d
+			dependencies: ["2840D6EFB5DE5254"]
+			id: "3A796C4F55BF25D8"
+			tasks: [
+				{
+					id: "7FE4934250BCEFC3"
+					type: "item"
+					title: "Burning Chamber"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_burner"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_burner"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7C0EC980A3F2A503"
+					type: "item"
+					title: "Boiler"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_boiler"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_boiler"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "195BC1F02E51D8AF"
+					type: "item"
+					title: "Steam Engine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_steam_engine"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_steam_engine"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Put those shards to work"
+			x: -0.5d
+			y: -4.0d
+			dependencies: ["230D36713B063759"]
+			id: "26F03151E6999FCE"
+			tasks: [{
+				id: "2F1D0C917875A0A6"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+		}
+		{
+			title: "Smart Storage Drawers"
+			x: -7.0d
 			y: -1.0d
 			dependencies: [
-				"595DE98379F6280C"
-				"6C27D59380778FF1"
+				"56923B891152AA07"
+				"3624A74DAF4EEABA"
 			]
-			id: "5CA75B15FF7EFF4D"
-			tasks: [{
-				id: "4402FF20DD09E542"
-				type: "item"
-				item: "astralsorcery:rock_crystal_ore"
-			}]
-			rewards: [{
-				id: "49327AA6D10773E7"
-				type: "item"
-				item: "forbidden_arcanus:arcane_crystal"
-				count: 16
-			}]
+			id: "608E8D992CD290B2"
+			tasks: [
+				{
+					id: "3A128698DD0F6D87"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "2260A2F45D31A178"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+				{
+					id: "0753F5B767B3AF9D"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+				}
+			]
 		}
 		{
-			x: 1.5d
-			y: -3.5d
-			id: "0A6A7255ABA1A0DF"
+			title: "Storage Drawers"
+			x: -4.5d
+			y: -1.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "3624A74DAF4EEABA"
 			tasks: [{
-				id: "3BB34EF83FD90999"
+				id: "61995A7A78CD5A9C"
 				type: "item"
-				item: "minecraft:beacon"
-			}]
-		}
-		{
-			x: 1.5d
-			y: -4.5d
-			id: "320A5562AD11FF54"
-			tasks: [{
-				id: "2485BA3350C93784"
-				type: "item"
-				item: "minecraft:conduit"
+				title: "Any #storagedrawers:drawers"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
 			}]
 		}
 	]

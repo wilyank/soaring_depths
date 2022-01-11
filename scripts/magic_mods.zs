@@ -12,7 +12,7 @@ import crafttweaker.api.util.text.MCTextComponent;
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:wet_purifying_soap>))
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:minecraft:water>*250))
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_quartz>*144))
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:portable_beacons:starberries>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
 <recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_discidia", 
     <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
@@ -177,6 +177,59 @@ mods.jei.JEI.addInfo(<item:forbidden_arcanus:purifying_soap>, ["Becomes wet when
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("wraith_liquid_interaction_success", <entityType:eidolon:wraith>, <fluid:astralsorcery:liquid_starlight> * 1000, 100, <fluid:tconstruct:molten_lead> * 1000, 100, 80);
 
 // some help for F&A
-<item:forbidden_arcanus:runic_chiseled_polished_darkstone>.addTooltip("tooltip.forbidden_arcanus.runic_chiseled_polished_darkstone");
+<item:forbidden_arcanus:runic_chiseled_polished_darkstone>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.forbidden_arcanus.runic_chiseled_polished_darkstone"));
 <item:forbidden_arcanus:shiny_zombie_arm>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.forbidden_arcanus.zombie_arm"));
 <item:forbidden_arcanus:zombie_arm>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.forbidden_arcanus.zombie_arm"));
+
+// add information that crystal lens does not work
+<item:astralsorcery:lens>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.astralsorcery.lens"));
+mods.jei.JEI.addDescription(<item:astralsorcery:lens>, MCTextComponent.createTranslationTextComponent("description.astralsorcery.lens"));
+// obsidian skull
+craftingTable.removeRecipe(<item:forbidden_arcanus:obsidian_skull>);
+<recipetype:astralsorcery:infusion>.addRecipe("obsidian_skull", 
+    <item:forbidden_arcanus:obsidian_skull>, 
+    <item:minecraft:skeleton_skull>, 
+    <fluid:tconstruct:molten_obsidian>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    false
+);
+
+// construction wands
+craftingTable.removeRecipe(<item:constructionwand:stone_wand>);
+mods.jei.JEI.hideIngredient(<item:constructionwand:stone_wand>);
+
+craftingTable.removeRecipe(<item:forbidden_arcanus:dark_nether_star>);
+<recipetype:astralsorcery:infusion>.addRecipe("dark_nether_star", 
+    <item:forbidden_arcanus:dark_nether_star>, 
+    <item:minecraft:nether_star>, 
+    <fluid:tconstruct:molten_obsidian>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    false
+);
+
+craftingTable.removeRecipe(<item:constructionwand:infinity_wand>);
+craftingTable.addShaped("infinity_wand",
+    <item:constructionwand:infinity_wand>,
+    [
+        [<item:minecraft:air>,<item:minecraft:air>,<item:forbidden_arcanus:dark_nether_star>],
+        [<item:minecraft:air>, <item:tconstruct:tough_handle>.withTag({Material: "tconstruct:hepatizon" as string}), <item:minecraft:air>],
+        [<item:tconstruct:tool_handle>.withTag({Material: "tconstruct:lead" as string}), <item:minecraft:air>, <item:minecraft:air>]
+    ]
+);
+
+// spectral eye amulet
+craftingTable.removeRecipe(<item:forbidden_arcanus:spectral_eye_amulet>);
+craftingTable.addShaped("spectral_eye_amulet",
+    <item:forbidden_arcanus:spectral_eye_amulet>,
+    [
+        [<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>],
+        [<item:forbidden_arcanus:arcane_gold_ingot>, <item:eidolon:basic_amulet>, <item:forbidden_arcanus:arcane_gold_ingot>],
+        [<item:minecraft:air>, <item:minecraft:ender_eye>, <item:minecraft:air>]
+    ]
+);

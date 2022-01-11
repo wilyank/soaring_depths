@@ -1,0 +1,279 @@
+{
+	id: "5A87B67153E29FC0"
+	group: ""
+	order_index: 1
+	filename: "automation_checklist"
+	title: "Automation Checklist"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Automated Cobblestone"
+			icon: "minecraft:cobblestone"
+			x: -15.0d
+			y: -7.5d
+			id: "1F1D5B9D7E798C28"
+			tasks: [
+				{
+					id: "0DD8371409F4AD24"
+					type: "item"
+					item: "minecraft:cobblestone"
+				}
+				{
+					id: "30C5AC42012A6E6A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -7.0d
+			id: "3CCD471E58F19519"
+			tasks: [{
+				id: "13DB8B788DA605EC"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			title: "Automated Stone Types"
+			x: -14.5d
+			y: -6.5d
+			dependencies: ["1F1D5B9D7E798C28"]
+			id: "1C2743F899DB9396"
+			tasks: [
+				{
+					id: "16F30C2DF347297F"
+					type: "item"
+					item: "minecraft:granite"
+				}
+				{
+					id: "653753CDAC816AFC"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "1267EF643864B589"
+					type: "item"
+					item: "minecraft:diorite"
+				}
+				{
+					id: "3B8CF540E74D486B"
+					type: "item"
+					item: "minecraft:stone"
+				}
+				{
+					id: "0E4C596275BE9CCB"
+					type: "checkmark"
+					title: "Automated"
+				}
+				{
+					id: "231C73FEDAA5D29B"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+				}
+			]
+		}
+		{
+			title: "More Autmated Stone Types"
+			x: -15.0d
+			y: -5.5d
+			dependencies: [
+				"1C2743F899DB9396"
+				"3E7EDA69C036415C"
+			]
+			id: "542186F8DD4461AD"
+			tasks: [
+				{
+					id: "7BDF6B39764F2FEB"
+					type: "item"
+					item: "create:gabbro"
+				}
+				{
+					id: "72939332C7D72CD3"
+					type: "item"
+					item: "create:scoria"
+				}
+				{
+					id: "1680A1F275497125"
+					type: "item"
+					item: "create:limestone"
+				}
+				{
+					id: "2A4A924B396A9841"
+					type: "item"
+					item: "create:dolomite"
+				}
+				{
+					id: "59824965FD3F98A1"
+					type: "checkmark"
+					title: "Automated"
+				}
+				{
+					id: "604DB075B08406BC"
+					type: "item"
+					item: "minecraft:sandstone"
+				}
+				{
+					id: "3000D475B5A738F4"
+					type: "item"
+					item: "minecraft:red_sandstone"
+				}
+			]
+		}
+		{
+			title: "Automated Sands"
+			x: -15.5d
+			y: -6.5d
+			dependencies: ["1F1D5B9D7E798C28"]
+			id: "3E7EDA69C036415C"
+			tasks: [
+				{
+					id: "06CD7B990C8D17D7"
+					type: "item"
+					item: "minecraft:sand"
+				}
+				{
+					id: "08C8D3B52EE53D07"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "633F3A57928B2779"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "6E38E0FE8EB39617"
+					type: "item"
+					item: "minecraft:red_sand"
+				}
+				{
+					id: "2F5D8393CB52EC0F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Mob Drops Automated"
+			x: -18.0d
+			y: -7.5d
+			id: "2BD49A6D021EC09C"
+			tasks: [
+				{
+					id: "7E85A81929F0D7C3"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+				{
+					id: "692AA056AC9E28DD"
+					type: "item"
+					item: "minecraft:bone"
+				}
+				{
+					id: "24DCAC2F40E1AF07"
+					type: "item"
+					item: "minecraft:string"
+				}
+				{
+					id: "0F34CDF6C5966C67"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+			]
+		}
+		{
+			x: -16.0d
+			y: -5.5d
+			dependencies: ["3E7EDA69C036415C"]
+			id: "233F22890F4F9DDA"
+			tasks: [
+				{
+					id: "20FB1D4446676E54"
+					type: "item"
+					title: "Concrete (Any Color)"
+					icon: "minecraft:white_concrete"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:white_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:orange_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:magenta_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:light_blue_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:yellow_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:pink_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:gray_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:light_gray_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:cyan_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:purple_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:blue_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:brown_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:green_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:red_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:black_concrete"
+									Count: 1b
+								}
+								{
+									id: "minecraft:lime_concrete"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "150AFAF77124357F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+	]
+}
