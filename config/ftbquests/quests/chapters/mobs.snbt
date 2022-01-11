@@ -461,7 +461,8 @@
 		{
 			title: "Totems"
 			x: -1.5d
-			y: -6.0d
+			y: -2.5d
+			shape: "diamond"
 			id: "52991EE4099F1253"
 			tasks: [{
 				id: "175BEB40CD021966"
@@ -641,6 +642,18 @@
 				id: "7FF93BE02B333341"
 				type: "item"
 				item: "eidolon:unholy_symbol"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "563FA7CA73A3DA5C"
+				type: "item"
+				item: {
+					id: "eidolon:unholy_symbol"
+					Count: 1b
+					tag: {
+						Unbreakable: 1b
+					}
+				}
 			}]
 		}
 		{
@@ -860,19 +873,6 @@
 				id: "404E5846FD3EE8CD"
 				type: "item"
 				item: "astralsorcery:chalice"
-			}]
-		}
-		{
-			title: "Shulker Farming"
-			x: 12.0d
-			y: -2.0d
-			dependencies: ["6BDAB55CE5D502C9"]
-			id: "6C9AAA13C36D0C6F"
-			tasks: [{
-				id: "51D8670383DEA0A5"
-				type: "item"
-				item: "minecraft:shulker_shell"
-				count: 64L
 			}]
 		}
 		{
@@ -1469,6 +1469,43 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Getting Started"
+			x: -1.5d
+			y: 0.0d
+			id: "472201D5EAC73A69"
+			tasks: [
+				{
+					id: "2B0740E70127CA87"
+					type: "item"
+					title: "Pickaxe"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:pickaxes"
+						}
+					}
+				}
+				{
+					id: "286D7FE7AFD50BCB"
+					type: "item"
+					title: "Crafting Table"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:workbenches"
+						}
+					}
+				}
+				{
+					id: "484203CE05A57DBC"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+			]
 		}
 	]
 }

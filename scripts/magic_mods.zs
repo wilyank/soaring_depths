@@ -14,6 +14,8 @@ import crafttweaker.api.util.text.MCTextComponent;
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_quartz>*144))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
+smithing.addRecipe("unbreakable_symbol", <item:eidolon:unholy_symbol>.withTag({Unbreakable: 1 as byte}), <item:eidolon:unholy_symbol>, <item:minecraft:obsidian>);
+
 <recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_discidia", 
     <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
     <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 

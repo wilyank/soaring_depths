@@ -8,10 +8,10 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Automated Cobblestone"
+			title: "Cobblestone"
 			icon: "minecraft:cobblestone"
-			x: -15.0d
-			y: -7.5d
+			x: -17.0d
+			y: -6.0d
 			id: "1F1D5B9D7E798C28"
 			tasks: [
 				{
@@ -27,127 +27,40 @@
 			]
 		}
 		{
-			x: -8.5d
-			y: -7.0d
+			title: "Wood"
+			x: -10.5d
+			y: -12.0d
 			id: "3CCD471E58F19519"
-			tasks: [{
-				id: "13DB8B788DA605EC"
-				type: "item"
-				item: "minecraft:oak_log"
-			}]
-		}
-		{
-			title: "Automated Stone Types"
-			x: -14.5d
-			y: -6.5d
-			dependencies: ["1F1D5B9D7E798C28"]
-			id: "1C2743F899DB9396"
 			tasks: [
 				{
-					id: "16F30C2DF347297F"
+					id: "13DB8B788DA605EC"
 					type: "item"
-					item: "minecraft:granite"
+					title: "Any #minecraft:logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
 				}
 				{
-					id: "653753CDAC816AFC"
-					type: "item"
-					item: "minecraft:andesite"
-				}
-				{
-					id: "1267EF643864B589"
-					type: "item"
-					item: "minecraft:diorite"
-				}
-				{
-					id: "3B8CF540E74D486B"
-					type: "item"
-					item: "minecraft:stone"
-				}
-				{
-					id: "0E4C596275BE9CCB"
+					id: "7CD397C27FEB601D"
 					type: "checkmark"
 					title: "Automated"
 				}
-				{
-					id: "231C73FEDAA5D29B"
-					type: "item"
-					item: "astralsorcery:marble_raw"
-				}
 			]
 		}
 		{
-			title: "More Autmated Stone Types"
-			x: -15.0d
-			y: -5.5d
-			dependencies: [
-				"1C2743F899DB9396"
-				"3E7EDA69C036415C"
-			]
-			id: "542186F8DD4461AD"
-			tasks: [
-				{
-					id: "7BDF6B39764F2FEB"
-					type: "item"
-					item: "create:gabbro"
-				}
-				{
-					id: "72939332C7D72CD3"
-					type: "item"
-					item: "create:scoria"
-				}
-				{
-					id: "1680A1F275497125"
-					type: "item"
-					item: "create:limestone"
-				}
-				{
-					id: "2A4A924B396A9841"
-					type: "item"
-					item: "create:dolomite"
-				}
-				{
-					id: "59824965FD3F98A1"
-					type: "checkmark"
-					title: "Automated"
-				}
-				{
-					id: "604DB075B08406BC"
-					type: "item"
-					item: "minecraft:sandstone"
-				}
-				{
-					id: "3000D475B5A738F4"
-					type: "item"
-					item: "minecraft:red_sandstone"
-				}
-			]
-		}
-		{
-			title: "Automated Sands"
+			title: "Sand"
 			x: -15.5d
-			y: -6.5d
-			dependencies: ["1F1D5B9D7E798C28"]
+			y: -4.5d
 			id: "3E7EDA69C036415C"
 			tasks: [
 				{
 					id: "06CD7B990C8D17D7"
 					type: "item"
 					item: "minecraft:sand"
-				}
-				{
-					id: "08C8D3B52EE53D07"
-					type: "item"
-					item: "minecraft:gravel"
-				}
-				{
-					id: "633F3A57928B2779"
-					type: "item"
-					item: "minecraft:soul_sand"
-				}
-				{
-					id: "6E38E0FE8EB39617"
-					type: "item"
-					item: "minecraft:red_sand"
 				}
 				{
 					id: "2F5D8393CB52EC0F"
@@ -157,9 +70,9 @@
 			]
 		}
 		{
-			title: "Mob Drops Automated"
-			x: -18.0d
-			y: -7.5d
+			title: "Rotten Flesh"
+			x: -21.0d
+			y: -12.0d
 			id: "2BD49A6D021EC09C"
 			tasks: [
 				{
@@ -168,26 +81,16 @@
 					item: "minecraft:rotten_flesh"
 				}
 				{
-					id: "692AA056AC9E28DD"
-					type: "item"
-					item: "minecraft:bone"
-				}
-				{
-					id: "24DCAC2F40E1AF07"
-					type: "item"
-					item: "minecraft:string"
-				}
-				{
-					id: "0F34CDF6C5966C67"
-					type: "item"
-					item: "minecraft:gunpowder"
+					id: "564E7ABCB76AB0B7"
+					type: "checkmark"
+					title: "Automated"
 				}
 			]
 		}
 		{
-			x: -16.0d
-			y: -5.5d
-			dependencies: ["3E7EDA69C036415C"]
+			title: "Concrete"
+			x: -16.5d
+			y: -3.5d
 			id: "233F22890F4F9DDA"
 			tasks: [
 				{
@@ -270,6 +173,899 @@
 				}
 				{
 					id: "150AFAF77124357F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -7.5d
+			id: "535913873BDA7A73"
+			tasks: [
+				{
+					id: "345DA648BDC87785"
+					type: "item"
+					item: "minecraft:iron_ingot"
+				}
+				{
+					id: "015D7E788A5FA947"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -7.5d
+			id: "11F7B15F955C03B1"
+			tasks: [
+				{
+					id: "5425DEC3D02068D3"
+					type: "item"
+					item: "minecraft:gold_ingot"
+				}
+				{
+					id: "6DAC97D7F2E1AF4F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: -6.5d
+			description: ["Hint: Grottols spawn in dark caves"]
+			id: "00DF60F774FC8139"
+			tasks: [
+				{
+					id: "01BE89B71C593D76"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+				{
+					id: "43702762DF9A5671"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -6.5d
+			id: "6F2BC84B31D6DAA9"
+			tasks: [
+				{
+					id: "3220E87A76BFF1DE"
+					type: "item"
+					item: "minecraft:emerald"
+				}
+				{
+					id: "1D6A595BAC59ADCF"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -6.5d
+			id: "5A499AE00682359A"
+			tasks: [
+				{
+					id: "3CF7A6989585C82E"
+					type: "item"
+					item: "minecraft:redstone"
+				}
+				{
+					id: "67126B33292D4396"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Slimeball"
+			x: -21.5d
+			y: -11.0d
+			id: "1335E739C8A6159C"
+			tasks: [
+				{
+					id: "27AF9C5BC33198B3"
+					type: "item"
+					title: "Any #forge:slimeballs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:slimeballs"
+						}
+					}
+				}
+				{
+					id: "223B8CF914DD9EAB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -24.0d
+			y: -10.0d
+			id: "4639D9306D9E2F31"
+			tasks: [
+				{
+					id: "6954FFB31274ED0E"
+					type: "item"
+					item: "minecraft:wheat"
+				}
+				{
+					id: "1CD1DFDC05053109"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -11.0d
+			id: "0A9E91F5439DA22C"
+			tasks: [
+				{
+					id: "666D925CE3DC785E"
+					type: "item"
+					item: "minecraft:cactus"
+				}
+				{
+					id: "7F08B3F125672FD3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -23.5d
+			y: -9.0d
+			id: "1C645A0FC971A89F"
+			tasks: [
+				{
+					id: "5B7277E991B923D0"
+					type: "item"
+					item: "minecraft:golden_carrot"
+				}
+				{
+					id: "44535EFF7DCD74A7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -24.5d
+			y: -9.0d
+			id: "32E970D777FC45F1"
+			tasks: [
+				{
+					id: "1F394BB9AA8146E4"
+					type: "item"
+					item: "minecraft:baked_potato"
+				}
+				{
+					id: "397762B6E73A1CFF"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -24.0d
+			y: -8.0d
+			id: "38453A90699582B1"
+			tasks: [
+				{
+					id: "11C02ACA00AFC189"
+					type: "item"
+					item: "minecraft:beetroot"
+				}
+				{
+					id: "5BD94EFC53A5D65C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -25.0d
+			y: -8.0d
+			id: "387D946B242240BE"
+			tasks: [
+				{
+					id: "774910C5165B7AD4"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+				}
+				{
+					id: "53A85CEAF01C3C87"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -11.0d
+			id: "74BCEB4408554C9E"
+			tasks: [
+				{
+					id: "29D6FB921F95E14A"
+					type: "item"
+					item: "minecraft:sugar_cane"
+				}
+				{
+					id: "5D6F06410EED214F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -12.0d
+			id: "61ED1BBD421412D2"
+			tasks: [
+				{
+					id: "309AE41786A4D5B3"
+					type: "item"
+					item: "minecraft:dried_kelp"
+				}
+				{
+					id: "29DE08DC9B08DC6E"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -12.0d
+			id: "01B959E99DB0AAAC"
+			tasks: [
+				{
+					id: "2879EB642C47E7C4"
+					type: "item"
+					item: "minecraft:bamboo"
+				}
+				{
+					id: "593BBD3E7BC738AC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -20.5d
+			y: -11.0d
+			id: "187ECF33074B099B"
+			tasks: [
+				{
+					id: "182638234BB8609E"
+					type: "item"
+					item: "minecraft:ender_pearl"
+				}
+				{
+					id: "50D4FD12DF1F65C7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -20.0d
+			y: -12.0d
+			id: "0EE8A5094661B851"
+			tasks: [
+				{
+					id: "384EB3603F1A1D66"
+					type: "item"
+					item: "minecraft:bone"
+				}
+				{
+					id: "57211C850339116C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -22.0d
+			y: -12.0d
+			id: "0889F903EC04C42D"
+			tasks: [
+				{
+					id: "4920A85BB4DA3B99"
+					type: "item"
+					item: "minecraft:gunpowder"
+				}
+				{
+					id: "4C6F50B9D7FC0D75"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -21.5d
+			y: -13.0d
+			id: "584DA21004D110E4"
+			tasks: [
+				{
+					id: "62A7A04EAB6E6E60"
+					type: "item"
+					item: "minecraft:string"
+				}
+				{
+					id: "11B4CBBF0AA49A0C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -18.5d
+			y: -7.5d
+			id: "234BB44DBB76701B"
+			tasks: [
+				{
+					id: "1C0CE6BE5853DD46"
+					type: "item"
+					item: "minecraft:gravel"
+				}
+				{
+					id: "3529C42E87BCE530"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -6.5d
+			id: "6ECBABF02CAA3EC6"
+			tasks: [
+				{
+					id: "27C494526F4AACB6"
+					type: "item"
+					item: "minecraft:granite"
+				}
+				{
+					id: "0ED0F07CCA8F472D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -4.5d
+			id: "7A2AA21BCF1DF02F"
+			tasks: [
+				{
+					id: "375713F444275DB7"
+					type: "item"
+					item: "minecraft:andesite"
+				}
+				{
+					id: "077130A6B65026F4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -3.5d
+			id: "65D839865317BE5E"
+			tasks: [
+				{
+					id: "5BB76394E76D8DD0"
+					type: "item"
+					item: "minecraft:diorite"
+				}
+				{
+					id: "54B4B6164935FE05"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -6.5d
+			id: "2659594C72924E48"
+			tasks: [
+				{
+					id: "3BAD00CB782ABB8D"
+					type: "item"
+					item: "create:dolomite"
+				}
+				{
+					id: "49083233E85626F6"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -18.5d
+			y: -8.5d
+			id: "1CB9717123B30D02"
+			tasks: [
+				{
+					id: "28FE86D6A447871E"
+					type: "item"
+					item: "create:gabbro"
+				}
+				{
+					id: "2913AC971F832157"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -7.5d
+			id: "32C966CCFC06516E"
+			tasks: [
+				{
+					id: "7E12E51F80A6CD2B"
+					type: "item"
+					item: "create:scoria"
+				}
+				{
+					id: "7AE8636020FFC30D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -3.5d
+			id: "0C047E393F61AB41"
+			tasks: [
+				{
+					id: "6D1ADFD8979EE4CF"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+				}
+				{
+					id: "3818CDCFDAF96246"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -18.5d
+			y: -4.5d
+			id: "7E16E3DA86589B5D"
+			tasks: [
+				{
+					id: "448C66AA3874A109"
+					type: "item"
+					item: "minecraft:soul_sand"
+				}
+				{
+					id: "446855ED1A81E750"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -8.5d
+			id: "3FE46C944CF15404"
+			tasks: [
+				{
+					id: "15714BAB9842278C"
+					type: "item"
+					item: "minecraft:red_sand"
+				}
+				{
+					id: "022689C364380FAB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -8.5d
+			id: "2484431225E0899E"
+			tasks: [
+				{
+					id: "522EEBFD3D1E6BA8"
+					type: "item"
+					item: "minecraft:mossy_cobblestone"
+				}
+				{
+					id: "4B4F96F6C420CEF1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -13.5d
+			y: -12.0d
+			id: "23FB587061B71C2F"
+			tasks: [
+				{
+					id: "67C897FE0E15A94A"
+					type: "item"
+					item: "minecraft:vine"
+					consume_items: true
+				}
+				{
+					id: "6BC03ED263F285B8"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -3.5d
+			id: "7E9EE040DC8B3515"
+			tasks: [
+				{
+					id: "6CE09999C9F5E179"
+					type: "item"
+					item: "infernalexp:soul_stone"
+				}
+				{
+					id: "7AA96CCBB7425BF3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Glass"
+			x: -17.5d
+			y: -3.5d
+			id: "0DF61C888378540A"
+			tasks: [
+				{
+					id: "4A5E2DFB95E26C22"
+					type: "item"
+					title: "Any #forge:glass"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:glass"
+						}
+					}
+				}
+				{
+					id: "69DED3550CB4B411"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -4.5d
+			id: "64DBB67895300F8A"
+			tasks: [
+				{
+					id: "37681B32B651E524"
+					type: "item"
+					item: "minecraft:netherrack"
+				}
+				{
+					id: "6D3E2ACA76DDC4FA"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -5.5d
+			id: "085610B8C9A52411"
+			tasks: [
+				{
+					id: "5553D8D2CA04FCED"
+					type: "item"
+					item: "minecraft:nether_brick"
+				}
+				{
+					id: "0A19ACAD07E9EF5F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -16.5d
+			y: -8.5d
+			id: "4B05FD3826BCABCC"
+			tasks: [
+				{
+					id: "32AD87035484484E"
+					type: "item"
+					item: "tconstruct:seared_brick"
+				}
+				{
+					id: "5C409AC66CE0DE1C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -15.5d
+			y: -7.5d
+			id: "7A7534DC1D136671"
+			tasks: [
+				{
+					id: "4FD796CAE203DB14"
+					type: "item"
+					item: "minecraft:clay_ball"
+				}
+				{
+					id: "1308AAA7FE5842E7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -7.5d
+			id: "7CE20A0AE2EABB3C"
+			tasks: [
+				{
+					id: "19C1A5AD1D8E83BA"
+					type: "item"
+					item: "create:limestone"
+				}
+				{
+					id: "03A8A65D448561EB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -5.5d
+			id: "5C1EA4A06E265DA6"
+			tasks: [
+				{
+					id: "5A6814189E9773EE"
+					type: "item"
+					item: "create:limesand"
+				}
+				{
+					id: "0ED4F72347292990"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -18.5d
+			y: -3.5d
+			id: "4E1284F5C5887609"
+			tasks: [
+				{
+					id: "2E409A6DEE314F50"
+					type: "item"
+					item: "minecraft:blackstone"
+				}
+				{
+					id: "2410842ED8F02585"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -11.0d
+			y: -5.5d
+			id: "3A1C7426488AD332"
+			tasks: [
+				{
+					id: "6DED1B8BD68A653D"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+				{
+					id: "7E7F82FD3AA58196"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -14.5d
+			y: -8.5d
+			id: "1B09BBFDA63E28AB"
+			tasks: [
+				{
+					id: "4CAE8CD0D693CA04"
+					type: "item"
+					item: "tconstruct:scorched_brick"
+				}
+				{
+					id: "2B753B4162861C22"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -10.0d
+			y: -5.5d
+			id: "019762C2234B65C5"
+			tasks: [
+				{
+					id: "036A4E0E98AE9EAE"
+					type: "item"
+					item: "forbidden_arcanus:arcane_crystal"
+				}
+				{
+					id: "487EB5D3DC3ACCA3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -9.0d
+			y: -5.5d
+			id: "237E195DB6980E99"
+			tasks: [
+				{
+					id: "076C1845EC45A80C"
+					type: "item"
+					item: "forbidden_arcanus:arcane_gold_ingot"
+				}
+				{
+					id: "7573B4FDCB4E5699"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -23.0d
+			y: -8.0d
+			id: "6A4143849DFEDB50"
+			tasks: [
+				{
+					id: "3143BB9DBF040EF0"
+					type: "item"
+					item: "minecraft:cake"
+				}
+				{
+					id: "331AA5BA183155B1"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -20.5d
+			y: -13.0d
+			id: "527DF5A53B84DB06"
+			tasks: [
+				{
+					id: "61BB41177D55EA9A"
+					type: "item"
+					item: "minecraft:shulker_shell"
+				}
+				{
+					id: "38DEE157E07C213B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -25.0d
+			y: -6.0d
+			id: "1DC8830A31EC56B8"
+			tasks: [
+				{
+					id: "414D24E23D4ECE4E"
+					type: "item"
+					item: "astralsorcery:liquid_starlight_bucket"
+				}
+				{
+					id: "7C8D7277A5B9FFAB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -24.0d
+			y: -6.0d
+			id: "37A06164ED9E53A7"
+			tasks: [
+				{
+					id: "00653871E6A68E45"
+					type: "item"
+					item: "minecraft:lava_bucket"
+				}
+				{
+					id: "73F6892CE8204EE9"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			title: "Wool"
+			x: -11.5d
+			y: -12.0d
+			id: "503EBCC14B9BD2D2"
+			tasks: [
+				{
+					id: "2296C4B9221E06EF"
+					type: "item"
+					title: "Any #minecraft:wool"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:wool"
+						}
+					}
+				}
+				{
+					id: "0009D3388DB1E722"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -23.0d
+			y: -6.0d
+			id: "42E40EE67427F886"
+			tasks: [
+				{
+					id: "7998389917C8807A"
+					type: "item"
+					item: "create:honey_bucket"
+				}
+				{
+					id: "6B48FEEF1FA97ECC"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -17.5d
+			y: -8.5d
+			id: "3F264CA82908D0ED"
+			tasks: [
+				{
+					id: "04BF1CB82FD2CD60"
+					type: "item"
+					item: "minecraft:obsidian"
+				}
+				{
+					id: "029BAD002A6C1D5C"
 					type: "checkmark"
 					title: "Automated"
 				}
