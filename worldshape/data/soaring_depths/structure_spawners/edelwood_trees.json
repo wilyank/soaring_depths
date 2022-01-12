@@ -1,0 +1,25 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "soaring_depths:trees/edelwood",
+        "max_depth": 1
+    },
+
+    "averageSpacing": 1,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "minY": 0,
+        "maxY": 255,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "otg:skylandsliteplus.dark_forest",
+        "otg:skylandsliteplus.dark_forest_hills"
+    ]
+}
