@@ -465,12 +465,12 @@
 			id: "0EE8A5094661B851"
 			tasks: [
 				{
-					id: "384EB3603F1A1D66"
+					id: "04634B98C22E6B10"
 					type: "item"
 					item: "minecraft:bone"
 				}
 				{
-					id: "57211C850339116C"
+					id: "0253EB13AB8E7489"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -1216,6 +1216,165 @@
 				}
 				{
 					id: "5DAC3612031CF5F4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -7.5d
+			id: "2F35732D68B12A68"
+			tasks: [
+				{
+					id: "09C4451D31D08C50"
+					type: "item"
+					item: "minecraft:coal"
+				}
+				{
+					id: "4BCAA59A691110A7"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -13.0d
+			id: "4F3BDB9F7699CE5F"
+			tasks: [
+				{
+					id: "21704507CC663149"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+				{
+					id: "17587E7154330FEB"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -6.5d
+			id: "0D898CB0360EB640"
+			tasks: [
+				{
+					id: "76656FE13A3D205E"
+					type: "item"
+					item: "astralsorcery:aquamarine"
+				}
+				{
+					id: "555C0ADE920DC727"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -7.5d
+			id: "3327EDF04A76B53B"
+			tasks: [
+				{
+					id: "6AD4C2B98FFE3F2B"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "768D0076D80C581A"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.0d
+			y: -12.0d
+			id: "01CB24627D342262"
+			tasks: [
+				{
+					id: "6C0BF6A5DB3356CE"
+					type: "item"
+					item: "minecraft:magma_cream"
+				}
+				{
+					id: "05AEBB4B5FF2E568"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -13.5d
+			y: -8.0d
+			id: "5FD4B2BD7A1263D6"
+			tasks: [
+				{
+					id: "4B2117D2A14D3077"
+					type: "item"
+					item: "minecraft:basalt"
+				}
+				{
+					id: "07A5C6BE53015367"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -13.5d
+			y: -7.0d
+			id: "50D05ADFA962F22E"
+			tasks: [
+				{
+					id: "0AD1EACBF0D4256E"
+					type: "item"
+					item: "minecraft:blue_ice"
+				}
+				{
+					id: "1FC73873B4D04EFE"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -6.5d
+			id: "1DB25071E3FB19C2"
+			tasks: [
+				{
+					id: "2942EBD2FBF66D9C"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+				{
+					id: "5A016D1EF024ED6D"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -7.0d
+			y: -5.5d
+			id: "55590935DCA7AFEA"
+			tasks: [
+				{
+					id: "475A467A55849356"
+					type: "item"
+					item: "minecraft:end_crystal"
+				}
+				{
+					id: "4A23D7EC82ECE478"
 					type: "checkmark"
 					title: "Automated"
 				}

@@ -225,7 +225,7 @@
 			]
 		}
 		{
-			title: "Master Storage System"
+			title: "Master Storage Network"
 			x: -6.5d
 			y: 1.0d
 			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
@@ -369,7 +369,7 @@
 		}
 		{
 			title: "Smeltery Side-grade"
-			x: -2.0d
+			x: -2.5d
 			y: -1.5d
 			dependencies: [
 				"0F828792BEE1DC4F"
@@ -830,8 +830,8 @@
 					Damage: 0
 				}
 			}
-			x: 2.0d
-			y: 0.0d
+			x: -1.0d
+			y: -1.5d
 			dependencies: ["00E4D5A2C3F9A861"]
 			id: "264C220DE37F34BA"
 			tasks: [{
@@ -1000,6 +1000,112 @@
 					item: "simpleplanes:electric_engine"
 				}
 			]
+		}
+		{
+			x: -1.5d
+			y: 2.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "4FEFA50D4182C0BB"
+			tasks: [{
+				id: "4F0777D56B321091"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 2.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "43D0ED3A0CA129B1"
+			tasks: [{
+				id: "741605D5ED6279C7"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "78C170840CFCACE9"
+			tasks: [{
+				id: "09972B42FA0CEAF6"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "136C3A4F41B1D166"
+			tasks: [{
+				id: "0C9B9033AA795590"
+				type: "item"
+				item: "netherite_plus:netherite_white_shulker_box"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "6A9B3D23D3F008B9"
+			tasks: [{
+				id: "48D58D5A27945C6B"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "624181FF7C850F5C"
+			tasks: [{
+				id: "52F783884E4B0F51"
+				type: "item"
+				item: "netherite_plus:netherite_beacon"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "7E8248CC2A1C5988"
+			tasks: [{
+				id: "2676F7FC12E916E8"
+				type: "item"
+				item: "minecraft:lodestone"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "32F2860ADFDB6C15"
+			tasks: [{
+				id: "3795718833DCDA11"
+				type: "item"
+				item: "minecraft:respawn_anchor"
+			}]
 		}
 	]
 }
