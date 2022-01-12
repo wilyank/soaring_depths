@@ -24,7 +24,7 @@
                     }
                   }
                 ],
-                "name": "minecraft:emerald_ore"
+                "name": "create:zinc_ore"
               },
               {
                 "type": "minecraft:item",
