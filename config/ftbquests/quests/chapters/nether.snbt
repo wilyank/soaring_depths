@@ -1,0 +1,336 @@
+{
+	id: "4B26414638283653"
+	group: ""
+	order_index: 2
+	filename: "nether"
+	title: "Nether"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: -3.5d
+			shape: "octagon"
+			id: "00E4D5A2C3F9A861"
+			tasks: [{
+				id: "11A1D73875C1BAB8"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.5d
+			id: "69D1AE70AEE6A509"
+			tasks: [{
+				id: "1E2655FDBE60B0D1"
+				type: "structure"
+				structure: "minecraft:fortress"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			id: "43BE2FC96EE14FCF"
+			tasks: [{
+				id: "48F4908427372155"
+				type: "structure"
+				structure: "minecraft:bastion_remnant"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.5d
+			id: "709EBCAD5B426A6F"
+			tasks: [{
+				id: "402030272E8D227A"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -5.0d
+			id: "0975892805CFAFF4"
+			tasks: [{
+				id: "6BB0EF08F8D129E3"
+				type: "item"
+				item: "minecraft:blaze_rod"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.5d
+			id: "05372402DBC26E39"
+			tasks: [{
+				id: "23096ED75305BA9C"
+				type: "advancement"
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			id: "70208F2DF7FFB8BC"
+			tasks: [{
+				id: "07B4B0602DA111B1"
+				type: "item"
+				item: "portable_beacons:starberries"
+			}]
+			rewards: [{
+				id: "6C4435F5D94799F6"
+				type: "item"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "portable_beacons:beacon_book"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -6.0d
+			id: "3E2EF8F8B3B577EF"
+			tasks: [{
+				id: "4CAC1C800FADB92B"
+				type: "item"
+				item: "forbidden_arcanus:dark_nether_star"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -7.5d
+			id: "40D32734AF052093"
+			tasks: [{
+				id: "5D00A3E8571A1CE7"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -6.0d
+			id: "2360C9C0330301B6"
+			tasks: [{
+				id: "07BB1BF25386788C"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 0.5d
+			id: "30C45327DF396EDF"
+			tasks: [{
+				id: "4E0D32E698ED5C57"
+				type: "structure"
+				structure: "repurposed_structures:city_nether"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 0.5d
+			id: "164D87647F91D4E8"
+			tasks: [{
+				id: "170FC56AC7B33F72"
+				type: "structure"
+				structure: "repurposed_structures:outpost_crimson"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -0.5d
+			id: "3C8B737A95F9572A"
+			tasks: [{
+				id: "13A85B1469701B31"
+				type: "structure"
+				structure: "repurposed_structures:mineshaft_crimson"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			id: "3196B75C491FCF23"
+			tasks: [{
+				id: "60BA49B4B762AF53"
+				type: "structure"
+				structure: "repurposed_structures:mineshaft_nether"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -1.5d
+			id: "62F5681AF4E41D4A"
+			tasks: [{
+				id: "23A6D8289E730028"
+				type: "structure"
+				structure: "repurposed_structures:outpost_warped"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.5d
+			id: "0F4181187A6A9592"
+			tasks: [{
+				id: "252261F439E2FACA"
+				type: "structure"
+				structure: "repurposed_structures:outpost_nether_brick"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.5d
+			id: "76C9179CE460F680"
+			tasks: [{
+				id: "5580FAB12912975B"
+				type: "structure"
+				structure: "repurposed_structures:mineshaft_warped"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.5d
+			id: "27A93D9AAB6311C1"
+			tasks: [{
+				id: "10D55BB1D3F0C028"
+				type: "structure"
+				structure: "repurposed_structures:pyramid_nether"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 0.5d
+			id: "40F4F67EB7336CE1"
+			tasks: [{
+				id: "16E13D75B47C523B"
+				type: "structure"
+				structure: "repurposed_structures:ruins_nether"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -0.5d
+			id: "5F1FA12555E8F65F"
+			tasks: [{
+				id: "08AC466DFF7E975D"
+				type: "structure"
+				structure: "repurposed_structures:shipwreck_crimson"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			id: "3F325E27C2CE11B9"
+			tasks: [{
+				id: "4F0D42C5BFD64E64"
+				type: "structure"
+				structure: "repurposed_structures:shipwreck_warped"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -0.5d
+			id: "5E3C25FB6E2DB7FB"
+			tasks: [{
+				id: "3691871BC5F96EEA"
+				type: "structure"
+				structure: "repurposed_structures:shipwreck_nether_bricks"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.5d
+			id: "53930F8884EB7849"
+			tasks: [{
+				id: "7AC8E901C1C00764"
+				type: "structure"
+				structure: "repurposed_structures:temple_nether_basalt"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			id: "05414DFDA7B6399F"
+			tasks: [{
+				id: "598BDE3B2B41FB61"
+				type: "structure"
+				structure: "repurposed_structures:temple_nether_soul"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -1.5d
+			id: "19304DC4E641348F"
+			tasks: [{
+				id: "7A10261215E64D1B"
+				type: "structure"
+				structure: "repurposed_structures:temple_nether_crimson"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			id: "5C48402B28B3728A"
+			tasks: [{
+				id: "1E7AAF1C48F5EB89"
+				type: "structure"
+				structure: "repurposed_structures:temple_nether_warped"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.5d
+			id: "0F6AF5B9D6AD0BDE"
+			tasks: [{
+				id: "61A408037C478DBD"
+				type: "structure"
+				structure: "repurposed_structures:temple_nether_wasteland"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.5d
+			id: "525EC19D6FBE9130"
+			tasks: [{
+				id: "3C28C602F74E7771"
+				type: "structure"
+				structure: "repurposed_structures:village_warped"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.5d
+			id: "0FBD152B08AE12DA"
+			tasks: [{
+				id: "2890A8A432DB9B41"
+				type: "structure"
+				structure: "repurposed_structures:village_crimson"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -3.5d
+			id: "4F5802C3CB85C25B"
+			tasks: [
+				{
+					id: "7DB2BCEFA951EE6B"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "6491554345959B4E"
+					type: "item"
+					item: "minecraft:gold_nugget"
+				}
+				{
+					id: "6A627873BA1AFA9C"
+					type: "item"
+					item: "tconstruct:cobalt_nugget"
+				}
+			]
+		}
+	]
+}

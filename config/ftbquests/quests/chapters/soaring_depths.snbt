@@ -2,7 +2,7 @@
 	id: "7721277CB4BB2E39"
 	group: ""
 	order_index: 0
-	filename: "mobs"
+	filename: "soaring_depths"
 	title: "Soaring Depths"
 	icon: "minecraft:oak_boat"
 	default_quest_shape: ""
@@ -205,8 +205,8 @@
 			x: -8.0d
 			y: -1.0d
 			dependencies: [
-				"3441145CEBF76F0C"
 				"530392498F50A2AE"
+				"6FB843E23682C2DA"
 			]
 			dependency_requirement: "one_completed"
 			id: "5160A319C6E43EA0"
@@ -957,11 +957,6 @@
 			id: "3441145CEBF76F0C"
 			tasks: [
 				{
-					id: "496AD79484905F26"
-					type: "item"
-					item: "create:blaze_burner"
-				}
-				{
 					id: "0BDEE7911D0B5298"
 					type: "item"
 					item: "create:deployer"
@@ -1014,7 +1009,7 @@
 		}
 		{
 			title: "Liquid Processing"
-			x: -6.5d
+			x: -6.0d
 			y: -2.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "56923B891152AA07"
@@ -1098,9 +1093,9 @@
 		}
 		{
 			title: "Personal Improvement"
-			x: -8.5d
+			x: -7.5d
 			y: -4.0d
-			dependencies: ["38594CB73913C20B"]
+			dependencies: ["3441145CEBF76F0C"]
 			id: "4B592B561F7D8917"
 			tasks: [
 				{
@@ -1163,55 +1158,6 @@
 					type: "item"
 					item: "create:linked_controller"
 				}
-				{
-					id: "001F50DB0D744B30"
-					type: "item"
-					item: "create:wand_of_symmetry"
-				}
-				{
-					id: "4EBC5912C7B1B6F1"
-					type: "item"
-					item: {
-						id: "createaddition:overcharged_hammer"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		}
-		{
-			title: "How do you make these?"
-			x: -7.5d
-			y: -4.0d
-			dependencies: ["3441145CEBF76F0C"]
-			id: "38594CB73913C20B"
-			tasks: [
-				{
-					id: "62DE026EA5301319"
-					type: "item"
-					item: {
-						id: "create:chromatic_compound"
-						Count: 1b
-						tag: { }
-					}
-				}
-				{
-					id: "239301FA017B5C3C"
-					type: "item"
-					item: "create:refined_radiance"
-				}
-				{
-					id: "1E6D9F32BF2C506E"
-					type: "item"
-					item: "create:shadow_steel"
-				}
-				{
-					id: "61D00A3401CBAC13"
-					type: "item"
-					item: "createaddition:overcharged_alloy"
-				}
 			]
 		}
 		{
@@ -1220,77 +1166,30 @@
 			y: -3.0d
 			dependencies: ["771A22A8D5C1F2C5"]
 			id: "4EB93D58A62C90CA"
-			tasks: [
-				{
-					id: "6B2EAB27D1F48F64"
-					type: "item"
-					item: "create:water_wheel"
-				}
-				{
-					id: "6C441179A265BFA0"
-					type: "item"
-					item: "create:windmill_bearing"
-				}
-				{
-					id: "2DDEF96B8C6E7A7C"
-					type: "item"
-					item: "create:sail_frame"
-					count: 8L
-				}
-				{
-					id: "55B1B412E9D3E531"
-					type: "item"
-					item: "create:encased_fan"
-				}
-				{
-					id: "37C2F9B11060772C"
-					type: "item"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "itemfilters:and"
-									Count: 1b
-									tag: {
-										items: [
-											{
-												id: "itemfilters:or"
-												Count: 1b
-												tag: {
-													items: [
-														{
-															id: "create:white_sail"
-															Count: 1b
-														}
-														{
-															id: "create:sail_frame"
-															Count: 1b
-														}
-													]
-												}
-											}
-											{
-												id: "create:windmill_bearing"
-												Count: 1b
-											}
-										]
-									}
-								}
-								{
-									id: "create:encased_fan"
-									Count: 1b
-								}
-								{
-									id: "create:water_wheel"
-									Count: 1b
-								}
-							]
-						}
+			tasks: [{
+				id: "48ACBB12E40CF5A2"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:water_wheel"
+								Count: 1b
+							}
+							{
+								id: "create:encased_fan"
+								Count: 1b
+							}
+							{
+								id: "create:windmill_bearing"
+								Count: 1b
+							}
+						]
 					}
 				}
-			]
+			}]
 		}
 		{
 			title: "Better Power"
@@ -1426,7 +1325,7 @@
 		}
 		{
 			title: "Smart Storage Drawers"
-			x: -7.0d
+			x: -6.5d
 			y: -1.0d
 			dependencies: [
 				"56923B891152AA07"
