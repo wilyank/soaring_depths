@@ -28,9 +28,9 @@ craftingTable.removeRecipe(<item:storagenetwork:collector>);
 craftingTable.addShaped("storagenetwork_master", 
     <item:storagenetwork:master>, 
     [
-        [<item:storagenetwork:kabel>,<tag:items:forge:gems/diamond>, <item:storagenetwork:kabel>], 
-        [<tag:items:forge:gems/diamond>, <item:create:brass_casing>, <tag:items:forge:gems/diamond>], 
-        [<item:storagenetwork:kabel>, <tag:items:forge:gems/diamond>,<item:storagenetwork:kabel>]
+        [<item:storagenetwork:kabel>,<item:create:electron_tube>, <item:storagenetwork:kabel>], 
+        [<item:create:electron_tube>, <item:create:brass_casing>, <item:create:electron_tube>], 
+        [<item:storagenetwork:kabel>, <item:create:electron_tube>,<item:storagenetwork:kabel>]
     ]);
 craftingTable.addShaped("storagenetwork_inventory", 
     <item:storagenetwork:inventory>, 

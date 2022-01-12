@@ -1,7 +1,7 @@
 {
 	id: "5A87B67153E29FC0"
 	group: ""
-	order_index: 1
+	order_index: 3
 	filename: "automation_checklist"
 	title: "Automation Checklist"
 	default_quest_shape: ""
@@ -248,8 +248,8 @@
 			]
 		}
 		{
-			x: -10.5d
-			y: -6.5d
+			x: -9.0d
+			y: -5.5d
 			id: "5A499AE00682359A"
 			tasks: [
 				{
@@ -877,7 +877,7 @@
 			]
 		}
 		{
-			x: -11.0d
+			x: -10.0d
 			y: -5.5d
 			id: "3A1C7426488AD332"
 			tasks: [
@@ -911,7 +911,7 @@
 			]
 		}
 		{
-			x: -10.0d
+			x: -11.0d
 			y: -5.5d
 			id: "019762C2234B65C5"
 			tasks: [
@@ -928,8 +928,8 @@
 			]
 		}
 		{
-			x: -9.0d
-			y: -5.5d
+			x: -10.5d
+			y: -6.5d
 			id: "237E195DB6980E99"
 			tasks: [
 				{
@@ -1066,6 +1066,156 @@
 				}
 				{
 					id: "029BAD002A6C1D5C"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -22.0d
+			y: -6.0d
+			id: "5E09B6B7937D83D4"
+			tasks: [
+				{
+					id: "2C41A7A218B2A56B"
+					type: "item"
+					item: "tconstruct:blazing_blood_bucket"
+				}
+				{
+					id: "498FFCA7B38E8D49"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.0d
+			y: -5.5d
+			id: "4381BBCA634169A5"
+			tasks: [
+				{
+					id: "4A628B7B6B8246D6"
+					type: "item"
+					item: "minecraft:quartz"
+				}
+				{
+					id: "2BE08E8744AE4F2B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -10.5d
+			y: -4.5d
+			id: "75C42D6DDE06D14A"
+			tasks: [
+				{
+					id: "6097A8F223FA5E41"
+					type: "item"
+					item: "create:blaze_cake"
+				}
+				{
+					id: "358FF16F373AABED"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: -3.5d
+			dependencies: [
+				"3A1C7426488AD332"
+				"37D6D96607C38CBD"
+				"75C42D6DDE06D14A"
+			]
+			id: "40D3694B61F5B851"
+			tasks: [
+				{
+					id: "1628FC5BA669F55B"
+					type: "item"
+					item: {
+						id: "create:chromatic_compound"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4B1D06E2030B47E2"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -3.5d
+			dependencies: ["0D2029195876215D"]
+			id: "37D6D96607C38CBD"
+			tasks: [
+				{
+					id: "5E9276B83C985CBD"
+					type: "item"
+					item: "create:polished_rose_quartz"
+				}
+				{
+					id: "406538369701DCB5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -8.5d
+			y: -4.5d
+			dependencies: [
+				"4381BBCA634169A5"
+				"5A499AE00682359A"
+			]
+			id: "0D2029195876215D"
+			tasks: [
+				{
+					id: "7D5ACA844CC1E869"
+					type: "item"
+					item: "create:rose_quartz"
+				}
+				{
+					id: "385860C51E558905"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -23.0d
+			y: -10.0d
+			id: "4CE8D9377A02E641"
+			tasks: [
+				{
+					id: "03C91BF24A300D42"
+					type: "item"
+					item: "minecraft:egg"
+				}
+				{
+					id: "5B41D29EFE04EBB5"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -19.5d
+			y: -11.0d
+			id: "3BDFA665E5431875"
+			tasks: [
+				{
+					id: "79C397579B630389"
+					type: "item"
+					item: "minecraft:scute"
+				}
+				{
+					id: "5DAC3612031CF5F4"
 					type: "checkmark"
 					title: "Automated"
 				}

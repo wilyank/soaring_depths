@@ -4,7 +4,7 @@
 	order_index: 0
 	filename: "soaring_depths"
 	title: "Soaring Depths"
-	icon: "minecraft:oak_boat"
+	icon: "minecraft:grass_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -96,71 +96,8 @@
 			]
 		}
 		{
-			title: "Smeltery Side-grade"
-			x: -7.0d
-			y: 2.0d
-			dependencies: ["0F828792BEE1DC4F"]
-			id: "3409F08778C9EC83"
-			tasks: [
-				{
-					id: "4EBDB1953A484086"
-					type: "item"
-					item: "tconstruct:scorched_alloyer"
-				}
-				{
-					id: "4F789221A1A17B60"
-					type: "item"
-					title: "Any #tconstruct:scorched_tanks"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "tconstruct:scorched_tanks"
-						}
-					}
-				}
-				{
-					id: "1DDA13257CE71F67"
-					type: "item"
-					item: "tconstruct:scorched_faucet"
-				}
-				{
-					id: "674FC2A16779C2B4"
-					type: "item"
-					item: "tconstruct:scorched_table"
-				}
-				{
-					id: "4D1DF0794A1314A7"
-					type: "item"
-					title: "Any #tconstruct:casts"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "tconstruct:casts"
-						}
-					}
-				}
-				{
-					id: "0E5126008B1074FD"
-					type: "item"
-					item: "tconstruct:scorched_basin"
-				}
-				{
-					id: "2B2339300839115F"
-					type: "item"
-					item: "tconstruct:foundry_controller"
-				}
-				{
-					id: "5A7F205C9A4052F7"
-					type: "item"
-					item: "tconstruct:scorched_drain"
-				}
-			]
-		}
-		{
 			title: "Smeltery"
-			x: -7.0d
+			x: -4.5d
 			y: 1.0d
 			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
@@ -197,119 +134,6 @@
 					id: "03D4633A9DE90F1F"
 					type: "item"
 					item: "tconstruct:cast_chest"
-				}
-			]
-		}
-		{
-			title: "Basic Storage Network"
-			x: -8.0d
-			y: -1.0d
-			dependencies: [
-				"530392498F50A2AE"
-				"6FB843E23682C2DA"
-			]
-			dependency_requirement: "one_completed"
-			id: "5160A319C6E43EA0"
-			tasks: [
-				{
-					id: "7D6E568DF6F7473D"
-					type: "item"
-					item: "storagenetwork:master"
-				}
-				{
-					id: "5BE7555B44079757"
-					type: "item"
-					item: "storagenetwork:inventory"
-				}
-				{
-					id: "355923547DEEC24E"
-					type: "item"
-					item: "storagenetwork:storage_kabel"
-				}
-			]
-		}
-		{
-			title: "Advanced Storage Network"
-			x: -9.0d
-			y: -1.0d
-			description: ["Fancy some automatic inputs and outputs?"]
-			dependencies: ["5160A319C6E43EA0"]
-			id: "12201FDC25F41EC4"
-			tasks: [
-				{
-					id: "21225B3AE8C3F35F"
-					type: "item"
-					item: "storagenetwork:request"
-				}
-				{
-					id: "59CCE2EDD6B1481A"
-					type: "item"
-					item: "storagenetwork:import_kabel"
-				}
-				{
-					id: "50317FCB5B653E7A"
-					type: "item"
-					item: "storagenetwork:export_kabel"
-				}
-				{
-					id: "75D43C452DB68BB4"
-					type: "item"
-					item: "storagenetwork:collector"
-				}
-				{
-					id: "19F012C74C225F09"
-					type: "item"
-					item: "storagenetwork:stack_upgrade"
-				}
-				{
-					id: "2157C5F6DDBF3F2D"
-					type: "item"
-					item: "storagenetwork:speed_upgrade"
-				}
-			]
-		}
-		{
-			title: "Master Storage System"
-			x: -10.0d
-			y: -1.0d
-			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
-			dependencies: ["12201FDC25F41EC4"]
-			id: "45B064317F8E62A0"
-			tasks: [
-				{
-					id: "61B06F7E71FDA2CC"
-					type: "item"
-					item: "storagenetwork:import_filter_kabel"
-				}
-				{
-					id: "0AC71E5007366007"
-					type: "item"
-					item: "storagenetwork:filter_kabel"
-				}
-				{
-					id: "1885A28330CBE411"
-					type: "item"
-					item: "storagenetwork:inventory_remote"
-				}
-				{
-					id: "4B843B1A96C41044"
-					type: "item"
-					item: "storagenetwork:crafting_remote"
-				}
-				{
-					id: "153561553AE613EE"
-					type: "item"
-					item: "storagenetwork:picker_remote"
-				}
-				{
-					id: "123DED55BB8E13EB"
-					type: "item"
-					item: "storagenetwork:collector_remote"
-				}
-				{
-					id: "1929AF2D4888747B"
-					type: "item"
-					item: "storagenetwork:builder_remote"
 				}
 			]
 		}
@@ -456,34 +280,6 @@
 				id: "7F04EC1F9D71FEB2"
 				type: "item"
 				item: "astralsorcery:tome"
-			}]
-		}
-		{
-			title: "Totems"
-			x: -1.5d
-			y: -2.5d
-			shape: "diamond"
-			id: "52991EE4099F1253"
-			tasks: [{
-				id: "175BEB40CD021966"
-				type: "item"
-				title: "Any Totem"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "minecraft:totem_of_undying"
-								Count: 1b
-							}
-							{
-								id: "voidtotem:totem_of_void_undying"
-								Count: 1b
-							}
-						]
-					}
-				}
 			}]
 		}
 		{
@@ -950,35 +746,6 @@
 			]
 		}
 		{
-			title: "Advanced Processing"
-			x: -7.0d
-			y: -3.0d
-			dependencies: ["6FB843E23682C2DA"]
-			id: "3441145CEBF76F0C"
-			tasks: [
-				{
-					id: "0BDEE7911D0B5298"
-					type: "item"
-					item: "create:deployer"
-				}
-				{
-					id: "259C33C739DBEEA4"
-					type: "item"
-					item: "create:mechanical_crafter"
-				}
-				{
-					id: "361BC715BE6EBA77"
-					type: "item"
-					item: "createaddition:tesla_coil"
-				}
-				{
-					id: "4E46DC3FE1BCD70A"
-					type: "item"
-					item: "createaddition:rolling_mill"
-				}
-			]
-		}
-		{
 			title: "Basic Processing"
 			x: -6.0d
 			y: -3.0d
@@ -1005,11 +772,16 @@
 					type: "item"
 					item: "create:basin"
 				}
+				{
+					id: "15662CE3ECFD4914"
+					type: "item"
+					item: "create:deployer"
+				}
 			]
 		}
 		{
 			title: "Liquid Processing"
-			x: -6.0d
+			x: -6.5d
 			y: -2.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "56923B891152AA07"
@@ -1092,75 +864,6 @@
 			]
 		}
 		{
-			title: "Personal Improvement"
-			x: -7.5d
-			y: -4.0d
-			dependencies: ["3441145CEBF76F0C"]
-			id: "4B592B561F7D8917"
-			tasks: [
-				{
-					id: "0353FBCF87A4FAA8"
-					type: "item"
-					item: {
-						id: "create:extendo_grip"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "3F300404AC2C0B9C"
-					type: "item"
-					item: {
-						id: "create:copper_backtank"
-						Count: 1b
-						tag: {
-							Air: 900
-						}
-					}
-				}
-				{
-					id: "0C7C01B5042D5089"
-					type: "item"
-					item: {
-						id: "create:potato_cannon"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "00E865782C14DD2A"
-					type: "item"
-					item: {
-						id: "create:diving_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0427DB61746D6D7E"
-					type: "item"
-					item: {
-						id: "create:diving_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "1E9E933FB56FCF89"
-					type: "item"
-					item: "create:linked_controller"
-				}
-			]
-		}
-		{
 			title: "Early-Game Power"
 			x: -5.0d
 			y: -3.0d
@@ -1192,126 +895,6 @@
 			}]
 		}
 		{
-			title: "Better Power"
-			x: -8.0d
-			y: -3.0d
-			dependencies: ["3441145CEBF76F0C"]
-			id: "2840D6EFB5DE5254"
-			tasks: [
-				{
-					id: "070EB4EDB974A059"
-					type: "item"
-					item: "create:flywheel"
-				}
-				{
-					id: "161E1EB496559BA9"
-					type: "item"
-					item: "create:furnace_engine"
-				}
-				{
-					id: "55A887E68DFA15E5"
-					type: "item"
-					title: "Burner"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "createaddition:furnace_burner"
-									Count: 1b
-								}
-								{
-									id: "createaddition:crude_burner"
-									Count: 1b
-								}
-								{
-									id: "minecraft:furnace"
-									Count: 1b
-								}
-								{
-									id: "minecraft:blast_furnace"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-		}
-		{
-			title: "Best Power"
-			x: -9.0d
-			y: -3.0d
-			dependencies: ["2840D6EFB5DE5254"]
-			id: "3A796C4F55BF25D8"
-			tasks: [
-				{
-					id: "7FE4934250BCEFC3"
-					type: "item"
-					title: "Burning Chamber"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "steampowered:bronze_burner"
-									Count: 1b
-								}
-								{
-									id: "steampowered:cast_iron_burner"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "7C0EC980A3F2A503"
-					type: "item"
-					title: "Boiler"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "steampowered:bronze_boiler"
-									Count: 1b
-								}
-								{
-									id: "steampowered:cast_iron_boiler"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-				{
-					id: "195BC1F02E51D8AF"
-					type: "item"
-					title: "Steam Engine"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "steampowered:bronze_steam_engine"
-									Count: 1b
-								}
-								{
-									id: "steampowered:cast_iron_steam_engine"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
-		}
-		{
 			title: "Put those shards to work"
 			x: -0.5d
 			y: -4.0d
@@ -1325,7 +908,7 @@
 		}
 		{
 			title: "Smart Storage Drawers"
-			x: -6.5d
+			x: -7.0d
 			y: -1.0d
 			dependencies: [
 				"56923B891152AA07"
@@ -1403,6 +986,35 @@
 					id: "484203CE05A57DBC"
 					type: "item"
 					item: "minecraft:water_bucket"
+				}
+			]
+		}
+		{
+			title: "Basic Item Transportation"
+			x: -7.0d
+			y: -3.0d
+			dependencies: ["6FB843E23682C2DA"]
+			id: "7CA4E9527355FCAC"
+			tasks: [
+				{
+					id: "316D455C53B81E6B"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "3190D33159FFF64F"
+					type: "item"
+					item: "create:andesite_tunnel"
+				}
+				{
+					id: "7DD8AEF983EA8A2B"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+				{
+					id: "4C494A1399CBE0D0"
+					type: "item"
+					item: "create:chute"
 				}
 			]
 		}

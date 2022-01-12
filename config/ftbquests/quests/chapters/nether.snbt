@@ -1,15 +1,441 @@
 {
 	id: "4B26414638283653"
 	group: ""
-	order_index: 2
+	order_index: 1
 	filename: "nether"
 	title: "Nether"
+	icon: "minecraft:crimson_nylium"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.0d
-			y: -3.5d
+			title: "Advanced Processing"
+			x: -3.5d
+			y: -1.0d
+			dependencies: [
+				"6FB843E23682C2DA"
+				"4F5802C3CB85C25B"
+			]
+			id: "3441145CEBF76F0C"
+			tasks: [
+				{
+					id: "259C33C739DBEEA4"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+				{
+					id: "4E46DC3FE1BCD70A"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
+				{
+					id: "07685127C5A712F7"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+			]
+		}
+		{
+			title: "Better Power"
+			x: -5.0d
+			y: -1.5d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "2840D6EFB5DE5254"
+			tasks: [
+				{
+					id: "070EB4EDB974A059"
+					type: "item"
+					item: "create:flywheel"
+				}
+				{
+					id: "161E1EB496559BA9"
+					type: "item"
+					item: "create:furnace_engine"
+				}
+				{
+					id: "55A887E68DFA15E5"
+					type: "item"
+					title: "Burner"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "createaddition:furnace_burner"
+									Count: 1b
+								}
+								{
+									id: "createaddition:crude_burner"
+									Count: 1b
+								}
+								{
+									id: "minecraft:furnace"
+									Count: 1b
+								}
+								{
+									id: "minecraft:blast_furnace"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Best Power"
+			x: -6.5d
+			y: -2.0d
+			dependencies: ["2840D6EFB5DE5254"]
+			id: "3A796C4F55BF25D8"
+			tasks: [
+				{
+					id: "7FE4934250BCEFC3"
+					type: "item"
+					title: "Burning Chamber"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_burner"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_burner"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7C0EC980A3F2A503"
+					type: "item"
+					title: "Boiler"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_boiler"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_boiler"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "195BC1F02E51D8AF"
+					type: "item"
+					title: "Steam Engine"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "steampowered:bronze_steam_engine"
+									Count: 1b
+								}
+								{
+									id: "steampowered:cast_iron_steam_engine"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Basic Storage Network"
+			x: -3.5d
+			y: 0.0d
+			dependencies: [
+				"530392498F50A2AE"
+				"6FB843E23682C2DA"
+				"4F5802C3CB85C25B"
+			]
+			dependency_requirement: "one_completed"
+			id: "5160A319C6E43EA0"
+			tasks: [
+				{
+					id: "7D6E568DF6F7473D"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "5BE7555B44079757"
+					type: "item"
+					item: "storagenetwork:inventory"
+				}
+				{
+					id: "355923547DEEC24E"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+				}
+			]
+		}
+		{
+			title: "Advanced Storage Network"
+			x: -5.0d
+			y: 0.5d
+			description: ["Fancy some automatic inputs and outputs?"]
+			dependencies: ["5160A319C6E43EA0"]
+			id: "12201FDC25F41EC4"
+			tasks: [
+				{
+					id: "21225B3AE8C3F35F"
+					type: "item"
+					item: "storagenetwork:request"
+				}
+				{
+					id: "59CCE2EDD6B1481A"
+					type: "item"
+					item: "storagenetwork:import_kabel"
+				}
+				{
+					id: "50317FCB5B653E7A"
+					type: "item"
+					item: "storagenetwork:export_kabel"
+				}
+				{
+					id: "75D43C452DB68BB4"
+					type: "item"
+					item: "storagenetwork:collector"
+				}
+				{
+					id: "19F012C74C225F09"
+					type: "item"
+					item: "storagenetwork:stack_upgrade"
+				}
+				{
+					id: "2157C5F6DDBF3F2D"
+					type: "item"
+					item: "storagenetwork:speed_upgrade"
+				}
+			]
+		}
+		{
+			title: "Master Storage System"
+			x: -6.5d
+			y: 1.0d
+			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
+			dependencies: ["12201FDC25F41EC4"]
+			id: "45B064317F8E62A0"
+			tasks: [
+				{
+					id: "61B06F7E71FDA2CC"
+					type: "item"
+					item: "storagenetwork:import_filter_kabel"
+				}
+				{
+					id: "0AC71E5007366007"
+					type: "item"
+					item: "storagenetwork:filter_kabel"
+				}
+				{
+					id: "1885A28330CBE411"
+					type: "item"
+					item: "storagenetwork:inventory_remote"
+				}
+				{
+					id: "4B843B1A96C41044"
+					type: "item"
+					item: "storagenetwork:crafting_remote"
+				}
+				{
+					id: "153561553AE613EE"
+					type: "item"
+					item: "storagenetwork:picker_remote"
+				}
+				{
+					id: "123DED55BB8E13EB"
+					type: "item"
+					item: "storagenetwork:collector_remote"
+				}
+				{
+					id: "1929AF2D4888747B"
+					type: "item"
+					item: "storagenetwork:builder_remote"
+				}
+			]
+		}
+		{
+			title: "Personal Improvement"
+			x: -5.0d
+			y: -0.5d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "4B592B561F7D8917"
+			tasks: [
+				{
+					id: "0353FBCF87A4FAA8"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F300404AC2C0B9C"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "0C7C01B5042D5089"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00E865782C14DD2A"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0427DB61746D6D7E"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E9E933FB56FCF89"
+					type: "item"
+					item: "create:linked_controller"
+				}
+			]
+		}
+		{
+			title: "Totems"
+			x: 0.5d
+			y: -4.0d
+			shape: "diamond"
+			dependencies: ["05372402DBC26E39"]
+			id: "52991EE4099F1253"
+			tasks: [{
+				id: "175BEB40CD021966"
+				type: "item"
+				title: "Any Totem"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "minecraft:totem_of_undying"
+								Count: 1b
+							}
+							{
+								id: "voidtotem:totem_of_void_undying"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Smeltery Side-grade"
+			x: -2.0d
+			y: -1.5d
+			dependencies: [
+				"0F828792BEE1DC4F"
+				"4F5802C3CB85C25B"
+			]
+			id: "3409F08778C9EC83"
+			tasks: [
+				{
+					id: "4EBDB1953A484086"
+					type: "item"
+					item: "tconstruct:scorched_alloyer"
+				}
+				{
+					id: "4F789221A1A17B60"
+					type: "item"
+					title: "Any #tconstruct:scorched_tanks"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:scorched_tanks"
+						}
+					}
+				}
+				{
+					id: "1DDA13257CE71F67"
+					type: "item"
+					item: "tconstruct:scorched_faucet"
+				}
+				{
+					id: "674FC2A16779C2B4"
+					type: "item"
+					item: "tconstruct:scorched_table"
+				}
+				{
+					id: "4D1DF0794A1314A7"
+					type: "item"
+					title: "Any #tconstruct:casts"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:casts"
+						}
+					}
+				}
+				{
+					id: "0E5126008B1074FD"
+					type: "item"
+					item: "tconstruct:scorched_basin"
+				}
+				{
+					id: "2B2339300839115F"
+					type: "item"
+					item: "tconstruct:foundry_controller"
+				}
+				{
+					id: "5A7F205C9A4052F7"
+					type: "item"
+					item: "tconstruct:scorched_drain"
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
 			shape: "octagon"
 			id: "00E4D5A2C3F9A861"
 			tasks: [{
@@ -19,8 +445,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -3.5d
+			x: 4.5d
+			y: 0.5d
 			id: "69D1AE70AEE6A509"
 			tasks: [{
 				id: "1E2655FDBE60B0D1"
@@ -29,8 +455,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -2.5d
+			x: 5.5d
+			y: 0.5d
 			id: "43BE2FC96EE14FCF"
 			tasks: [{
 				id: "48F4908427372155"
@@ -39,8 +465,9 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -5.5d
+			x: 0.5d
+			y: -1.5d
+			dependencies: ["00E4D5A2C3F9A861"]
 			id: "709EBCAD5B426A6F"
 			tasks: [{
 				id: "402030272E8D227A"
@@ -49,18 +476,9 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -5.0d
-			id: "0975892805CFAFF4"
-			tasks: [{
-				id: "6BB0EF08F8D129E3"
-				type: "item"
-				item: "minecraft:blaze_rod"
-			}]
-		}
-		{
-			x: -1.0d
-			y: -6.5d
+			x: 1.0d
+			y: -3.0d
+			dependencies: ["709EBCAD5B426A6F"]
 			id: "05372402DBC26E39"
 			tasks: [{
 				id: "23096ED75305BA9C"
@@ -70,8 +488,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -7.0d
+			x: 2.5d
+			y: -3.0d
+			dependencies: ["05372402DBC26E39"]
 			id: "70208F2DF7FFB8BC"
 			tasks: [{
 				id: "07B4B0602DA111B1"
@@ -91,8 +510,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -6.0d
+			x: 2.5d
+			y: -4.0d
+			dependencies: ["05372402DBC26E39"]
 			id: "3E2EF8F8B3B577EF"
 			tasks: [{
 				id: "4CAC1C800FADB92B"
@@ -101,8 +521,9 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -7.5d
+			x: 1.5d
+			y: -4.5d
+			dependencies: ["05372402DBC26E39"]
 			id: "40D32734AF052093"
 			tasks: [{
 				id: "5D00A3E8571A1CE7"
@@ -111,18 +532,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -6.0d
-			id: "2360C9C0330301B6"
-			tasks: [{
-				id: "07BB1BF25386788C"
-				type: "item"
-				item: "create:blaze_burner"
-			}]
-		}
-		{
-			x: -4.0d
-			y: 0.5d
+			x: 5.5d
+			y: 7.5d
 			id: "30C45327DF396EDF"
 			tasks: [{
 				id: "4E0D32E698ED5C57"
@@ -131,8 +542,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 0.5d
+			x: 5.5d
+			y: 6.5d
 			id: "164D87647F91D4E8"
 			tasks: [{
 				id: "170FC56AC7B33F72"
@@ -141,8 +552,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -0.5d
+			x: 5.5d
+			y: 5.5d
 			id: "3C8B737A95F9572A"
 			tasks: [{
 				id: "13A85B1469701B31"
@@ -151,8 +562,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -0.5d
+			x: 4.5d
+			y: 5.5d
 			id: "3196B75C491FCF23"
 			tasks: [{
 				id: "60BA49B4B762AF53"
@@ -161,8 +572,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -1.5d
+			x: 6.5d
+			y: 6.5d
 			id: "62F5681AF4E41D4A"
 			tasks: [{
 				id: "23A6D8289E730028"
@@ -171,8 +582,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -1.5d
+			x: 4.5d
+			y: 6.5d
 			id: "0F4181187A6A9592"
 			tasks: [{
 				id: "252261F439E2FACA"
@@ -181,8 +592,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 0.5d
+			x: 6.5d
+			y: 5.5d
 			id: "76C9179CE460F680"
 			tasks: [{
 				id: "5580FAB12912975B"
@@ -191,8 +602,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -1.5d
+			x: 6.5d
+			y: 7.5d
 			id: "27A93D9AAB6311C1"
 			tasks: [{
 				id: "10D55BB1D3F0C028"
@@ -201,8 +612,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 0.5d
+			x: 4.5d
+			y: 7.5d
 			id: "40F4F67EB7336CE1"
 			tasks: [{
 				id: "16E13D75B47C523B"
@@ -211,8 +622,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -0.5d
+			x: 5.5d
+			y: 3.5d
 			id: "5F1FA12555E8F65F"
 			tasks: [{
 				id: "08AC466DFF7E975D"
@@ -221,8 +632,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
+			x: 6.5d
+			y: 3.5d
 			id: "3F325E27C2CE11B9"
 			tasks: [{
 				id: "4F0D42C5BFD64E64"
@@ -231,8 +642,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -0.5d
+			x: 4.5d
+			y: 3.5d
 			id: "5E3C25FB6E2DB7FB"
 			tasks: [{
 				id: "3691871BC5F96EEA"
@@ -241,8 +652,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -1.5d
+			x: 8.5d
+			y: 2.5d
 			id: "53930F8884EB7849"
 			tasks: [{
 				id: "7AC8E901C1C00764"
@@ -251,8 +662,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -0.5d
+			x: 7.5d
+			y: 2.5d
 			id: "05414DFDA7B6399F"
 			tasks: [{
 				id: "598BDE3B2B41FB61"
@@ -261,8 +672,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -1.5d
+			x: 5.5d
+			y: 2.5d
 			id: "19304DC4E641348F"
 			tasks: [{
 				id: "7A10261215E64D1B"
@@ -271,8 +682,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -0.5d
+			x: 6.5d
+			y: 2.5d
 			id: "5C48402B28B3728A"
 			tasks: [{
 				id: "1E7AAF1C48F5EB89"
@@ -281,8 +692,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 0.5d
+			x: 4.5d
+			y: 2.5d
 			id: "0F6AF5B9D6AD0BDE"
 			tasks: [{
 				id: "61A408037C478DBD"
@@ -291,8 +702,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -2.5d
+			x: 6.5d
+			y: 4.5d
 			id: "525EC19D6FBE9130"
 			tasks: [{
 				id: "3C28C602F74E7771"
@@ -301,8 +712,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: -2.5d
+			x: 5.5d
+			y: 4.5d
 			id: "0FBD152B08AE12DA"
 			tasks: [{
 				id: "2890A8A432DB9B41"
@@ -311,8 +722,10 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -3.5d
+			title: "Nether Materials"
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["00E4D5A2C3F9A861"]
 			id: "4F5802C3CB85C25B"
 			tasks: [
 				{
@@ -329,6 +742,262 @@
 					id: "6A627873BA1AFA9C"
 					type: "item"
 					item: "tconstruct:cobalt_nugget"
+				}
+				{
+					id: "3598D1FEE3940070"
+					type: "item"
+					item: "minecraft:glowstone_dust"
+				}
+				{
+					id: "389A87E1323FDF43"
+					type: "item"
+					item: "minecraft:nether_wart"
+				}
+				{
+					id: "7E8F72733A58EB6B"
+					type: "item"
+					item: "minecraft:magma_cream"
+				}
+				{
+					id: "479C8C37DBC39FE2"
+					type: "item"
+					item: "minecraft:blaze_rod"
+				}
+			]
+		}
+		{
+			title: "Crafting Your Way to the End"
+			x: -1.0d
+			y: -6.5d
+			dependencies: [
+				"00E2150629E600D8"
+				"19D6506369671503"
+			]
+			id: "46F04F5E976877E7"
+			tasks: [{
+				id: "03328B628204C7ED"
+				type: "item"
+				item: "minecraft:end_portal_frame"
+				count: 12L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			id: "0A8B2AE8D8E56147"
+			tasks: [{
+				id: "10039637971CC508"
+				type: "structure"
+				structure: "infernalexp:strider_altar"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.5d
+			id: "509833292CEA3E57"
+			tasks: [{
+				id: "7864BFED50BA5A25"
+				type: "structure"
+				structure: "infernalexp:bastion_outpost"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.5d
+			id: "28A7D452E5AF7A5B"
+			tasks: [{
+				id: "1F1E14C0FB7D7B1A"
+				type: "structure"
+				structure: "infernalexp:glowstone_canyon_ruin"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.5d
+			id: "3E0D61F2209E2F8C"
+			tasks: [{
+				id: "3CB579CE6EE085C4"
+				type: "structure"
+				structure: "infernalexp:soul_sand_valley_ruin"
+			}]
+		}
+		{
+			title: "Prepare for DEATH"
+			icon: {
+				id: "cataclysm:infernal_forge"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: 0.0d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "264C220DE37F34BA"
+			tasks: [{
+				id: "4A784B619F6F06F2"
+				type: "structure"
+				structure: "cataclysm:soul_black_smith"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.5d
+			id: "72985EC2DC87BB9B"
+			tasks: [{
+				id: "79BB49B1AA5E90F2"
+				type: "structure"
+				structure: "tconstruct:nether_slime_island"
+			}]
+		}
+		{
+			title: "Electrics"
+			x: -4.0d
+			y: -2.5d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "2CA4ED9DC14D29BA"
+			tasks: [
+				{
+					id: "3AEC0C68828460AB"
+					type: "item"
+					item: "createaddition:tesla_coil"
+				}
+				{
+					id: "0605C0535C3F2D36"
+					type: "item"
+					item: "createaddition:alternator"
+				}
+				{
+					id: "298EB46538FF4C18"
+					type: "item"
+					item: "createaddition:connector"
+				}
+				{
+					id: "021CD01CF8E7BADC"
+					type: "item"
+					title: "Wire Spool"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "createaddition:copper_spool"
+									Count: 1b
+								}
+								{
+									id: "createaddition:gold_spool"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.5d
+			y: -4.0d
+			dependencies: [
+				"2CA4ED9DC14D29BA"
+				"2053A79BD5581BB2"
+			]
+			hide: true
+			id: "395B71E6E88244E6"
+			tasks: [{
+				id: "6BB71137BAD31EBF"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -5.5d
+			dependencies: [
+				"40D32734AF052093"
+				"2053A79BD5581BB2"
+			]
+			hide: true
+			id: "19D6506369671503"
+			tasks: [{
+				id: "225E903B63B9CF79"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -3.0d
+			dependencies: ["3441145CEBF76F0C"]
+			id: "2053A79BD5581BB2"
+			tasks: [{
+				id: "0E7FB1854D85EACC"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.5d
+			dependencies: ["2053A79BD5581BB2"]
+			hide: true
+			id: "00E2150629E600D8"
+			tasks: [{
+				id: "79394ED1383FDA0B"
+				type: "item"
+				item: "create:shadow_steel"
+			}]
+		}
+		{
+			title: "A Builder's Best Frenemy"
+			x: 2.5d
+			y: -5.0d
+			dependencies: ["3E2EF8F8B3B577EF"]
+			id: "33B06FD562AC30CC"
+			tasks: [{
+				id: "538E44BC125ADF54"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			subtitle: "Use this to turn your Runes Dark. Activate with a Dark Nether Star"
+			dependencies: ["3E2EF8F8B3B577EF"]
+			id: "25782E5C25E18578"
+			tasks: [{
+				id: "3477BC3488C58146"
+				type: "item"
+				item: "forbidden_arcanus:runic_tenebris_frame"
+			}]
+		}
+		{
+			title: "Charging Your Planes"
+			x: -5.5d
+			y: -3.0d
+			dependencies: ["2CA4ED9DC14D29BA"]
+			id: "516E47A6B726E806"
+			tasks: [
+				{
+					id: "31B8E823DB9DEB18"
+					type: "item"
+					item: "simpleplanes:charging_station"
+				}
+				{
+					id: "7F7FA4099A7D9FC0"
+					type: "item"
+					item: "simpleplanes:electric_engine"
 				}
 			]
 		}

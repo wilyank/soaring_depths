@@ -1,0 +1,11 @@
+{
+	id: "3C8128472BA35792"
+	group: ""
+	order_index: 2
+	filename: "end"
+	title: "End"
+	icon: "betterendforge:chorus_nylium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

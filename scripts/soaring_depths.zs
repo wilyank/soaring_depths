@@ -28,6 +28,13 @@ forge_gems.add(<item:bloodmagic:lavacrystal>);
 <tag:items:forge:lanterns>.add(<item:tconstruct:scorched_lantern>);
 <tag:items:forge:lanterns>.add(<item:tconstruct:seared_lantern>);
 
+<tag:items:forge:cogwheels>.add(<item:steampowered:bronze_cogwheel>);
+<tag:items:forge:cogwheels>.add(<item:steampowered:cast_iron_cogwheel>);
+<tag:items:forge:cogwheels>.add(<item:steampowered:steel_cogwheel>);
+<tag:items:forge:large_cogwheels>.add(<item:steampowered:bronze_large_cogwheel>);
+<tag:items:forge:large_cogwheels>.add(<item:steampowered:bronze_large_cogwheel>);
+<tag:items:forge:large_cogwheels>.add(<item:steampowered:steel_large_cogwheel>);
+
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
 // remove distracting item filters
@@ -43,13 +50,20 @@ var _ = <item:minecraft:air>;
 // end portal
 craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
 craftingTable.addShaped("end_portal_frame", 
-    <item:minecraft:end_portal_frame>, 
+    <item:minecraft:end_portal_frame>*3, 
     [
-        [_, <item:minecraft:ender_pearl>, _],
+        [_, <item:create:shadow_steel>, _],
         [<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], 
-        [<item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>, <item:infernalexp:glowstone_bricks>]
+        [<item:infernalexp:glowstone_bricks>, <item:create:refined_radiance>, <item:infernalexp:glowstone_bricks>]
     ]);
-
+craftingTable.addShaped("end_crystal",
+    <item:minecraft:end_crystal>,
+    [
+        [<tag:items:forge:glass/colorless>, <tag:items:forge:glass/colorless>, <tag:items:forge:glass/colorless>],
+        [<tag:items:forge:glass/colorless>, <item:minecraft:ender_eye>, <tag:items:forge:glass/colorless>],
+        [<tag:items:forge:glass/colorless>, <item:eidolon:wraith_heart>, <tag:items:forge:glass/colorless>]
+    ]
+);
 
 // BOP sand casts
 craftingTable.addShapeless("wite_sand_cast", 
@@ -387,10 +401,18 @@ craftingTable.addShaped("mining_helmet",
 <recipetype:create:filling>.addRecipe("brass_casing",
     <item:create:brass_casing>,
     <tag:items:minecraft:logs>,
-    <fluid:tconstruct:molten_brass>  
+    <fluid:tconstruct:molten_brass>*144  
 );
 
-
+craftingTable.removeRecipe(<item:create:deployer>);
+craftingTable.addShaped("deployer",
+    <item:create:deployer>,
+    [
+        [_, <tag:items:forge:cogwheels>, _],
+        [<tag:items:forge:cogwheels>, <item:create:brass_casing>, <tag:items:forge:cogwheels>],
+        [_, <item:create:brass_hand>, _]
+    ]
+);
 
 // crushed ores
 furnace.removeByName("minecraft:iron_ingot");
