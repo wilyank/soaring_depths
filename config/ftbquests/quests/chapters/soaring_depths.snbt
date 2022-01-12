@@ -1,19 +1,20 @@
 {
 	id: "7721277CB4BB2E39"
-	group: ""
+	group: "4C3A2A3D8FDBADEB"
 	order_index: 0
 	filename: "soaring_depths"
-	title: "Soaring Depths"
+	title: "Overworld"
 	icon: "minecraft:grass_block"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Toolmaking"
-			x: -2.0d
+			x: -0.5d
 			y: -1.0d
 			shape: "hexagon"
 			subtitle: "All a tool shop needs"
+			dependencies: ["472201D5EAC73A69"]
 			id: "103BBB9EE1DB0526"
 			tasks: [
 				{
@@ -50,7 +51,7 @@
 			}]
 		}
 		{
-			x: -3.0d
+			x: -1.5d
 			y: 1.0d
 			subtitle: "Great for Melting Stuff"
 			dependencies: ["103BBB9EE1DB0526"]
@@ -97,7 +98,7 @@
 		}
 		{
 			title: "Smeltery"
-			x: -4.5d
+			x: -3.0d
 			y: 1.0d
 			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
@@ -139,9 +140,10 @@
 		}
 		{
 			title: "Magical Ores"
-			x: -1.0d
+			x: 0.5d
 			y: -1.0d
 			shape: "hexagon"
+			dependencies: ["472201D5EAC73A69"]
 			id: "6C27D59380778FF1"
 			tasks: [
 				{
@@ -179,7 +181,7 @@
 		}
 		{
 			title: "Eidolon"
-			x: 0.0d
+			x: 1.5d
 			y: -3.0d
 			subtitle: "The road to power is paved with corpses"
 			description: ["Use this guide well"]
@@ -210,7 +212,7 @@
 		}
 		{
 			title: "Astral Sorcery"
-			x: 2.5d
+			x: 4.5d
 			y: -1.0d
 			subtitle: "Stargazing time"
 			dependencies: [
@@ -283,7 +285,7 @@
 			}]
 		}
 		{
-			x: 0.0d
+			x: 1.5d
 			y: 1.0d
 			dependencies: ["6C27D59380778FF1"]
 			id: "6D19DBB61E7BA7DE"
@@ -296,7 +298,7 @@
 		}
 		{
 			title: "Black Hole Shenanigans"
-			x: 4.5d
+			x: 6.5d
 			y: 1.0d
 			dependencies: ["6D19DBB61E7BA7DE"]
 			id: "6ED5B14AFEF8AA44"
@@ -319,7 +321,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 7.0d
 			y: 0.0d
 			dependencies: ["6ED5B14AFEF8AA44"]
 			id: "1224891D38AFE539"
@@ -332,7 +334,7 @@
 		{
 			title: "Stella Arcanum"
 			icon: "forbidden_arcanus:stella_arcanum"
-			x: 7.0d
+			x: 9.0d
 			y: 0.0d
 			subtitle: "Solidified Magic + Starlight = Magical Star"
 			dependencies: [
@@ -348,7 +350,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 5.5d
 			y: -1.0d
 			dependencies: ["567200F26E42CA7F"]
 			id: "0BED126A098F5636"
@@ -366,7 +368,7 @@
 			]
 		}
 		{
-			x: 5.5d
+			x: 7.5d
 			y: -1.0d
 			dependencies: ["436B7F15C6A13C48"]
 			id: "5E049F73506FFBE5"
@@ -378,7 +380,7 @@
 		}
 		{
 			title: "Trapping the light"
-			x: 4.5d
+			x: 6.5d
 			y: -1.0d
 			dependencies: ["0BED126A098F5636"]
 			id: "436B7F15C6A13C48"
@@ -394,7 +396,7 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 8.5d
 			y: -1.0d
 			dependencies: ["5E049F73506FFBE5"]
 			id: "01B8946F3D2BBB1B"
@@ -406,7 +408,7 @@
 		}
 		{
 			title: "Questionable Friends"
-			x: 1.0d
+			x: 2.5d
 			y: -3.0d
 			dependencies: ["230D36713B063759"]
 			id: "058442E9170FB612"
@@ -430,7 +432,7 @@
 		}
 		{
 			title: "Calling Favours"
-			x: 2.0d
+			x: 3.5d
 			y: -3.0d
 			dependencies: ["058442E9170FB612"]
 			id: "114A4DD936FEE504"
@@ -454,7 +456,7 @@
 		}
 		{
 			title: "Gone Cackling"
-			x: 2.5d
+			x: 4.0d
 			y: -4.0d
 			dependencies: ["114A4DD936FEE504"]
 			id: "62ED5A7BBE82E81E"
@@ -523,7 +525,7 @@
 		}
 		{
 			title: "Bloodying Your Hands"
-			x: 1.0d
+			x: 2.5d
 			y: -5.0d
 			dependencies: ["5180661B35362BD1"]
 			id: "2FBBF90641C30260"
@@ -547,7 +549,7 @@
 			]
 		}
 		{
-			x: 10.0d
+			x: 12.0d
 			y: 1.0d
 			description: ["Use this to turn your Runes dark"]
 			dependencies: [
@@ -570,7 +572,7 @@
 		}
 		{
 			title: "A Basis for Baubles"
-			x: 0.5d
+			x: 2.0d
 			y: -4.0d
 			dependencies: ["230D36713B063759"]
 			id: "5180661B35362BD1"
@@ -593,7 +595,7 @@
 			]
 		}
 		{
-			x: 8.5d
+			x: 10.5d
 			y: -1.0d
 			dependencies: ["4CDD8725B9F5571B"]
 			id: "061E5BF316C8B69E"
@@ -604,7 +606,7 @@
 			}]
 		}
 		{
-			x: 9.5d
+			x: 11.5d
 			y: -1.0d
 			dependencies: ["061E5BF316C8B69E"]
 			id: "5F9B898EE8166C73"
@@ -616,7 +618,7 @@
 		}
 		{
 			title: "Grow Your Own Crystal DIY Kit"
-			x: 7.5d
+			x: 9.5d
 			y: -1.0d
 			dependencies: ["01B8946F3D2BBB1B"]
 			id: "4CDD8725B9F5571B"
@@ -650,7 +652,7 @@
 			}]
 		}
 		{
-			x: 10.5d
+			x: 12.5d
 			y: -1.0d
 			dependencies: ["5F9B898EE8166C73"]
 			id: "66EDA6545CA4149A"
@@ -661,7 +663,7 @@
 			}]
 		}
 		{
-			x: 11.5d
+			x: 13.5d
 			y: -1.0d
 			dependencies: ["66EDA6545CA4149A"]
 			id: "6BDAB55CE5D502C9"
@@ -673,7 +675,7 @@
 		}
 		{
 			title: "Mundane is Not Boring"
-			x: -3.0d
+			x: -1.5d
 			y: -3.0d
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "10B47CA6C72372F3"
@@ -706,7 +708,7 @@
 		}
 		{
 			title: "Ready to Get Creative"
-			x: -4.0d
+			x: -2.5d
 			y: -3.0d
 			dependencies: ["10B47CA6C72372F3"]
 			id: "771A22A8D5C1F2C5"
@@ -747,7 +749,7 @@
 		}
 		{
 			title: "Basic Processing"
-			x: -6.0d
+			x: -4.5d
 			y: -3.0d
 			dependencies: ["4EB93D58A62C90CA"]
 			id: "6FB843E23682C2DA"
@@ -781,7 +783,7 @@
 		}
 		{
 			title: "Liquid Processing"
-			x: -6.5d
+			x: -5.0d
 			y: -2.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "56923B891152AA07"
@@ -820,7 +822,7 @@
 		}
 		{
 			title: "The Power To Change The World"
-			x: -6.5d
+			x: -5.0d
 			y: -4.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "6D8255565710100F"
@@ -865,7 +867,7 @@
 		}
 		{
 			title: "Early-Game Power"
-			x: -5.0d
+			x: -3.5d
 			y: -3.0d
 			dependencies: ["771A22A8D5C1F2C5"]
 			id: "4EB93D58A62C90CA"
@@ -896,7 +898,7 @@
 		}
 		{
 			title: "Put those shards to work"
-			x: -0.5d
+			x: 1.0d
 			y: -4.0d
 			dependencies: ["230D36713B063759"]
 			id: "26F03151E6999FCE"
@@ -908,7 +910,7 @@
 		}
 		{
 			title: "Smart Storage Drawers"
-			x: -7.0d
+			x: -5.5d
 			y: -1.0d
 			dependencies: [
 				"56923B891152AA07"
@@ -935,7 +937,7 @@
 		}
 		{
 			title: "Storage Drawers"
-			x: -4.5d
+			x: -3.0d
 			y: -1.0d
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "3624A74DAF4EEABA"
@@ -954,7 +956,7 @@
 		}
 		{
 			title: "Getting Started"
-			x: -1.5d
+			x: 0.0d
 			y: 0.0d
 			id: "472201D5EAC73A69"
 			tasks: [
@@ -991,7 +993,7 @@
 		}
 		{
 			title: "Basic Item Transportation"
-			x: -7.0d
+			x: -5.5d
 			y: -3.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "7CA4E9527355FCAC"
@@ -1017,6 +1019,149 @@
 					item: "create:chute"
 				}
 			]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			id: "3EB91DD38C059277"
+			tasks: [{
+				id: "3A7B187492911158"
+				type: "item"
+				item: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			id: "11BE7DD0E0ED7C32"
+			tasks: [{
+				id: "5CECF22551032B72"
+				type: "kill"
+				entity: "minecraft:elder_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6C538E744B6C0076"
+				type: "item"
+				item: "minecraft:wet_sponge"
+				count: 3
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			id: "33450A19619CD1CB"
+			tasks: [{
+				id: "0DF185632027C578"
+				type: "item"
+				item: "minecraft:conduit"
+			}]
+		}
+		{
+			title: "Economist"
+			x: 0.0d
+			y: 3.0d
+			id: "7D5DEFCC6F4B1948"
+			tasks: [
+				{
+					id: "19B066E659154685"
+					type: "advancement"
+					title: "Trade with a Kobold"
+					advancement: "kobolds:kobold_trader_advancement"
+					criterion: ""
+				}
+				{
+					id: "44F40C7247CD223D"
+					type: "advancement"
+					title: "Trade with a Villager or Wandering Trader"
+					advancement: "minecraft:adventure/trade"
+					criterion: ""
+				}
+				{
+					id: "28AB3A9D4CBD968B"
+					type: "advancement"
+					title: "Trade with a Kobold Engineer"
+					advancement: "kobolds:kobold_engineer_advancement"
+					criterion: ""
+				}
+				{
+					id: "746D3FEB6B136B86"
+					type: "advancement"
+					title: "Trade with a Kobold Enchanter"
+					advancement: "kobolds:kobold_enchanter_advancement"
+					criterion: ""
+				}
+				{
+					id: "0894C0E1CF3FB666"
+					type: "advancement"
+					title: "Cure a Zombie Villager"
+					advancement: "minecraft:story/cure_zombie_villager"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 3.0d
+			id: "43ACA0B2EFCFB9A6"
+			tasks: [{
+				id: "2E28A65B3F84B320"
+				type: "kill"
+				icon: "mowziesmobs:wrought_helmet"
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				value: 1L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "3D387EA2D702027B"
+			tasks: [{
+				id: "7FE1D23D8D7E96F9"
+				type: "item"
+				item: "simpleplanes:plane_workbench"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			dependencies: ["103BBB9EE1DB0526"]
+			id: "62A36E8F4314F68A"
+			tasks: [
+				{
+					id: "6AF7D1864E7EF12C"
+					type: "item"
+					item: "improvedbackpacks:sewing_table"
+				}
+				{
+					id: "48DC5BA802AC31C3"
+					type: "item"
+					item: "improvedbackpacks:sewing_spool"
+				}
+				{
+					id: "3A97261982D70F7A"
+					type: "item"
+					item: {
+						id: "minecraft:shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "04ED962B8BC20216"
+				type: "item"
+				item: "improvedbackpacks:tiny_pocket"
+			}]
 		}
 	]
 }

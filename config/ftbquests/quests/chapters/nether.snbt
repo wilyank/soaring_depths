@@ -1,6 +1,6 @@
 {
 	id: "4B26414638283653"
-	group: ""
+	group: "4C3A2A3D8FDBADEB"
 	order_index: 1
 	filename: "nether"
 	title: "Nether"
@@ -830,7 +830,7 @@
 					Damage: 0
 				}
 			}
-			x: -1.0d
+			x: -0.5d
 			y: -1.5d
 			dependencies: ["00E4D5A2C3F9A861"]
 			id: "264C220DE37F34BA"
@@ -1002,7 +1002,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: 0.0d
 			y: 2.5d
 			dependencies: ["00E4D5A2C3F9A861"]
 			id: "4FEFA50D4182C0BB"
@@ -1013,7 +1013,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: 2.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "43D0ED3A0CA129B1"
@@ -1030,8 +1030,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 3.5d
+			x: -1.0d
+			y: 1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "78C170840CFCACE9"
 			tasks: [{
@@ -1047,7 +1047,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -1.0d
 			y: 3.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "136C3A4F41B1D166"
@@ -1058,7 +1058,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: 1.0d
 			y: 1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "6A9B3D23D3F008B9"
@@ -1075,7 +1075,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.0d
 			y: 2.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "624181FF7C850F5C"
@@ -1086,7 +1086,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: 1.0d
 			y: 3.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "7E8248CC2A1C5988"
@@ -1106,6 +1106,233 @@
 				type: "item"
 				item: "minecraft:respawn_anchor"
 			}]
+		}
+		{
+			x: -3.0d
+			y: 2.0d
+			dependencies: ["4F5802C3CB85C25B"]
+			id: "7CACD318ADF849E2"
+			tasks: [{
+				id: "7E085E672B8CD900"
+				type: "item"
+				item: "mutantbeasts:chemical_x"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 4.5d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "50DF135EB0EE40F8"
+			tasks: [{
+				id: "42DC5D4B4B3B12EF"
+				type: "item"
+				item: "mutantmore:formula_y"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 7.0d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "1F6A8A60EF0C38E5"
+			tasks: [{
+				id: "1625CB394ABB2691"
+				type: "item"
+				item: "mutantmore:compound_z"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 3.0d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "2D494F2F0297795A"
+			tasks: [{
+				id: "70634713FAB6BEB7"
+				type: "kill"
+				entity: "mutantbeasts:mutant_creeper"
+				value: 1L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "4B844CA923B26EAC"
+			tasks: [{
+				id: "1773CD165562311B"
+				type: "kill"
+				entity: "mutantbeasts:mutant_enderman"
+				value: 1L
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "4216EA0568664273"
+			tasks: [{
+				id: "77699D6B319ADADC"
+				type: "kill"
+				entity: "mutantbeasts:mutant_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 1.0d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "2924BD54947CF38D"
+			tasks: [{
+				id: "33DCC27186B423A1"
+				type: "kill"
+				entity: "mutantbeasts:mutant_zombie"
+				value: 1L
+			}]
+		}
+		{
+			icon: {
+				id: "cataclysm:monstrous_helm"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: -3.0d
+			dependencies: ["264C220DE37F34BA"]
+			id: "7B84CAF2F44CE4AB"
+			tasks: [{
+				id: "676EA4230AD242D2"
+				type: "kill"
+				title: "Through the Fire and the Flames"
+				entity: "cataclysm:netherite_monstrosity"
+				value: 1L
+			}]
+		}
+		{
+			x: -1.0d
+			y: 5.0d
+			dependencies: ["3EB956128D8E865C"]
+			id: "762C9D1C7E515D8E"
+			tasks: [{
+				id: "6A0A87D4FABA4620"
+				type: "item"
+				item: "cataclysm:ignitium_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			id: "6E32F9A83144275D"
+			tasks: [{
+				id: "495FE98566985480"
+				type: "kill"
+				entity: "mutantbeasts:spider_pig"
+				value: 1L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.5d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "3EB956128D8E865C"
+			tasks: [{
+				id: "0E3AFAF58F376810"
+				type: "kill"
+				entity: "mutantmore:mutant_blaze"
+				value: 1L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 5.5d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "13118062EEBEF110"
+			tasks: [{
+				id: "7E1EAD611517CA30"
+				type: "kill"
+				entity: "mutantmore:mutant_hoglin"
+				value: 1L
+			}]
+		}
+		{
+			x: -3.5d
+			y: 5.5d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "2ABF7C2129D4BA74"
+			tasks: [{
+				id: "252F15F3883A6D43"
+				type: "kill"
+				entity: "mutantmore:mutant_husk"
+				value: 1L
+			}]
+		}
+		{
+			x: -5.0d
+			y: 4.5d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "61962EE695CB94DA"
+			tasks: [{
+				id: "57449A9A2509D401"
+				type: "kill"
+				entity: "mutantmore:mutant_wither_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			title: "Ignitium Armor Set"
+			x: 0.0d
+			y: 5.5d
+			dependencies: [
+				"4FEFA50D4182C0BB"
+				"762C9D1C7E515D8E"
+			]
+			id: "2BD80774847DC5C4"
+			tasks: [
+				{
+					id: "4EBA40C34504A972"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "111AE18215D15419"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "609D9F980D0AD90B"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4EFA796938AA7A4A"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }

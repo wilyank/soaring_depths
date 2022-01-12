@@ -1,6 +1,6 @@
 {
 	id: "3C8128472BA35792"
-	group: ""
+	group: "4C3A2A3D8FDBADEB"
 	order_index: 2
 	filename: "end"
 	title: "End"
@@ -9,6 +9,7 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
+			icon: "minecraft:end_stone"
 			x: 0.0d
 			y: 0.0d
 			id: "6A1A37C3500EC4A9"
@@ -326,6 +327,30 @@
 				type: "structure"
 				icon: "cataclysm:void_core"
 				structure: "cataclysm:ruined_citadel"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -7.5d
+			dependencies: ["744670D1196E8521"]
+			id: "258EF6B0DE7F5C52"
+			tasks: [{
+				id: "2E5615FB1C6A187B"
+				type: "kill"
+				entity: "cataclysm:ender_guardian"
+				value: 1L
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			dependencies: ["506743E13D35F54F"]
+			id: "51899DD0864A2493"
+			tasks: [{
+				id: "473F1B3910E650CB"
+				type: "kill"
+				entity: "mutantmore:mutant_shulker"
+				value: 1L
 			}]
 		}
 	]

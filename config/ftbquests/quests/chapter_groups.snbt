@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "4C3A2A3D8FDBADEB", title: "Progression" }
+		{ id: "7AA6A42EAAA7D2D9", title: "Side Quests" }
+	]
 }

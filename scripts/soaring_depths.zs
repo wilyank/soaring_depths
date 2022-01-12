@@ -456,4 +456,65 @@ furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
     <item:create:cinder_flour>,
     <fluid:tconstruct:blood>*25
 );
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("netherrack_casting",
+    <item:minecraft:cobblestone>,
+    <fluid:tconstruct:magma>*250,
+    <item:minecraft:netherrack>,
+    60,
+    true,
+    false
+);
 
+// ignitium
+var ii = <item:cataclysm:ignitium_ingot>;
+
+craftingTable.addShaped("ignitium_ingot",
+    ii,
+    [
+        [<item:forbidden_arcanus:arcane_gold_ingot>, <item:forbidden_arcanus:arcane_gold_ingot>, <item:forbidden_arcanus:arcane_gold_ingot>],
+        [<item:forbidden_arcanus:arcane_gold_ingot>, <item:mutantmore:mutant_blaze_core>, <item:forbidden_arcanus:arcane_gold_ingot>],
+        [<item:forbidden_arcanus:arcane_gold_ingot>, <item:forbidden_arcanus:arcane_gold_ingot>, <item:forbidden_arcanus:arcane_gold_ingot>]
+    ]
+);
+craftingTable.addShapeless("ignitium_ingot_from_block",
+    ii*9,
+    [<item:cataclysm:ignitium_block>]
+);
+craftingTable.addShapeless("ignitium_block",
+    <item:cataclysm:ignitium_block>,
+    [ii,ii,ii,
+    ii,ii,ii,
+    ii,ii,ii]
+);
+smithing.addRecipe("ignitium_helmet",
+    <item:cataclysm:ignitium_helmet>,
+    <item:minecraft:netherite_helmet>,
+    ii
+);
+smithing.addRecipe("ignitium_chestplate",
+    <item:cataclysm:ignitium_chestplate>,
+    <item:minecraft:netherite_chestplate>,
+    ii
+);
+smithing.addRecipe("ignitium_leggings",
+    <item:cataclysm:ignitium_leggings>,
+    <item:minecraft:netherite_leggings>,
+    ii
+);
+smithing.addRecipe("ignitium_boots",
+    <item:cataclysm:ignitium_boots>,
+    <item:minecraft:netherite_boots>,
+    ii
+);
+
+// Grappling hook
+craftingTable.removeRecipe(<item:grapplemod:baseupgradeitem>);
+craftingTable.addShaped("grappling_upgrade",
+    <item:grapplemod:baseupgradeitem>,
+    [
+        [_, <tag:items:forge:ingots/silicon_bronze>, _],
+        [<tag:items:forge:ingots/silicon_bronze>, <item:storagedrawers:upgrade_template>, <tag:items:forge:ingots/silicon_bronze>],
+        [_, <tag:items:minecraft:planks>, _]
+    ]
+);
+craftingTable.removeRecipe(<item:grapplemod:block_grapple_modifier>);
