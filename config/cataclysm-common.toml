@@ -1,21 +1,21 @@
 
 #Ender Guardian
 [enderguardian]
-	#Ender Guardian's block breaking Ignore the MobGriefing
-	"ender guardian's block breaking ignore the MobGriefing" = true
-	#Ender Guardian's BodyBlocking verdict
-	"ender guardian's bodyBlocking verdict" = true
-	#Ender Guardian's damage
-	#Range: 1 ~ 1000000
-	"ender guardian damage" = 16
-	#Ender Guardian's health
-	#Range: 1 ~ 1000000
-	"ender guardian health" = 300
 	#Ender Guardian's damage cap
 	#Range: 1 ~ 1000000
 	"ender guardian damage cap" = 22
+	#Ender Guardian's health
+	#Range: 1 ~ 1000000
+	"ender guardian health" = 300
+	#Ender Guardian's damage
+	#Range: 1 ~ 1000000
+	"ender guardian damage" = 16
+	#Ender Guardian's block breaking Ignore the MobGriefing
+	"ender guardian's block breaking ignore the MobGriefing" = true
 	#ruined citadel spawn
 	"ruined citadel spawn" = true
+	#Ender Guardian's BodyBlocking verdict
+	"ender guardian's bodyBlocking verdict" = true
 
 #Netherite Monstrosity
 [netheritemonstoristy]
@@ -24,20 +24,20 @@
 	#Monstorosity's damage
 	#Range: 1 ~ 1000000
 	"monstosity damage" = 22
+	#Monstorosity's damage cap
+	#Range: 1 ~ 1000000
+	"monstosity damage cap" = 22
+	#soul black smith spawn
+	"soul black smith spawn" = true
+	#Monstorosity's health
+	#Range: 1 ~ 1000000
+	"monstosity health" = 360
 	#Magazine of Lavabomb
 	#Range: 1 ~ 360
 	"lavabomb magazine" = 3
 	#Amount of Lavabomb
 	#Range: 3 ~ 15
 	"lavabomb amount" = 3
-	#Monstorosity's health
-	#Range: 1 ~ 1000000
-	"monstosity health" = 360
-	#Monstorosity's damage cap
-	#Range: 1 ~ 1000000
-	"monstosity damage cap" = 22
-	#soul black smith spawn
-	"soul black smith spawn" = true
 
 #Ender Golem
 [endergolem]
