@@ -518,3 +518,45 @@ craftingTable.addShaped("grappling_upgrade",
     ]
 );
 craftingTable.removeRecipe(<item:grapplemod:block_grapple_modifier>);
+
+craftingTable.removeRecipe(<item:simpleplanes:plane_workbench>);
+craftingTable.addShapedMirrored("plane_workbench",
+    <item:simpleplanes:plane_workbench>,
+    [
+        [<item:minecraft:iron_axe>, <tag:items:forge:plates/iron>, <item:simpleplanes:wrench>],
+        [<tag:items:forge:rods/iron>, <item:create:refined_radiance_casing>, <tag:items:forge:rods/iron>],
+        [<tag:items:forge:rods/iron>, <item:minecraft:crafting_table>, <tag:items:forge:rods/iron>]
+    ]
+);
+craftingTable.removeRecipe(<item:simpleplanes:charging_station>);
+craftingTable.addShapedMirrored("plane_charging_station",
+    <item:simpleplanes:charging_station>,
+    [
+        [<tag:items:forge:ingots/cobalt>, <item:minecraft:light_weighted_pressure_plate>, <tag:items:forge:ingots/cobalt>],
+        [<tag:items:forge:rods/gold>, <item:createaddition:overcharged_casing>, <tag:items:forge:rods/gold>],
+        [<tag:items:forge:ingots/cobalt>, <tag:items:forge:dusts/redstone>, <tag:items:forge:ingots/cobalt>]
+    ]
+);
+craftingTable.removeRecipe(<item:simpleplanes:electric_engine>);
+craftingTable.addShaped("plane_electric_engine",
+    <item:simpleplanes:electric_engine>,
+    [
+        [<tag:items:forge:ingots/cobalt>, <item:minecraft:light_weighted_pressure_plate>, <tag:items:forge:ingots/cobalt>],
+        [<item:createaddition:electric_motor>, <item:createaddition:overcharged_casing>, <item:createaddition:electric_motor>],
+        [<tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>, <tag:items:forge:plates/iron>]
+    ]
+);
+
+// knuckles
+craftingTable.removeRecipe(<item:curios:knuckles>);
+craftingTable.addShapedMirrored("brass_knuckles",
+    <item:curios:knuckles>,
+    [
+        [_, <tag:items:forge:nuggets/brass>, _],
+        [<tag:items:forge:ingots/brass>, <item:alexsmobs:guster_eye>, <tag:items:forge:nuggets/brass>],
+        [_, <tag:items:forge:ingots/brass>, _]
+    ]
+
+);
+// explorer's compass
+craftingTable.removeRecipe(<item:explorerscompass:explorerscompass>);

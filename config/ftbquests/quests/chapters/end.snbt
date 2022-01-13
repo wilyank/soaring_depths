@@ -75,7 +75,7 @@
 		}
 		{
 			x: 1.5d
-			y: -3.0d
+			y: -2.5d
 			dependencies: ["3411AA16C45C3819"]
 			id: "4B8E5831C9322BCF"
 			tasks: [{
@@ -86,7 +86,7 @@
 		}
 		{
 			x: -1.5d
-			y: -3.0d
+			y: -2.5d
 			dependencies: ["3411AA16C45C3819"]
 			id: "6A1F4185E6F4EE33"
 			tasks: [{
@@ -98,7 +98,7 @@
 		{
 			title: "Draco Arcanus Equipment"
 			x: 3.0d
-			y: -3.5d
+			y: -2.5d
 			dependencies: ["4B8E5831C9322BCF"]
 			id: "1CAF833C3FA09188"
 			tasks: [
@@ -165,8 +165,9 @@
 			]
 		}
 		{
+			title: "Advanced Dragon Scales"
 			x: 3.0d
-			y: -4.5d
+			y: -3.5d
 			dependencies: ["4B8E5831C9322BCF"]
 			id: "2D726D1F62B83D71"
 			tasks: [
@@ -185,7 +186,7 @@
 		{
 			title: "Protected by Fate"
 			x: 4.5d
-			y: -6.0d
+			y: -4.5d
 			dependencies: ["2D726D1F62B83D71"]
 			id: "332D98F40438EF78"
 			tasks: [
@@ -236,8 +237,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: -5.0d
+			x: -1.5d
+			y: -4.5d
 			subtitle: "Item transport up"
 			dependencies: ["48D0BC412D93664C"]
 			id: "6B7DE10C58C129EA"
@@ -306,9 +307,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: -6.0d
-			dependencies: ["48D0BC412D93664C"]
+			x: -6.0d
+			y: -7.5d
+			dependencies: ["0C90BE15A168866A"]
 			id: "66659FBF3F719D4D"
 			tasks: [{
 				id: "7F58D9A89E4896C5"
@@ -319,7 +320,7 @@
 		}
 		{
 			x: 1.5d
-			y: -6.0d
+			y: -4.5d
 			dependencies: ["48D0BC412D93664C"]
 			id: "744670D1196E8521"
 			tasks: [{
@@ -330,8 +331,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: -7.5d
+			x: 3.0d
+			y: -5.5d
 			dependencies: ["744670D1196E8521"]
 			id: "258EF6B0DE7F5C52"
 			tasks: [{
@@ -342,8 +343,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -7.0d
+			x: 1.5d
+			y: -6.5d
 			dependencies: ["506743E13D35F54F"]
 			id: "51899DD0864A2493"
 			tasks: [{
@@ -351,6 +352,32 @@
 				type: "kill"
 				entity: "mutantmore:mutant_shulker"
 				value: 1L
+			}]
+		}
+		{
+			title: "Microwaving Worms"
+			x: -3.0d
+			y: -5.5d
+			dependencies: ["6B7DE10C58C129EA"]
+			id: "2A7283CA677F9F22"
+			tasks: [{
+				id: "00367013C60E6CCC"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/mysterious_worm"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Throw that ugly thing away"
+			x: -4.5d
+			y: -6.5d
+			dependencies: ["2A7283CA677F9F22"]
+			id: "0C90BE15A168866A"
+			tasks: [{
+				id: "27250826F6DA75EE"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
 			}]
 		}
 	]

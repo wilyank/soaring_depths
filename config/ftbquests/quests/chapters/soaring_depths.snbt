@@ -1119,17 +1119,6 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 0.0d
-			dependencies: ["103BBB9EE1DB0526"]
-			id: "3D387EA2D702027B"
-			tasks: [{
-				id: "7FE1D23D8D7E96F9"
-				type: "item"
-				item: "simpleplanes:plane_workbench"
-			}]
-		}
-		{
 			x: -0.5d
 			y: -3.0d
 			dependencies: ["103BBB9EE1DB0526"]
@@ -1161,6 +1150,121 @@
 				id: "04ED962B8BC20216"
 				type: "item"
 				item: "improvedbackpacks:tiny_pocket"
+			}]
+		}
+		{
+			title: "Balloons"
+			x: 3.0d
+			y: 3.0d
+			description: ["Can be tied to a boat"]
+			id: "153FC9C1806A8F91"
+			tasks: [{
+				id: "2CE94FE586E4DBB1"
+				type: "item"
+				title: "Bolloom Balloon"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "endergetic:bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:red_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:orange_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:yellow_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:lime_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:green_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:light_blue_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:cyan_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:blue_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:pink_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:magenta_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:purple_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:brown_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:gray_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:light_gray_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:white_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:black_bolloom_balloon"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			dependencies: ["11BE7DD0E0ED7C32"]
+			id: "7E6A0FD32FAA0253"
+			tasks: [{
+				id: "330EB1C38D7BBBAB"
+				type: "item"
+				item: {
+					id: "portable_beacons:bonk_stick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			id: "7EFCAE2177E91260"
+			tasks: [{
+				id: "09A446EED25C477D"
+				type: "item"
+				item: "bountiful:bountyboard"
 			}]
 		}
 	]

@@ -1,0 +1,1419 @@
+{
+	id: "586E3C04A79C8397"
+	group: "7AA6A42EAAA7D2D9"
+	order_index: 1
+	filename: "collection"
+	title: "Collection"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Vanilla Music Discs"
+			x: -1.0d
+			y: -1.0d
+			id: "594695FD3A22087B"
+			tasks: [
+				{
+					id: "526B4400AD148A70"
+					type: "item"
+					item: "minecraft:music_disc_13"
+				}
+				{
+					id: "26F120D31E6DA0BF"
+					type: "item"
+					item: "minecraft:music_disc_cat"
+				}
+				{
+					id: "13EA8E190EE63520"
+					type: "item"
+					item: "minecraft:music_disc_blocks"
+				}
+				{
+					id: "6000D6CC9200AA1F"
+					type: "item"
+					item: "minecraft:music_disc_chirp"
+				}
+				{
+					id: "760E5C56DDAE390A"
+					type: "item"
+					item: "minecraft:music_disc_far"
+				}
+				{
+					id: "052F77A7E7A573EF"
+					type: "item"
+					item: "minecraft:music_disc_mall"
+				}
+				{
+					id: "2531860BCCA38292"
+					type: "item"
+					item: "minecraft:music_disc_mellohi"
+				}
+				{
+					id: "1B10B7012340F63F"
+					type: "item"
+					item: "minecraft:music_disc_stal"
+				}
+				{
+					id: "038D58022744598B"
+					type: "item"
+					item: "minecraft:music_disc_strad"
+				}
+				{
+					id: "530ACBD9E5F98945"
+					type: "item"
+					item: "minecraft:music_disc_ward"
+				}
+				{
+					id: "140907C6CA9C8CA3"
+					type: "item"
+					item: "minecraft:music_disc_11"
+				}
+				{
+					id: "62F82672E09C9F0F"
+					type: "item"
+					item: "minecraft:music_disc_wait"
+				}
+				{
+					id: "42A885BC8150312B"
+					type: "item"
+					item: "minecraft:music_disc_pigstep"
+				}
+			]
+		}
+		{
+			title: "Chocolate Music Discs"
+			x: 0.0d
+			y: -1.0d
+			id: "5679FD07660CC88A"
+			tasks: [
+				{
+					id: "481F416F318C20DB"
+					type: "item"
+					item: "endergetic:music_disc_kilobyte"
+				}
+				{
+					id: "7F8F5187F16F05D3"
+					type: "item"
+					item: "infernalexp:music_disc_soul_spunk"
+				}
+				{
+					id: "588FC41810ACF7F9"
+					type: "item"
+					item: "infernalexp:music_disc_flush"
+				}
+				{
+					id: "40A593F07921BE1F"
+					type: "item"
+					item: "alexsmobs:music_disc_thime"
+				}
+				{
+					id: "69B87894E78328BE"
+					type: "item"
+					item: "alexsmobs:music_disc_daze"
+				}
+				{
+					id: "4C8E8B4CA61694D4"
+					type: "item"
+					item: "betterendforge:music_disc_strange_and_alien"
+				}
+				{
+					id: "0DB25E0E0A6661DA"
+					type: "item"
+					item: "betterendforge:music_disc_grasping_at_stars"
+				}
+				{
+					id: "77ACC2A3523DEF35"
+					type: "item"
+					item: "betterendforge:music_disc_endseeker"
+				}
+				{
+					id: "68242A7E0930D857"
+					type: "item"
+					item: "betterendforge:music_disc_eo_dracona"
+				}
+				{
+					id: "5006F748CECA269D"
+					type: "item"
+					item: "biomesoplenty:music_disc_wanderer"
+				}
+				{
+					id: "2932EF59FB5500C8"
+					type: "item"
+					item: "eidolon:music_disc_parousia"
+				}
+				{
+					id: "1F27C40D727CFD84"
+					type: "item"
+					item: "cataclysm:music_disc_netherite_monstrosity"
+				}
+				{
+					id: "1BC717597F0D4684"
+					type: "item"
+					item: "cataclysm:music_disc_ender_guardian"
+				}
+				{
+					id: "0AC17630DAF052FA"
+					type: "item"
+					item: "outer_end:music_disc_galactic_wave"
+				}
+				{
+					id: "40DFFC64534CDD14"
+					type: "item"
+					item: "outer_end:music_disc_unknown_frontier"
+				}
+			]
+		}
+		{
+			title: "Saplings Pt. I"
+			x: 1.0d
+			y: -1.0d
+			id: "2575179F74A44EF5"
+			tasks: [
+				{
+					id: "134E0268ED5AD4B3"
+					type: "item"
+					item: "minecraft:oak_sapling"
+				}
+				{
+					id: "79525179AC45D21C"
+					type: "item"
+					item: "minecraft:spruce_sapling"
+				}
+				{
+					id: "501A02311E0FCB05"
+					type: "item"
+					item: "minecraft:birch_sapling"
+				}
+				{
+					id: "5BDBF231A5441FD8"
+					type: "item"
+					item: "minecraft:jungle_sapling"
+				}
+				{
+					id: "5A0AE47BE5485AAB"
+					type: "item"
+					item: "minecraft:acacia_sapling"
+				}
+				{
+					id: "54E0FFA4438271F6"
+					type: "item"
+					item: "minecraft:dark_oak_sapling"
+				}
+				{
+					id: "59A2EBD9121F99B3"
+					type: "item"
+					item: "biomesoplenty:origin_sapling"
+				}
+				{
+					id: "4974649465FEE6EF"
+					type: "item"
+					item: "biomesoplenty:flowering_oak_sapling"
+				}
+				{
+					id: "5AF2E8700FDBFDC1"
+					type: "item"
+					item: "biomesoplenty:rainbow_birch_sapling"
+				}
+				{
+					id: "797E03E0944A5036"
+					type: "item"
+					item: "biomesoplenty:yellow_autumn_sapling"
+				}
+				{
+					id: "0052248B3B9FA95C"
+					type: "item"
+					item: "biomesoplenty:orange_autumn_sapling"
+				}
+				{
+					id: "527CF3ED5E4E44D1"
+					type: "item"
+					item: "biomesoplenty:maple_sapling"
+				}
+				{
+					id: "29CB94336E0DFB7E"
+					type: "item"
+					item: "biomesoplenty:fir_sapling"
+				}
+				{
+					id: "351C9782AD79FD8E"
+					type: "item"
+					item: "biomesoplenty:redwood_sapling"
+				}
+				{
+					id: "6F54015D532DC851"
+					type: "item"
+					item: "biomesoplenty:white_cherry_sapling"
+				}
+				{
+					id: "3DCB6A5BE98EC988"
+					type: "item"
+					item: "biomesoplenty:pink_cherry_sapling"
+				}
+				{
+					id: "1ABB498FE66BD616"
+					type: "item"
+					item: "biomesoplenty:mahogany_sapling"
+				}
+				{
+					id: "2880B9164D55ED36"
+					type: "item"
+					item: "biomesoplenty:jacaranda_sapling"
+				}
+				{
+					id: "7400663A538D9E86"
+					type: "item"
+					item: "biomesoplenty:palm_sapling"
+				}
+				{
+					id: "01A0CFDE43E80532"
+					type: "item"
+					item: "biomesoplenty:willow_sapling"
+				}
+			]
+		}
+		{
+			title: "Saplings Pt. II"
+			x: 2.0d
+			y: -1.0d
+			id: "175F2DF1B53D939B"
+			tasks: [
+				{
+					id: "6CD0D08A0E43AB04"
+					type: "item"
+					item: "biomesoplenty:dead_sapling"
+				}
+				{
+					id: "35BCEF6EEC0E9E27"
+					type: "item"
+					item: "biomesoplenty:magic_sapling"
+				}
+				{
+					id: "61D2D5CE233BFC24"
+					type: "item"
+					item: "biomesoplenty:umbran_sapling"
+				}
+				{
+					id: "5A062E968C2F787C"
+					type: "item"
+					item: "biomesoplenty:hellbark_sapling"
+				}
+				{
+					id: "6F16037984ADD961"
+					type: "item"
+					item: "betterendforge:hydralux_sapling"
+				}
+				{
+					id: "022B2D04B556EBDE"
+					type: "item"
+					item: "betterendforge:mossy_glowshroom_sapling"
+				}
+				{
+					id: "0847999893EAF446"
+					type: "item"
+					item: "betterendforge:lacugrove_sapling"
+				}
+				{
+					id: "066BBD04BC54F86B"
+					type: "item"
+					item: "betterendforge:pythadendron_sapling"
+				}
+				{
+					id: "47A955DC0F26C49E"
+					type: "item"
+					item: "betterendforge:dragon_tree_sapling"
+				}
+				{
+					id: "326296FCDC824F2C"
+					type: "item"
+					item: "betterendforge:tenanea_sapling"
+				}
+				{
+					id: "2123AB9FE76645C0"
+					type: "item"
+					item: "betterendforge:helix_tree_sapling"
+				}
+				{
+					id: "52ABAF7742878B58"
+					type: "item"
+					item: "betterendforge:umbrella_tree_sapling"
+				}
+				{
+					id: "26AEDDE06917B2EF"
+					type: "item"
+					item: "betterendforge:lucernia_sapling"
+				}
+				{
+					id: "58B116C1A8E926B5"
+					type: "item"
+					item: "tconstruct:earth_slime_sapling"
+				}
+				{
+					id: "7CCF9D72478E7915"
+					type: "item"
+					item: "tconstruct:sky_slime_sapling"
+				}
+				{
+					id: "23FDAB27021E6642"
+					type: "item"
+					item: "tconstruct:ender_slime_sapling"
+				}
+				{
+					id: "1B92303C4F296A4A"
+					type: "item"
+					item: "forbidden_arcanus:cherrywood_sapling"
+				}
+				{
+					id: "60D2645524688438"
+					type: "item"
+					item: "forbidden_arcanus:mysterywood_sapling"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -4.0d
+			id: "4CE0A2DF7EC5685E"
+			tasks: [
+				{
+					id: "45CCE8B7AD79033C"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3DB84A67B339F48B"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "61D69CEEA08E6F1C"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D44E99F27881EDA"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			id: "3693A49C3315303B"
+			tasks: [
+				{
+					id: "4CFD424355F2EBE1"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "38AE20FB390F0E4D"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "77D75F85927C6840"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "25AD332CBCA5FD31"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			id: "09E39BCC97722EBB"
+			tasks: [
+				{
+					id: "752F050711FB84FE"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4AF08A515C121C70"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7679BABDE655BD24"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "308BAF168F461F70"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			id: "7225264C0175E06F"
+			tasks: [
+				{
+					id: "28165CDFD4E48196"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C257BAEC4187045"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7489AF5F1EDCA698"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "19281216913198D3"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			id: "0E550607B379E60B"
+			tasks: [
+				{
+					id: "6DE2EAC062A68841"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2222FA412582BC88"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CEADCB506A782F9"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5FDAB33F66636D9F"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			id: "5B3C8DC36E044EF1"
+			tasks: [
+				{
+					id: "5996B0AD23ECB57F"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "710A7F3EF8A887B9"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "006BCEBA08E3FF3B"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5D8A55834CE258BD"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: -4.0d
+			id: "021C137B3F4C55CA"
+			tasks: [
+				{
+					id: "10CE16F3FB7EB08B"
+					type: "item"
+					item: {
+						id: "minecraft:turtle_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "11D1D30822C48D61"
+					type: "item"
+					item: {
+						id: "endergetic:booflo_vest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D6F24B2593B2071"
+					type: "item"
+					item: {
+						id: "mining_helmet:mining_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Alex's Armor"
+			x: 11.0d
+			y: -4.0d
+			id: "6C2435D62BFB20A2"
+			tasks: [
+				{
+					id: "1F740B2A1CA6279F"
+					type: "item"
+					item: {
+						id: "alexsmobs:crocodile_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "251048D40A033481"
+					type: "item"
+					item: {
+						id: "alexsmobs:roadrunner_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7C193E6028694C81"
+					type: "item"
+					item: {
+						id: "alexsmobs:centipede_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "74B28CB7C2019106"
+					type: "item"
+					item: {
+						id: "alexsmobs:moose_headgear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "628BD3E81BE61830"
+					type: "item"
+					item: {
+						id: "alexsmobs:frontier_cap"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "618A1197AE61F38B"
+					type: "item"
+					item: {
+						id: "alexsmobs:spiked_turtle_shell"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0DF4A47E1D454F41"
+					type: "item"
+					item: {
+						id: "alexsmobs:emu_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01166547C0C7A00C"
+					type: "item"
+					item: {
+						id: "alexsmobs:fedora"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Mutant Skeleton Armor"
+			x: 6.0d
+			y: -4.0d
+			id: "7AD01A4E14DB2930"
+			tasks: [
+				{
+					id: "78DB4F25D156AA02"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_skull"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F14050ECEC0DD4E"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "32A18218BD8E0DA5"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0396865F29F227CD"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			id: "49B334F0B52BAFA5"
+			tasks: [
+				{
+					id: "58B7E305CFB83F6A"
+					type: "item"
+					item: {
+						id: "mutantmore:mutant_wither_skeleton_skull"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3DC70F0DB30131D8"
+					type: "item"
+					item: {
+						id: "mutantmore:mutant_wither_skeleton_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71181CE27401BDD8"
+					type: "item"
+					item: {
+						id: "mutantmore:mutant_wither_skeleton_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "161E0E3D974AD2A0"
+					type: "item"
+					item: {
+						id: "mutantmore:mutant_wither_skeleton_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -4.0d
+			id: "0CA65171AAB421CD"
+			tasks: [
+				{
+					id: "372FC62B717F4200"
+					type: "item"
+					item: {
+						id: "betterendforge:thallasium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "486885B1A4DE9CB6"
+					type: "item"
+					item: {
+						id: "betterendforge:thallasium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6A24F86C478C2559"
+					type: "item"
+					item: {
+						id: "betterendforge:thallasium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "091893A0D714B573"
+					type: "item"
+					item: {
+						id: "betterendforge:thallasium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -3.0d
+			id: "44E8101AF6EF274D"
+			tasks: [
+				{
+					id: "259201228BC0B83F"
+					type: "item"
+					item: {
+						id: "betterendforge:terminite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E99F46BB72A9FFE"
+					type: "item"
+					item: {
+						id: "betterendforge:terminite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3CE2FB2F03BDFAD5"
+					type: "item"
+					item: {
+						id: "betterendforge:terminite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "31FE4B534ED45ABC"
+					type: "item"
+					item: {
+						id: "betterendforge:terminite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -2.0d
+			id: "05B6A9C547221600"
+			tasks: [
+				{
+					id: "39DBBFADC211EE70"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "54446640C68BB672"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D8B1B51AB3CD03B"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "673297F5BF5209D6"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			id: "4314A1BD92BCB27F"
+			tasks: [
+				{
+					id: "6546C1908845F0FD"
+					type: "item"
+					item: {
+						id: "betterendforge:crystalite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "67FE1BA0B2D9D3DE"
+					type: "item"
+					item: {
+						id: "betterendforge:crystalite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "604F8062B7E27A60"
+					type: "item"
+					item: {
+						id: "betterendforge:crystalite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "207F13C35DECD564"
+					type: "item"
+					item: {
+						id: "betterendforge:crystalite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -4.0d
+			id: "3907295A76983BE5"
+			tasks: [
+				{
+					id: "1B77A22C0712F653"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_gold_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "00981BA35D8AD7C3"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_gold_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "17C7D803578C8946"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_gold_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "6D0BAF1770F6E1B1"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_gold_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			id: "35CF4B478D145F7B"
+			tasks: [
+				{
+					id: "1C27872E70AD3034"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mortem_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53347EA444E20549"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mortem_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "676FCC38875C0031"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mortem_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2FEE70FEA6A7F210"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mortem_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			id: "32B0891D1692C5F2"
+			tasks: [
+				{
+					id: "24AD6ACA68DFB236"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D35A8CF2FA682F9"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B37D9DD0F6E60F8"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D1C3072163DD378"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			id: "0AF9E119A8745A52"
+			tasks: [
+				{
+					id: "7E33F41D1CE49113"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "3E290079973D4493"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0907E4A5B1032672"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60A72F62F156F9F3"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: -4.0d
+			id: "49CCBEFCD0DB3FB8"
+			tasks: [
+				{
+					id: "1F2D30F36BAF7EB3"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2BC4A46A914325D9"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0ACD836D9E678BB7"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26D3E19FC7957555"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}
