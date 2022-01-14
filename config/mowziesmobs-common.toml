@@ -452,7 +452,7 @@
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["MOUNTAIN"]
+			biome_type = ["MOUNTAIN,!SNOWY"]
 
 		[mobs.naga.combat_config]
 			#Scale mob attack damage by this value
@@ -475,7 +475,7 @@
 			needs_see_sky = true
 			#Smaller number causes less spawning, 0 to disable spawning
 			#Range: > 0
-			spawn_rate = 2
+			spawn_rate = 1
 			#Set to true to only allow this mob to spawn in the dark, like zombies and skeletons.
 			needs_darkness = false
 			#Names of structures this mob will avoid spawning near.

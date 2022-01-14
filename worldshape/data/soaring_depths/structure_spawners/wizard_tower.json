@@ -1,0 +1,24 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:wizard_tower"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "minY": 50,
+        "maxY": 200,
+        "type": "surface",
+        "terraform": 0
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#plains"
+    ]
+}

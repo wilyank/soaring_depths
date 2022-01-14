@@ -549,28 +549,6 @@
 			]
 		}
 		{
-			x: 12.0d
-			y: 1.0d
-			description: ["Use this to turn your Runes dark"]
-			dependencies: [
-				"6ED5B14AFEF8AA44"
-				"5F9B898EE8166C73"
-			]
-			id: "5859321EFF72D0D5"
-			tasks: [
-				{
-					id: "3B8BF2ECFD371415"
-					type: "item"
-					item: "forbidden_arcanus:runic_tenebris_frame"
-				}
-				{
-					id: "64B396A32D15823E"
-					type: "item"
-					item: "forbidden_arcanus:dark_nether_star"
-				}
-			]
-		}
-		{
 			title: "A Basis for Baubles"
 			x: 2.0d
 			y: -4.0d
@@ -1265,6 +1243,33 @@
 				id: "09A446EED25C477D"
 				type: "item"
 				item: "bountiful:bountyboard"
+			}]
+		}
+		{
+			title: "In Case of Fire"
+			x: 12.5d
+			y: 0.0d
+			dependencies: ["5F9B898EE8166C73"]
+			id: "1772CBA4B6B8FBB0"
+			tasks: [{
+				id: "71B3900853FCEE72"
+				type: "item"
+				item: "forbidden_arcanus:obsidian_skull"
+			}]
+		}
+		{
+			title: "I Fear No Flames No More"
+			x: 13.5d
+			y: 1.0d
+			dependencies: [
+				"1772CBA4B6B8FBB0"
+				"28E747E8DD63BA1F"
+			]
+			id: "5701A7E232904D61"
+			tasks: [{
+				id: "71AAED904B686098"
+				type: "item"
+				item: "forbidden_arcanus:eternal_obsidian_skull"
 			}]
 		}
 	]
