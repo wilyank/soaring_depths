@@ -33,7 +33,7 @@ graphicsMode:1
 ao:2
 biomeBlendRadius:2
 renderClouds:false
-resourcePacks:["vanilla","mod_resources","file/Infernal Resources.zip","file/Shield Corrections [Colored].zip","openloader/resources/Created Storage Network 1.1.zip","file/Better_3D_Ores_1.16.2+.zip","openloader/resources/soaring_depths"]
+resourcePacks:["vanilla","mod_resources","file/Infernal Resources.zip","file/Shield Corrections [Colored].zip","file/Better_3D_Ores_1.16.2+.zip","file/Created Storage Network 1.1.zip","file/created_simpleplanes-1.16.zip","openloader/resources/soaring_depths"]
 incompatibleResourcePacks:["file/Shield Corrections [Colored].zip"]
 lastServer:
 lang:en_us
