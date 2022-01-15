@@ -1,0 +1,23 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:floating_wizard_tower"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 5,
+        "minY": 50,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#extreme_hills"
+    ]
+}

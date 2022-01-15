@@ -11,7 +11,7 @@ import crafttweaker.api.util.text.MCTextComponent;
     .addOutput(<item:astralsorcery:rock_crystal_ore>, 1)
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:wet_purifying_soap>))
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:minecraft:water>*250))
-    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_quartz>*144))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_pewter>*144))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
 smithing.addRecipe("unbreakable_symbol", <item:eidolon:unholy_symbol>.withTag({Unbreakable: 1 as byte}), <item:eidolon:unholy_symbol>, <item:minecraft:obsidian>);
@@ -20,36 +20,7 @@ smithing.addRecipe("unbreakable_symbol", <item:eidolon:unholy_symbol>.withTag({U
     <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
     <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
     true, 
-    200, 
-    <resource:astralsorcery:discidia>
-);
-<recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_armara", 
-    <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
-    <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
-    true, 
-    200, 
-    <resource:astralsorcery:armara>
-);
-<recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_vicio", 
-    <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
-    <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
-    true, 
-    200, 
-    <resource:astralsorcery:vicio>
-);
-<recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_aevitas", 
-    <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
-    <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
-    true, 
-    200, 
-    <resource:astralsorcery:aevitas>
-);
-<recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_evorsio", 
-    <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
-    <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
-    true, 
-    200, 
-    <resource:astralsorcery:evorsio>
+    200
 );
 
 // information on how to get xpetrified orb
@@ -233,5 +204,19 @@ craftingTable.addShaped("spectral_eye_amulet",
         [<item:minecraft:air>, <item:minecraft:nether_star>, <item:minecraft:air>],
         [<item:forbidden_arcanus:arcane_gold_ingot>, <item:eidolon:basic_amulet>, <item:forbidden_arcanus:arcane_gold_ingot>],
         [<item:minecraft:air>, <item:minecraft:ender_eye>, <item:minecraft:air>]
+    ]
+);
+
+// crying obsidian
+<item:minecraft:crying_obsidian>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.crying_obsidian"));
+<recipetype:create:mixing>.addRecipe("crying_obsidian",
+    "none",
+    <item:minecraft:crying_obsidian>,
+    [
+        <item:minecraft:diamond>
+    ],
+    [
+        <fluid:tconstruct:molten_obsidian>*1000, 
+        <fluid:astralsorcery:liquid_starlight>*1000
     ]
 );

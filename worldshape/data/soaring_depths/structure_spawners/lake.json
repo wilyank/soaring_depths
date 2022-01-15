@@ -11,7 +11,8 @@
         "offset": -3,
         "minY": 3,
         "maxY": 255,
-        "type": "surface"
+        "type": "surface",
+        "terraform": 0
     },
 
     "dimensions": [
@@ -24,7 +25,6 @@
         "#mesa",
         "#plains",
         "#savanna",
-        "#icy",
         "#beach",
         "#forest",
         "#ocean",

@@ -102,6 +102,8 @@
   "tooltip.astralsorcery.lens": "Currently broken... Sorry",
   "description.astralsorcery.lens": "Due to a bug, Crystal Lenses do not relay Starlight in Minecraft version 1.16.5. The developer is working on this.",
 
+  "tooltip.soaring_depths.crying_obsidian": "Seems to be connected to some lower realm",
+
   "item.eidolon.arcane_gold_ingot": "Redstone Gold Ingot",
   "item.eidolon.arcane_gold_nugget": "Redstone Gold Nugget",
   "block.eidolon.arcane_gold_block": "Redstone Gold Block",

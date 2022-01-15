@@ -560,3 +560,14 @@ craftingTable.addShapedMirrored("brass_knuckles",
 );
 // explorer's compass
 craftingTable.removeRecipe(<item:explorerscompass:explorerscompass>);
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("explorers_compass")
+    .transitionTo(<item:minecraft:compass>)
+    .require(<tag:items:forge:ingots/redstone_gold>)
+    .loops(1)
+    .addOutput(<item:explorerscompass:explorerscompass>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:betterendforge:eternal_crystal>))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:ender_slime> * 250))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:mowziesmobs:ice_crystal>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
+);
