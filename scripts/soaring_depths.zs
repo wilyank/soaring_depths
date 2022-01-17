@@ -568,6 +568,7 @@ craftingTable.removeRecipe(<item:explorerscompass:explorerscompass>);
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:betterendforge:eternal_crystal>))
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:ender_slime> * 250))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:mowziesmobs:ice_crystal>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:minecraft:shulker_shell>))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
 

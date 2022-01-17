@@ -19,7 +19,7 @@ BiomeCategory: desert
 #######################################################################
 
 BiomeSize: 4
-[[
+
 BiomeRarity: 100
 
 BiomeColor: #D25F12

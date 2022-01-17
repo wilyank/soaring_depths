@@ -380,5 +380,21 @@
 				criterion: ""
 			}]
 		}
+		{
+			title: "Easy Location"
+			x: -1.5d
+			y: -6.5d
+			dependencies: ["506743E13D35F54F"]
+			id: "68761DBC823B0E7A"
+			tasks: [{
+				id: "3344A33B29B108D0"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
 	]
 }
