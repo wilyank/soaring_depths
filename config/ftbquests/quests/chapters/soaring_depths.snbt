@@ -98,7 +98,7 @@
 		}
 		{
 			title: "Smeltery"
-			x: -3.0d
+			x: -4.5d
 			y: 1.0d
 			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
@@ -893,6 +893,7 @@
 			dependencies: [
 				"56923B891152AA07"
 				"3624A74DAF4EEABA"
+				"530392498F50A2AE"
 			]
 			id: "608E8D992CD290B2"
 			tasks: [
@@ -999,8 +1000,8 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.5d
 			id: "3EB91DD38C059277"
 			tasks: [{
 				id: "3A7B187492911158"
@@ -1015,8 +1016,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 3.0d
+			x: -1.0d
+			y: 2.5d
 			id: "11BE7DD0E0ED7C32"
 			tasks: [{
 				id: "5CECF22551032B72"
@@ -1032,8 +1033,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 3.0d
+			x: 0.0d
+			y: 2.5d
 			id: "33450A19619CD1CB"
 			tasks: [{
 				id: "0DF185632027C578"
@@ -1043,8 +1044,8 @@
 		}
 		{
 			title: "Economist"
-			x: 0.0d
-			y: 3.0d
+			x: 1.0d
+			y: 2.5d
 			id: "7D5DEFCC6F4B1948"
 			tasks: [
 				{
@@ -1085,8 +1086,8 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.5d
 			id: "43ACA0B2EFCFB9A6"
 			tasks: [{
 				id: "2E28A65B3F84B320"
@@ -1132,8 +1133,8 @@
 		}
 		{
 			title: "Balloons"
-			x: 3.0d
-			y: 3.0d
+			x: 4.0d
+			y: 2.5d
 			description: ["Can be tied to a boat"]
 			id: "153FC9C1806A8F91"
 			tasks: [{
@@ -1219,8 +1220,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 4.0d
+			x: -1.0d
+			y: 3.5d
 			dependencies: ["11BE7DD0E0ED7C32"]
 			id: "7E6A0FD32FAA0253"
 			tasks: [{
@@ -1236,8 +1237,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 3.0d
+			x: 3.0d
+			y: 2.5d
 			id: "7EFCAE2177E91260"
 			tasks: [{
 				id: "09A446EED25C477D"
@@ -1271,6 +1272,46 @@
 				type: "item"
 				item: "forbidden_arcanus:eternal_obsidian_skull"
 			}]
+		}
+		{
+			title: "Kobold Resources"
+			x: 1.0d
+			y: 3.5d
+			id: "2FED68C632DAE63C"
+			tasks: [{
+				id: "065295CD2CC70504"
+				type: "advancement"
+				advancement: "kobolds:kobold_apple_advancement"
+				criterion: ""
+			}]
+		}
+		{
+			title: "One Spade Deeper"
+			x: 7.5d
+			y: -3.0d
+			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want, as long as you use at least 10 Crying Obsidian for the frame."]
+			dependencies: ["436B7F15C6A13C48"]
+			id: "5146EEC7C482DD52"
+			tasks: [
+				{
+					id: "631665A7472D7815"
+					type: "item"
+					item: "minecraft:crying_obsidian"
+					count: 10L
+				}
+				{
+					id: "3998F93DF4907CC3"
+					type: "item"
+					title: "Any Portal Lighter"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "custom_nether_portals:ignition"
+						}
+					}
+				}
+			]
 		}
 	]
 }

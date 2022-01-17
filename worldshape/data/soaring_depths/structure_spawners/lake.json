@@ -8,11 +8,11 @@
     "avoidOthers": true,
     
     "placement": {
-        "offset": -3,
+        "offset": 0,
         "minY": 3,
         "maxY": 255,
         "type": "surface",
-        "terraform": 0
+        "terraform": 3
     },
 
     "dimensions": [

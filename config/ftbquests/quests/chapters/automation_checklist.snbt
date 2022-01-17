@@ -1125,7 +1125,7 @@
 		}
 		{
 			x: -9.5d
-			y: -3.5d
+			y: -2.5d
 			dependencies: [
 				"3A1C7426488AD332"
 				"37D6D96607C38CBD"
@@ -1150,7 +1150,7 @@
 			]
 		}
 		{
-			x: -8.5d
+			x: -9.0d
 			y: -3.5d
 			dependencies: ["0D2029195876215D"]
 			id: "37D6D96607C38CBD"
@@ -1376,6 +1376,57 @@
 				}
 				{
 					id: "4A23D7EC82ECE478"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -21.0d
+			y: -10.0d
+			id: "5F50C159015FAFB6"
+			tasks: [
+				{
+					id: "1BBC64666EDBA3E6"
+					type: "item"
+					item: "minecraft:prismarine_shard"
+				}
+				{
+					id: "2A81A321731498A3"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -20.0d
+			y: -10.0d
+			id: "0DB042DB25A71315"
+			tasks: [
+				{
+					id: "4C3BF9F460A45C2D"
+					type: "item"
+					item: "minecraft:prismarine_crystals"
+				}
+				{
+					id: "103C61B11D286747"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -20.0d
+			y: -14.0d
+			id: "54D3BFD7DA5D3294"
+			tasks: [
+				{
+					id: "1B4DAF2F480746FB"
+					type: "item"
+					item: "rubber_duck:rubber_duck_item"
+				}
+				{
+					id: "1AA95C1847D649BC"
 					type: "checkmark"
 					title: "Automated"
 				}

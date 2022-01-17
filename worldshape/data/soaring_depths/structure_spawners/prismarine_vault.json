@@ -1,0 +1,26 @@
+{
+    "template": {
+        "type": "single",
+        "id": "soaring_depths:prismarine_vault"
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "minY": 50,
+        "maxY": 150,
+        "type": "surface",
+        "offset": -28
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+    "biomes": [
+        "#river",
+        "#ocean",
+        "#jungle",
+        "#swamp"
+    ]
+}

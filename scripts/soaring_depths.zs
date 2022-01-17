@@ -426,9 +426,12 @@ furnace.removeByName("eidolon:smelt_lead_ore");
 furnace.removeByName("create:smelting/copper_ingot_from_ore");
 furnace.removeByName("create:smelting/zinc_ingot_from_ore");
 furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
+furnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
+blastFurnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 
 <recipetype:create:crushing>.addRecipe("crushed_arcane_crystal", [<item:forbidden_arcanus:arcane_crystal>, <item:forbidden_arcanus:arcane_crystal>%20], <item:forbidden_arcanus:arcane_crystal_ore>);
-<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal_dust", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
+<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal_dust_crushing", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
+<recipetype:create:milling>.addRecipe("crushed_arcane_crystal_dust_milling", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
 
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_copper_ore>);
 <recipetype:create:crushing>.addRecipe("crushed_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore>*2 % 30, <item:minecraft:cobblestone> % 12], <tag:items:forge:ores/copper>);
