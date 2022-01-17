@@ -560,7 +560,6 @@ craftingTable.addShapedMirrored("brass_knuckles",
 );
 // explorer's compass
 craftingTable.removeRecipe(<item:explorerscompass:explorerscompass>);
-
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("explorers_compass")
     .transitionTo(<item:minecraft:compass>)
     .require(<tag:items:forge:ingots/redstone_gold>)
@@ -570,4 +569,22 @@ craftingTable.removeRecipe(<item:explorerscompass:explorerscompass>);
     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:ender_slime> * 250))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:mowziesmobs:ice_crystal>))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
+);
+
+// vanillatweaks inspired recipes
+craftingTable.addShaped("better_chests",
+    <item:minecraft:chest>*4,
+    [
+        [<tag:items:minecraft:logs>,<tag:items:minecraft:logs>,<tag:items:minecraft:logs>],
+        [<tag:items:minecraft:logs>,_,<tag:items:minecraft:logs>],
+        [<tag:items:minecraft:logs>,<tag:items:minecraft:logs>,<tag:items:minecraft:logs>]
+    ]
+);
+craftingTable.addShaped("better_repeater",
+    <item:minecraft:repeater>,
+    [
+        [<item:minecraft:redstone>, _, <item:minecraft:redstone>],
+        [<tag:items:forge:rods/wooden>, <item:minecraft:redstone>, <tag:items:forge:rods/wooden>],
+        [<item:minecraft:stone>,<item:minecraft:stone>,<item:minecraft:stone>]
+    ]
 );
