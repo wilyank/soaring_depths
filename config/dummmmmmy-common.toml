@@ -5,7 +5,7 @@ disable_equipment_damage = true
 	#Animal entities that will not be scared
 	mobs_blacklist = [""]
 	#All animal entities will be scared. add here additional ones that are not included
-	mobs_whitelist = [""]
+	mobs_whitelist = ["alexsmobs:crow,alexsmobs:seagull"]
 	#Scaring radius
 	#Range: 0 ~ 100
 	scare_radius = 12
