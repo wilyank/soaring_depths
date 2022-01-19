@@ -1436,11 +1436,35 @@
 			x: -24.5d
 			y: -5.0d
 			id: "650D0B62FBDEBF26"
-			tasks: [{
-				id: "7DD5B32195455ECF"
-				type: "item"
-				item: "create:chocolate_bucket"
-			}]
+			tasks: [
+				{
+					id: "7DD5B32195455ECF"
+					type: "item"
+					item: "create:chocolate_bucket"
+				}
+				{
+					id: "13FB1DE9067540D4"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -23.5d
+			y: -5.0d
+			id: "058D15C19CE599F4"
+			tasks: [
+				{
+					id: "1E3CCE4858F21561"
+					type: "item"
+					item: "create:builders_tea"
+				}
+				{
+					id: "20FCE769B1EBA552"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
 		}
 	]
 }

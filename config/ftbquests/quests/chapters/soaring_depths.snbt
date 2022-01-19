@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Toolmaking"
-			x: -0.5d
-			y: -1.0d
+			x: 1.0d
+			y: 3.0d
 			shape: "hexagon"
 			subtitle: "All a tool shop needs"
 			dependencies: ["472201D5EAC73A69"]
@@ -51,8 +51,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 1.0d
+			x: 2.0d
+			y: 5.0d
 			subtitle: "Great for Melting Stuff"
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "0F828792BEE1DC4F"
@@ -98,8 +98,8 @@
 		}
 		{
 			title: "Smeltery"
-			x: -4.5d
-			y: 1.0d
+			x: 8.0d
+			y: 5.0d
 			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
 			id: "530392498F50A2AE"
@@ -140,8 +140,8 @@
 		}
 		{
 			title: "Magical Ores"
-			x: 0.5d
-			y: -1.0d
+			x: 1.0d
+			y: -3.0d
 			shape: "hexagon"
 			dependencies: ["472201D5EAC73A69"]
 			id: "6C27D59380778FF1"
@@ -181,8 +181,8 @@
 		}
 		{
 			title: "Eidolon"
-			x: 1.5d
-			y: -3.0d
+			x: 2.0d
+			y: -5.0d
 			subtitle: "The road to power is paved with corpses"
 			description: ["Use this guide well"]
 			dependencies: ["6C27D59380778FF1"]
@@ -212,8 +212,8 @@
 		}
 		{
 			title: "Astral Sorcery"
-			x: 4.5d
-			y: -1.0d
+			x: 5.0d
+			y: -3.0d
 			subtitle: "Stargazing time"
 			dependencies: [
 				"114A4DD936FEE504"
@@ -285,8 +285,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.0d
+			x: 2.0d
+			y: -1.0d
 			dependencies: ["6C27D59380778FF1"]
 			id: "6D19DBB61E7BA7DE"
 			tasks: [{
@@ -298,8 +298,8 @@
 		}
 		{
 			title: "Black Hole Shenanigans"
-			x: 6.5d
-			y: 1.0d
+			x: 5.0d
+			y: -1.0d
 			dependencies: ["6D19DBB61E7BA7DE"]
 			id: "6ED5B14AFEF8AA44"
 			tasks: [
@@ -321,8 +321,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 0.0d
+			x: 8.0d
+			y: -1.0d
 			dependencies: ["6ED5B14AFEF8AA44"]
 			id: "1224891D38AFE539"
 			tasks: [{
@@ -334,8 +334,8 @@
 		{
 			title: "Stella Arcanum"
 			icon: "forbidden_arcanus:stella_arcanum"
-			x: 9.0d
-			y: 0.0d
+			x: 10.0d
+			y: -1.0d
 			subtitle: "Solidified Magic + Starlight = Magical Star"
 			dependencies: [
 				"1224891D38AFE539"
@@ -350,8 +350,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -1.0d
+			x: 6.0d
+			y: -3.0d
 			dependencies: ["567200F26E42CA7F"]
 			id: "0BED126A098F5636"
 			tasks: [
@@ -368,8 +368,8 @@
 			]
 		}
 		{
-			x: 7.5d
-			y: -1.0d
+			x: 8.0d
+			y: -3.0d
 			dependencies: ["436B7F15C6A13C48"]
 			id: "5E049F73506FFBE5"
 			tasks: [{
@@ -380,8 +380,8 @@
 		}
 		{
 			title: "Trapping the light"
-			x: 6.5d
-			y: -1.0d
+			x: 7.0d
+			y: -3.0d
 			dependencies: ["0BED126A098F5636"]
 			id: "436B7F15C6A13C48"
 			tasks: [{
@@ -396,8 +396,8 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: -1.0d
+			x: 9.0d
+			y: -3.0d
 			dependencies: ["5E049F73506FFBE5"]
 			id: "01B8946F3D2BBB1B"
 			tasks: [{
@@ -408,8 +408,8 @@
 		}
 		{
 			title: "Questionable Friends"
-			x: 2.5d
-			y: -3.0d
+			x: 3.0d
+			y: -5.0d
 			dependencies: ["230D36713B063759"]
 			id: "058442E9170FB612"
 			tasks: [
@@ -432,8 +432,8 @@
 		}
 		{
 			title: "Calling Favours"
-			x: 3.5d
-			y: -3.0d
+			x: 4.0d
+			y: -5.0d
 			dependencies: ["058442E9170FB612"]
 			id: "114A4DD936FEE504"
 			tasks: [{
@@ -456,8 +456,8 @@
 		}
 		{
 			title: "Gone Cackling"
-			x: 4.0d
-			y: -4.0d
+			x: 4.5d
+			y: -6.0d
 			dependencies: ["114A4DD936FEE504"]
 			id: "62ED5A7BBE82E81E"
 			tasks: [
@@ -525,8 +525,8 @@
 		}
 		{
 			title: "Bloodying Your Hands"
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -7.0d
 			dependencies: ["5180661B35362BD1"]
 			id: "2FBBF90641C30260"
 			tasks: [
@@ -550,8 +550,8 @@
 		}
 		{
 			title: "A Basis for Baubles"
-			x: 2.0d
-			y: -4.0d
+			x: 2.5d
+			y: -6.0d
 			dependencies: ["230D36713B063759"]
 			id: "5180661B35362BD1"
 			tasks: [
@@ -573,8 +573,8 @@
 			]
 		}
 		{
-			x: 10.5d
-			y: -1.0d
+			x: 11.0d
+			y: -3.0d
 			dependencies: ["4CDD8725B9F5571B"]
 			id: "061E5BF316C8B69E"
 			tasks: [{
@@ -584,8 +584,8 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: -1.0d
+			x: 12.0d
+			y: -3.0d
 			dependencies: ["061E5BF316C8B69E"]
 			id: "5F9B898EE8166C73"
 			tasks: [{
@@ -596,8 +596,8 @@
 		}
 		{
 			title: "Grow Your Own Crystal DIY Kit"
-			x: 9.5d
-			y: -1.0d
+			x: 10.0d
+			y: -3.0d
 			dependencies: ["01B8946F3D2BBB1B"]
 			id: "4CDD8725B9F5571B"
 			tasks: [
@@ -630,8 +630,8 @@
 			}]
 		}
 		{
-			x: 12.5d
-			y: -1.0d
+			x: 13.0d
+			y: -3.0d
 			dependencies: ["5F9B898EE8166C73"]
 			id: "66EDA6545CA4149A"
 			tasks: [{
@@ -641,8 +641,8 @@
 			}]
 		}
 		{
-			x: 13.5d
-			y: -1.0d
+			x: 14.0d
+			y: -3.0d
 			dependencies: ["66EDA6545CA4149A"]
 			id: "6BDAB55CE5D502C9"
 			tasks: [{
@@ -653,8 +653,8 @@
 		}
 		{
 			title: "Mundane is Not Boring"
-			x: -1.5d
-			y: -3.0d
+			x: 2.0d
+			y: 1.0d
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "10B47CA6C72372F3"
 			tasks: [
@@ -686,8 +686,8 @@
 		}
 		{
 			title: "Ready to Get Creative"
-			x: -2.5d
-			y: -3.0d
+			x: 4.0d
+			y: 1.0d
 			dependencies: ["10B47CA6C72372F3"]
 			id: "771A22A8D5C1F2C5"
 			tasks: [
@@ -727,8 +727,8 @@
 		}
 		{
 			title: "Basic Processing"
-			x: -4.5d
-			y: -3.0d
+			x: 8.0d
+			y: 1.0d
 			dependencies: ["4EB93D58A62C90CA"]
 			id: "6FB843E23682C2DA"
 			tasks: [
@@ -761,8 +761,8 @@
 		}
 		{
 			title: "Liquid Processing"
-			x: -5.0d
-			y: -2.0d
+			x: 8.5d
+			y: 2.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "56923B891152AA07"
 			tasks: [
@@ -800,8 +800,8 @@
 		}
 		{
 			title: "The Power To Change The World"
-			x: -5.0d
-			y: -4.0d
+			x: 8.5d
+			y: 0.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "6D8255565710100F"
 			tasks: [
@@ -845,8 +845,8 @@
 		}
 		{
 			title: "Early-Game Power"
-			x: -3.5d
-			y: -3.0d
+			x: 6.0d
+			y: 1.0d
 			dependencies: ["771A22A8D5C1F2C5"]
 			id: "4EB93D58A62C90CA"
 			tasks: [{
@@ -876,8 +876,8 @@
 		}
 		{
 			title: "Put those shards to work"
-			x: 1.0d
-			y: -4.0d
+			x: 1.5d
+			y: -6.0d
 			dependencies: ["230D36713B063759"]
 			id: "26F03151E6999FCE"
 			tasks: [{
@@ -888,8 +888,8 @@
 		}
 		{
 			title: "Smart Storage Drawers"
-			x: -5.5d
-			y: -1.0d
+			x: 9.0d
+			y: 3.0d
 			dependencies: [
 				"56923B891152AA07"
 				"3624A74DAF4EEABA"
@@ -916,8 +916,8 @@
 		}
 		{
 			title: "Storage Drawers"
-			x: -3.0d
-			y: -1.0d
+			x: 4.0d
+			y: 3.0d
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "3624A74DAF4EEABA"
 			tasks: [{
@@ -935,7 +935,7 @@
 		}
 		{
 			title: "Getting Started"
-			x: 0.0d
+			x: -0.5d
 			y: 0.0d
 			id: "472201D5EAC73A69"
 			tasks: [
@@ -972,8 +972,8 @@
 		}
 		{
 			title: "Basic Item Transportation"
-			x: -5.5d
-			y: -3.0d
+			x: 9.0d
+			y: 1.0d
 			dependencies: ["6FB843E23682C2DA"]
 			id: "7CA4E9527355FCAC"
 			tasks: [
@@ -1000,8 +1000,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 4.0d
 			id: "3EB91DD38C059277"
 			tasks: [{
 				id: "3A7B187492911158"
@@ -1016,8 +1016,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 2.5d
+			x: -3.0d
+			y: 4.0d
 			id: "11BE7DD0E0ED7C32"
 			tasks: [{
 				id: "5CECF22551032B72"
@@ -1033,8 +1033,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.5d
+			x: -2.0d
+			y: 4.0d
 			id: "33450A19619CD1CB"
 			tasks: [{
 				id: "0DF185632027C578"
@@ -1044,8 +1044,8 @@
 		}
 		{
 			title: "Economist"
-			x: 1.0d
-			y: 2.5d
+			x: -5.0d
+			y: 3.0d
 			id: "7D5DEFCC6F4B1948"
 			tasks: [
 				{
@@ -1086,8 +1086,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 3.0d
 			id: "43ACA0B2EFCFB9A6"
 			tasks: [{
 				id: "2E28A65B3F84B320"
@@ -1098,8 +1098,8 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: -3.0d
+			x: 1.0d
+			y: 5.0d
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "62A36E8F4314F68A"
 			tasks: [
@@ -1133,8 +1133,8 @@
 		}
 		{
 			title: "Balloons"
-			x: 4.0d
-			y: 2.5d
+			x: -2.0d
+			y: 3.0d
 			description: ["Can be tied to a boat"]
 			id: "153FC9C1806A8F91"
 			tasks: [{
@@ -1220,8 +1220,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 3.5d
+			x: -3.0d
+			y: 5.0d
 			dependencies: ["11BE7DD0E0ED7C32"]
 			id: "7E6A0FD32FAA0253"
 			tasks: [{
@@ -1237,8 +1237,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 2.5d
+			x: -3.0d
+			y: 3.0d
 			id: "7EFCAE2177E91260"
 			tasks: [{
 				id: "09A446EED25C477D"
@@ -1249,7 +1249,7 @@
 		{
 			title: "In Case of Fire"
 			x: 12.5d
-			y: 0.0d
+			y: -2.0d
 			dependencies: ["5F9B898EE8166C73"]
 			id: "1772CBA4B6B8FBB0"
 			tasks: [{
@@ -1260,8 +1260,8 @@
 		}
 		{
 			title: "I Fear No Flames No More"
-			x: 13.5d
-			y: 1.0d
+			x: 13.0d
+			y: -1.0d
 			dependencies: [
 				"1772CBA4B6B8FBB0"
 				"28E747E8DD63BA1F"
@@ -1275,8 +1275,8 @@
 		}
 		{
 			title: "Kobold Resources"
-			x: 1.0d
-			y: 3.5d
+			x: -5.0d
+			y: 4.0d
 			id: "2FED68C632DAE63C"
 			tasks: [{
 				id: "065295CD2CC70504"
@@ -1287,8 +1287,8 @@
 		}
 		{
 			title: "One Spade Deeper"
-			x: 7.5d
-			y: -3.0d
+			x: 8.0d
+			y: -5.0d
 			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want, as long as you use at least 10 Crying Obsidian for the frame."]
 			dependencies: ["436B7F15C6A13C48"]
 			id: "5146EEC7C482DD52"

@@ -1415,5 +1415,202 @@
 				}
 			]
 		}
+		{
+			title: "Bucket of Fish"
+			x: -1.0d
+			y: 1.0d
+			id: "7C40307D90C461A7"
+			tasks: [
+				{
+					id: "1F445AC7795B816D"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:pufferfish_bucket"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:edelwood_pufferfish_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "7F1C1BAC06DCAD72"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:salmon_bucket"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:edelwood_salmon_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "63FC4BCBC5C6AAB5"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:cod_bucket"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:edelwood_cod_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "02A94E4B84A29A0F"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "minecraft:tropical_fish_bucket"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:edelwood_tropical_fish_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "3E9141A56E18D91D"
+					type: "item"
+					item: "alexsmobs:lobster_bucket"
+				}
+				{
+					id: "7CA93BD5F19EE07B"
+					type: "item"
+					item: "alexsmobs:blobfish_bucket"
+				}
+				{
+					id: "630D61DF35B2C8F0"
+					type: "item"
+					item: "alexsmobs:mimic_octopus_bucket"
+				}
+				{
+					id: "793AF7398188349C"
+					type: "item"
+					item: "alexsmobs:frilled_shark_bucket"
+				}
+				{
+					id: "3B525B0A304B93D2"
+					type: "item"
+					item: "forbidden_arcanus:edelwood_squid_bucket"
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 1.0d
+			id: "53347258CEF78738"
+			tasks: [
+				{
+					id: "6ABD10213F03875D"
+					type: "item"
+					item: "betterendforge:bucket_end_fish"
+				}
+				{
+					id: "574F9162494C582F"
+					type: "item"
+					item: "betterendforge:bucket_cubozoa"
+				}
+			]
+		}
+		{
+			title: "Hot Stuff"
+			x: 1.0d
+			y: 1.0d
+			id: "2998470A1EDC2015"
+			tasks: [
+				{
+					id: "35DA08EC504CB0AB"
+					type: "item"
+					item: "infernalexp:voline_bucket"
+				}
+				{
+					id: "0EAE5F62916E91A2"
+					type: "item"
+					title: "Bucket of Magma Cube"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "infernalexp:magma_cube_bucket"
+									Count: 1b
+								}
+								{
+									id: "forbidden_arcanus:edelwood_magma_cube_bucket"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1DA4852044FD600D"
+					type: "item"
+					item: "infernalexp:strider_bucket"
+				}
+				{
+					id: "6B3D16F0343BE053"
+					type: "item"
+					item: "alexsmobs:stradpole_bucket"
+				}
+			]
+		}
+		{
+			title: "Bucket of Critter"
+			x: 0.0d
+			y: 1.0d
+			id: "60D201D5C37E5611"
+			tasks: [
+				{
+					id: "26C7A2E33D851858"
+					type: "item"
+					item: "forbidden_arcanus:edelwood_bat_bucket"
+				}
+				{
+					id: "38DE478966CC3D4F"
+					type: "item"
+					item: "forbidden_arcanus:edelwood_slime_bucket"
+				}
+				{
+					id: "10CD81F73FDED15F"
+					type: "item"
+					item: "forbidden_arcanus:edelwood_chicken_bucket"
+				}
+			]
+		}
 	]
 }
