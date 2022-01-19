@@ -4,14 +4,14 @@
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:flower_forest"
+        "value": "otg:skylandsliteplus.flower_forest"
       }
     ],
     [
       {
         "type": "REGISTRY_NAME",
         "negate": false,
-        "value": "minecraft:sunflower_plains"
+        "value": "otg:skylandsliteplus.sunflower_plains"
       }
     ],
     [

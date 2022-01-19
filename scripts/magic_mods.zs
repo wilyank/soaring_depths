@@ -220,3 +220,20 @@ craftingTable.addShaped("spectral_eye_amulet",
         <fluid:astralsorcery:liquid_starlight>*1000
     ]
 );
+craftingTable.removeRecipe(<item:forbidden_arcanus:golden_feather>);
+craftingTable.addShaped("golden_feather",
+    <item:forbidden_arcanus:golden_feather>,
+    [
+        [<item:forbidden_arcanus:arcane_gold_nugget>,<item:forbidden_arcanus:arcane_gold_nugget>,<item:forbidden_arcanus:arcane_gold_nugget>],
+        [<item:forbidden_arcanus:arcane_gold_nugget>,<item:minecraft:feather>,<item:forbidden_arcanus:arcane_gold_nugget>],
+        [<item:forbidden_arcanus:arcane_gold_nugget>,<item:forbidden_arcanus:arcane_gold_nugget>,<item:forbidden_arcanus:arcane_gold_nugget>]
+    ]
+);
+<recipetype:create:mixing>.addRecipe("golden_feather",
+    "none",
+    <item:forbidden_arcanus:golden_feather>,
+    [
+        <item:minecraft:feather>,
+        <item:forbidden_arcanus:arcane_gold_nugget>*8
+    ]
+);

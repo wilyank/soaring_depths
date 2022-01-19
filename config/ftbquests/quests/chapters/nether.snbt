@@ -1225,6 +1225,7 @@
 			}]
 		}
 		{
+			title: "The Legacy of Dr. Spencer Black"
 			x: -4.0d
 			y: 3.0d
 			dependencies: ["7CACD318ADF849E2"]

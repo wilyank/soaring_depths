@@ -592,3 +592,16 @@ craftingTable.addShaped("better_repeater",
         [<item:minecraft:stone>,<item:minecraft:stone>,<item:minecraft:stone>]
     ]
 );
+
+craftingTable.removeRecipe(<item:magicfeather:magicfeather>);
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("magic_feather")
+    .transitionTo(<item:minecraft:feather>)
+    .require(<tag:items:forge:elytra>)
+    .loops(1)
+    .addOutput(<item:magicfeather:magicfeather>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:shears>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:minecraft:shulker_shell>))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_glass> * 250))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:golden_feather>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
+);

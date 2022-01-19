@@ -26,12 +26,12 @@
       {
         "type": "REGISTRY_NAME",
         "negate": true,
-        "value": "minecraft:jungle_egde"
+        "value": "otg:skylandsliteplus.jungle_egde"
       },
       {
         "type": "REGISTRY_NAME",
         "negate": true,
-        "value": "minecraft:modified_jungle_edge"
+        "value": "otg:skylandsliteplus.modified_jungle_edge"
       }
     ]
   ]

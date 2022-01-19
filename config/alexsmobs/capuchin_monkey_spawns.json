@@ -14,12 +14,12 @@
       {
         "type": "REGISTRY_NAME",
         "negate": true,
-        "value": "minecraft:bamboo_jungle"
+        "value": "otg:skylandsliteplus.bamboo_jungle"
       },
       {
         "type": "REGISTRY_NAME",
         "negate": true,
-        "value": "minecraft:bamboo_jungle_hills"
+        "value": "otg:skylandsliteplus.bamboo_jungle_hills"
       },
       {
         "type": "REGISTRY_NAME",
