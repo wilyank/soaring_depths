@@ -248,3 +248,65 @@ mods.jei.JEI.hideMod("metalbarrels", (name as string) => {
         || name == "metalbarrels:gold_to_diamond"
         || name == "metalbarrels:diamond_to_netherite");
 });
+
+craftingTable.removeByRegex("storagedrawers:.*_upgrade");
+smithing.addRecipe("storage_upgrade_1",
+    <item:storagedrawers:obsidian_storage_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <item:forbidden_arcanus:obsidian_ingot>
+);
+smithing.addRecipe("storage_upgrade_2",
+    <item:storagedrawers:iron_storage_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <tag:items:forge:ingots/iron>
+);
+smithing.addRecipe("storage_upgrade_3",
+    <item:storagedrawers:gold_storage_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <tag:items:forge:ingots/gold>
+);
+smithing.addRecipe("storage_upgrade_4",
+    <item:storagedrawers:diamond_storage_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <tag:items:forge:gems/diamond>
+);
+smithing.addRecipe("storage_upgrade_5",
+    <item:storagedrawers:emerald_storage_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <tag:items:forge:storage_blocks/emerald>
+);
+smithing.addRecipe("storage_downgrade",
+    <item:storagedrawers:one_stack_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <item:minecraft:flint>
+);
+smithing.addRecipe("redstone_upgrade",
+    <item:storagedrawers:redstone_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <item:minecraft:redstone>
+);
+smithing.addRecipe("repeater_upgrade",
+    <item:storagedrawers:fill_level_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <item:minecraft:comparator>
+);
+smithing.addRecipe("redstone_min_upgrade",
+    <item:storagedrawers:min_redstone_upgrade>,
+    <item:storagedrawers:redstone_upgrade>,
+    <item:minecraft:redstone_torch>
+);
+smithing.addRecipe("redstone_max_upgrade",
+    <item:storagedrawers:max_redstone_upgrade>,
+    <item:storagedrawers:redstone_upgrade>,
+    <item:minecraft:redstone>
+);
+smithing.addRecipe("illumination_upgrade",
+    <item:storagedrawers:illumination_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <tag:items:forge:dusts/glowstone>
+);
+smithing.addRecipe("void_upgrade",
+    <item:storagedrawers:void_upgrade>,
+    <item:storagedrawers:upgrade_template>,
+    <item:eidolon:pewter_inlay>
+);

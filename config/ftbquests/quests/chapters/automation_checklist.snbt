@@ -11,8 +11,8 @@
 		{
 			title: "Cobblestone"
 			icon: "minecraft:cobblestone"
-			x: -17.0d
-			y: -6.0d
+			x: -17.5d
+			y: -7.5d
 			id: "1F1D5B9D7E798C28"
 			tasks: [
 				{
@@ -54,8 +54,8 @@
 		}
 		{
 			title: "Sand"
-			x: -15.5d
-			y: -4.5d
+			x: -17.5d
+			y: -6.5d
 			id: "3E7EDA69C036415C"
 			tasks: [
 				{
@@ -90,8 +90,8 @@
 		}
 		{
 			title: "Concrete"
-			x: -16.5d
-			y: -3.5d
+			x: -17.5d
+			y: -4.5d
 			id: "233F22890F4F9DDA"
 			tasks: [
 				{
@@ -512,7 +512,7 @@
 			]
 		}
 		{
-			x: -18.5d
+			x: -15.5d
 			y: -7.5d
 			id: "234BB44DBB76701B"
 			tasks: [
@@ -529,7 +529,7 @@
 			]
 		}
 		{
-			x: -19.5d
+			x: -15.5d
 			y: -6.5d
 			id: "6ECBABF02CAA3EC6"
 			tasks: [
@@ -546,8 +546,8 @@
 			]
 		}
 		{
-			x: -14.5d
-			y: -4.5d
+			x: -17.5d
+			y: -5.5d
 			id: "7A2AA21BCF1DF02F"
 			tasks: [
 				{
@@ -563,25 +563,8 @@
 			]
 		}
 		{
-			x: -14.5d
-			y: -3.5d
-			id: "65D839865317BE5E"
-			tasks: [
-				{
-					id: "5BB76394E76D8DD0"
-					type: "item"
-					item: "minecraft:diorite"
-				}
-				{
-					id: "54B4B6164935FE05"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -14.5d
-			y: -6.5d
+			x: -15.5d
+			y: -4.5d
 			id: "2659594C72924E48"
 			tasks: [
 				{
@@ -597,8 +580,8 @@
 			]
 		}
 		{
-			x: -18.5d
-			y: -8.5d
+			x: -14.5d
+			y: -6.5d
 			id: "1CB9717123B30D02"
 			tasks: [
 				{
@@ -614,24 +597,7 @@
 			]
 		}
 		{
-			x: -19.5d
-			y: -7.5d
-			id: "32C966CCFC06516E"
-			tasks: [
-				{
-					id: "7E12E51F80A6CD2B"
-					type: "item"
-					item: "create:scoria"
-				}
-				{
-					id: "7AE8636020FFC30D"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -15.5d
+			x: -17.5d
 			y: -3.5d
 			id: "0C047E393F61AB41"
 			tasks: [
@@ -648,7 +614,7 @@
 			]
 		}
 		{
-			x: -18.5d
+			x: -16.5d
 			y: -4.5d
 			id: "7E16E3DA86589B5D"
 			tasks: [
@@ -659,40 +625,6 @@
 				}
 				{
 					id: "446855ED1A81E750"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -15.5d
-			y: -8.5d
-			id: "3FE46C944CF15404"
-			tasks: [
-				{
-					id: "15714BAB9842278C"
-					type: "item"
-					item: "minecraft:red_sand"
-				}
-				{
-					id: "022689C364380FAB"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -19.5d
-			y: -8.5d
-			id: "2484431225E0899E"
-			tasks: [
-				{
-					id: "522EEBFD3D1E6BA8"
-					type: "item"
-					item: "minecraft:mossy_cobblestone"
-				}
-				{
-					id: "4B4F96F6C420CEF1"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -717,26 +649,9 @@
 			]
 		}
 		{
-			x: -19.5d
-			y: -3.5d
-			id: "7E9EE040DC8B3515"
-			tasks: [
-				{
-					id: "6CE09999C9F5E179"
-					type: "item"
-					item: "infernalexp:soul_stone"
-				}
-				{
-					id: "7AA96CCBB7425BF3"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			title: "Glass"
-			x: -17.5d
-			y: -3.5d
+			x: -16.5d
+			y: -5.5d
 			id: "0DF61C888378540A"
 			tasks: [
 				{
@@ -759,8 +674,8 @@
 			]
 		}
 		{
-			x: -19.5d
-			y: -4.5d
+			x: -14.5d
+			y: -7.5d
 			id: "64DBB67895300F8A"
 			tasks: [
 				{
@@ -776,8 +691,8 @@
 			]
 		}
 		{
-			x: -19.5d
-			y: -5.5d
+			x: -15.5d
+			y: -3.5d
 			id: "085610B8C9A52411"
 			tasks: [
 				{
@@ -793,8 +708,8 @@
 			]
 		}
 		{
-			x: -16.5d
-			y: -8.5d
+			x: -15.5d
+			y: -5.5d
 			id: "4B05FD3826BCABCC"
 			tasks: [
 				{
@@ -810,8 +725,8 @@
 			]
 		}
 		{
-			x: -15.5d
-			y: -7.5d
+			x: -16.5d
+			y: -6.5d
 			id: "7A7534DC1D136671"
 			tasks: [
 				{
@@ -827,41 +742,7 @@
 			]
 		}
 		{
-			x: -14.5d
-			y: -7.5d
-			id: "7CE20A0AE2EABB3C"
-			tasks: [
-				{
-					id: "19C1A5AD1D8E83BA"
-					type: "item"
-					item: "create:limestone"
-				}
-				{
-					id: "03A8A65D448561EB"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -14.5d
-			y: -5.5d
-			id: "5C1EA4A06E265DA6"
-			tasks: [
-				{
-					id: "5A6814189E9773EE"
-					type: "item"
-					item: "create:limesand"
-				}
-				{
-					id: "0ED4F72347292990"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -18.5d
+			x: -16.5d
 			y: -3.5d
 			id: "4E1284F5C5887609"
 			tasks: [
@@ -896,7 +777,7 @@
 		}
 		{
 			x: -14.5d
-			y: -8.5d
+			y: -5.5d
 			id: "1B09BBFDA63E28AB"
 			tasks: [
 				{
@@ -1056,8 +937,8 @@
 			]
 		}
 		{
-			x: -17.5d
-			y: -8.5d
+			x: -14.5d
+			y: -3.5d
 			id: "3F264CA82908D0ED"
 			tasks: [
 				{
@@ -1314,8 +1195,8 @@
 			]
 		}
 		{
-			x: -17.5d
-			y: -4.5d
+			x: -16.5d
+			y: -7.5d
 			id: "5FD4B2BD7A1263D6"
 			tasks: [
 				{
@@ -1331,7 +1212,7 @@
 			]
 		}
 		{
-			x: -16.5d
+			x: -14.5d
 			y: -4.5d
 			id: "50D05ADFA962F22E"
 			tasks: [
@@ -1461,6 +1342,41 @@
 				}
 				{
 					id: "20FCE769B1EBA552"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			x: -22.5d
+			y: -5.0d
+			id: "06C78CDA63D6F6C1"
+			tasks: [
+				{
+					id: "762B9ACEDAE6A91A"
+					type: "item"
+					item: "create_confectionery:soothing_hot_chocolate"
+				}
+				{
+					id: "5FC784E20650309B"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
+		{
+			disable_toast: true
+			x: -21.0d
+			y: -14.0d
+			id: "672C9D9E510B4DB9"
+			tasks: [
+				{
+					id: "2CBFE8CD507DAB8C"
+					type: "item"
+					item: "eidolon:soul_shard"
+				}
+				{
+					id: "67FAC62AEA4B6B74"
 					type: "checkmark"
 					title: "Automated"
 				}

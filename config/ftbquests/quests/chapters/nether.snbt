@@ -441,7 +441,8 @@
 		{
 			x: 0.0d
 			y: 0.0d
-			shape: "octagon"
+			shape: "hexagon"
+			size: 1.5d
 			id: "00E4D5A2C3F9A861"
 			tasks: [{
 				id: "11A1D73875C1BAB8"
@@ -584,10 +585,12 @@
 			title: "Crafting Your Way to the End"
 			x: -1.0d
 			y: -7.0d
+			shape: "hexagon"
 			dependencies: [
 				"00E2150629E600D8"
 				"19D6506369671503"
 			]
+			size: 1.5d
 			id: "46F04F5E976877E7"
 			tasks: [{
 				id: "03328B628204C7ED"

@@ -69,8 +69,8 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:golden_orchid_seeds>);
     80
 );
 
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 80);
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:molten_manyullyn>*1000, 100, 20);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 90);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 10);
 
 // change Mutant chemical recipes
 brewing.removeRecipeByReagent(<item:minecraft:obsidian>);

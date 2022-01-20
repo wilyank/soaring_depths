@@ -370,6 +370,7 @@
 			]
 		}
 		{
+			title: "Leather Armor Set"
 			x: 5.0d
 			y: -4.0d
 			id: "4CE0A2DF7EC5685E"
@@ -421,6 +422,7 @@
 			]
 		}
 		{
+			title: "Chainmail Armor Set"
 			x: 5.0d
 			y: -3.0d
 			id: "3693A49C3315303B"
@@ -472,6 +474,7 @@
 			]
 		}
 		{
+			title: "Iron Armor Set"
 			x: 5.0d
 			y: -2.0d
 			id: "09E39BCC97722EBB"
@@ -523,6 +526,7 @@
 			]
 		}
 		{
+			title: "Golden Armor Set"
 			x: 5.0d
 			y: -1.0d
 			id: "7225264C0175E06F"
@@ -574,6 +578,7 @@
 			]
 		}
 		{
+			title: "Diamond Armor Set"
 			x: 5.0d
 			y: 0.0d
 			id: "0E550607B379E60B"
@@ -625,6 +630,7 @@
 			]
 		}
 		{
+			title: "Netherite Armor Set"
 			x: 5.0d
 			y: 1.0d
 			id: "5B3C8DC36E044EF1"
@@ -676,6 +682,7 @@
 			]
 		}
 		{
+			title: "Special Equipment"
 			x: 10.0d
 			y: -4.0d
 			id: "021C137B3F4C55CA"
@@ -818,7 +825,7 @@
 			]
 		}
 		{
-			title: "Mutant Skeleton Armor"
+			title: "Mutant Skeleton Armor Set"
 			x: 6.0d
 			y: -4.0d
 			id: "7AD01A4E14DB2930"
@@ -870,6 +877,7 @@
 			]
 		}
 		{
+			title: "Mutant Wither Skeleton Armor Set"
 			x: 6.0d
 			y: -3.0d
 			id: "49B334F0B52BAFA5"
@@ -921,6 +929,7 @@
 			]
 		}
 		{
+			title: "Thallasium Armor Set"
 			x: 7.0d
 			y: -4.0d
 			id: "0CA65171AAB421CD"
@@ -972,6 +981,7 @@
 			]
 		}
 		{
+			title: "Terminite Armor Set"
 			x: 7.0d
 			y: -3.0d
 			id: "44E8101AF6EF274D"
@@ -1023,6 +1033,7 @@
 			]
 		}
 		{
+			title: "Aeternium Armor Set"
 			x: 7.0d
 			y: -2.0d
 			id: "05B6A9C547221600"
@@ -1074,6 +1085,7 @@
 			]
 		}
 		{
+			title: "Crystalite Armor Set"
 			x: 7.0d
 			y: -1.0d
 			id: "4314A1BD92BCB27F"
@@ -1131,6 +1143,7 @@
 			]
 		}
 		{
+			title: "Arcane Gold Armor Set"
 			x: 8.0d
 			y: -4.0d
 			id: "3907295A76983BE5"
@@ -1206,6 +1219,7 @@
 			]
 		}
 		{
+			title: "Mortem Armor Set"
 			x: 8.0d
 			y: -3.0d
 			id: "35CF4B478D145F7B"
@@ -1257,6 +1271,7 @@
 			]
 		}
 		{
+			title: "Draco Arcanus Armor Set"
 			x: 8.0d
 			y: -2.0d
 			id: "32B0891D1692C5F2"
@@ -1308,6 +1323,7 @@
 			]
 		}
 		{
+			title: "Tyr Armor Set"
 			x: 8.0d
 			y: -1.0d
 			id: "0AF9E119A8745A52"
@@ -1365,6 +1381,7 @@
 			]
 		}
 		{
+			title: "Ignitium Armor Set"
 			x: 9.0d
 			y: -4.0d
 			id: "49CCBEFCD0DB3FB8"
@@ -1609,6 +1626,114 @@
 					id: "10CD81F73FDED15F"
 					type: "item"
 					item: "forbidden_arcanus:edelwood_chicken_bucket"
+				}
+			]
+		}
+		{
+			title: "Tinkerer's Armor Set"
+			x: 12.0d
+			y: -4.0d
+			id: "2FD400D5C0FD208B"
+			tasks: [
+				{
+					id: "199A6CF7CA56167A"
+					type: "item"
+					title: "Any #tconstruct:modifiable/armor/helmets"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:modifiable/armor/helmets"
+						}
+					}
+				}
+				{
+					id: "6F8D339E716C931B"
+					type: "item"
+					title: "Any #tconstruct:modifiable/armor/chestplate"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:modifiable/armor/chestplate"
+						}
+					}
+				}
+				{
+					id: "732E38A8169D8774"
+					type: "item"
+					title: "Any #tconstruct:modifiable/armor/leggings"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:modifiable/armor/leggings"
+						}
+					}
+				}
+				{
+					id: "30B9E50C2762E303"
+					type: "item"
+					title: "Any #tconstruct:modifiable/armor/boots"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "tconstruct:modifiable/armor/boots"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Magical Trinket Collection"
+			x: 5.0d
+			y: 3.0d
+			id: "04FC74E3204453DD"
+			tasks: [
+				{
+					id: "65AFBC973F3F34C1"
+					type: "item"
+					item: "eidolon:resolute_belt"
+				}
+				{
+					id: "74A2C06BC8D16FD4"
+					type: "item"
+					item: "eidolon:gravity_belt"
+				}
+				{
+					id: "78F965785DD62586"
+					type: "item"
+					item: "eidolon:void_amulet"
+				}
+				{
+					id: "1C39B53F9CC5597F"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:spectral_eye_amulet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7A3DDF4C9DBB36D4"
+					type: "item"
+					item: "eidolon:warded_mail"
+				}
+				{
+					id: "08860297FA918E03"
+					type: "item"
+					item: "eidolon:prestigious_palm"
+				}
+				{
+					id: "7A0505B70E589A0A"
+					type: "item"
+					item: "eidolon:mind_shielding_plate"
+				}
+				{
+					id: "14123A87988C7F53"
+					type: "item"
+					item: "eidolon:glass_hand"
 				}
 			]
 		}

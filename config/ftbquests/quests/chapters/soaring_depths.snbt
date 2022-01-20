@@ -53,6 +53,7 @@
 		{
 			x: 2.0d
 			y: 5.0d
+			shape: "gear"
 			subtitle: "Great for Melting Stuff"
 			dependencies: ["103BBB9EE1DB0526"]
 			id: "0F828792BEE1DC4F"
@@ -100,6 +101,7 @@
 			title: "Smeltery"
 			x: 8.0d
 			y: 5.0d
+			shape: "gear"
 			subtitle: "Great for Alloying and Ore Doubling"
 			dependencies: ["0F828792BEE1DC4F"]
 			id: "530392498F50A2AE"
@@ -183,6 +185,7 @@
 			title: "Eidolon"
 			x: 2.0d
 			y: -5.0d
+			shape: "pentagon"
 			subtitle: "The road to power is paved with corpses"
 			description: ["Use this guide well"]
 			dependencies: ["6C27D59380778FF1"]
@@ -410,6 +413,7 @@
 			title: "Questionable Friends"
 			x: 3.0d
 			y: -5.0d
+			shape: "pentagon"
 			dependencies: ["230D36713B063759"]
 			id: "058442E9170FB612"
 			tasks: [
@@ -434,6 +438,7 @@
 			title: "Calling Favours"
 			x: 4.0d
 			y: -5.0d
+			shape: "pentagon"
 			dependencies: ["058442E9170FB612"]
 			id: "114A4DD936FEE504"
 			tasks: [{
@@ -458,6 +463,7 @@
 			title: "Gone Cackling"
 			x: 4.5d
 			y: -6.0d
+			shape: "pentagon"
 			dependencies: ["114A4DD936FEE504"]
 			id: "62ED5A7BBE82E81E"
 			tasks: [
@@ -527,6 +533,7 @@
 			title: "Bloodying Your Hands"
 			x: 3.0d
 			y: -7.0d
+			shape: "pentagon"
 			dependencies: ["5180661B35362BD1"]
 			id: "2FBBF90641C30260"
 			tasks: [
@@ -552,6 +559,7 @@
 			title: "A Basis for Baubles"
 			x: 2.5d
 			y: -6.0d
+			shape: "pentagon"
 			dependencies: ["230D36713B063759"]
 			id: "5180661B35362BD1"
 			tasks: [
@@ -688,6 +696,7 @@
 			title: "Ready to Get Creative"
 			x: 4.0d
 			y: 1.0d
+			shape: "gear"
 			dependencies: ["10B47CA6C72372F3"]
 			id: "771A22A8D5C1F2C5"
 			tasks: [
@@ -729,6 +738,7 @@
 			title: "Basic Processing"
 			x: 8.0d
 			y: 1.0d
+			shape: "gear"
 			dependencies: ["4EB93D58A62C90CA"]
 			id: "6FB843E23682C2DA"
 			tasks: [
@@ -763,6 +773,7 @@
 			title: "Liquid Processing"
 			x: 8.5d
 			y: 2.0d
+			shape: "gear"
 			dependencies: ["6FB843E23682C2DA"]
 			id: "56923B891152AA07"
 			tasks: [
@@ -802,6 +813,7 @@
 			title: "The Power To Change The World"
 			x: 8.5d
 			y: 0.0d
+			shape: "gear"
 			dependencies: ["6FB843E23682C2DA"]
 			id: "6D8255565710100F"
 			tasks: [
@@ -847,6 +859,7 @@
 			title: "Early-Game Power"
 			x: 6.0d
 			y: 1.0d
+			shape: "gear"
 			dependencies: ["771A22A8D5C1F2C5"]
 			id: "4EB93D58A62C90CA"
 			tasks: [{
@@ -878,6 +891,7 @@
 			title: "Put those shards to work"
 			x: 1.5d
 			y: -6.0d
+			shape: "pentagon"
 			dependencies: ["230D36713B063759"]
 			id: "26F03151E6999FCE"
 			tasks: [{
@@ -890,6 +904,7 @@
 			title: "Smart Storage Drawers"
 			x: 9.0d
 			y: 3.0d
+			shape: "gear"
 			dependencies: [
 				"56923B891152AA07"
 				"3624A74DAF4EEABA"
@@ -937,6 +952,8 @@
 			title: "Getting Started"
 			x: -0.5d
 			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
 			id: "472201D5EAC73A69"
 			tasks: [
 				{
@@ -974,6 +991,7 @@
 			title: "Basic Item Transportation"
 			x: 9.0d
 			y: 1.0d
+			shape: "gear"
 			dependencies: ["6FB843E23682C2DA"]
 			id: "7CA4E9527355FCAC"
 			tasks: [
@@ -1289,8 +1307,10 @@
 			title: "One Spade Deeper"
 			x: 8.0d
 			y: -5.0d
+			shape: "hexagon"
 			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want, as long as you use at least 10 Crying Obsidian for the frame."]
 			dependencies: ["436B7F15C6A13C48"]
+			size: 1.5d
 			id: "5146EEC7C482DD52"
 			tasks: [
 				{

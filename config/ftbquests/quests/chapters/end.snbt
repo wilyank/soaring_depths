@@ -12,6 +12,8 @@
 			icon: "minecraft:end_stone"
 			x: 0.0d
 			y: 0.0d
+			shape: "hexagon"
+			size: 1.5d
 			id: "6A1A37C3500EC4A9"
 			tasks: [{
 				id: "70BD40220EA30855"
