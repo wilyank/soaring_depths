@@ -9,6 +9,10 @@ import crafttweaker.api.util.text.MCTextComponent;
 import crafttweaker.api.util.text.MCStyle;
 import crafttweaker.api.events.CTEventManager;
 import crafttweaker.api.server.MCServer;
+import crafttweaker.api.entity.MCLivingEntity;
+import crafttweaker.api.util.MCHand;
+import crafttweaker.api.util.Random;
+
 
 // this scripts does random tweaks and fixes
 
@@ -605,3 +609,26 @@ craftingTable.removeRecipe(<item:magicfeather:magicfeather>);
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:forbidden_arcanus:golden_feather>))
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
+
+CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
+    (event) => {
+        var entity = event.getEntity();
+        if (entity.type == <entitytype:minecraft:drowned>) {
+            var drownedEntity = (entity as MCLivingEntity);
+            println("entity" + drownedEntity.name + " spawned");
+            if (drownedEntity.getHeldItem(MCHand.MAIN_HAND).empty) {
+                var random = new Random;
+                var randomInt = random.nextInt(12);
+                if (randomInt == 0) {
+                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:trident>.withDamage(random.nextInt(249)));
+                }
+                else if (randomInt == 1 || randomInt == 2) {
+                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:nautilus_shell>);
+                }
+                else if (randomInt == 3 || randomInt == 4 || randomInt == 5) {
+                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:fishing_rod>.withDamage(random.nextInt(63)));
+                }
+            }
+        }
+     }
+ );
