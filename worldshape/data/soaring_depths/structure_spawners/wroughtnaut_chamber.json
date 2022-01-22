@@ -1,0 +1,31 @@
+{
+    "template": {
+        "type": "pool",
+        "id": "soaring_depths:ruins/andesite/start",
+        "maxDepth": 3
+    },
+
+    "averageSpacing": 30,
+    "avoidOthers": true,
+    
+    "placement": {
+        "offset": 0,
+        "terraform": 0,
+        "minY": 70,
+        "maxY": 200,
+        "type": "surface"
+    },
+
+    "dimensions": [
+        "minecraft:overworld"
+    ],
+
+    "biomes": [
+        "#taiga",
+        "#plains",
+        "#forest",
+        "#mushroom",
+        "#icy"
+    ]
+
+}
