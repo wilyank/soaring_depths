@@ -1,0 +1,19 @@
+[
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "mowziesmobs:naga",
+        "mincount": 
+        {
+            "amount": 2,
+            "mob": "mowziesmobs:naga",
+            "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "mowziesmobs:naga",
+        "mindaycount": 20,
+        "result": "deny"
+    }
+]
