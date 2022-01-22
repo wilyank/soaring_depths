@@ -5,7 +5,7 @@
         "max_depth": 1
     },
 
-    "averageSpacing": 20,
+    "averageSpacing": 30,
     "avoidOthers": true,
     
     "placement": {

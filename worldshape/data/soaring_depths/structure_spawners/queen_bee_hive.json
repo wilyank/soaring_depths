@@ -4,7 +4,7 @@
         "id": "queen_bee:bee_nest"
     },
 
-    "averageSpacing": 50,
+    "averageSpacing": 60,
     "avoidOthers": true,
     
     "placement": {

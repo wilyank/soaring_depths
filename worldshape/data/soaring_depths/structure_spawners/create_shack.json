@@ -4,7 +4,7 @@
         "id": "soaring_depths:create_shack"
     },
 
-    "averageSpacing": 15,
+    "averageSpacing": 30,
     "avoidOthers": true,
     
     "placement": {

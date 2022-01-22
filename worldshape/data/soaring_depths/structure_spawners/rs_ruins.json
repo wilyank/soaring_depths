@@ -2,7 +2,7 @@
     "template": {
         "type": "pool",
         "id": "repurposed_structures:ruins/land_warm/start_pool",
-        "maxDepth": 7
+        "maxDepth": 4
     },
 
     "averageSpacing": 30,
