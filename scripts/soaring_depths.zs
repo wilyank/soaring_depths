@@ -23,7 +23,6 @@ forge_gems.add(<item:betterendforge:amber_gem>);
 forge_gems.add(<item:astralsorcery:resonating_gem>);
 forge_gems.add(<item:eidolon:lesser_soul_gem>);
 forge_gems.add(<item:eidolon:shadow_gem>);
-forge_gems.add(<item:bloodmagic:lavacrystal>);
 
 <tag:items:forge:lanterns>.add(<item:minecraft:lantern>);
 <tag:items:forge:lanterns>.add(<item:minecraft:soul_lantern>);
