@@ -1,1 +1,35 @@
-[]
+[
+    {
+        "mob": [
+            "minecraft:pillager",
+            "minecraft:vindicator"
+        ],
+        "weights": [
+            10,
+            3
+        ],
+        "persecond": 0.1,
+        "attempts": 10,
+        "amount": {
+            "minimum": 2,
+            "maximum": 5
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "maxthis": 10
+        }
+    },
+    {
+        "mob": "mowziesmobs:naga",
+        "persecond": 0.005,
+        "attempts": 2,
+        "amount": {
+            "maximum": 1,
+            "minimum": 1
+        },
+        "conditions": {
+            "dimension": "minecraft:overworld",
+            "maxthis": 5
+        }
+    }
+]

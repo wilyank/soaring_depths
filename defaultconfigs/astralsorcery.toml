@@ -685,7 +685,7 @@
 
 	[registries.perk_void_trash_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define item-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
-		perk_void_trash_ore = ["forge:ores/coal;5200", "forge:ores/iron;2500", "forge:ores/gold;550", "forge:ores/lapis;360", "forge:ores/redstone;700", "forge:ores/diamond;120", "forge:ores/emerald;100"]
+		perk_void_trash_ore = ["forge:ores/coal;5200", "forge:ores/copper;3000", "forge:ores/zinc;3000", "forge:ores/iron;2500", "forge:ores/gold;550", "forge:ores/lapis;360", "forge:ores/redstone;700", "forge:ores/diamond;120", "forge:ores/emerald;100"]
 
 	[registries.gem_attributes]
 		#Format: '<attributeRegistryName>;<integerWeight>' Defines the attributes Perk Gems can roll.
@@ -697,7 +697,7 @@
 
 	[registries.mineralis_ritual_ore]
 		#Format: '<tagName>;<integerWeight>' Defines random-weighted ore-selection data. Define block-tags to select from here with associated weight. Specific mods can be blacklisted in the general AstralSorcery config in 'modidOreBlacklist'.
-		mineralis_ritual_ore = ["forge:ores/coal;5200", "forge:ores/iron;2500", "forge:ores/gold;440", "forge:ores/lapis;200", "forge:ores/redstone;600", "forge:ores/emerald;60", "forge:ores/diamond;40"]
+		mineralis_ritual_ore = ["forge:ores/coal;5200", "forge:ores/copper;3000", "forge:ores/zinc;3000", "forge:ores/iron;2500", "forge:ores/gold;440", "forge:ores/lapis;200", "forge:ores/redstone;600", "forge:ores/emerald;60", "forge:ores/diamond;40", "forge:ores/runestone;30"]
 
 	[registries.fluid_rarities]
 		#Defines fluid-rarities and amounts for the evershifting fountain's neromantic prime. The lower the relative rarity, the more rare the fluid. Format: <FluidName>;<guaranteedMbAmount>;<additionalRandomMbAmount>;<rarity>

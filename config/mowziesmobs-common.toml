@@ -445,14 +445,14 @@
 			#Prevent spawns in these biomes regardless of the biome type settings
 			biome_blacklist = []
 			#Allow spawns in these biomes regardless of the biome type settings
-			biome_whitelist = ["minecraft:stone_shore"]
+			biome_whitelist = []
 			#Each entry is a combination of allowed biome types.
 			#Separate types with commas to require biomes to have all types in an entry
 			#Put a '!' before a biome type to mean NOT that type
 			#A blank entry means all biomes. No entries means no biomes.
 			#For example, 'FOREST,MAGICAL,!SNOWY' would mean all biomes that are magical forests but not snowy
 			#'!MOUNTAIN' would mean all non-mountain biomes
-			biome_type = ["MOUNTAIN,!SNOWY"]
+			biome_type = []
 
 		[mobs.naga.combat_config]
 			#Scale mob attack damage by this value
@@ -488,7 +488,7 @@
 			height_max = -1
 			#Probability of a spawn attempt succeeding. 1 for normal spawning, 0 will prevent spawning. Used to make mobs extra rare.
 			#Range: 0.0 ~ 1.0
-			extra_rarity = 0.1
+			extra_rarity = 1.0
 			#Tags of blocks this mob is allowed to spawn on. Leave blank to ignore block tags.
 			allowed_block_tags = []
 			#Minimum number of mobs that appear in a spawn group

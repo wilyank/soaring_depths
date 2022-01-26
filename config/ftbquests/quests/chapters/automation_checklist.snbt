@@ -1382,5 +1382,22 @@
 				}
 			]
 		}
+		{
+			x: -6.0d
+			y: -5.5d
+			id: "2C98D36D5FD10258"
+			tasks: [
+				{
+					id: "2A873E88C6A2796B"
+					type: "item"
+					item: "forbidden_arcanus:dark_rune"
+				}
+				{
+					id: "51DBE5F5C156069F"
+					type: "checkmark"
+					title: "Automated"
+				}
+			]
+		}
 	]
 }

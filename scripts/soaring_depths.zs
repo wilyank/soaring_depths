@@ -156,6 +156,23 @@ craftingTable.addShapeless("granite",
     false
 );
 
+craftingTable.addShapeless("darkstone"
+    <item:forbidden_arcanus:darkstone>,
+    [
+        <item:minecraft:stone>,
+        <item:minecraft:blackstone>
+    ]
+);
+
+<recipetype:create:mixing>.addRecipe("darkstone_mixing",
+    "none",
+    <item:forbidden_arcanus:darkstone>,
+    [
+        <item:minecraft:stone>,
+        <item:minecraft:blackstone>
+    ]
+);
+
 // fix villager infinte diamonds
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/axes");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/shovel");

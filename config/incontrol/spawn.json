@@ -1,19 +1,43 @@
 [
     {
-        "dimension": "minecraft:overworld",
         "mob": "mowziesmobs:naga",
-        "mincount": 
-        {
-            "amount": 2,
-            "mob": "mowziesmobs:naga",
-            "perplayer": true
-        },
+        "structure": "worldshape:soaring_depths/jungle_ruins",
+        "result": "allow"
+    },
+    {
+        "mob": "mowziesmobs:naga",
         "result": "deny"
     },
     {
-        "dimension": "minecraft:overworld",
-        "mob": "mowziesmobs:naga",
-        "mindaycount": 20,
+        "mob": [
+            "minecraft:pillager",
+            "minecraft:vindicator"
+        ],
+        "structure": "worldshape:soaring_depths/pillager_outpost",
+        "maxlight": 8,
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:pillager",
+            "minecraft:vindicator"
+        ],
+        "structure": "worldshape:soaring_depths/pillager_outpost",
+        "block": [
+          "minecraft:grass",
+          "minecraft:sand"  
+        ],
+        "result": "allow"
+    },
+    {
+        "mob": [
+            "minecraft:pillager",
+            "minecraft:vindicator"
+        ],
+        "result": "deny"
+    },
+    {
+        "structure": "worldshape:soaring_depths/pillager_outpost",
         "result": "deny"
     }
 ]
