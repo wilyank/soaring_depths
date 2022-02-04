@@ -1,0 +1,468 @@
+{
+	id: "4761B474D5DB78E1"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 3
+	filename: "exploration"
+	title: "Overworld Exploration"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Economist"
+			x: -3.0d
+			y: -3.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "7D5DEFCC6F4B1948"
+			tasks: [
+				{
+					id: "19B066E659154685"
+					type: "advancement"
+					title: "Trade with a Kobold"
+					advancement: "kobolds:kobold_trader_advancement"
+					criterion: ""
+				}
+				{
+					id: "44F40C7247CD223D"
+					type: "advancement"
+					title: "Trade with a Villager or Wandering Trader"
+					advancement: "minecraft:adventure/trade"
+					criterion: ""
+				}
+				{
+					id: "28AB3A9D4CBD968B"
+					type: "advancement"
+					title: "Trade with a Kobold Engineer"
+					advancement: "kobolds:kobold_engineer_advancement"
+					criterion: ""
+				}
+				{
+					id: "746D3FEB6B136B86"
+					type: "advancement"
+					title: "Trade with a Kobold Enchanter"
+					advancement: "kobolds:kobold_enchanter_advancement"
+					criterion: ""
+				}
+				{
+					id: "0894C0E1CF3FB666"
+					type: "advancement"
+					title: "Cure a Zombie Villager"
+					advancement: "minecraft:story/cure_zombie_villager"
+					criterion: ""
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: -3.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "43ACA0B2EFCFB9A6"
+			tasks: [{
+				id: "2E28A65B3F84B320"
+				type: "kill"
+				icon: "mowziesmobs:wrought_helmet"
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				value: 1L
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "7EFCAE2177E91260"
+			tasks: [{
+				id: "09A446EED25C477D"
+				type: "item"
+				item: "bountiful:bountyboard"
+			}]
+		}
+		{
+			title: "Balloons"
+			x: 0.0d
+			y: -3.5d
+			description: ["Can be tied to a boat"]
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "153FC9C1806A8F91"
+			tasks: [{
+				id: "2CE94FE586E4DBB1"
+				type: "item"
+				title: "Bolloom Balloon"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "endergetic:bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:red_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:orange_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:yellow_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:lime_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:green_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:light_blue_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:cyan_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:blue_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:pink_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:magenta_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:purple_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:brown_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:gray_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:light_gray_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:white_bolloom_balloon"
+								Count: 1b
+							}
+							{
+								id: "endergetic:black_bolloom_balloon"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "33450A19619CD1CB"
+			tasks: [{
+				id: "0DF185632027C578"
+				type: "item"
+				item: "minecraft:conduit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -0.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "11BE7DD0E0ED7C32"
+			tasks: [{
+				id: "5CECF22551032B72"
+				type: "kill"
+				entity: "minecraft:elder_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6C538E744B6C0076"
+				type: "item"
+				item: "minecraft:wet_sponge"
+				count: 3
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "3EB91DD38C059277"
+			tasks: [{
+				id: "3A7B187492911158"
+				type: "item"
+				item: {
+					id: "minecraft:trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Kobold Resources"
+			x: -3.0d
+			y: -0.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "2FED68C632DAE63C"
+			tasks: [{
+				id: "065295CD2CC70504"
+				type: "advancement"
+				advancement: "kobolds:kobold_apple_advancement"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.5d
+			dependencies: ["11BE7DD0E0ED7C32"]
+			id: "7E6A0FD32FAA0253"
+			tasks: [{
+				id: "330EB1C38D7BBBAB"
+				type: "item"
+				item: {
+					id: "portable_beacons:bonk_stick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			shape: "hexagon"
+			size: 1.5d
+			id: "2A6453F8ACAD32BF"
+			tasks: [{
+				id: "31FE8C0FA262B729"
+				type: "dimension"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "69D1AE70AEE6A509"
+			tasks: [{
+				id: "1E2655FDBE60B0D1"
+				type: "structure"
+				structure: "minecraft:fortress"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "43BE2FC96EE14FCF"
+			tasks: [{
+				id: "48F4908427372155"
+				type: "structure"
+				structure: "minecraft:bastion_remnant"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "0A8B2AE8D8E56147"
+			tasks: [{
+				id: "10039637971CC508"
+				type: "structure"
+				structure: "infernalexp:strider_altar"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "509833292CEA3E57"
+			tasks: [{
+				id: "7864BFED50BA5A25"
+				type: "structure"
+				structure: "infernalexp:bastion_outpost"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "28A7D452E5AF7A5B"
+			tasks: [{
+				id: "1F1E14C0FB7D7B1A"
+				type: "structure"
+				structure: "infernalexp:glowstone_canyon_ruin"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -5.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "3E0D61F2209E2F8C"
+			tasks: [{
+				id: "3CB579CE6EE085C4"
+				type: "structure"
+				structure: "infernalexp:soul_sand_valley_ruin"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "6A9B3D23D3F008B9"
+			tasks: [{
+				id: "48D58D5A27945C6B"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "624181FF7C850F5C"
+			tasks: [{
+				id: "52F783884E4B0F51"
+				type: "item"
+				item: "netherite_plus:netherite_beacon"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "7E8248CC2A1C5988"
+			tasks: [{
+				id: "2676F7FC12E916E8"
+				type: "item"
+				item: "minecraft:lodestone"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "4FEFA50D4182C0BB"
+			tasks: [{
+				id: "4F0777D56B321091"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "136C3A4F41B1D166"
+			tasks: [{
+				id: "0C9B9033AA795590"
+				type: "item"
+				item: "netherite_plus:netherite_white_shulker_box"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "43D0ED3A0CA129B1"
+			tasks: [{
+				id: "741605D5ED6279C7"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "78C170840CFCACE9"
+			tasks: [{
+				id: "09972B42FA0CEAF6"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Prepare for DEATH"
+			icon: {
+				id: "cataclysm:infernal_forge"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -3.5d
+			dependencies: ["00E4D5A2C3F9A861"]
+			id: "264C220DE37F34BA"
+			tasks: [{
+				id: "4A784B619F6F06F2"
+				type: "structure"
+				structure: "cataclysm:soul_black_smith"
+			}]
+		}
+		{
+			icon: {
+				id: "cataclysm:monstrous_helm"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -5.0d
+			dependencies: ["264C220DE37F34BA"]
+			id: "7B84CAF2F44CE4AB"
+			tasks: [{
+				id: "676EA4230AD242D2"
+				type: "kill"
+				title: "Through the Fire and the Flames"
+				entity: "cataclysm:netherite_monstrosity"
+				value: 1L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			shape: "hexagon"
+			size: 1.5d
+			id: "00E4D5A2C3F9A861"
+			tasks: [{
+				id: "11A1D73875C1BAB8"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+	]
+}

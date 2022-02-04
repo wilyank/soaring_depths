@@ -213,7 +213,7 @@ craftingTable.addShaped("spectral_eye_amulet",
     "none",
     <item:minecraft:crying_obsidian>,
     [
-        <item:minecraft:diamond>
+        <item:forbidden_arcanus:rune>
     ],
     [
         <fluid:tconstruct:molten_obsidian>*1000, 

@@ -1,0 +1,1511 @@
+{
+	id: "66B6E9F62ACE49C2"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 2
+	filename: "light_magic"
+	title: "Light Magic"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Astral Sorcery"
+			x: -6.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Stargazing time"
+			dependencies: [
+				"114A4DD936FEE504"
+				"6C27D59380778FF1"
+			]
+			size: 1.5d
+			id: "567200F26E42CA7F"
+			tasks: [
+				{
+					id: "245E57F2B5D8B659"
+					type: "structure"
+					title: "Find an Ancient Shrine"
+					icon: {
+						id: "astralsorcery:rock_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+						}
+					}
+					structure: "worldshape:soaring_depths/as_ancient_shrine"
+				}
+				{
+					id: "2832BC16E35A1D89"
+					type: "structure"
+					title: "Find a lake with Aquamarine Shale"
+					icon: "astralsorcery:aquamarine_sand_ore"
+					structure: "worldshape:soaring_depths/lake"
+				}
+				{
+					id: "27A76E69AF833A40"
+					type: "item"
+					item: "astralsorcery:rock_crystal_ore"
+				}
+			]
+			rewards: [{
+				id: "7F04EC1F9D71FEB2"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			dependencies: ["567200F26E42CA7F"]
+			id: "0BED126A098F5636"
+			tasks: [
+				{
+					id: "1B10053E1E179456"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "7AA1D858A105FE7A"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+		}
+		{
+			title: "Trapping the light"
+			x: -3.5d
+			y: 0.0d
+			dependencies: ["0BED126A098F5636"]
+			id: "436B7F15C6A13C48"
+			tasks: [{
+				id: "55993A5B716B965F"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [{
+				id: "338B3C4851DFBE2C"
+				type: "item"
+				item: "minecraft:bucket"
+			}]
+		}
+		{
+			title: "One Spade Deeper"
+			x: -2.5d
+			y: -2.0d
+			shape: "hexagon"
+			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want, as long as you use at least 10 Crying Obsidian for the frame."]
+			dependencies: ["436B7F15C6A13C48"]
+			size: 1.5d
+			id: "5146EEC7C482DD52"
+			tasks: [
+				{
+					id: "631665A7472D7815"
+					type: "item"
+					item: "minecraft:crying_obsidian"
+					count: 10L
+				}
+				{
+					id: "3998F93DF4907CC3"
+					type: "item"
+					title: "Any Portal Lighter"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "custom_nether_portals:ignition"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			dependencies: ["436B7F15C6A13C48"]
+			id: "5E049F73506FFBE5"
+			tasks: [{
+				id: "6A98CA8BDA71E769"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			dependencies: ["5E049F73506FFBE5"]
+			id: "01B8946F3D2BBB1B"
+			tasks: [{
+				id: "5CBE4CE5112980F2"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+		}
+		{
+			title: "Grow Your Own Crystal DIY Kit"
+			x: -0.5d
+			y: 0.0d
+			dependencies: ["01B8946F3D2BBB1B"]
+			id: "4CDD8725B9F5571B"
+			tasks: [
+				{
+					id: "3FB184ABBB15D9FC"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "77FD455084FBDFB0"
+					type: "item"
+					item: "astralsorcery:liquid_starlight_bucket"
+				}
+				{
+					id: "0C87CCB14794AA21"
+					type: "item"
+					item: "astralsorcery:stardust"
+				}
+			]
+			rewards: [{
+				id: "72AE761E288D02C5"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			dependencies: ["4CDD8725B9F5571B"]
+			id: "061E5BF316C8B69E"
+			tasks: [{
+				id: "0E5C2628B2961A53"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Infuse items with Starlight or some darker stuff"
+			dependencies: ["061E5BF316C8B69E"]
+			id: "5F9B898EE8166C73"
+			tasks: [{
+				id: "0F8953BE5D45F9CA"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			dependencies: ["5F9B898EE8166C73"]
+			id: "66EDA6545CA4149A"
+			tasks: [{
+				id: "0550B3AE83AF6419"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			dependencies: ["66EDA6545CA4149A"]
+			id: "6BDAB55CE5D502C9"
+			tasks: [{
+				id: "404E5846FD3EE8CD"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+		}
+		{
+			title: "In Case of Fire"
+			x: 2.0d
+			y: 1.0d
+			dependencies: ["5F9B898EE8166C73"]
+			id: "1772CBA4B6B8FBB0"
+			tasks: [{
+				id: "71B3900853FCEE72"
+				type: "item"
+				item: "forbidden_arcanus:obsidian_skull"
+			}]
+		}
+		{
+			title: "I Fear No Flames No More"
+			x: 2.5d
+			y: 2.0d
+			dependencies: [
+				"1772CBA4B6B8FBB0"
+				"28E747E8DD63BA1F"
+			]
+			id: "5701A7E232904D61"
+			tasks: [{
+				id: "71AAED904B686098"
+				type: "item"
+				item: "forbidden_arcanus:eternal_obsidian_skull"
+			}]
+		}
+		{
+			title: "Stella Arcanum"
+			icon: "forbidden_arcanus:stella_arcanum"
+			x: -0.5d
+			y: 2.0d
+			subtitle: "Solidified Magic + Starlight = Magical Star"
+			dependencies: [
+				"1224891D38AFE539"
+				"01B8946F3D2BBB1B"
+			]
+			id: "28E747E8DD63BA1F"
+			tasks: [{
+				id: "451CCB705B4CFB9F"
+				type: "item"
+				title: "Stellarite Piece (Drops from Stella Arcanum)"
+				item: "forbidden_arcanus:stellarite_piece"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.5d
+			dependencies: ["5E049F73506FFBE5"]
+			id: "01C22F7A5BC61690"
+			tasks: [{
+				id: "276B79F4B9BB3812"
+				type: "item"
+				item: "astralsorcery:ritual_pedestal"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "13CF1E749522E130"
+			tasks: [{
+				id: "4E4ED3B6FF5F25F5"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:discidia"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 3.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "5E5F8C9C520DC0BA"
+			tasks: [{
+				id: "73AE8CA0A82B4BD4"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:armara"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 4.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "5EF0670F10E8EC46"
+			tasks: [{
+				id: "4439B0176FAFCECB"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:vicio"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "35E614E32D5D8FB0"
+			tasks: [{
+				id: "35D6956B1888E70E"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:evorsio"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "07FA1163ECC27832"
+			tasks: [{
+				id: "6CF4485E778C279A"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:aevitas"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "445F690CF3DB9042"
+			tasks: [{
+				id: "419D525C31A6B056"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:lucerna"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Ores for Days"
+			x: -1.0d
+			y: 6.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "4E10608C990361DE"
+			tasks: [{
+				id: "4E434DC61AEEEA2A"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:mineralis"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "10BD37E4B9C69D77"
+			tasks: [{
+				id: "13F65A49E1CCBD8E"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:horologium"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "0C93E3474EEFD260"
+			tasks: [{
+				id: "4E6B259949652FC4"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:octans"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "585CF3FEB6436FE8"
+			tasks: [{
+				id: "20544A82F389F304"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:bootes"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "7CFC5470282DBC56"
+			tasks: [{
+				id: "02327EA67D3C90C6"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:fornax"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			dependencies: ["01C22F7A5BC61690"]
+			id: "12E99D1CFFC50922"
+			tasks: [{
+				id: "2029A7D08E81ED63"
+				type: "item"
+				item: {
+					id: "astralsorcery:attuned_rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:pelotrio"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			dependencies: ["061E5BF316C8B69E"]
+			id: "3C88810B5898DE84"
+			tasks: [{
+				id: "5314E11CE7124D38"
+				type: "item"
+				title: "Collector Crystal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:discidia"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.discidia"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:armara"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.armara"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:vicio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.vicio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:aevitas"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.aevitas"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:evorsio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.evorsio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:lucerna"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.lucerna"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:mineralis"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.mineralis"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:horologium"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.horologium"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:octans"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.octans"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:bootes"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.bootes"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:fornax"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.fornax"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:rock_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:pelotrio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.pelotrio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["3C88810B5898DE84"]
+			id: "7D7632D0E4584AE5"
+			tasks: [{
+				id: "09B0717C60850109"
+				type: "item"
+				title: "Better Collector Crystal"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:discidia"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.discidia"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:armara"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.armara"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:vicio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.vicio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:aevitas"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.aevitas"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:evorsio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.evorsio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:lucerna"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.lucerna"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:mineralis"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.mineralis"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:horologium"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.horologium"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:octans"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.octans"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:bootes"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.bootes"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:fornax"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.fornax"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+							{
+								id: "astralsorcery:celestial_collector_crystal"
+								Count: 1b
+								tag: {
+									astralsorcery: {
+										constellation: "astralsorcery:pelotrio"
+										crystalProperties: {
+											attributes: [
+												{
+													property: "astralsorcery:size"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:purity"
+													pLevel: 2
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:shape"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:collector.rate"
+													pLevel: 3
+													discovered: 1b
+												}
+												{
+													property: "astralsorcery:constellation.pelotrio"
+													pLevel: 2
+													discovered: 1b
+												}
+											]
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: -1.0d
+			dependencies: ["5E049F73506FFBE5"]
+			id: "4631BCE9BFF79BC6"
+			tasks: [{
+				id: "722596A854DF92F1"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["5146EEC7C482DD52"]
+			id: "32F2860ADFDB6C15"
+			tasks: [{
+				id: "3795718833DCDA11"
+				type: "item"
+				item: "minecraft:respawn_anchor"
+			}]
+		}
+	]
+}

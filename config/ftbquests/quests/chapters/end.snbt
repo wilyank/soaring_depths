@@ -1,7 +1,7 @@
 {
 	id: "3C8128472BA35792"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 2
+	order_index: 5
 	filename: "end"
 	title: "End"
 	icon: "betterendforge:chorus_nylium"
@@ -23,21 +23,7 @@
 		}
 		{
 			x: 0.0d
-			y: -1.5d
-			dependencies: ["6A1A37C3500EC4A9"]
-			id: "3411AA16C45C3819"
-			tasks: [{
-				id: "5F01871F43CF6BCB"
-				type: "kill"
-				icon: "minecraft:dragon_head"
-				entity: "minecraft:ender_dragon"
-				value: 1L
-			}]
-		}
-		{
-			x: 0.0d
 			y: -3.5d
-			dependencies: ["3411AA16C45C3819"]
 			id: "48D0BC412D93664C"
 			tasks: [{
 				id: "1EF2CDB301A8737B"
@@ -76,167 +62,14 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -2.5d
-			dependencies: ["3411AA16C45C3819"]
-			id: "4B8E5831C9322BCF"
-			tasks: [{
-				id: "6AB44A5DB97C5429"
-				type: "item"
-				item: "forbidden_arcanus:dragon_scale"
-			}]
-		}
-		{
 			x: -1.5d
 			y: -2.5d
-			dependencies: ["3411AA16C45C3819"]
 			id: "6A1F4185E6F4EE33"
 			tasks: [{
 				id: "10738175EB159864"
 				type: "item"
 				item: "tconstruct:dragon_scale"
 			}]
-		}
-		{
-			title: "Draco Arcanus Equipment"
-			x: 3.0d
-			y: -2.5d
-			dependencies: ["4B8E5831C9322BCF"]
-			id: "1CAF833C3FA09188"
-			tasks: [
-				{
-					id: "5472413ADED1B126"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:draco_arcanus_sword"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "586580E85B7DAD96"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:draco_arcanus_shovel"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "04537EBF4FBDD3C0"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:draco_arcanus_pickaxe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5B80E3D86C982A97"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:draco_arcanus_axe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "00510DE2B1726A28"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:draco_arcanus_hoe"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "5A4EA6FB358389D1"
-					type: "item"
-					item: "forbidden_arcanus:draco_arcanus_scepter"
-				}
-			]
-		}
-		{
-			title: "Advanced Dragon Scales"
-			x: 3.0d
-			y: -3.5d
-			dependencies: ["4B8E5831C9322BCF"]
-			id: "2D726D1F62B83D71"
-			tasks: [
-				{
-					id: "4A1D4D010048B258"
-					type: "item"
-					item: "forbidden_arcanus:golden_dragon_scale"
-				}
-				{
-					id: "2DADEF4FC9EE2A36"
-					type: "item"
-					item: "forbidden_arcanus:aquatic_dragon_scale"
-				}
-			]
-		}
-		{
-			title: "Protected by Fate"
-			x: 4.5d
-			y: -4.5d
-			dependencies: ["2D726D1F62B83D71"]
-			id: "332D98F40438EF78"
-			tasks: [
-				{
-					id: "04C9900D0784BB76"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:tyr_helmet"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "2F3A604E4A007598"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:tyr_chestplate"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "226D8FEDB22A3810"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:tyr_leggings"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "10CFD23A3AE7920D"
-					type: "item"
-					item: {
-						id: "forbidden_arcanus:tyr_boots"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
 		}
 		{
 			x: -1.5d
