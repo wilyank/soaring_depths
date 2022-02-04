@@ -156,7 +156,7 @@ craftingTable.addShapeless("granite",
     false
 );
 
-craftingTable.addShapeless("darkstone"
+craftingTable.addShapeless("darkstone",
     <item:forbidden_arcanus:darkstone>,
     [
         <item:minecraft:stone>,

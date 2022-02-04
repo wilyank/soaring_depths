@@ -1,7 +1,7 @@
 {
     "template": {
         "type": "pool",
-        "id": "soaring_depths:pillager_outpost",
+        "id": "soaring_depths:kobold_cave/start",
         "maxDepth": 3
     },
 
@@ -18,13 +18,5 @@
 
     "dimensions": [
         "minecraft:overworld"
-    ],
-
-    "biomes": [
-        "#plains",
-        "#savanna",
-        "#forest",
-        "#mushroom"
     ]
-
 }
