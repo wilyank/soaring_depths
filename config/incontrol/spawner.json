@@ -21,7 +21,7 @@
     },
     {
         "mob": "mowziesmobs:naga",
-        "persecond": 0.005,
+        "persecond": 0.01,
         "attempts": 2,
         "amount": {
             "maximum": 1,
