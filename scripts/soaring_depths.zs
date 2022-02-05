@@ -333,8 +333,23 @@ craftingTable.removeRecipe(<item:create:rose_quartz>);
 craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>, 
     [
         <item:minecraft:quartz>, 
-        <item:minecraft:redstone>*4
-    ]);
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>
+    ]
+);
+<recipetype:create:mixing>.addRecipe("mixing_rose_quartz",
+    "none",
+    <item:create:rose_quartz>,
+    [
+        <item:minecraft:quartz>, 
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>, 
+        <item:minecraft:redstone>
+    ]
+);
 <recipetype:tconstruct:casting_table>.addItemCastingRecipe("casting_rose_quartz",
     <item:minecraft:redstone>,
     <fluid:tconstruct:molten_quartz>*144,
