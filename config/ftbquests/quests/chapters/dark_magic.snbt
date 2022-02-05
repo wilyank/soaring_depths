@@ -4,6 +4,7 @@
 	order_index: 1
 	filename: "dark_magic"
 	title: "Dark Magic"
+	icon: "eidolon:unholy_symbol"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -150,31 +151,6 @@
 					item: "eidolon:goblet"
 				}
 			]
-		}
-		{
-			title: "Calling Favours"
-			x: 4.5d
-			y: 0.0d
-			shape: "pentagon"
-			dependencies: ["058442E9170FB612"]
-			id: "114A4DD936FEE504"
-			tasks: [{
-				id: "7FF93BE02B333341"
-				type: "item"
-				item: "eidolon:unholy_symbol"
-				consume_items: true
-			}]
-			rewards: [{
-				id: "563FA7CA73A3DA5C"
-				type: "item"
-				item: {
-					id: "eidolon:unholy_symbol"
-					Count: 1b
-					tag: {
-						Unbreakable: 1b
-					}
-				}
-			}]
 		}
 		{
 			title: "Gone Cackling"
@@ -335,6 +311,7 @@
 			}]
 		}
 		{
+			title: "Unholy Creatures"
 			x: 1.5d
 			y: 7.5d
 			dependencies: ["6C27D59380778FF1"]
@@ -395,6 +372,7 @@
 			}]
 		}
 		{
+			title: "More Unholy Creatures"
 			x: 4.0d
 			y: 7.5d
 			dependencies: ["7CACD318ADF849E2"]
@@ -442,6 +420,7 @@
 			}]
 		}
 		{
+			title: "Better Unholy Creatures"
 			x: 7.5d
 			y: 7.5d
 			dependencies: ["50DF135EB0EE40F8"]
@@ -779,6 +758,31 @@
 					}
 				}
 			]
+		}
+		{
+			title: "Calling Favours"
+			x: 4.5d
+			y: 0.0d
+			shape: "pentagon"
+			dependencies: ["058442E9170FB612"]
+			id: "114A4DD936FEE504"
+			tasks: [{
+				id: "7FF93BE02B333341"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "563FA7CA73A3DA5C"
+				type: "item"
+				item: {
+					id: "eidolon:unholy_symbol"
+					Count: 1b
+					tag: {
+						Unbreakable: 1b
+					}
+				}
+			}]
 		}
 	]
 }

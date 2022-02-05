@@ -104,6 +104,19 @@ craftingTable.addShapeless("orange_sand_cast",
     950, 
     40
 );
+// add netherite monstrosity drop melting
+<recipetype:tconstruct:melting>.addMeltingRecipe("monstrous_horn_melting", 
+    <item:cataclysm:monstrous_horn>, 
+    <fluid:tconstruct:molten_netherite>*720, 
+    1250, 
+    360
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("infernal_forge_melting", 
+    <item:cataclysm:infernal_forge>, 
+    <fluid:tconstruct:molten_netherite>*1296, 
+    1250, 
+    360
+);
 
 // make soul sand and liquid soul automatable
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("sand_to_soul_sand", 

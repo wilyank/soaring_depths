@@ -3,7 +3,7 @@
 	group: "4C3A2A3D8FDBADEB"
 	order_index: 3
 	filename: "exploration"
-	title: "Overworld Exploration"
+	title: "Exploration"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -65,6 +65,7 @@
 			}]
 		}
 		{
+			title: "Just trying to help"
 			x: -1.0d
 			y: -3.5d
 			dependencies: ["2A6453F8ACAD32BF"]
@@ -211,7 +212,7 @@
 			}]
 		}
 		{
-			title: "Kobold Resources"
+			title: "Production of Personnel"
 			x: -3.0d
 			y: -0.5d
 			dependencies: ["2A6453F8ACAD32BF"]
@@ -241,6 +242,9 @@
 			}]
 		}
 		{
+			title: "Visit the Overworld"
+			icon: "minecraft:grass_block"
+			disable_toast: true
 			x: -1.5d
 			y: -2.0d
 			shape: "hexagon"
@@ -253,6 +257,7 @@
 			}]
 		}
 		{
+			title: "A Terrible Fortress"
 			x: 3.5d
 			y: -3.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -264,6 +269,7 @@
 			}]
 		}
 		{
+			title: "Foregone Glory"
 			x: 4.5d
 			y: -3.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -275,6 +281,7 @@
 			}]
 		}
 		{
+			title: "A Fiery Altar"
 			x: 3.5d
 			y: -4.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -286,6 +293,7 @@
 			}]
 		}
 		{
+			title: "Blackstone Outcrop"
 			x: 4.5d
 			y: -4.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -297,6 +305,7 @@
 			}]
 		}
 		{
+			title: "Glowing Ruins"
 			x: 3.5d
 			y: -5.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -308,6 +317,7 @@
 			}]
 		}
 		{
+			title: "Soulless Space"
 			x: 4.5d
 			y: -5.5d
 			dependencies: ["00E4D5A2C3F9A861"]
@@ -374,9 +384,11 @@
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "136C3A4F41B1D166"
 			tasks: [{
-				id: "0C9B9033AA795590"
-				type: "item"
-				item: "netherite_plus:netherite_white_shulker_box"
+				id: "4237874799D4FCA3"
+				type: "advancement"
+				title: "Netherite Shulker Box"
+				advancement: "netherite_plus:netherite_plus/netherite_shulker_boxes"
+				criterion: ""
 			}]
 		}
 		{
@@ -453,6 +465,8 @@
 			}]
 		}
 		{
+			title: "Visit the Nether"
+			icon: "minecraft:crimson_nylium"
 			x: 2.5d
 			y: -2.0d
 			shape: "hexagon"
@@ -462,6 +476,245 @@
 				id: "11A1D73875C1BAB8"
 				type: "dimension"
 				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "Visit the End"
+			icon: "betterendforge:chorus_nylium"
+			x: 7.0d
+			y: -2.0d
+			shape: "hexagon"
+			size: 1.5d
+			id: "6A1A37C3500EC4A9"
+			tasks: [{
+				id: "70BD40220EA30855"
+				type: "dimension"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			title: "Prepare for DEATH! pt. 2"
+			x: 8.0d
+			y: -0.5d
+			dependencies: ["6A1A37C3500EC4A9"]
+			id: "744670D1196E8521"
+			tasks: [{
+				id: "7FF92FCDB566E176"
+				type: "structure"
+				icon: "cataclysm:void_core"
+				structure: "cataclysm:ruined_citadel"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.5d
+			dependencies: ["6A1A37C3500EC4A9"]
+			id: "506743E13D35F54F"
+			tasks: [{
+				id: "526D3786ECB43B2F"
+				type: "structure"
+				title: "Find an End City"
+				structure: "minecraft:endcity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.0d
+			dependencies: ["506743E13D35F54F"]
+			id: "21C4BCE3A2D066D7"
+			tasks: [{
+				id: "6C9C28200F928426"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -0.5d
+			subtitle: "Item elevators"
+			dependencies: ["6A1A37C3500EC4A9"]
+			id: "6B7DE10C58C129EA"
+			tasks: [{
+				id: "4B8C274433EF634A"
+				type: "item"
+				item: "alexsmobs:capsid"
+			}]
+		}
+		{
+			title: "Upgraded Elytra"
+			x: 7.0d
+			y: -6.0d
+			dependencies: ["21C4BCE3A2D066D7"]
+			id: "0A7DD6E0579E6578"
+			tasks: [{
+				id: "7C347656BF062BCE"
+				type: "item"
+				title: "Any better Elytra"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "alexsmobs:tarantula_hawk_elytra"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "netherite_plus:netherite_elytra"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "tconstruct:slime_chestplate"
+								Count: 1b
+								tag: {
+									tic_multipliers: { }
+									tic_stats: {
+										"tconstruct:durability": 672.0f
+										"tconstruct:armor": 0.0f
+									}
+									tic_broken: 0b
+									HideFlags: 3
+									tic_modifiers: [{
+										name: "tconstruct:wings"
+										level: 1s
+									}]
+									Damage: 0
+									tic_volatile_data: {
+										"tconstruct:elyta": 1b
+									}
+									tic_persistent_data: {
+										abilities: 1
+										upgrades: 5
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.0d
+			dependencies: ["0C90BE15A168866A"]
+			id: "66659FBF3F719D4D"
+			tasks: [{
+				id: "7F58D9A89E4896C5"
+				type: "kill"
+				entity: "alexsmobs:void_worm"
+				value: 1L
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			dependencies: ["744670D1196E8521"]
+			id: "258EF6B0DE7F5C52"
+			tasks: [{
+				id: "2E5615FB1C6A187B"
+				type: "kill"
+				entity: "cataclysm:ender_guardian"
+				value: 1L
+			}]
+		}
+		{
+			title: "Kill a Mutant Shulker"
+			x: 9.5d
+			y: -4.5d
+			description: ["A Shulker can be mutated by splashing it with a potent magical substance"]
+			dependencies: ["506743E13D35F54F"]
+			id: "51899DD0864A2493"
+			tasks: [{
+				id: "473F1B3910E650CB"
+				type: "kill"
+				entity: "mutantmore:mutant_shulker"
+				value: 1L
+			}]
+		}
+		{
+			title: "Microwaving Worms"
+			x: 6.0d
+			y: 1.0d
+			dependencies: ["6B7DE10C58C129EA"]
+			id: "2A7283CA677F9F22"
+			tasks: [{
+				id: "00367013C60E6CCC"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/mysterious_worm"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Throw that ugly thing away"
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["2A7283CA677F9F22"]
+			id: "0C90BE15A168866A"
+			tasks: [{
+				id: "27250826F6DA75EE"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Easy Location"
+			x: 6.5d
+			y: -4.5d
+			dependencies: ["506743E13D35F54F"]
+			id: "68761DBC823B0E7A"
+			tasks: [{
+				id: "3344A33B29B108D0"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Localized Flight Field Apparatus"
+			x: 9.0d
+			y: -6.0d
+			description: ["The Magic Feather grants creative flight when within range of an active Beacon"]
+			dependencies: ["21C4BCE3A2D066D7"]
+			id: "17CB36BB7D1A16A9"
+			tasks: [{
+				id: "40344C0434CCD5DA"
+				type: "item"
+				item: "magicfeather:magicfeather"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.5d
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "3864CE7C4C1729D9"
+			tasks: [{
+				id: "5341BCF63069B724"
+				type: "kill"
+				icon: {
+					id: "mowziesmobs:ice_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mowziesmobs:frostmaw"
+				value: 1L
 			}]
 		}
 	]

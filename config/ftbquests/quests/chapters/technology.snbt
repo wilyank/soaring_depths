@@ -4,6 +4,7 @@
 	order_index: 0
 	filename: "technology"
 	title: "Technology"
+	icon: "create:goggles"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -548,7 +549,7 @@
 		}
 		{
 			title: "Master Storage Network"
-			x: 12.0d
+			x: 11.5d
 			y: 0.0d
 			description: ["Now we are really getting somewhere. Note, the remotes only work when the Network Root is loaded."]
 			dependencies: ["12201FDC25F41EC4"]
