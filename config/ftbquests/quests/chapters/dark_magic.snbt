@@ -554,6 +554,22 @@
 				advancement: "minecraft:nether/summon_wither"
 				criterion: ""
 			}]
+			rewards: [{
+				id: "3161B2C95BA093CD"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/wither_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Wither Crate\",\"color\":\"black\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 3.0d

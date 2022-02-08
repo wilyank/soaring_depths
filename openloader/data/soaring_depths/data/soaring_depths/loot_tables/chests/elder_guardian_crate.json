@@ -1,0 +1,167 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:edelwood_tropical_fish_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:edelwood_pufferfish_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:edelwood_salmon_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:edelwood_cod_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:edelwood_squid_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:blobfish_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:lobster_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:mimic_octopus_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:frilled_shark_bucket"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "progressivebosses:elder_guardian_spike",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 4
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wet_sponge",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:prismarine_crystals",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sea_pickle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "enchantments": [
+                "minecraft:channeling",
+                "minecraft:aqua_affinity",
+                "minecraft:binding_curse",
+                "minecraft:depth_strider",
+                "minecraft:frost_walker",
+                "minecraft:impaling",
+                "minecraft:loyalty",
+                "minecraft:luck_of_the_sea",
+                "minecraft:lure",
+                "minecraft:mending",
+                "minecraft:respiration",
+                "minecraft:riptide",
+                "minecraft:thorns",
+                "minecraft:unbreaking",
+                "minecraft:vanishing_curse"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

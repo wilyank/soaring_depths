@@ -1,0 +1,107 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 1,
+          "max": 3
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:andesite"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 25
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "rubber_duck:rubber_duck_item"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "constructionwand:stone_wand"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "eidolon:stone_hand"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "eidolon:stone_altar"
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 1,
+          "max": 4
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_boots"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_chestplate"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_helmet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:chainmail_leggings"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:enchant_with_levels",
+            "levels": {
+              "min": 25,
+              "max": 37
+            },
+            "treasure": true
+          }
+        ]
+      }
+    ]
+  }
+  

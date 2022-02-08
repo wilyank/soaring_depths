@@ -1,0 +1,69 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "type": "minecraft:binomial",
+          "n": 1,
+          "p": 0.1
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:dragon_head",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 2,
+          "max": 10
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:binding_curse",
+                  "minecraft:mending",
+                  "minecraft:vanishing_curse",
+                  "minecraft:unbreaking"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "rubber_duck:rubber_duck_item"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "forbidden_arcanus:dragon_scale"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:dragon_breath",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 16
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

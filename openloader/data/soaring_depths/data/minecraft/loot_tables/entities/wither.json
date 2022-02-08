@@ -1,0 +1,38 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:barrel",
+                "functions": [
+                  {
+                    "function": "minecraft:set_loot_table",
+                    "name": "soaring_depths:chests/wither_crate"
+                  },
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  },
+                  {
+                    "function": "minecraft:set_name",
+                    "name": {
+                      "text": "Wither Crate",
+                      "color": "dark_gray",
+                      "bold": true,
+                      "italic": false
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+    ]
+}

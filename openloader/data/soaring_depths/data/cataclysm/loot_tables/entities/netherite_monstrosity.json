@@ -1,0 +1,76 @@
+{
+    "pools": [
+      {
+        "name": "hammer",
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "cataclysm:infernal_forge"
+  
+          }
+        ]
+      },
+      {
+        "name": "horn",
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "cataclysm:monstrous_horn"
+          }
+        ]
+      },
+      {
+        "name": "disc",
+        "conditions": [
+          {
+            "condition": "random_chance_with_looting",
+            "chance": 0.1,
+            "looting_multiplier": 0.1
+          }
+        ],
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "cataclysm:music_disc_netherite_monstrosity",
+            "weight": 1
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+              "condition": "killed_by_player"
+          }
+      ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "netherite_plus:netherite_red_shulker_box",
+            "functions": [
+              {
+                "function": "minecraft:set_loot_table",
+                "name": "soaring_depths:chests/netherite_monstrosity_crate"
+              },
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Netherite Monstrosity Crate",
+                  "color": "dark_red",
+                  "bold": true,
+                  "italic": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

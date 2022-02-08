@@ -63,6 +63,23 @@
 				entity: "mowziesmobs:ferrous_wroughtnaut"
 				value: 1L
 			}]
+			rewards: [{
+				id: "5B6FA2866D214151"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/wroughtnaut_ruins"
+							id: "minecraft:barrel"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Just trying to help"
@@ -188,10 +205,20 @@
 				value: 1L
 			}]
 			rewards: [{
-				id: "6C538E744B6C0076"
+				id: "6B86B6BFB4913A99"
 				type: "item"
-				item: "minecraft:wet_sponge"
-				count: 3
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/elder_guardian_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Elder Guardian Crate\"}"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -443,6 +470,17 @@
 				type: "structure"
 				structure: "cataclysm:soul_black_smith"
 			}]
+			rewards: [{
+				id: "00498643AC4C5CD0"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
 		}
 		{
 			icon: {
@@ -462,6 +500,22 @@
 				title: "Through the Fire and the Flames"
 				entity: "cataclysm:netherite_monstrosity"
 				value: 1L
+			}]
+			rewards: [{
+				id: "1EC751D7E58CE231"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_red_shulker_box"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/netherite_monstrosity_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Netherite Monstrosity Crate\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -501,6 +555,7 @@
 			tasks: [{
 				id: "7FF92FCDB566E176"
 				type: "structure"
+				title: "Find a Ruined Citadel"
 				icon: "cataclysm:void_core"
 				structure: "cataclysm:ruined_citadel"
 			}]
@@ -616,6 +671,22 @@
 				entity: "alexsmobs:void_worm"
 				value: 1L
 			}]
+			rewards: [{
+				id: "792F27E38EC56CE5"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_purple_shulker_box"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/void_worm_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Void Worm Crate\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+			}]
 		}
 		{
 			x: 9.0d
@@ -627,6 +698,22 @@
 				type: "kill"
 				entity: "cataclysm:ender_guardian"
 				value: 1L
+			}]
+			rewards: [{
+				id: "32649759F86494D6"
+				type: "item"
+				item: {
+					id: "minecraft:purple_shulker_box"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/ender_guardian_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"text\":\"Ender Guardian Crate\"}"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -642,6 +729,18 @@
 				entity: "mutantmore:mutant_shulker"
 				value: 1L
 			}]
+			rewards: [
+				{
+					id: "2525766A8A2B00BA"
+					type: "item"
+					item: "netherite_plus:netherite_shulker_box"
+				}
+				{
+					id: "183A3B1E384B6684"
+					type: "item"
+					item: "mutantmore:compound_z"
+				}
+			]
 		}
 		{
 			title: "Microwaving Worms"
@@ -684,6 +783,11 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "6801BDB35886851A"
+				type: "item"
+				item: "minecraft:map"
+			}]
 		}
 		{
 			title: "Localized Flight Field Apparatus"
@@ -715,6 +819,34 @@
 				}
 				entity: "mowziesmobs:frostmaw"
 				value: 1L
+			}]
+			rewards: [{
+				id: "520CDA63FB9B99B9"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/frostmaw_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Frostmaw Crate\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -2.5d
+			subtitle: "A handy binder for your guides"
+			dependencies: ["2A6453F8ACAD32BF"]
+			id: "4294E9EE3F13CC85"
+			tasks: [{
+				id: "7E342E3F89E498A7"
+				type: "item"
+				item: "akashictome:tome"
 			}]
 		}
 	]

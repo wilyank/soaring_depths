@@ -1,0 +1,83 @@
+{
+    "pools": [
+        {
+            "name": "frostmaw_has_crystal",
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "mowziesmobs:has_crystal"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mowziesmobs:ice_crystal",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "name": "frostmaw_no_crystal",
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                },
+                {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                        "condition": "mowziesmobs:has_crystal"
+                    }
+                },
+                {
+                    "condition": "minecraft:weather_check",
+                    "raining": true
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "mowziesmobs:music_disc_petiole",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "name": "loot_crate",
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:barrel",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_loot_table",
+                            "name": "soaring_depths:chests/frostmaw_crate"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 1
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "Frostmaw Crate",
+                                "color": "white",
+                                "bold": true,
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
