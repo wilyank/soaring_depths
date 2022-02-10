@@ -2,6 +2,14 @@
 
 import crafttweaker.api.util.text.MCTextComponent;
 
+craftingTable.addShapedMirrored("polished_wood_stairs",
+    <item:eidolon:polished_planks_stairs>,
+    [
+        [<item:eidolon:polished_planks>,<item:minecraft:air>,<item:minecraft:air>],
+        [<item:eidolon:polished_planks>,<item:eidolon:polished_planks>,<item:minecraft:air>],
+        [<item:eidolon:polished_planks>,<item:eidolon:polished_planks>,<item:eidolon:polished_planks>]
+    ]
+);
 
 // Astral Sorcery's ores
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("rock_crystal_ore")

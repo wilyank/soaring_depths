@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:sort_stairs"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:sortwood_logs"},"result":"twilightforest:sort_stairs","count":4}

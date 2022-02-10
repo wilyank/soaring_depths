@@ -1,0 +1,14 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "forbidden_arcanus"
+        }
+    ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "forbidden_arcanus:cherrywood_planks"
+    },
+    "result": "forbidden_arcanus:carved_cherrywood_planks",
+    "count": 1
+}

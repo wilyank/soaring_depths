@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:warped_ladder"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/warped"},"result":"quark:warped_ladder","count":1}

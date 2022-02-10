@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:spruce_vertical_slab"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/spruce"},"result":"quark:spruce_vertical_slab","count":2}

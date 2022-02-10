@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:time_trapdoor"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:timewood_logs"},"result":"twilightforest:time_trapdoor","count":4}

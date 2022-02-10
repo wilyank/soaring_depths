@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"outer_end"}],"type":"minecraft:stonecutting","ingredient":{"item":"outer_end:azure_planks"},"result":"outer_end:azure_stairs","count":1}

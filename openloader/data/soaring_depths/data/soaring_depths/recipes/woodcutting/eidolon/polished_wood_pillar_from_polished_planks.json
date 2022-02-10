@@ -1,0 +1,14 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "eidolon"
+        }
+    ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "eidolon:polished_planks"
+    },
+    "result": "eidolon:polished_wood_pillar",
+    "count": 1
+}

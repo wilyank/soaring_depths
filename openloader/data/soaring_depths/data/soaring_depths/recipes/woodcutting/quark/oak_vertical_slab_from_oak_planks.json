@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:oak_vertical_slab"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/oak"},"result":"quark:oak_vertical_slab","count":2}

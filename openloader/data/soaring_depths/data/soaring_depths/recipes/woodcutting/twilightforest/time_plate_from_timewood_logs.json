@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:time_plate"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:timewood_logs"},"result":"twilightforest:time_plate","count":4}

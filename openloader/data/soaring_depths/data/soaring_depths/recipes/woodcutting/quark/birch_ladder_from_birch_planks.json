@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:birch_ladder"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/birch"},"result":"quark:birch_ladder","count":1}

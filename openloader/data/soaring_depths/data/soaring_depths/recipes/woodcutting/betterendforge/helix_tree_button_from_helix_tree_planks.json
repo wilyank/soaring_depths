@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"betterendforge"}],"type":"minecraft:stonecutting","ingredient":{"item":"betterendforge:helix_tree_planks"},"result":"betterendforge:helix_tree_button","count":1}

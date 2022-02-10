@@ -1,0 +1,14 @@
+{
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "eidolon"
+        }
+    ],
+    "type": "minecraft:stonecutting",
+    "ingredient": {
+        "item": "eidolon:polished_planks"
+    },
+    "result": "eidolon:polished_planks_fence",
+    "count": 1
+}

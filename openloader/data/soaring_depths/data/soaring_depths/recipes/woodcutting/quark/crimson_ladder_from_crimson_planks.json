@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:crimson_ladder"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/crimson"},"result":"quark:crimson_ladder","count":1}

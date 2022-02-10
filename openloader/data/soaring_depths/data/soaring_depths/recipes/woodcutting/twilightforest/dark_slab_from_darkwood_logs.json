@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:dark_slab"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:darkwood_logs"},"result":"twilightforest:dark_slab","count":8}

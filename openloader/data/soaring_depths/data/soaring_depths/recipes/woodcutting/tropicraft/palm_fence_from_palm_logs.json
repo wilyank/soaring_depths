@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"tropicraft"},{"type":"forge:item_exists","item":"tropicraft:palm_fence"}],"type":"minecraft:stonecutting","ingredient":{"tag":"tropicraft:palm_logs"},"result":"tropicraft:palm_fence","count":4}

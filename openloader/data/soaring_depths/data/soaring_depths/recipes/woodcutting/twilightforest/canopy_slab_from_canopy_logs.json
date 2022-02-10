@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:canopy_slab"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:canopy_logs"},"result":"twilightforest:canopy_slab","count":8}

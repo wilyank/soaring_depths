@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"tconstruct"}],"type":"minecraft:stonecutting","ingredient":{"item":"tconstruct:bloodshroom_planks"},"result":"tconstruct:bloodshroom_button","count":1}

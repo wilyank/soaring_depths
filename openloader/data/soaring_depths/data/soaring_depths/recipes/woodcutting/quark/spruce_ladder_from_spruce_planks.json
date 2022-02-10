@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:spruce_ladder"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/spruce"},"result":"quark:spruce_ladder","count":1}

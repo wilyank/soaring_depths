@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"biomesoplenty"}],"type":"minecraft:stonecutting","ingredient":{"item":"biomesoplenty:fir_planks"},"result":"biomesoplenty:fir_pressure_plate","count":1}

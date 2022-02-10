@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"tconstruct"}],"type":"minecraft:stonecutting","ingredient":{"item":"tconstruct:skyroot_planks"},"result":"tconstruct:skyroot_trapdoor","count":1}

@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:item_exists","item":"quark:warped_vertical_slab"}],"type":"minecraft:stonecutting","ingredient":{"tag":"forge:planks/warped"},"result":"quark:warped_vertical_slab","count":2}

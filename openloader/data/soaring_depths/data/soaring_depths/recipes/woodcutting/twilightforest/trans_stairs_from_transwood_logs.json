@@ -1,0 +1,1 @@
+{"conditions":[{"type":"forge:mod_loaded","modid":"twilightforest"},{"type":"forge:item_exists","item":"twilightforest:trans_stairs"}],"type":"minecraft:stonecutting","ingredient":{"tag":"twilightforest:transwood_logs"},"result":"twilightforest:trans_stairs","count":4}
