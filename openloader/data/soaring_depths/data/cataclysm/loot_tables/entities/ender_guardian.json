@@ -53,7 +53,7 @@
                 "function": "minecraft:set_name",
                 "name": {
                   "text": "Ender Guardian Crate",
-                  "color": "pink",
+                  "color": "#AC7BAC",
                   "bold": true,
                   "italic": false
                 }
