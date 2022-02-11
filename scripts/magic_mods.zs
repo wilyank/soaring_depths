@@ -77,9 +77,18 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:golden_orchid_seeds>);
     80
 );
 
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 90);
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 95);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 5);
 
+
+
+<recipetype:create:mixing>.addRecipe("dark_scoria",
+    "none",
+    <item:create:dark_scoria_cobblestone>,
+    [
+        <item:create:scoria_cobblestone>*8, <item:minecraft:black_dye>
+    ]
+);
 // change Mutant chemical recipes
 brewing.removeRecipeByReagent(<item:minecraft:obsidian>);
 brewing.removeRecipeByInput(<item:mutantmore:formula_y>);

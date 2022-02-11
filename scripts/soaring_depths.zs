@@ -146,27 +146,62 @@ mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul 
 <recipetype:create:mixing>.addRecipe("marble",
     "heated",
     <item:astralsorcery:marble_raw>*2,
-    [<item:minecraft:diorite>, <item:create:limesand>]
+    [<item:create:diorite_cobblestone>, <item:create:limesand>]
 );
 
+// do some cobble gen stuff
+<recipetype:astralsorcery:liquid_interaction>.removeRecipe(<item:minecraft:stone>);
+<recipetype:astralsorcery:liquid_interaction>.removeRecipe(<item:minecraft:obsidian>);
+<recipetype:astralsorcery:liquid_interaction>.removeRecipe(<item:minecraft:cobblestone>);
+
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("cobble_liquid_interaction", <item:minecraft:cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("granite_cobble_liquid_interaction", <item:create:granite_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("andesite_cobble_liquid_interaction", <item:create:andesite_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("diorite_cobble_liquid_interaction", <item:create:diorite_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("gabbro_cobble_liquid_interaction", <item:create:gabbro_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("scoria_cobble_liquid_interaction", <item:create:scoria_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
+
+
+// change how granite is made
 craftingTable.removeRecipe(<item:minecraft:granite>);
-craftingTable.addShapeless("granite",
-    <item:minecraft:granite>,
-    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
-);
-<recipetype:create:mixing>.addRecipe("granite_mixing",
-    "none",
-    <item:minecraft:granite>,
-    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
-);
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/granite");
-<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("casting_granite",
-    <item:minecraft:cobblestone>,
-    <fluid:tconstruct:molten_iron>*4,
-    <item:minecraft:granite>,
-    10,
-    true,
-    false
+
+craftingTable.addShapeless("granite_cobblestone",
+    <item:create:granite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
+);
+<recipetype:create:mixing>.addRecipe("granite_cobblestone_mixing",
+    "none",
+    <item:create:granite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
+);
+
+// change how diorite is made
+craftingTable.removeRecipe(<item:minecraft:diorite>);
+<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/diorite");
+
+craftingTable.addShapeless("diorite_cobblestone",
+    <item:create:diorite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:minecraft:bone_meal>]
+);
+<recipetype:create:mixing>.addRecipe("diorite_cobblestone_mixing",
+    "none",
+    <item:create:diorite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:minecraft:bone_meal>]
+);
+
+// change how andesite is made
+craftingTable.removeRecipe(<item:minecraft:andesite>);
+<recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/andesite");
+
+craftingTable.addShapeless("_cobblestone",
+    <item:create:andesite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:minecraft:clay_ball>]
+);
+<recipetype:create:mixing>.addRecipe("andesite_cobblestone_mixing",
+    "none",
+    <item:create:andesite_cobblestone>,
+    [<item:minecraft:cobblestone>,<item:minecraft:clay_ball>]
 );
 
 craftingTable.addShapeless("darkstone",
@@ -509,7 +544,7 @@ blastFurnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 );
 <recipetype:tconstruct:casting_basin>.addItemCastingRecipe("netherrack_casting",
     <item:minecraft:cobblestone>,
-    <fluid:tconstruct:magma>*250,
+    <fluid:tconstruct:blood>*250,
     <item:minecraft:netherrack>,
     60,
     true,
