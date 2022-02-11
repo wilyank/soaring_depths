@@ -737,6 +737,16 @@ craftingTable.addShapeless("soulsteel_nuggets_from_ingot",
     ]]
 );
 
+craftingTable.removeRecipe(<item:minecraft:crossbow>);
+craftingTable.addShaped("crossbow",
+    <item:minecraft:crossbow>,
+    [
+        [<item:minecraft:stick>, <item:create:brass_ingot>, <item:minecraft:stick>],
+        [<item:minecraft:string>, <item:minecraft:tripwire_hook>, <item:minecraft:string>],
+        [<item:minecraft:air>, <item:minecraft:string>, <item:minecraft:air>]
+    ]
+);
+
 CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
     (event) => {
         var entity = event.getEntity();
