@@ -689,6 +689,54 @@ craftingTable.removeRecipe(<item:magicfeather:magicfeather>);
     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:eidolon:unholy_symbol>))
 );
 
+mods.jei.JEI.addItem(<item:tconstruct:soulsteel_nugget>);
+mods.jei.JEI.addItem(<item:tconstruct:soulsteel_ingot>);
+mods.jei.JEI.addItem(<item:tconstruct:soulsteel_block>);
+craftingTable.addShapeless("soulsteel_block_from_ingots",
+    <item:tconstruct:soulsteel_block>,
+    [
+        <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>,
+        <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>,
+        <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>, <item:tconstruct:soulsteel_ingot>
+
+    ]
+);
+craftingTable.addShapeless("soulsteel_ingot_from_nuggets",
+    <item:tconstruct:soulsteel_ingot>,
+    [
+        <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>,
+        <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>,
+        <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>, <item:tconstruct:soulsteel_nugget>
+
+    ]
+);
+
+craftingTable.addShapeless("soulsteel_ingots_from_block",
+    <item:tconstruct:soulsteel_ingot>*9,
+    [
+        <item:tconstruct:soulsteel_block>
+    ]
+);
+craftingTable.addShapeless("soulsteel_nuggets_from_ingot",
+    <item:tconstruct:soulsteel_nugget>*9,
+    [
+        <item:tconstruct:soulsteel_ingot>
+    ]
+);
+
+<recipetype:create:mechanical_crafting>.addRecipe("soulsteel_ingots_from_block_mech",
+    <item:tconstruct:soulsteel_ingot>*9,
+    [[
+        <item:tconstruct:soulsteel_block>
+    ]]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("soulsteel_nuggets_from_ingot_mech",
+    <item:tconstruct:soulsteel_nugget>*9,
+    [[
+        <item:tconstruct:soulsteel_ingot>
+    ]]
+);
+
 CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
     (event) => {
         var entity = event.getEntity();

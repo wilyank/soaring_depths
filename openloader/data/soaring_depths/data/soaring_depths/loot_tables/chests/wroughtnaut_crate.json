@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 3,
+          "max": 5
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "create:iron_sheet"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_nugget"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "steampowered:steel_cogwheel"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "steampowered:cast_iron_cogwheel"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "tconstruct:soulsteel_ingot"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_count",
+            "count": {
+              "min": 3,
+              "max": 27
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
