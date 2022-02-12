@@ -81,7 +81,7 @@
 
   "tooltip.soaring_depths.ores.copper": "This ore can be found between Y-levels 40 and 255.",
   "tooltip.soaring_depths.ores.zinc": "This ore can be found between Y-levels 30 and 200.",
-  "tooltip.soaring_depths.ores.lead": "This ore can be found below Y = 40.",
+  "tooltip.soaring_depths.ores.lead": "This ore can be found below Y = 60.",
   "tooltip.soaring_depths.ores.iron": "This ore can be found at Y = 100 and below.",
   "tooltip.soaring_depths.ores.coal": "This ore can be found at all heights in the world.",
   "tooltip.soaring_depths.ores.gold": "This ore can be found below Y = 40.",

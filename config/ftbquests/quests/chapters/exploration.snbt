@@ -64,18 +64,17 @@
 				value: 1L
 			}]
 			rewards: [{
-				id: "5B6FA2866D214151"
+				id: "450C83D4B42B07EF"
 				type: "item"
 				item: {
 					id: "minecraft:barrel"
 					Count: 1b
 					tag: {
 						BlockEntityTag: {
-							LootTable: "soaring_depths:chests/wroughtnaut_ruins"
-							id: "minecraft:barrel"
+							LootTable: "soaring_depths:chests/wroughtnaut_crate"
 						}
 						display: {
-							Lore: ["\"(+NBT)\""]
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Ferrous Wroughtnaut Crate\"}"
 						}
 					}
 				}

@@ -39,5 +39,42 @@
     {
         "structure": "worldshape:soaring_depths/pillager_outpost",
         "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": [
+            "minecraft:skeleton",
+            "minecraft:zombie",
+            "minecraft:creeper",
+            "minecraft:spider",
+            "minecraft:stray",
+            "minecraft:husk",
+            "minecraft:enderman",
+            "eidolon:wraith",
+            "eidolon:zombie_brute" 
+        ],
+        "mincount": {
+          "amount": 50,
+          "hostile": true,
+          "perplayer": true
+        },
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": [
+            "minecraft:sheep",
+            "minecraft:cow",
+            "minecraft:chicken",
+            "minecraft:pig",
+            "minecraft:mooshroom",
+            "minecraft:rabbit"
+        ],
+        "maxcount": {
+            "amount": 50,
+            "passive": true,
+            "perplayer": true
+        },
+        "result": "allow"
     }
 ]
