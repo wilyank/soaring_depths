@@ -12,6 +12,9 @@ import crafttweaker.api.server.MCServer;
 import crafttweaker.api.entity.MCLivingEntity;
 import crafttweaker.api.util.MCHand;
 import crafttweaker.api.util.Random;
+import crafttweaker.api.server.MCServer;
+import crafttweaker.api.data.MapData;
+import crafttweaker.api.util.BlockPos;
 
 
 // this scripts does random tweaks and fixes
@@ -229,7 +232,7 @@ craftingTable.addShapeless("darkstone",
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/leggings");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/chestplate");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/helmet");
-
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/iron/ingot_4");
 
 
 // change totem and void totem recipes
@@ -752,10 +755,9 @@ CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
         var entity = event.getEntity();
         if (entity.type == <entitytype:minecraft:drowned>) {
             var drownedEntity = (entity as MCLivingEntity);
-            println("entity" + drownedEntity.name + " spawned");
             if (drownedEntity.getHeldItem(MCHand.MAIN_HAND).empty) {
                 var random = new Random;
-                var randomInt = random.nextInt(12);
+                var randomInt = random.nextInt(80);
                 if (randomInt == 0) {
                     drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:trident>.withDamage(random.nextInt(249)));
                 }
@@ -768,4 +770,76 @@ CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
             }
         }
      }
- );
+);
+
+CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingDeathEvent>(
+    (event) => {
+        var entity = event.getEntity();
+        if (entity.type == <entitytype:minecraft:player>) {
+            var world = entity.getWorld();
+            world.asServerWorld().server.executeCommand("say haha noob", false);
+            var deathPos = entity.getPosition();
+
+            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.b dummy", true);
+            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.x dummy", true);
+            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.y dummy", true);
+            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.z dummy", true);
+
+            world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 1, true);
+            world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.x " + deathPos.x, true);
+            world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.y " + deathPos.y, true);
+            world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.z " + deathPos.z, true);
+        }
+    }
+);
+CTEventManager.register<crafttweaker.api.event.entity.player.MCPlayerRespawnEvent>(
+     (event) => {
+         if (!event.isEndConquered()) {
+            var entity = event.getEntity();
+            var world = entity.getWorld();
+            world.asServerWorld().server.executeCommand("say haha noob", false);
+            if(world.asServerWorld().server.executeCommand("scoreboard players get " + entity.name + " s_d.lastDeath.b") == 1) {
+                var x = world.asServerWorld().server.executeCommand("scoreboard players get " + entity.name + " s_d.lastDeath.x");
+                var y = world.asServerWorld().server.executeCommand("scoreboard players get " + entity.name + " s_d.lastDeath.y");
+                var z = world.asServerWorld().server.executeCommand("scoreboard players get " + entity.name + " s_d.lastDeath.z");
+                var displayNBTString = "display:{Name:\'{\"text\":\"Death Compass\",\"italic\":false,\"bold\":true,\"color\":\"gold\"}\'}";
+                world.asServerWorld().server.executeCommand("give " + entity.name + " compass{" + displayNBTString + ",LodestoneDimension:'minecraft:overworld',LodestoneTracked:0b,LodestonePos:{X:" + x + ",Y:" + y + ",Z:" + z + "},IsDeathCompass:true}", false);
+                world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 0, true);
+            }
+         }
+     }
+);
+CTEventManager.register<crafttweaker.api.event.tick.MCPlayerTickEvent>(
+    (event) => {
+        if (!(<item:minecraft:compass>.matches(event.getPlayer().getCurrentItem()))) {
+            return;
+        }
+        var item = event.getPlayer().getCurrentItem();
+        if (!item.hasTag) {
+            return;
+        }
+
+        // TODO: make sure normal lodestone compasses are not voided
+        // if (!item.tag.contains("IsDeathCompass")) {
+        //     println("not holding death compass");
+        //     return;
+        // }
+        var dataMap = new MapData(item.tag.asMap());
+        var targetDim = dataMap.getAt("LodestoneDimension").getString();
+        
+        if (targetDim != event.getPlayer().getWorld().dimension) {
+            return;
+        }
+
+        var blockPosMap = new MapData(dataMap.getAt("LodestonePos").asMap());
+        var x = blockPosMap.getAt("X").asNumber().getInt();
+        var y = blockPosMap.getAt("Y").asNumber().getInt();
+        var z = blockPosMap.getAt("Z").asNumber().getInt();
+        if (!(event.player.getPosition().distanceSq(new BlockPos(x, y, z)) < 25)) {
+            return;
+        }
+        // TODO: test for server-side 
+        // event.getPlayer().getWorld().asServerWorld().server.executeCommand("replaceitem entity " + event.player.name.unformattedComponentText + " air", false);
+        // set held item to air
+    }
+);
