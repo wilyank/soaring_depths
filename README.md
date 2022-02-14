@@ -1,6 +1,6 @@
 # soaring_depths
-a Minecraft modpack based around immersive tech and magic in a Skylands world
-Minecraft version: 1.16
+a Minecraft modpack based around immersive tech and magic in a Skylands world.  
+Minecraft version: 1.16.5
 
 Mod list:
 - Just Enough Resources (JER) (by way2muchnoise)
