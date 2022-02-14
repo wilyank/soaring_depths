@@ -750,6 +750,21 @@ craftingTable.addShaped("crossbow",
     ]
 );
 
+craftingTable.addShaped("press",
+    <item:create:mechanical_press>,
+    [
+        [
+            <item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>
+        ],
+        [
+            <tag:items:forge:cogwheels>, <item:create:andesite_casing>, <tag:items:forge:cogwheels>
+        ],
+        [
+            <item:minecraft:air>, <item:minecraft:iron_block>, <item:minecraft:air>
+        ]
+    ]
+);
+
 var dimList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"] as stdlib.List<string>;
 
 

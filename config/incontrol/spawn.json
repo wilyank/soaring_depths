@@ -51,7 +51,9 @@
             "minecraft:husk",
             "minecraft:enderman",
             "eidolon:wraith",
-            "eidolon:zombie_brute" 
+            "eidolon:zombie_brute",
+            "minecraft:witch",
+            "minecraft:zombie_villager" 
         ],
         "mincount": {
           "amount": 50,
