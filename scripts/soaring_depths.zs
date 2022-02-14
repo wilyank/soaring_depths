@@ -750,28 +750,6 @@ craftingTable.addShaped("crossbow",
     ]
 );
 
-CTEventManager.register<crafttweaker.api.event.entity.MCEntityJoinWorldEvent>(
-    (event) => {
-        var entity = event.getEntity();
-        if (entity.type == <entitytype:minecraft:drowned>) {
-            var drownedEntity = (entity as MCLivingEntity);
-            if (drownedEntity.getHeldItem(MCHand.MAIN_HAND).empty) {
-                var random = new Random;
-                var randomInt = random.nextInt(80);
-                if (randomInt == 0) {
-                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:trident>.withDamage(random.nextInt(249)));
-                }
-                else if (randomInt == 1 || randomInt == 2) {
-                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:nautilus_shell>);
-                }
-                else if (randomInt == 3 || randomInt == 4 || randomInt == 5) {
-                    drownedEntity.setHeldItem(MCHand.MAIN_HAND, <item:minecraft:fishing_rod>.withDamage(random.nextInt(63)));
-                }
-            }
-        }
-     }
-);
-
 var dimList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"] as stdlib.List<string>;
 
 
