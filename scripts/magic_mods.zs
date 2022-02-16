@@ -254,3 +254,8 @@ craftingTable.addShaped("golden_feather",
         <item:forbidden_arcanus:arcane_gold_nugget>*8
     ]
 );
+
+<recipetype:create:milling>.addRecipe("arcane_gilded_nuggets",
+    [<item:forbidden_arcanus:arcane_gold_nugget>],
+    <item:forbidden_arcanus:arcane_gilded_darkstone>
+);
