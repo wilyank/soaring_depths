@@ -876,3 +876,10 @@ CTEventManager.register<crafttweaker.api.event.tick.MCPlayerTickEvent>(
         event.player.getWorld().asServerWorld().server.executeCommand("replaceitem entity " + event.player.name.unformattedComponentText + " weapon air", true);
     }
 );
+
+CTEventManager.register<crafttweaker.api.event.block.MCPortalSpawnEvent>(
+    (event) => {
+        event.cancel();
+        println("vanilla portal creation canceled");
+    }
+);
