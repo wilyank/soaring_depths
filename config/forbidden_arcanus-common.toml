@@ -88,10 +88,10 @@
 	[world_gen.darkstone]
 		#Maximum size of Darkstone veins [default: 20]
 		#Range: 0 ~ 100
-		max_vein_size = 100
+		max_vein_size = 50
 		#Maximum Darkstone veins per chunk [default: 20]
 		#Range: 1 ~ 100
-		count = 50
+		count = 100
 		#Maximum height for Darkstone to generate [default: 8]
 		#Range: 1 ~ 256
 		max_height = 40
