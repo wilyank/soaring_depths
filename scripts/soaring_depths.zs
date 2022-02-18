@@ -460,6 +460,10 @@ mods.jei.JEI.hideIngredient(<item:mowziesmobs:grant_suns_blessing>);
 mods.jei.JEI.hideIngredient(<item:mowziesmobs:earth_talisman>);
 mods.jei.JEI.hideIngredient(<item:mowziesmobs:mob_remover>);
 
+mods.jei.JEI.addDescription(<item:minecraft:kelp>,"Trade with a Wandering Trader or a Kobold to obtain this.");
+mods.jei.JEI.addDescription(<item:minecraft:sugar_cane>,"Trade with a Kobold to obtain this.");
+
+
 craftingTable.addShapeless("painted_acacia_wood",
     <item:mowziesmobs:painted_acacia>,
     [<item:minecraft:acacia_planks>,<tag:items:forge:dyes>]
