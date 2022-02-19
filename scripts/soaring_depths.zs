@@ -407,8 +407,7 @@ mods.jei.JEI.hideIngredient(<item:tconstruct:copper_ore>);
 if (loadedMods.isModLoaded("jeresources")) {
     mods.jei.JEI.hideCategory("jeresources:worldgen");
 }
-var style = new MCStyle;
-style.setFormatting(<formatting:gray>);
+var style = new MCStyle().setColor(11184810);
 <item:create:copper_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.copper").setStyle(style));
 <item:create:zinc_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.zinc").setStyle(style));
 
@@ -599,6 +598,14 @@ smithing.addRecipe("ignitium_boots",
     <item:minecraft:netherite_boots>,
     ii
 );
+
+var orangeTextColor = new MCStyle().setColor(14246400);
+
+<item:cataclysm:ignitium_helmet>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.armor.ignitium").setStyle(orangeTextColor));
+<item:cataclysm:ignitium_chestplate>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.armor.ignitium").setStyle(orangeTextColor));
+<item:cataclysm:ignitium_leggings>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.armor.ignitium").setStyle(orangeTextColor));
+<item:cataclysm:ignitium_boots>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.armor.ignitium").setStyle(orangeTextColor));
+
 
 // Grappling hook
 craftingTable.removeRecipe(<item:grapplemod:baseupgradeitem>);
@@ -885,5 +892,32 @@ CTEventManager.register<crafttweaker.api.event.block.MCPortalSpawnEvent>(
     (event) => {
         event.cancel();
         println("vanilla portal creation canceled");
+    }
+);
+
+CTEventManager.register<crafttweaker.api.event.tick.MCPlayerTickEvent>(
+    (event) => {
+        /* 
+            This function sets the player on fire if they are wearing a full set of Ignitium armor 
+        */
+        var player = event.getPlayer();
+
+        var ignitiumList = [
+            <item:cataclysm:ignitium_boots>,
+            <item:cataclysm:ignitium_leggings>,
+            <item:cataclysm:ignitium_chestplate>,
+            <item:cataclysm:ignitium_helmet>
+        ];
+        var i = 0;
+        for armorPiece in player.getArmorInventoryList() {
+            if (!ignitiumList[i].matches(armorPiece.asIItemStack())) {
+                return;
+            }
+            i++;
+        }
+        if (player.getWorld().isRainingAt(player.getPosition())) {
+            return;
+        }
+        player.setFire(1);
     }
 );
