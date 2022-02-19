@@ -259,3 +259,27 @@ craftingTable.addShaped("golden_feather",
     [<item:forbidden_arcanus:arcane_gold_nugget>],
     <item:forbidden_arcanus:arcane_gilded_darkstone>
 );
+
+// make pufifying soap use wax tag instead of only wax
+craftingTable.removeRecipe(<item:forbidden_arcanus:purifying_soap>);
+<recipetype:create:mixing>.removeRecipe(<item:forbidden_arcanus:purifying_soap>);
+
+craftingTable.addShapeless("purifying_soap_tag",
+    <item:forbidden_arcanus:purifying_soap>,
+    [
+        <item:forbidden_arcanus:arcane_crystal_dust>,
+        <tag:items:forge:wax>,
+        <tag:items:forge:slimeballs>,
+        <tag:items:minecraft:small_flowers>
+    ]
+);
+<recipetype:create:mixing>.addRecipe("purifying_soap_tag_mixing",
+    "none",
+    <item:forbidden_arcanus:purifying_soap>,
+    [
+        <item:forbidden_arcanus:arcane_crystal_dust>,
+        <tag:items:forge:wax>,
+        <tag:items:forge:slimeballs>,
+        <tag:items:minecraft:small_flowers>
+    ]
+);

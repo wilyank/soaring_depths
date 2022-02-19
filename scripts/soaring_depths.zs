@@ -43,6 +43,9 @@ forge_gems.add(<item:eidolon:shadow_gem>);
 
 <tag:items:forge:leather>.remove(<item:forbidden_arcanus:rotten_leather>);
 
+<tag:items:forge:wax>.add(<item:forbidden_arcanus:wax>);
+<tag:items:forge:wax>.add(<item:eidolon:tallow>);
+
 // remove distracting item filters
 mods.jei.JEI.hideMod("itemfilters");
 
