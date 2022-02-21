@@ -114,5 +114,7 @@
   "eidolon.codex.page.arcane_gold": "It is possible to alchemically imbue gold with a small amount of magical energy. The resulting metal is stronger and more magically conductive than mundane gold, and is put to good use in the construction of magic items.",
   "eidolon.codex.page.inlays": "Metal inlay is a simple method for durably inscribing sigils and symbols into magical constructs. While mundane on their own, inlays of pewter and redstone gold appear frequently in magical formulae.",
 
-  "item.eidolon.pewter_blend": "Banana Pickaxe"
+  "item.eidolon.pewter_blend": "Banana Pickaxe",
+
+  "item.create.brass_hand": "Bronze Hand"
 }
