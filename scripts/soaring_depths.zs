@@ -14,6 +14,11 @@ import crafttweaker.api.util.text.MCStyle;
 // remove distracting item filters
 mods.jei.JEI.hideMod("itemfilters");
 
+// remove all stupid sequenced assembly recipes
+
+<recipetype:create:sequenced_assembly>.removeAll();
+
+
 var _ = <item:minecraft:air>;
 
 // end portal
@@ -215,25 +220,48 @@ craftingTable.addShaped("totem_of_void_undying",
         [<item:forbidden_arcanus:soul>, <item:minecraft:chorus_fruit>, <item:forbidden_arcanus:soul>],
         [<tag:items:forge:ender_pearls>, <item:unactivatedtotems:unactivated_totem>, <tag:items:forge:ender_pearls>],
         [<item:eidolon:lesser_soul_gem>, <tag:items:forge:nether_stars>, <item:eidolon:lesser_soul_gem>]
-    ]);
+    ]
+);
 
+// fix cast iron large cogwheel recipe
 
-// fix bronze machines being crafted with brass
-var s = <item:steampowered:bronze_sheet>;
+var i = <tag:items:forge:ingots/iron>;
+var s = <tag:items:forge:plates/iron>;
 var b = <item:minecraft:bricks>;
 var p = <item:create:fluid_pipe>;
-var i = <tag:items:forge:ingots/silicon_bronze>;
 var pl = <tag:items:minecraft:planks>;
 var c = <item:steampowered:bronze_cogwheel>;
 var sh = <item:create:shaft>;
 var a = <item:create:andesite_alloy>;
 
+// large bronze cogwheel
+craftingTable.removeRecipe(<item:steampowered:cast_iron_large_cogwheel>);
+craftingTable.addShaped("cast_iron_large_cogwheel",
+    <item:steampowered:cast_iron_large_cogwheel>*2,
+    [
+        [i, s, i],
+        [s, a, s],
+        [i, s, i]
+    ]
+    );
+<recipetype:create:mechanical_crafting>.addRecipe("mc_cast_iron_large_cogwheel",
+    <item:steampowered:cast_iron_large_cogwheel>*2,
+    [
+        [i, s, i],
+        [s, a, s],
+        [i, s, i]
+    ]);
+
+// fix bronze machines being crafted with brass
+s = <tag:items:forge:plates/bronze>;
+i = <tag:items:forge:ingots/silicon_bronze>;
+
 // bronze sheet
-<recipetype:create:pressing>.addRecipe("bronze_sheet", [s], i);
+<recipetype:create:pressing>.addRecipe("bronze_sheet", [<item:steampowered:bronze_sheet>], i);
 <recipetype:tconstruct:casting_table>.addItemCastingRecipe("cast_bronze_sheet", 
     <item:tconstruct:plate_cast>, 
     <fluid:tconstruct:molten_tinkers_bronze> * 144, 
-    s, 
+    <item:steampowered:bronze_sheet>, 
     40, 
     false, 
     false
@@ -243,24 +271,25 @@ var a = <item:create:andesite_alloy>;
 // small bronze cogwheel
 craftingTable.removeRecipe(c);
 craftingTable.addShaped("bronze_cogwheel",
-    c,
+    c*8,
     [
-        [_, i, _],
+        [i, i, i],
         [i, a, i],
-        [_, i, _]
+        [i, i, i]
     ]
-    );
+);
 <recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_cogwheel",
-    c,
+    c*8,
     [
-        [_, i, _],
+        [i, i, i],
         [i, a, i],
-        [_, i, _]
-    ]);
+        [i, i, i]
+    ]
+);
 // large bronze cogwheel
 craftingTable.removeRecipe(<item:steampowered:bronze_large_cogwheel>);
 craftingTable.addShaped("bronze_large_cogwheel",
-    <item:steampowered:bronze_large_cogwheel>,
+    <item:steampowered:bronze_large_cogwheel>*2,
     [
         [i, s, i],
         [s, a, s],
@@ -268,7 +297,7 @@ craftingTable.addShaped("bronze_large_cogwheel",
     ]
     );
 <recipetype:create:mechanical_crafting>.addRecipe("mc_bronze_large_cogwheel",
-    <item:steampowered:bronze_large_cogwheel>,
+    <item:steampowered:bronze_large_cogwheel>*2,
     [
         [i, s, i],
         [s, a, s],
@@ -327,12 +356,22 @@ craftingTable.addShaped("bronze_boiler",
         [_, i, i, i, _],
     ]);
 
+craftingTable.removeRecipe(<item:create:brass_hand>);
 craftingTable.addShaped("bronze_hand", 
     <item:create:brass_hand>,
     [
         [_, <item:create:andesite_alloy>, _],
-        [<item:create:brass_sheet>, <item:create:brass_sheet>, <item:create:brass_sheet>],
-        [_, <item:create:brass_sheet>, _]
+        [s, s, s],
+        [_, s, _]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe(
+    "mech_bronze_hand", 
+    <item:create:brass_hand>,
+    [
+        [_, <item:create:andesite_alloy>, _],
+        [s, s, s],
+        [_, s, _]
     ]
 );
 
@@ -733,32 +772,21 @@ craftingTable.addShaped("crossbow",
     ]
 );
 
+craftingTable.removeRecipe(<item:create:mechanical_press>);
 craftingTable.addShaped("press",
     <item:create:mechanical_press>,
     [
-        [
-            <item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>
-        ],
-        [
-            <tag:items:forge:cogwheels>, <item:create:andesite_casing>, <tag:items:forge:cogwheels>
-        ],
-        [
-            <item:minecraft:air>, <item:minecraft:iron_block>, <item:minecraft:air>
-        ]
+        [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+        [<tag:items:forge:cogwheels>, <item:create:andesite_casing>, <tag:items:forge:cogwheels>],
+        [<item:minecraft:air>, <item:minecraft:iron_block>, <item:minecraft:air>]
     ]
 );
 <recipetype:create:mechanical_crafting>.addRecipe("mechanical_press",
     <item:create:mechanical_press>,
     [
-        [
-            <item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>
-        ],
-        [
-            <tag:items:forge:cogwheels>, <item:create:andesite_casing>, <tag:items:forge:cogwheels>
-        ],
-        [
-            <item:minecraft:air>, <item:minecraft:iron_block>, <item:minecraft:air>
-        ]
+        [<item:minecraft:air>, <item:create:andesite_alloy>, <item:minecraft:air>],
+        [<tag:items:forge:cogwheels>, <item:create:andesite_casing>, <tag:items:forge:cogwheels>],
+        [<item:minecraft:air>, <item:minecraft:iron_block>, <item:minecraft:air>]
     ]
 );
 craftingTable.removeRecipe(<item:create:speedometer>);
@@ -793,3 +821,67 @@ craftingTable.addShaped("stressometer",
         [<item:create:speedometer>]
     ]
 );
+
+craftingTable.removeRecipe(<item:create:redstone_link>);
+craftingTable.addShapedMirrored("redstone_link",
+    <item:create:redstone_link>*2,
+    [
+        [_, _, <item:create:electron_tube>],
+        [<item:create:brass_sheet>, <tag:items:minecraft:planks>, <item:createaddition:copper_wire>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mechanical_redstone_link",
+    <item:create:redstone_link>*2,
+    [
+        [_, _, <item:create:electron_tube>],
+        [<item:create:brass_sheet>, <tag:items:minecraft:planks>, <item:createaddition:copper_wire>]
+    ]
+);
+
+craftingTable.removeRecipe(<item:create:schematicannon>);
+craftingTable.addShaped("schematicannon",
+    <item:create:schematicannon>,
+    [
+        [<item:create:precision_mechanism>, <item:minecraft:cauldron>, <item:create:precision_mechanism>],
+        [<tag:items:minecraft:logs>, <item:minecraft:dispenser>, <tag:items:minecraft:logs>],
+        [<item:minecraft:smooth_stone>, <item:minecraft:iron_block>, <item:minecraft:smooth_stone>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mechanical_schematicannon",
+    <item:create:schematicannon>,
+    [
+        [<item:create:precision_mechanism>, <item:minecraft:cauldron>, <item:create:precision_mechanism>],
+        [<tag:items:minecraft:logs>, <item:minecraft:dispenser>, <tag:items:minecraft:logs>],
+        [<item:minecraft:smooth_stone>, <item:minecraft:iron_block>, <item:minecraft:smooth_stone>]
+    ]
+);
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("precision_mechanism")
+    .transitionTo(<item:create:incomplete_precision_mechanism>)
+    .require(<item:create:golden_sheet>)
+    .loops(1)
+    .addOutput(<item:create:precision_mechanism>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:cogwheels>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:large_cogwheels>))
+    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(20))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:electron_tube>))
+);
+craftingTable.removeRecipe(<item:create:mechanical_arm>);
+craftingTable.addShaped("mechanical_arm",
+    <item:create:mechanical_arm>,
+    [
+        [<tag:items:forge:rods/brass>, <tag:items:forge:plates/brass>, a],
+        [<tag:items:forge:rods/brass>, <item:steampowered:bronze_cogwheel>, _],
+        [<item:create:precision_mechanism>, <item:create:brass_casing>, <item:create:precision_mechanism>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mech_mechanical_arm",
+    <item:create:mechanical_arm>,
+    [
+        [<tag:items:forge:rods/brass>, <tag:items:forge:plates/brass>, a],
+        [<tag:items:forge:rods/brass>, <item:steampowered:bronze_cogwheel>, _],
+        [<item:create:precision_mechanism>, <item:create:brass_casing>, <item:create:precision_mechanism>]
+    ]
+);
+
+//<recipetype:create:sequenced_assembly>.builder("small_cogwheel");
