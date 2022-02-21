@@ -46,84 +46,9 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Astral Sorcery"
-			x: -6.0d
-			y: 0.0d
-			shape: "hexagon"
-			subtitle: "Stargazing time"
-			dependencies: [
-				"114A4DD936FEE504"
-				"6C27D59380778FF1"
-			]
-			size: 1.5d
-			id: "567200F26E42CA7F"
-			tasks: [
-				{
-					id: "245E57F2B5D8B659"
-					type: "structure"
-					title: "Find an Ancient Shrine"
-					icon: {
-						id: "astralsorcery:rock_collector_crystal"
-						Count: 1b
-						tag: {
-							astralsorcery: {
-								constellation: "astralsorcery:discidia"
-								crystalProperties: {
-									attributes: [
-										{
-											property: "astralsorcery:size"
-											pLevel: 3
-											discovered: 1b
-										}
-										{
-											property: "astralsorcery:purity"
-											pLevel: 2
-											discovered: 1b
-										}
-										{
-											property: "astralsorcery:shape"
-											pLevel: 3
-											discovered: 1b
-										}
-										{
-											property: "astralsorcery:collector.rate"
-											pLevel: 3
-											discovered: 1b
-										}
-										{
-											property: "astralsorcery:constellation.discidia"
-											pLevel: 2
-											discovered: 1b
-										}
-									]
-								}
-							}
-						}
-					}
-					structure: "worldshape:soaring_depths/as_ancient_shrine"
-				}
-				{
-					id: "2832BC16E35A1D89"
-					type: "structure"
-					title: "Find a lake with Aquamarine Shale"
-					icon: "astralsorcery:aquamarine_sand_ore"
-					structure: "worldshape:soaring_depths/lake"
-				}
-				{
-					id: "27A76E69AF833A40"
-					type: "item"
-					item: "astralsorcery:rock_crystal_ore"
-				}
-			]
-			rewards: [{
-				id: "7F04EC1F9D71FEB2"
-				type: "item"
-				item: "astralsorcery:tome"
-			}]
-		}
-		{
 			x: -4.5d
 			y: 0.0d
+			description: ["Shine some night light through a crystal on a crafting table"]
 			dependencies: ["567200F26E42CA7F"]
 			id: "0BED126A098F5636"
 			tasks: [
@@ -161,7 +86,7 @@
 			x: -2.5d
 			y: -2.0d
 			shape: "hexagon"
-			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want, as long as you use at least 10 Crying Obsidian for the frame."]
+			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want."]
 			dependencies: ["436B7F15C6A13C48"]
 			size: 1.5d
 			id: "5146EEC7C482DD52"
@@ -170,7 +95,7 @@
 					id: "631665A7472D7815"
 					type: "item"
 					item: "minecraft:crying_obsidian"
-					count: 10L
+					count: 4L
 				}
 				{
 					id: "3998F93DF4907CC3"
@@ -280,6 +205,7 @@
 		{
 			x: 3.5d
 			y: 0.0d
+			description: ["Finally, I can create... Cobblestone!"]
 			dependencies: ["66EDA6545CA4149A"]
 			id: "6BDAB55CE5D502C9"
 			tasks: [{
@@ -576,6 +502,7 @@
 		{
 			x: 1.5d
 			y: -2.0d
+			subtitle: "Independent Research"
 			dependencies: ["061E5BF316C8B69E"]
 			id: "3C88810B5898DE84"
 			tasks: [{
@@ -1537,12 +1464,89 @@
 		{
 			x: -0.5d
 			y: -2.0d
+			subtitle: "In cases of emergencies..."
 			dependencies: ["5146EEC7C482DD52"]
 			id: "32F2860ADFDB6C15"
 			tasks: [{
 				id: "3795718833DCDA11"
 				type: "item"
 				item: "minecraft:respawn_anchor"
+			}]
+		}
+		{
+			title: "Astral Sorcery"
+			x: -6.0d
+			y: 0.0d
+			shape: "hexagon"
+			subtitle: "Stargazing time"
+			dependencies: [
+				"114A4DD936FEE504"
+				"6C27D59380778FF1"
+			]
+			size: 1.5d
+			id: "567200F26E42CA7F"
+			tasks: [
+				{
+					id: "245E57F2B5D8B659"
+					type: "structure"
+					title: "Find an Ancient Shrine"
+					icon: {
+						id: "astralsorcery:rock_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellation: "astralsorcery:discidia"
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:purity"
+											pLevel: 2
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:collector.rate"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:constellation.discidia"
+											pLevel: 2
+											discovered: 1b
+										}
+									]
+								}
+							}
+						}
+					}
+					structure: "worldshape:soaring_depths/as_ancient_shrine"
+				}
+				{
+					id: "2832BC16E35A1D89"
+					type: "structure"
+					title: "Find a lake with Aquamarine Shale"
+					icon: "astralsorcery:aquamarine_sand_ore"
+					structure: "worldshape:soaring_depths/lake"
+				}
+				{
+					id: "27A76E69AF833A40"
+					type: "item"
+					item: "astralsorcery:rock_crystal_ore"
+				}
+			]
+			rewards: [{
+				id: "7F04EC1F9D71FEB2"
+				type: "item"
+				item: "astralsorcery:tome"
 			}]
 		}
 	]

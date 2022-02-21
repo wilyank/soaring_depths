@@ -9,44 +9,22 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Magical Ores"
+			title: "Magical Crystals"
 			x: 0.0d
-			y: 4.5d
+			y: 5.0d
 			shape: "hexagon"
 			id: "6C27D59380778FF1"
-			tasks: [
-				{
-					id: "00C2DBE8CAEEA7C6"
-					type: "item"
-					item: "forbidden_arcanus:arcane_crystal"
-				}
-				{
-					id: "044082A2056F563A"
-					type: "item"
-					item: "create:crushed_lead_ore"
-				}
-				{
-					id: "5F3328DD14085DE6"
-					type: "item"
-					title: "Rune"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "forbidden_arcanus:rune"
-									Count: 1b
-								}
-								{
-									id: "forbidden_arcanus:dark_rune"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
+			tasks: [{
+				id: "00C2DBE8CAEEA7C6"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal"
+			}]
+			rewards: [{
+				id: "321D17B2E80825BF"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal_dust"
+				count: 4
+			}]
 		}
 		{
 			x: 1.5d
@@ -85,24 +63,13 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 2.0d
-			dependencies: ["6ED5B14AFEF8AA44"]
-			id: "1224891D38AFE539"
-			tasks: [{
-				id: "185D12A403AFB243"
-				type: "item"
-				item: "forbidden_arcanus:xpetrified_ore"
-			}]
-		}
-		{
 			title: "Eidolon"
 			x: 1.5d
 			y: 2.0d
 			shape: "pentagon"
 			subtitle: "The road to power is paved with corpses"
 			description: ["Use this guide well"]
-			dependencies: ["6C27D59380778FF1"]
+			dependencies: ["304A63B82E8AD8A0"]
 			id: "230D36713B063759"
 			tasks: [
 				{
@@ -288,7 +255,7 @@
 		}
 		{
 			x: 1.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "2924BD54947CF38D"
 			tasks: [{
@@ -300,7 +267,7 @@
 		}
 		{
 			x: 3.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "4B844CA923B26EAC"
 			tasks: [{
@@ -313,8 +280,8 @@
 		{
 			title: "Unholy Creatures"
 			x: 1.5d
-			y: 7.5d
-			dependencies: ["6C27D59380778FF1"]
+			y: 8.5d
+			dependencies: ["1E898401F99F390D"]
 			id: "7CACD318ADF849E2"
 			tasks: [{
 				id: "7E085E672B8CD900"
@@ -324,7 +291,7 @@
 		}
 		{
 			x: 2.5d
-			y: 9.0d
+			y: 10.0d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "2D494F2F0297795A"
 			tasks: [{
@@ -336,8 +303,8 @@
 		}
 		{
 			title: "The Legacy of Dr. Spencer Black"
-			x: 3.5d
-			y: 9.0d
+			x: 1.5d
+			y: 10.0d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "6E32F9A83144275D"
 			tasks: [{
@@ -348,8 +315,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 6.0d
+			x: 3.5d
+			y: 9.5d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "4216EA0568664273"
 			tasks: [{
@@ -361,7 +328,7 @@
 		}
 		{
 			x: 5.5d
-			y: 9.0d
+			y: 10.0d
 			dependencies: ["50DF135EB0EE40F8"]
 			id: "3EB956128D8E865C"
 			tasks: [{
@@ -374,7 +341,7 @@
 		{
 			title: "More Unholy Creatures"
 			x: 4.0d
-			y: 7.5d
+			y: 8.5d
 			dependencies: ["7CACD318ADF849E2"]
 			id: "50DF135EB0EE40F8"
 			tasks: [{
@@ -385,7 +352,7 @@
 		}
 		{
 			x: 4.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["50DF135EB0EE40F8"]
 			id: "61962EE695CB94DA"
 			tasks: [{
@@ -397,7 +364,7 @@
 		}
 		{
 			x: 4.5d
-			y: 9.0d
+			y: 10.0d
 			dependencies: ["50DF135EB0EE40F8"]
 			id: "13118062EEBEF110"
 			tasks: [{
@@ -409,7 +376,7 @@
 		}
 		{
 			x: 5.5d
-			y: 6.0d
+			y: 7.0d
 			dependencies: ["50DF135EB0EE40F8"]
 			id: "2ABF7C2129D4BA74"
 			tasks: [{
@@ -422,7 +389,7 @@
 		{
 			title: "Better Unholy Creatures"
 			x: 7.5d
-			y: 7.5d
+			y: 8.5d
 			dependencies: ["50DF135EB0EE40F8"]
 			id: "1F6A8A60EF0C38E5"
 			tasks: [{
@@ -433,7 +400,7 @@
 		}
 		{
 			x: 6.5d
-			y: 9.0d
+			y: 10.0d
 			dependencies: ["3EB956128D8E865C"]
 			id: "762C9D1C7E515D8E"
 			tasks: [{
@@ -611,8 +578,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 11.0d
+			x: 1.5d
+			y: 6.0d
 			dependencies: ["6C27D59380778FF1"]
 			id: "3411AA16C45C3819"
 			tasks: [{
@@ -622,10 +589,26 @@
 				entity: "minecraft:ender_dragon"
 				value: 1L
 			}]
+			rewards: [{
+				id: "6880D6139DB2734E"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/ender_dragon_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Ender Dragon Crate\",\"color\":\"black\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+			}]
 		}
 		{
-			x: 3.0d
-			y: 11.0d
+			x: 2.5d
+			y: 6.0d
 			dependencies: ["3411AA16C45C3819"]
 			id: "4B8E5831C9322BCF"
 			tasks: [{
@@ -636,8 +619,8 @@
 		}
 		{
 			title: "Draco Arcanus Equipment"
-			x: 3.5d
-			y: 10.0d
+			x: 2.5d
+			y: 7.0d
 			dependencies: ["4B8E5831C9322BCF"]
 			id: "1CAF833C3FA09188"
 			tasks: [
@@ -702,11 +685,28 @@
 					item: "forbidden_arcanus:draco_arcanus_scepter"
 				}
 			]
+			rewards: [
+				{
+					id: "266E9BA797154CCB"
+					type: "item"
+					item: "forbidden_arcanus:aquatic_dragon_scale"
+				}
+				{
+					id: "45DA55D34405FD5E"
+					type: "item"
+					item: "forbidden_arcanus:golden_dragon_scale"
+				}
+				{
+					id: "2B654D7376A1D009"
+					type: "item"
+					item: "forbidden_arcanus:silver_dragon_scale"
+				}
+			]
 		}
 		{
 			title: "Advanced Dragon Scales"
-			x: 4.0d
-			y: 11.0d
+			x: 3.5d
+			y: 6.0d
 			dependencies: ["4B8E5831C9322BCF"]
 			id: "2D726D1F62B83D71"
 			tasks: [
@@ -724,8 +724,8 @@
 		}
 		{
 			title: "Protected by Fate"
-			x: 5.0d
-			y: 11.0d
+			x: 4.5d
+			y: 6.0d
 			dependencies: ["2D726D1F62B83D71"]
 			id: "332D98F40438EF78"
 			tasks: [
@@ -796,6 +796,56 @@
 					Count: 1b
 					tag: {
 						Unbreakable: 1b
+					}
+				}
+			}]
+		}
+		{
+			title: "Magical Metal"
+			x: 0.0d
+			y: 3.0d
+			shape: "hexagon"
+			id: "304A63B82E8AD8A0"
+			tasks: [{
+				id: "536923FCADC7A4D9"
+				type: "item"
+				item: "create:crushed_lead_ore"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["6ED5B14AFEF8AA44"]
+			id: "1224891D38AFE539"
+			tasks: [{
+				id: "185D12A403AFB243"
+				type: "item"
+				item: "forbidden_arcanus:xpetrified_ore"
+			}]
+		}
+		{
+			title: "Magical Runes"
+			x: 0.0d
+			y: 7.5d
+			id: "1E898401F99F390D"
+			tasks: [{
+				id: "5C31AE55E374B177"
+				type: "item"
+				title: "Rune or Dark Rune"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "forbidden_arcanus:rune"
+								Count: 1b
+							}
+							{
+								id: "forbidden_arcanus:dark_rune"
+								Count: 1b
+							}
+						]
 					}
 				}
 			}]

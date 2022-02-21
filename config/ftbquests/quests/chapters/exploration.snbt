@@ -437,6 +437,7 @@
 		{
 			x: 1.5d
 			y: -0.5d
+			subtitle: "Gone Lavafishin'"
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "78C170840CFCACE9"
 			tasks: [{
