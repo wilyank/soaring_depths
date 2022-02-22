@@ -406,13 +406,51 @@ craftingTable.addShapeless("crafting_rose_quartz", <item:create:rose_quartz>,
     40,
     true,
     false
-    );
+);
 
-<recipetype:create:filling>.addRecipe("electron_tube", 
-    <item:create:electron_tube>, // output
-    <item:create:polished_rose_quartz>, // input item
-    <fluid:tconstruct:molten_iron>*16); // input fluid
+// <recipetype:create:filling>.addRecipe("electron_tube", 
+//     <item:create:electron_tube>, // output
+//     <item:create:polished_rose_quartz>, // input item
+//     <fluid:tconstruct:molten_iron>*16  // input fluid
+// );
+craftingTable.removeRecipe(<item:create:electron_tube>);
+// <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("electron_tube")
+//     .transitionTo(<item:create:polished_rose_quartz>)
+//     .require(<item:create:rose_quartz>)
+//     .loops(1)
+//     .addOutput(<item:create:electron_tube>, 1)
+//     .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(50))
+//     .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(50))
+//     .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:minecraft:redstone_torch>))
+//     .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_iron>*16))
+//     .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(50))
+// );
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("electron_tube")
+    .transitionTo(<item:create:polished_rose_quartz>)
+    .require(<item:create:polished_rose_quartz>)
+    .loops(1)
+    .addOutput(<item:create:electron_tube>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:minecraft:redstone_torch>))
+    .addStep(<recipetype:create:filling>.factory(), (rb) => rb.require(<fluid:tconstruct:molten_iron>*16))
+    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(50))
+);
+<recipetype:create:deploying>.registerRecipe("redstone_torch_deploying", (rb) => {
+    rb.output(<item:minecraft:redstone_torch>);
+    rb.require(<item:minecraft:stick>);
+    rb.require(<item:minecraft:redstone>);
+});
 
+
+<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("precision_mechanism")
+    .transitionTo(<item:create:incomplete_precision_mechanism>)
+    .require(<item:create:golden_sheet>)
+    .loops(1)
+    .addOutput(<item:create:precision_mechanism>, 1)
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:cogwheels>))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:large_cogwheels>))
+    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(20))
+    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:electron_tube>))
+);
 // ore hiding and descriptions
 mods.jei.JEI.hideIngredient(<item:tconstruct:copper_ore>);
 if (loadedMods.isModLoaded("jeresources")) {
@@ -856,16 +894,6 @@ craftingTable.addShaped("schematicannon",
     ]
 );
 
-<recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("precision_mechanism")
-    .transitionTo(<item:create:incomplete_precision_mechanism>)
-    .require(<item:create:golden_sheet>)
-    .loops(1)
-    .addOutput(<item:create:precision_mechanism>, 1)
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:cogwheels>))
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<tag:items:forge:large_cogwheels>))
-    .addStep(<recipetype:create:pressing>.factory(), (rb) => rb.duration(20))
-    .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:electron_tube>))
-);
 craftingTable.removeRecipe(<item:create:mechanical_arm>);
 craftingTable.addShaped("mechanical_arm",
     <item:create:mechanical_arm>,
