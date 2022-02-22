@@ -31,18 +31,17 @@ CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingDeathEvent>
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.y dummy", true);
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.z dummy", true);
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.d dummy", false);
-            if (event.getSource().type == "outOfWorld") {
-                world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 0, true);
-                return;
-            }
-            else {
-                world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 1, true);
-            }
+            
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.x " + deathPos.x, true);
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.y " + deathPos.y, true);
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.z " + deathPos.z, true);
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.d " + dimList.indexOf(world.dimension), true);
-
+            if (event.getSource().type == "outOfWorld") {
+                world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 0, true);
+            }
+            else {
+                world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.b " + 1, true);
+            }
         }
     }
 );
