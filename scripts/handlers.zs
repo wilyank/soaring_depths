@@ -30,7 +30,7 @@ CTEventManager.register<crafttweaker.api.event.entity.living.MCLivingDeathEvent>
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.x dummy", true);
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.y dummy", true);
             world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.z dummy", true);
-            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.d dummy", false);
+            world.asServerWorld().server.executeCommand("scoreboard objectives add s_d.lastDeath.d dummy", true);
             
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.x " + deathPos.x, true);
             world.asServerWorld().server.executeCommand("scoreboard players set " + entity.name + " s_d.lastDeath.y " + deathPos.y, true);

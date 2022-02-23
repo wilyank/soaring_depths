@@ -1,18 +1,18 @@
 {
     "template": {
         "type": "pool",
-        "id": "soaring_depths:kobolds/cave/start",
-        "maxDepth": 3
+        "id": "soaring_depths:kobolds/ship/start",
+        "maxDepth": 1
     },
 
     "averageSpacing": 45,
     "avoidOthers": true,
     
     "placement": {
-        "offset": 0,
-        "terraform": 3,
-        "minY": 70,
-        "maxY": 200,
+        "offset": 50,
+        "terraform": 0,
+        "minY": 0,
+        "maxY": 180,
         "type": "surface"
     },
 
