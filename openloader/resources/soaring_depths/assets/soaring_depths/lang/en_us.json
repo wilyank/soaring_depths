@@ -116,5 +116,10 @@
 
   "item.eidolon.pewter_blend": "Banana Pickaxe",
 
-  "item.create.brass_hand": "Bronze Hand"
+  "item.create.brass_hand": "Bronze Hand",
+
+  "item.soaring_depths.helmet": "Soaring Helmet",
+  "item.soaring_depths.chestplate": "Soaring Chestplate",
+  "item.soaring_depths.leggings": "Soaring Leggings",
+  "item.soaring_depths.boots": "Soaring Boots"
 }

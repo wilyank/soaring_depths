@@ -565,3 +565,37 @@ craftingTable.addShaped("crossbow",
     ]
 );
 
+
+craftingTable.addShapedMirrored("soaring_helmet",
+    <item:minecraft:diamond_helmet>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [406908201, 698699477, -1315920193, 1024514078], Name: "generic.max_health" as string}, {Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.luck" as string, Operation: 0 as int, UUID: [846493083, -1326429731, -1723277641, -1733768700], Name: "generic.luck" as string}, {Amount: 3 as int, Slot: "head" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [1971215365, -1098363312, -1695515322, -417499965], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "head" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [252407515, -1866905082, -1663024550, -1621122407], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.helmet\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
+    [
+        [<item:forbidden_arcanus:rune>, <item:rubber_duck:rubber_duck_item>, <item:forbidden_arcanus:rune>],
+        [<item:minecraft:pumpkin>, <item:minecraft:diamond_helmet>, <item:minecraft:melon>],
+        [<item:forbidden_arcanus:rune>, <item:minecraft:cake>, <item:forbidden_arcanus:rune>]
+    ]
+);
+craftingTable.addShapedMirrored("soaring_chestplate",
+    <item:minecraft:diamond_chestplate>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "chest" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [-1711147710, 786318086, -1840061360, -700988552], Name: "generic.max_health" as string}, {Amount: 0.05 as double, Slot: "chest" as string, AttributeName: "generic.attack_damage" as string, Operation: 1 as int, UUID: [1803469936, 2112506557, -1238374156, 1022883948], Name: "generic.attack_damage" as string}, {Amount: 8 as int, Slot: "chest" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [1946251339, -1752282237, -1631011045, 1659140540], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "chest" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [-2012540783, -350993202, -1974823836, -1574826634], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.chestplate\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
+    [
+        [<item:forbidden_arcanus:rune>, <item:rubber_duck:rubber_duck_item>, <item:forbidden_arcanus:rune>],
+        [<item:minecraft:pumpkin>, <item:minecraft:diamond_chestplate>, <item:minecraft:melon>],
+        [<item:forbidden_arcanus:rune>, <item:minecraft:cake>, <item:forbidden_arcanus:rune>]
+    ]
+);
+craftingTable.addShapedMirrored("soaring_leggings",
+    <item:minecraft:diamond_leggings>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "legs" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [1431361478, 2086225764, -1087738565, 241505510], Name: "generic.max_health" as string}, {Amount: 0.05 as double, Slot: "legs" as string, AttributeName: "generic.attack_speed" as string, Operation: 1 as int, UUID: [-2117892232, 158223464, -1125369066, 807726405], Name: "generic.attack_speed" as string}, {Amount: 6 as int, Slot: "legs" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [857608069, 1326596829, -1463633432, 728321353], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "legs" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [19210898, -950383499, -1810796246, 834679468], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.leggings\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
+    [
+        [<item:forbidden_arcanus:rune>, <item:rubber_duck:rubber_duck_item>, <item:forbidden_arcanus:rune>],
+        [<item:minecraft:pumpkin>, <item:minecraft:diamond_leggings>, <item:minecraft:melon>],
+        [<item:forbidden_arcanus:rune>, <item:minecraft:cake>, <item:forbidden_arcanus:rune>]
+    ]
+);
+craftingTable.addShapedMirrored("soaring_boots",
+    <item:minecraft:diamond_boots>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "feet" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [1080058058, -336311468, -1187948974, 1922209595], Name: "generic.max_health" as string}, {Amount: 0.05 as double, Slot: "feet" as string, AttributeName: "generic.movement_speed" as string, Operation: 1 as int, UUID: [943163541, -1239594384, -1553889467, -969823642], Name: "generic.movement_speed" as string}, {Amount: 3 as int, Slot: "feet" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [-888540306, -2113581502, -2031968599, 1451642743], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "feet" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [1955887886, -361281188, -1546569180, -333968879], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.boots\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
+    [
+        [<item:forbidden_arcanus:rune>, <item:rubber_duck:rubber_duck_item>, <item:forbidden_arcanus:rune>],
+        [<item:minecraft:pumpkin>, <item:minecraft:diamond_boots>, <item:minecraft:melon>],
+        [<item:forbidden_arcanus:rune>, <item:minecraft:cake>, <item:forbidden_arcanus:rune>]
+    ]
+);
+
