@@ -3,6 +3,8 @@
 	#How items should be handed to you
 	#Allowed Values: INVENTORY, MOUSE_PICKUP
 	GiveMode = "MOUSE_PICKUP"
+	#Enable fast batched item rendering for JEI (disable this if items in JEI are not rendering correctly)
+	FastItemRenderingEnabled = true
 	#Debug mode enabled
 	DebugMode = false
 	#Enable cheating items into the hotbar by using the shift+number keys.

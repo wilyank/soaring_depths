@@ -1,26 +1,19 @@
 
-[NotLivingEntity]
-	#Radius of the Lava bomb.
-	#Range: 1 ~ 7
-	Lavabombradius = 2
-	#Damage of the Void Rune.
-	#Range: 0 ~ 1000000
-	Voidrunedamage = 7
-
 ["Ender Guardian"]
-	#Damage of the EnderGuardian.
+	#EnderGuardian's Damage.
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianDamage = 16.0
 	#ruined citadel spawn
 	RuinedcitadelSpawn = true
-	#Ender guardian's bodyBlocking verdict
-	EnderguardianBodyBloking = true
-	#DamageCap of the EnderGuardian.
+	#Guardian's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Guardian's prevent attacks from far away Range" = 12.0
+	#EnderGuardian's DamageCap
 	#Range: 0 ~ 1000000
 	EnderGuardianDamageCap = 22
 	#Ender guardian's block breaking ignore the MobGriefing
 	EnderguardianBlockBreaking = true
-	#Health of the EnderGuardian.
+	#EnderGuardian's Health
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianHealth = 300.0
 
@@ -29,25 +22,55 @@
 	SoulblacksmithSpawn = true
 	#Monstrosity's bodyBlocking verdict
 	NetheritemonstrosityBodyBloking = true
-	#Damage of the Monstrosity.
+	#Monstrosity's Damage
 	#Range: 0.0 ~ 1000000.0
 	MonstrosityDamage = 22.0
-	#DamageCap of the Monstrosity.
+	#Monstrosity's DamageCap
 	#Range: 0 ~ 1000000
 	MonstrosityDamageCap = 22
-	#Health of the Monstrosity.
+	#Monstrosity's Health
 	#Range: 0.0 ~ 1000000.0
 	MonstrosityHealth = 360.0
-	#Lavabombamount of the Monstrosity.
+	#Monstrosity's Lavabomb amount
 	#Range: 1 ~ 1000000
 	Lavabombamount = 3
-	#Lavabombmagazine of the Monstrosity.
+	#Monstrosity's Lavabomb magazine.
 	#Range: 1 ~ 1000000
 	LavabombMagazine = 3
+	#Monstrosity's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Monstrosity's prevent attacks from far away Range" = 18.0
 
 ["Ender Golem"]
 	#Ender Golem's block breaking ignore the MobGriefing
 	EndergolemBlockBreaking = false
-	#Ender Golem's bodyBlocking verdict
-	EndergolemBodyBloking = true
+	#Endergolem's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Endergolem's prevent attacks from far away Range" = 6.0
+
+[Etc]
+	#Void Rune's Damage
+	#Range: 0 ~ 1000000
+	Voidrunedamage = 7
+	#Lava bomb's Radius
+	#Range: 1 ~ 7
+	Lavabombradius = 2
+	#ScreenShake(on/off)
+	"ScreenShake(on/off)" = true
+	#BossMusic(on/off)
+	"BossMusic(on/off)" = true
+
+[Ignis]
+	#Ignis's Health
+	#Range: 0.0 ~ 1000000.0
+	IgnisHealth = 333.0
+	#Ignis's Damage.
+	#Range: 0.0 ~ 1000000.0
+	IgnisDamage = 14.0
+	#Ignis's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Ignis's prevent attacks from far away Range" = 20.0
+	#Ignis's DamageCap
+	#Range: 0 ~ 1000000
+	IgnisDamageCap = 20
 

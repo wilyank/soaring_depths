@@ -62,3 +62,27 @@
 	#Whether the Witch applies potion effects to entities hitting it
 	witchArmor = true
 
+["Structure config"]
+	#Whether to generate workshop room structures in the overworld
+	generateWorkshopRoomStructure = true
+	#Minimum distance in chunks between two workshop room structures
+	#Range: 0 ~ 1000
+	structureWorkshopRoomMinSpacing = 10
+	#Maximum distance in chunks between two workshop room structures
+	#Range: 1 ~ 1000
+	structureWorkshopRoomMaxSpacing = 20
+	#Minimum y-level at which workshop room structures can generate. MUST be lower than structureWorkshopRoomMaxHeight
+	#Range: 6 ~ 244
+	structureWorkshopRoomMinHeight = 6
+	#Maximum y-level at which workshop room structures can generate. MUST be higher than structureWorkshopRoomMinHeight
+	#Range: 7 ~ 245
+	structureWorkshopRoomMaxHeight = 36
+	#Whether to generate nether temple structures in the nether
+	generateNetherTempleStructure = false
+	#Minimum distance in chunks between two nether temple structures
+	#Range: 0 ~ 1000
+	structureNetherTempleMinSpacing = 10
+	#Maximum distance in chunks between two nether temple structures
+	#Range: 1 ~ 1000
+	structureNetherTempleMaxSpacing = 20
+
