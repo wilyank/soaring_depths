@@ -78,31 +78,5 @@
             "perplayer": true
         },
         "result": "allow"
-    },
-    {
-        "dimension": "minecraft:overworld",
-        "mob": "kobolds:kobold_skeleton",
-        "structure": "worldshape:soaring_depths/kobold_ship",
-        "block": [
-            "create:brass_casing",
-            "minecraft:spruce_wood",
-            "minecraft:barrel",
-            "minecraft:spruce_stairs",
-            "minecraft:spruce_planks"
-        ],
-        "helditem": [
-            "minecraft:crossbow",
-            "minecraft:iron_axe"
-        ],
-        "armorhelmet": [
-            "minecraft:iron_helmet",
-            "minecraft:chainmail_helmet"
-        ],
-        "result": "allow"
-    },
-    {
-        "dimension": "minecraft:overworld",
-        "mob": "kobolds:kobold_skeleton",
-        "result": "deny"
     }
 ]

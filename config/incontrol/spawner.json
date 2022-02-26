@@ -31,18 +31,5 @@
             "dimension": "minecraft:overworld",
             "maxthis": 5
         }
-    },
-    {
-        "mob": "kobolds:kobold_skeleton",
-        "persecond": 1,
-        "attempts": 100,
-        "amount": {
-            "maximum": 2,
-            "minimum": 1
-        },
-        "conditions": {
-            "dimension": "minecraft:overworld",
-            "maxthis": 10
-        }
     }
 ]
