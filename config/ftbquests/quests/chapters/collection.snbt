@@ -420,6 +420,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "31E98906311077F9"
+				type: "item"
+				item: "minecraft:leather_horse_armor"
+			}]
 		}
 		{
 			title: "Chainmail Armor Set"
@@ -470,6 +475,18 @@
 							Damage: 0
 						}
 					}
+				}
+			]
+			rewards: [
+				{
+					id: "597144971B7DE63B"
+					type: "item"
+					item: "create:adjustable_chain_gearshift"
+				}
+				{
+					id: "6CF51E5F842A3833"
+					type: "item"
+					item: "create:encased_chain_drive"
 				}
 			]
 		}
@@ -524,6 +541,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "06CB5E858D0344B0"
+				type: "item"
+				item: "minecraft:iron_horse_armor"
+			}]
 		}
 		{
 			title: "Golden Armor Set"
@@ -576,6 +598,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "49BB938C5AC7BFB5"
+				type: "item"
+				item: "minecraft:golden_horse_armor"
+			}]
 		}
 		{
 			title: "Diamond Armor Set"
@@ -628,6 +655,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "64609A4A8AB23F43"
+				type: "item"
+				item: "minecraft:diamond_horse_armor"
+			}]
 		}
 		{
 			title: "Netherite Armor Set"
@@ -680,6 +712,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "7730CF450262F962"
+				type: "item"
+				item: "netherite_plus:netherite_horse_armor"
+			}]
 		}
 		{
 			title: "Special Equipment"
@@ -875,6 +912,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "3D5CD359231DA55C"
+				type: "item"
+				item: "minecraft:skeleton_horse_spawn_egg"
+			}]
 		}
 		{
 			title: "Mutant Wither Skeleton Armor Set"
@@ -927,6 +969,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "031259059AB3B75D"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
 		}
 		{
 			title: "Thallasium Armor Set"
@@ -1269,6 +1316,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "79808B032D9AFFD0"
+				type: "item"
+				item: "alexsmobs:bone_serpent_tooth"
+			}]
 		}
 		{
 			title: "Draco Arcanus Armor Set"
@@ -1321,6 +1373,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "6064991C569268E6"
+				type: "item"
+				item: "forbidden_arcanus:draco_arcanus_arrow"
+				count: 64
+			}]
 		}
 		{
 			title: "Tyr Armor Set"
@@ -1424,6 +1482,29 @@
 					type: "item"
 					item: {
 						id: "cataclysm:ignitium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1C47E7A8EAADD81D"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "48F79D20A1346753"
+					type: "item"
+					item: "minecraft:fire_charge"
+				}
+				{
+					id: "1507171C6D7E76DD"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -1684,6 +1765,30 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "691DE0A6B82A1FFE"
+				type: "item"
+				item: {
+					id: "tconstruct:scorched_ingot_gauge"
+					Count: 1b
+					tag: {
+						tank: {
+							FluidName: "tconstruct:molten_cobalt"
+							Amount: 4608
+						}
+						BlockEntityTag: {
+							tank: {
+								FluidName: "tconstruct:molten_cobalt"
+								Amount: 4608
+							}
+							id: "tconstruct:tank"
+						}
+						display: {
+							Lore: ["\"(+NBT)\""]
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Magical Trinket Collection"
@@ -1734,6 +1839,11 @@
 					id: "14123A87988C7F53"
 					type: "item"
 					item: "eidolon:glass_hand"
+				}
+				{
+					id: "3EE360DD707B6673"
+					type: "item"
+					item: "curios:knuckles"
 				}
 			]
 		}

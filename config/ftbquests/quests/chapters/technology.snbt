@@ -81,6 +81,12 @@
 					count: 16L
 				}
 			]
+			rewards: [{
+				id: "4ACE4CED3D5C0A6A"
+				type: "item"
+				item: "minecraft:iron_ingot"
+				count: 16
+			}]
 		}
 		{
 			title: "Ready to Get Creative"
@@ -123,6 +129,11 @@
 					item: "create:shaft"
 				}
 			]
+			rewards: [{
+				id: "126B493EA0BF2753"
+				type: "item"
+				item: "create:brown_toolbox"
+			}]
 		}
 		{
 			title: "Early-Game Power"
@@ -134,6 +145,7 @@
 			tasks: [{
 				id: "48ACBB12E40CF5A2"
 				type: "item"
+				title: "Rotational Power Source"
 				item: {
 					id: "itemfilters:or"
 					Count: 1b
@@ -190,6 +202,20 @@
 					item: "create:deployer"
 				}
 			]
+			rewards: [
+				{
+					id: "1804B277433367AF"
+					type: "item"
+					item: "create:belt_connector"
+					count: 6
+				}
+				{
+					id: "4AAF23B800C63B95"
+					type: "item"
+					item: "create:shaft"
+					count: 16
+				}
+			]
 		}
 		{
 			title: "The Power To Change The World"
@@ -223,6 +249,7 @@
 					id: "1A7488E6D0FFCEED"
 					type: "item"
 					item: "create:portable_storage_interface"
+					count: 2L
 				}
 				{
 					id: "2BD257AF88084F2E"
@@ -236,6 +263,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "0BB128EAF9B5B8DE"
+				type: "item"
+				item: "create:linear_chassis"
+				count: 16
+			}]
 		}
 		{
 			title: "Basic Item Transportation"
@@ -306,6 +339,11 @@
 					item: "create:hose_pulley"
 				}
 			]
+			rewards: [{
+				id: "07CE5F8EC77AE09A"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
 		}
 		{
 			title: "Smart Storage Drawers"
@@ -335,6 +373,11 @@
 					item: "storagedrawers:compacting_drawers_3"
 				}
 			]
+			rewards: [{
+				id: "5DD128D7247C8E94"
+				type: "item"
+				item: "metalbarrels:gold_barrel"
+			}]
 		}
 		{
 			title: "Smeltery"
@@ -464,12 +507,20 @@
 					item: "tconstruct:seared_basin"
 				}
 			]
-			rewards: [{
-				id: "5A3F88BEB348F296"
-				type: "item"
-				item: "minecraft:coal"
-				count: 16
-			}]
+			rewards: [
+				{
+					id: "5A3F88BEB348F296"
+					type: "item"
+					item: "minecraft:coal"
+					count: 16
+				}
+				{
+					id: "38DC04839361A8D5"
+					type: "item"
+					item: "create:crushed_gold_ore"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Storage Drawers"
@@ -488,6 +539,11 @@
 						value: "storagedrawers:drawers"
 					}
 				}
+			}]
+			rewards: [{
+				id: "66960F8E402FF351"
+				type: "item"
+				item: "minecraft:dark_oak_sapling"
 			}]
 		}
 		{
@@ -517,6 +573,11 @@
 					item: "storagenetwork:storage_kabel"
 				}
 			]
+			rewards: [{
+				id: "597B5B04D3039D27"
+				type: "item"
+				item: "metalbarrels:diamond_barrel"
+			}]
 		}
 		{
 			title: "Advanced Storage Network"
@@ -557,6 +618,11 @@
 					item: "storagenetwork:speed_upgrade"
 				}
 			]
+			rewards: [{
+				id: "4D4BD37F976918D6"
+				type: "item"
+				item: "metalbarrels:netherite_barrel"
+			}]
 		}
 		{
 			title: "Master Storage Network"
@@ -631,6 +697,12 @@
 					item: "create:blaze_cake"
 				}
 			]
+			rewards: [{
+				id: "169DB6236DB42AA7"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 128
+			}]
 		}
 		{
 			title: "Better Power"
@@ -679,6 +751,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "688E96AD05E483E2"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
 		}
 		{
 			title: "Personal Improvement"
@@ -820,6 +897,30 @@
 					}
 				}
 			]
+			rewards: [
+				{
+					id: "24693049B3C3D34F"
+					type: "item"
+					item: "minecraft:water_bucket"
+				}
+				{
+					id: "5F1AC32994D907BB"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "063344BF11021BDB"
+					type: "item"
+					item: "steampowered:bronze_large_cogwheel"
+					count: 2
+				}
+				{
+					id: "08EC5643F58DBCB1"
+					type: "item"
+					item: "steampowered:bronze_cogwheel"
+					count: 5
+				}
+			]
 		}
 		{
 			title: "Electrics"
@@ -880,6 +981,11 @@
 				type: "item"
 				item: "createaddition:overcharged_alloy"
 			}]
+			rewards: [{
+				id: "6B40BA9BD6608924"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
 			title: "Electric Planes"
@@ -897,6 +1003,20 @@
 					id: "7F7FA4099A7D9FC0"
 					type: "item"
 					item: "simpleplanes:electric_engine"
+				}
+			]
+			rewards: [
+				{
+					id: "7CF5BFE655230B1E"
+					type: "item"
+					item: "createaddition:gold_spool"
+					count: 8
+				}
+				{
+					id: "6B1A48184C3DEADC"
+					type: "item"
+					item: "createaddition:connector"
+					count: 16
 				}
 			]
 		}
@@ -978,6 +1098,18 @@
 				item: "minecraft:end_portal_frame"
 				count: 12L
 			}]
+			rewards: [
+				{
+					id: "5C661BF887B7BE7E"
+					type: "item"
+					item: "minecraft:white_bed"
+				}
+				{
+					id: "01FB5738A606D533"
+					type: "item"
+					item: "minecraft:respawn_anchor"
+				}
+			]
 		}
 		{
 			title: "Smeltery Side-grade"

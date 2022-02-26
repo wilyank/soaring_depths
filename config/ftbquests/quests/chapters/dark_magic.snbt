@@ -509,6 +509,11 @@
 				type: "item"
 				item: "minecraft:wither_skeleton_skull"
 			}]
+			rewards: [{
+				id: "39FE471937A425ED"
+				type: "item"
+				item: "tconstruct:necrotic_bone"
+			}]
 		}
 		{
 			x: 2.5d
@@ -810,6 +815,11 @@
 				id: "536923FCADC7A4D9"
 				type: "item"
 				item: "create:crushed_lead_ore"
+			}]
+			rewards: [{
+				id: "510876C7B7C397F2"
+				type: "item"
+				item: "minecraft:iron_ingot"
 			}]
 		}
 		{

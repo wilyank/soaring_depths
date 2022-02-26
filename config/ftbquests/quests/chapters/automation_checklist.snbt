@@ -395,6 +395,7 @@
 		{
 			x: -14.5d
 			y: -11.0d
+			description: ["Sugar Cane can be obtained by trading with Kobolds or Wandering Traders"]
 			id: "74BCEB4408554C9E"
 			tasks: [
 				{
@@ -412,6 +413,7 @@
 		{
 			x: -14.5d
 			y: -12.0d
+			description: ["Kelp can be obtained by trading with Kobolds or Wandering Traders"]
 			id: "61ED1BBD421412D2"
 			tasks: [
 				{
