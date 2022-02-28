@@ -49,28 +49,28 @@
 	"Endergolem's prevent attacks from far away Range" = 6.0
 
 [Etc]
-	#Void Rune's Damage
-	#Range: 0 ~ 1000000
-	Voidrunedamage = 7
+	#BossMusic(on/off)
+	"BossMusic(on/off)" = true
 	#Lava bomb's Radius
 	#Range: 1 ~ 7
 	Lavabombradius = 2
 	#ScreenShake(on/off)
 	"ScreenShake(on/off)" = true
-	#BossMusic(on/off)
-	"BossMusic(on/off)" = true
+	#Void Rune's Damage
+	#Range: 0 ~ 1000000
+	Voidrunedamage = 7
 
 [Ignis]
-	#Ignis's Health
-	#Range: 0.0 ~ 1000000.0
-	IgnisHealth = 333.0
-	#Ignis's Damage.
-	#Range: 0.0 ~ 1000000.0
-	IgnisDamage = 14.0
-	#Ignis's Immune to Long distance attack range.
-	#Range: 1.0 ~ 1000000.0
-	"Ignis's prevent attacks from far away Range" = 20.0
 	#Ignis's DamageCap
 	#Range: 0 ~ 1000000
 	IgnisDamageCap = 20
+	#Ignis's Health
+	#Range: 0.0 ~ 1000000.0
+	IgnisHealth = 333.0
+	#Ignis's Immune to Long distance attack range.
+	#Range: 1.0 ~ 1000000.0
+	"Ignis's prevent attacks from far away Range" = 20.0
+	#Ignis's Damage.
+	#Range: 0.0 ~ 1000000.0
+	IgnisDamage = 14.0
 
