@@ -1,0 +1,52 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [
+          {
+            "modid": "alexsmobs",
+            "type": "forge:mod_loaded"
+          }
+        ],
+        "recipe": {
+          "type": "minecraft:crafting_shapeless",
+          "ingredients": [
+            {
+              "item": "minecraft:sunflower"
+            },
+            {
+              "item": "minecraft:fermented_spider_eye"
+            },
+            {
+              "item": "portable_beacons:infused_dagger"
+            },
+            {
+              "item": "minecraft:firework_rocket"
+            }
+          ],
+          "result": {
+            "item": "portable_beacons:infused_dagger",
+            "nbt": {
+              "CustomPotionEffects": [
+                {
+                  "Ambient": 1,
+                  "CurativeItems": [
+                    {
+                      "id": "minecraft:milk_bucket",
+                      "Count": 1
+                    }
+                  ],
+                  "ShowIcon": 1,
+                  "ShowParticles": 1,
+                  "Duration": 100,
+                  "Id": 40,
+                  "Amplifier": 0
+                }
+              ],
+              "Damage": 0
+            }
+          }
+        }
+      }
+    ]
+  }

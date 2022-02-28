@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "RCR",
+      "nPn",
+      "IBI"
+    ],
+    "key": {
+      "C": {
+        "item": "minecraft:conduit"
+      },
+      "R": {
+        "item": "minecraft:blaze_rod"
+      },
+      "I": {
+        "item": "minecraft:iron_block"
+      },
+      "n": {
+        "item": "minecraft:netherite_ingot"
+      },
+      "B": {
+        "item": "minecraft:beacon"
+      },
+      "P": {
+          "tag": "improvedbackpacks:backpack"
+      }
+    },
+    "result": {
+      "item": "portable_beacons:beacon_backpack_0"
+    }
+  }
