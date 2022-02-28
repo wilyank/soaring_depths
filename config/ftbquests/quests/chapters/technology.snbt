@@ -401,7 +401,7 @@
 				{
 					id: "69554D43BABA20DE"
 					type: "item"
-					item: "tconstruct:seared_chute"
+					item: "tconstruct:seared_drain"
 				}
 				{
 					id: "57C3FE7CA8EB9614"
@@ -825,6 +825,28 @@
 					item: "create:linked_controller"
 				}
 			]
+			rewards: [
+				{
+					id: "4ECC44817B04CA8E"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "2BFBDBF9B02565DD"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "19E66EE0AFACD88E"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "4F4287EA53BCF60D"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+			]
 		}
 		{
 			title: "Steam Engines??"
@@ -1189,11 +1211,18 @@
 				type: "item"
 				item: "minecraft:beacon"
 			}]
-			rewards: [{
-				id: "0D486CBE779CBE75"
-				type: "item"
-				item: "tconstruct:pig_iron_ingot"
-			}]
+			rewards: [
+				{
+					id: "0D486CBE779CBE75"
+					type: "item"
+					item: "tconstruct:pig_iron_ingot"
+				}
+				{
+					id: "45FB5C83F85625FD"
+					type: "item"
+					item: "minecraft:iron_block"
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -1221,6 +1250,19 @@
 				type: "item"
 				item: "portable_beacons:beacon_backpack_0"
 			}]
+			rewards: [
+				{
+					id: "714AC9B10996F5EC"
+					type: "item"
+					item: "minecraft:sea_lantern"
+					count: 16
+				}
+				{
+					id: "203511F5BC0A9CD1"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+			]
 		}
 	]
 }

@@ -860,6 +860,17 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "1E6AE6A9A398757B"
+				type: "item"
+				item: {
+					id: "alexsmobs:echolocator"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
 		}
 		{
 			title: "Mutant Skeleton Armor Set"
@@ -969,11 +980,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "031259059AB3B75D"
-				type: "item"
-				item: "minecraft:wither_skeleton_skull"
-			}]
+			rewards: [
+				{
+					id: "031259059AB3B75D"
+					type: "item"
+					item: "minecraft:wither_skeleton_skull"
+				}
+				{
+					id: "2CB15DDC88D7BCE5"
+					type: "item"
+					item: "minecraft:ghast_tear"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Thallasium Armor Set"
@@ -1026,6 +1045,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "26610F45A699DE06"
+				type: "item"
+				item: "betterendforge:ender_ore"
+				count: 8
+			}]
 		}
 		{
 			title: "Terminite Armor Set"
@@ -1078,6 +1103,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "62A0ADE1F2F21A58"
+				type: "item"
+				item: "betterendforge:ender_shard"
+				count: 16
+			}]
 		}
 		{
 			title: "Aeternium Armor Set"
@@ -1130,6 +1161,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "2834C61FED9AF0F5"
+				type: "item"
+				item: "betterendforge:amber_ore"
+				count: 4
+			}]
 		}
 		{
 			title: "Crystalite Armor Set"
@@ -1186,6 +1223,18 @@
 							Damage: 0
 						}
 					}
+				}
+			]
+			rewards: [
+				{
+					id: "72B1293353985CD1"
+					type: "item"
+					item: "mutantmore:compound_z"
+				}
+				{
+					id: "71625B0C5F56E8CE"
+					type: "item"
+					item: "mutantmore:mutant_blaze_core"
 				}
 			]
 		}
@@ -1264,6 +1313,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "0102C70DD3253131"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal_ore"
+				count: 4
+			}]
 		}
 		{
 			title: "Mortem Armor Set"
@@ -1373,12 +1428,19 @@
 					}
 				}
 			]
-			rewards: [{
-				id: "6064991C569268E6"
-				type: "item"
-				item: "forbidden_arcanus:draco_arcanus_arrow"
-				count: 64
-			}]
+			rewards: [
+				{
+					id: "6064991C569268E6"
+					type: "item"
+					item: "forbidden_arcanus:draco_arcanus_arrow"
+					count: 64
+				}
+				{
+					id: "11396ABD3D383C42"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+				}
+			]
 		}
 		{
 			title: "Tyr Armor Set"
@@ -1437,6 +1499,11 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "183A059F81D79EAA"
+				type: "item"
+				item: "minecraft:spawner"
+			}]
 		}
 		{
 			title: "Ignitium Armor Set"
@@ -1844,6 +1911,19 @@
 					id: "3EE360DD707B6673"
 					type: "item"
 					item: "curios:knuckles"
+				}
+			]
+			rewards: [
+				{
+					id: "23FACDC9DFF1F836"
+					type: "item"
+					item: "tconstruct:jeweled_apple"
+				}
+				{
+					id: "1BD8782BCA0C9285"
+					type: "item"
+					item: "create_confectionery:caramelized_marshmellow_on_a_stick"
+					count: 16
 				}
 			]
 		}
