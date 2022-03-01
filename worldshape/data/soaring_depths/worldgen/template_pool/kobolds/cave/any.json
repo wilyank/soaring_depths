@@ -1,5 +1,5 @@
 {
-    "name": "soaring_depths:kobolds/cave/start",
+    "name": "soaring_depths:kobolds/cave/any",
     "fallback": "minecraft:empty",
     "elements": [
       {

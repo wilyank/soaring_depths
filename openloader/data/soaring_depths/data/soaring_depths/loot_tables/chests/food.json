@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 5,
+          "max": 20
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bread"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wheat"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:potato"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rabbit_stew"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_mutton"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:carrot"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_rabbit"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cake"
+          }
+        ]
+      }
+    ]
+  }
+  
