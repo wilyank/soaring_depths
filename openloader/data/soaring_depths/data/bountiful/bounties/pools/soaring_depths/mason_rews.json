@@ -3,16 +3,6 @@
     "content": [
       {
         "type": "item",
-        "content": "minecraft:quartz_block",
-        "amountRange": {
-          "min": 4,
-          "max": 32
-        },
-        "unitWorth": 128,
-        "weight": 800
-      },
-      {
-        "type": "item",
         "content": "biomesoplenty:nether_crystal",
         "amountRange": {
           "min": 1,
