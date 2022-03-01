@@ -14,9 +14,5 @@
         "maxY": 150,
         "type": "surface",
         "ceiling": true
-    },
-
-    "dimensions": [
-        "minecraft:overworld"
-    ]
+    }
 }
