@@ -3,7 +3,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 10,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 10,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
@@ -48,7 +48,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 5,
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
@@ -62,6 +62,15 @@
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
         "location": "soaring_depths:kobolds/cave/workshop",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 10,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/threeway_crossing",
         "processors": "minecraft:empty"
       }
     }

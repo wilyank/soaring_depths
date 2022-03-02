@@ -1,6 +1,6 @@
 {
     "pack": {
         "pack_format": 6,
-        "description": "Data for the Soaring Depths modpack. Includes structure and advancement overrides as well as wood stonecutter recipes."
+        "description": "Data for the Soaring Depths modpack. Includes structure, loot table and advancement overrides as well as wood stonecutter recipes."
     }
 }
