@@ -16,8 +16,7 @@ var prec_mech = <item:create:precision_mechanism>;
 var brass_casing = <item:create:brass_casing>;
 var cogwheels = <tag:items:forge:cogwheels>;
 
-// remove all stupid sequenced assembly recipes
-<recipetype:create:sequenced_assembly>.removeAll();
+
 
 craftingTable.addShapedMirrored("andesite_cobble_iron_alloy",
     a,

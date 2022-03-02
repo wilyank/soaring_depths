@@ -10,6 +10,8 @@ import crafttweaker.api.util.text.MCStyle;
 
 // this scripts does random tweaks and fixes
 
+// remove all stupid sequenced assembly recipes
+<recipetype:create:sequenced_assembly>.removeAll();
 
 // remove distracting item filters
 mods.jei.JEI.hideMod("itemfilters");
