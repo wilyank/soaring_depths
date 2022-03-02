@@ -1,0 +1,34 @@
+{
+    "name": "soaring_depths:kobolds/cave/prisoners",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "soaring_depths:kobolds/cave/prisoners/witch",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "soaring_depths:kobolds/cave/prisoners/vindicator",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "soaring_depths:kobolds/cave/prisoners/villager",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  

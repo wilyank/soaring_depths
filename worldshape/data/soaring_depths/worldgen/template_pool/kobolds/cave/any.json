@@ -1,33 +1,69 @@
 {
-    "name": "soaring_depths:kobolds/cave/any",
-    "fallback": "minecraft:empty",
-    "elements": [
-      {
-        "weight": 1,
-        "element": {
-          "location": "soaring_depths:kobolds/cave/tunnel_1",
-          "processors": "minecraft:empty",
-          "projection": "rigid",
-          "element_type": "minecraft:single_pool_element"
-        }
-      },
-      {
-        "weight": 1,
-        "element": {
-          "location": "soaring_depths:kobolds/cave/tunnel_2",
-          "processors": "minecraft:empty",
-          "projection": "rigid",
-          "element_type": "minecraft:single_pool_element"
-        }
-      },
-      {
-        "weight": 1,
-        "element": {
-          "location": "soaring_depths:kobolds/cave/room",
-          "processors": "minecraft:empty",
-          "projection": "rigid",
-          "element_type": "minecraft:single_pool_element"
-        }
+  "name": "soaring_depths:kobolds/cave/any",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/tunnel_1",
+        "processors": "minecraft:empty"
       }
-    ]
-  }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/tunnel_2",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/room",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/food_room",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/prison",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/town_square",
+        "processors": "minecraft:empty"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "soaring_depths:kobolds/cave/workshop",
+        "processors": "minecraft:empty"
+      }
+    }
+  ]
+}
