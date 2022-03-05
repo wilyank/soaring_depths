@@ -45,12 +45,44 @@
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "create:precision_mechanism"
+          "name": "create:copper_nugget"
         },
         {
           "type": "minecraft:item",
           "weight": 5,
-          "name": "create:polished_rose_quartz"
+          "name": "minecraft:redstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:repeater"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_torch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_lamp"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tripwire_hook"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:piston"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_log"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spruce_log"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_pressure_plate"
         }
       ],
       "functions": [
