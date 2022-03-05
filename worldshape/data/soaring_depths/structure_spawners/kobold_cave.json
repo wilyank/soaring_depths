@@ -2,7 +2,7 @@
     "template": {
         "type": "pool",
         "id": "soaring_depths:kobolds/cave/start",
-        "maxDepth": 3
+        "maxDepth": 5
     },
 
     "averageSpacing": 45,
