@@ -1,0 +1,137 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:iron_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 8,
+            "name": "minecraft:golden_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:diamond_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 8,
+            "name": "minecraft:chainmail_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "minecraft:netherite_leggings"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 8,
+            "name": "minecraft:leather_leggings"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.armor",
+                "name": "",
+                "amount": {
+                  "min": 3,
+                  "max": 8
+                },
+                "operation": "addition",
+                "slot": "legs"
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.armor_toughness",
+                "name": "",
+                "amount": {
+                  "min": 0,
+                  "max": 3
+                },
+                "operation": "addition",
+                "slot": "legs"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "name": "",
+                "amount": {
+                  "min": 0,
+                  "max": 1
+                },
+                "operation": "addition",
+                "slot": "legs"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "translate": "item.soaring_depths.relic.leggings",
+              "bold": true,
+              "italic": false
+            }
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "forge:swim_speed",
+                "name": "",
+                "amount": {
+                  "min": 0.05,
+                  "max": 0.5
+                },
+                "operation": "multiply_base",
+                "slot": "legs"
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.max_health",
+                "name": "",
+                "amount": {
+                  "min": -0.5,
+                  "max": 0.5
+                },
+                "operation": "addition",
+                "slot": "legs"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

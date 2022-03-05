@@ -121,5 +121,13 @@
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",
   "item.soaring_depths.leggings": "Soaring Leggings",
-  "item.soaring_depths.boots": "Soaring Boots"
+  "item.soaring_depths.boots": "Soaring Boots",
+
+  "item.soaring_depths.relic.axe": "Relict Axe",
+  "item.soaring_depths.relic.totem": "Relict Totem",
+  "item.soaring_depths.relic.helmet": "Relict Helmet",
+  "item.soaring_depths.relic.chestplate": "Relict Chestplate",
+  "item.soaring_depths.relic.leggings": "Relict Leggings",
+  "item.soaring_depths.relic.boots": "Relict Boots"
+
 }
