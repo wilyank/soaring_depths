@@ -237,6 +237,17 @@ craftingTable.addShaped("spectral_eye_amulet",
         <fluid:astralsorcery:liquid_starlight>*1000
     ]
 );
+<recipetype:create:mixing>.addRecipe("crying_rune",
+    "superheated",
+    <item:forbidden_arcanus:rune>,
+    [
+        <item:minecraft:crying_obsidian>
+    ],
+    [
+        <fluid:tconstruct:venom>*1000
+    ]
+);
+
 craftingTable.removeRecipe(<item:forbidden_arcanus:golden_feather>);
 craftingTable.addShaped("golden_feather",
     <item:forbidden_arcanus:golden_feather>,
