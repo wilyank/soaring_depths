@@ -8,6 +8,10 @@ import crafttweaker.api.util.Random;
 import crafttweaker.api.server.MCServer;
 import crafttweaker.api.data.MapData;
 import crafttweaker.api.util.BlockPos;
+import crafttweaker.api.BracketHandlers;
+import crafttweaker.api.entity.MCItemEntity;
+
+
 
 // This script contains all event handlers for the pack
 
@@ -153,5 +157,44 @@ CTEventManager.register<crafttweaker.api.event.tick.MCPlayerTickEvent>(
             return;
         }
         player.setFire(1);
+    }
+);
+
+CTEventManager.register<crafttweaker.api.event.block.MCBlockBreakEvent>(
+    (event) => {
+        var blockState = event.getBlockState();
+        if (<block:minecraft:spawner>.matchesBlock(blockState.block)) {
+    	    var blockPos = event.getPos();
+            var world = event.getWorld();
+            var tileEntity = world.getTileEntity(blockPos);
+            if (tileEntity != null) {
+                var dataMap = tileEntity.data as MapData;
+                if (dataMap.contains("SpawnData")) {
+                    var mobName = dataMap.getAt("SpawnData").asMap()["id"].getString();
+                    var itemStack = <item:minecraft:air>;
+                    var namespace = mobName.split(':')[0] as string;
+                    var itemName = mobName.split(':')[1] as string;
+                    println(namespace);
+                    if (namespace == "alexsmobs") {
+                        itemStack = BracketHandlers.getItem("alexsmobs:spawn_egg_" + itemName);
+                    } else if (namespace == "kobolds") {
+                        if (itemName == "kobold_zombie") {
+                            itemStack = BracketHandlers.getItem("kobolds:zombold_spawn_egg");
+                        } else if (itemName == "kobold_drowned") {
+                            itemStack = BracketHandlers.getItem("kobolds:drowned_zombold_spawn_egg");
+                        } else if (itemName == "kobold_skeleton") {
+                            itemStack = BracketHandlers.getItem("kobolds:skelebold_spawn_egg");
+                        }
+                    } else if (namespace == "eidolon") {
+                        itemStack = BracketHandlers.getItem("eidolon:spawn_" + itemName);
+                    }
+                    else {
+                        itemStack = BracketHandlers.getItem(mobName + "_spawn_egg");
+                    }
+                    println(itemStack.toString());
+                    world.addEntity(new MCItemEntity(world, blockPos.x, blockPos.y, blockPos.z, itemStack));
+                }
+            }
+        }
     }
 );
