@@ -1,0 +1,13 @@
+{
+  "type": "improvedbackpacks:sewing",
+  "spools_count": 1,
+  "first": {
+    "item": "portable_beacons:beacon_backpack_2"
+  },
+  "first_count": 1,
+  "second": {
+    "tag": "forge:storage_blocks/manyullyn"
+  },
+  "second_count": 18,
+  "result": "portable_beacons:beacon_backpack_3"
+}
