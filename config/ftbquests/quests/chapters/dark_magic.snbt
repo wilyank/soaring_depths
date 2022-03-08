@@ -35,7 +35,6 @@
 				id: "78001BF43773D39A"
 				type: "item"
 				item: "forbidden_arcanus:edelwood_log"
-				count: 16L
 			}]
 		}
 		{
@@ -264,6 +263,24 @@
 				entity: "mutantbeasts:mutant_zombie"
 				value: 1L
 			}]
+			rewards: [
+				{
+					id: "136DAA29B46E6462"
+					type: "item"
+					item: {
+						id: "tconstruct:repair_kit"
+						Count: 1b
+						tag: {
+							Material: "tconstruct:rotten_flesh"
+						}
+					}
+				}
+				{
+					id: "66B6FA2928859182"
+					type: "item"
+					item: "eidolon:zombie_heart"
+				}
+			]
 		}
 		{
 			x: 3.5d
@@ -275,6 +292,11 @@
 				type: "kill"
 				entity: "mutantbeasts:mutant_enderman"
 				value: 1L
+			}]
+			rewards: [{
+				id: "11E75E84B37A6AFC"
+				type: "item"
+				item: "betterendforge:ender_block"
 			}]
 		}
 		{
@@ -288,6 +310,11 @@
 				type: "item"
 				item: "mutantbeasts:chemical_x"
 			}]
+			rewards: [{
+				id: "4CCA811C52EA17C4"
+				type: "item"
+				item: "forbidden_arcanus:rune_bag"
+			}]
 		}
 		{
 			x: 2.5d
@@ -299,6 +326,12 @@
 				type: "kill"
 				entity: "mutantbeasts:mutant_creeper"
 				value: 1L
+			}]
+			rewards: [{
+				id: "27D5E7AECF49DFB2"
+				type: "item"
+				item: "tconstruct:efln_ball"
+				count: 16
 			}]
 		}
 		{
@@ -313,6 +346,12 @@
 				entity: "mutantbeasts:spider_pig"
 				value: 1L
 			}]
+			rewards: [{
+				id: "0148B69C026AB952"
+				type: "item"
+				item: "improvedbackpacks:sewing_spool"
+				count: 64
+			}]
 		}
 		{
 			x: 3.5d
@@ -324,6 +363,12 @@
 				type: "kill"
 				entity: "mutantbeasts:mutant_skeleton"
 				value: 1L
+			}]
+			rewards: [{
+				id: "15C13119B50B98A9"
+				type: "item"
+				item: "forbidden_arcanus:arcane_bone_meal"
+				count: 16
 			}]
 		}
 		{
@@ -337,6 +382,11 @@
 				entity: "mutantmore:mutant_blaze"
 				value: 1L
 			}]
+			rewards: [{
+				id: "59789546D2856FCD"
+				type: "item"
+				item: "mutantmore:mutant_blaze_core"
+			}]
 		}
 		{
 			title: "More Unholy Creatures"
@@ -348,6 +398,11 @@
 				id: "42DC5D4B4B3B12EF"
 				type: "item"
 				item: "mutantmore:formula_y"
+			}]
+			rewards: [{
+				id: "61E1CE0F7A9BB347"
+				type: "item"
+				item: "forbidden_arcanus:rune_bag"
 			}]
 		}
 		{
@@ -361,6 +416,11 @@
 				entity: "mutantmore:mutant_wither_skeleton"
 				value: 1L
 			}]
+			rewards: [{
+				id: "5DB4964E8AB65E5C"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+			}]
 		}
 		{
 			x: 4.5d
@@ -372,6 +432,12 @@
 				type: "kill"
 				entity: "mutantmore:mutant_hoglin"
 				value: 1L
+			}]
+			rewards: [{
+				id: "485C0904D976B6F0"
+				type: "item"
+				item: "infernalexp:raw_hogchop"
+				count: 16
 			}]
 		}
 		{
@@ -385,6 +451,20 @@
 				entity: "mutantmore:mutant_husk"
 				value: 1L
 			}]
+			rewards: [
+				{
+					id: "61DBD47C19E7C39B"
+					type: "item"
+					item: "minecraft:red_sand"
+					count: 64
+				}
+				{
+					id: "2477638B50270482"
+					type: "item"
+					item: "minecraft:sand"
+					count: 64
+				}
+			]
 		}
 		{
 			title: "Better Unholy Creatures"
@@ -396,6 +476,11 @@
 				id: "1625CB394ABB2691"
 				type: "item"
 				item: "mutantmore:compound_z"
+			}]
+			rewards: [{
+				id: "7078EF3CE61EF7BB"
+				type: "item"
+				item: "forbidden_arcanus:dark_rune_bag"
 			}]
 		}
 		{
@@ -436,6 +521,11 @@
 					tag: { }
 				}
 			}]
+			rewards: [{
+				id: "31E9C28299FA844C"
+				type: "item"
+				item: "rubber_duck:rubber_duck_item"
+			}]
 		}
 		{
 			x: 4.5d
@@ -449,6 +539,12 @@
 				id: "02104E998DDE93C5"
 				type: "item"
 				item: "forbidden_arcanus:dark_nether_star"
+			}]
+			rewards: [{
+				id: "290712789B00AB02"
+				type: "item"
+				item: "minecraft:obsidian"
+				count: 16
 			}]
 		}
 		{
@@ -467,6 +563,12 @@
 						wand_options: { }
 					}
 				}
+			}]
+			rewards: [{
+				id: "67554F63094C3141"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
 			}]
 		}
 		{
@@ -546,7 +648,11 @@
 		{
 			x: 3.0d
 			y: 5.0d
-			dependencies: ["05372402DBC26E39"]
+			dependencies: [
+				"05372402DBC26E39"
+				"6C27D59380778FF1"
+			]
+			dependency_requirement: "one_started"
 			id: "70208F2DF7FFB8BC"
 			tasks: [{
 				id: "07B4B0602DA111B1"
@@ -580,6 +686,12 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "2A25D2A95C5620E3"
+				type: "item"
+				item: "minecraft:blaze_rod"
+				count: 8
 			}]
 		}
 		{

@@ -1,5 +1,8 @@
 #priority 50
 
+import crafttweaker.api.BracketHandlers;
+
+
 // This script tweaks recipes added by Create or it's addons
 
 var _ = <item:minecraft:air>;
@@ -243,6 +246,44 @@ craftingTable.addShaped("deployer",
     ]
 );
 
+var woodTypes = ["oak", "birch", "jungle", "acacia", "dark_oak", "crimson", "warped"];
+for woodType in woodTypes {
+    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "cogwheel")
+        .transitionTo(BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"))
+        .require(BracketHandlers.getItem("minecraft:" + woodType + "_slab"))
+        .loops(1)
+        .addOutput(BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), 8)
+        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
+        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
+    );
+    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "large_cogwheel")
+        .transitionTo(BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"))
+        .require(BracketHandlers.getItem("minecraft:" + woodType + "_stairs"))
+        .loops(1)
+        .addOutput(BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), 4)
+        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
+        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
+    );
+}
+woodTypes = ["cherry", "dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow"];
+for woodType in woodTypes {
+    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "cogwheel")
+        .transitionTo(BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"))
+        .require(BracketHandlers.getItem("biomesoplenty:" + woodType + "_slab"))
+        .loops(1)
+        .addOutput(BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), 8)
+        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
+        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
+    );
+    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "large_cogwheel")
+        .transitionTo(BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"))
+        .require(BracketHandlers.getItem("biomesoplenty:" + woodType + "_stairs"))
+        .loops(1)
+        .addOutput(BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), 4)
+        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
+        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
+    );
+}
 craftingTable.removeRecipe(<item:create:mechanical_press>);
 craftingTable.addShaped("press",
     <item:create:mechanical_press>,

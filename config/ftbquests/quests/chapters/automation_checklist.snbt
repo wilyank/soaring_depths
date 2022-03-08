@@ -10,7 +10,6 @@
 	quests: [
 		{
 			title: "Cobblestone"
-			icon: "minecraft:cobblestone"
 			x: -17.5d
 			y: -7.5d
 			id: "1F1D5B9D7E798C28"

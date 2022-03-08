@@ -167,6 +167,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "36D234821EBA3175"
+				type: "item"
+				item: "minecraft:iron_ore"
+				count: 4
+			}]
 		}
 		{
 			title: "Basic Processing"
@@ -297,6 +303,20 @@
 					id: "4C494A1399CBE0D0"
 					type: "item"
 					item: "create:chute"
+				}
+			]
+			rewards: [
+				{
+					id: "085A434FF1101D6A"
+					type: "item"
+					item: "create:shaft"
+					count: 16
+				}
+				{
+					id: "2807295662162CD3"
+					type: "item"
+					item: "create:cogwheel"
+					count: 16
 				}
 			]
 		}
@@ -1127,9 +1147,9 @@
 					item: "minecraft:white_bed"
 				}
 				{
-					id: "01FB5738A606D533"
+					id: "35F5AD5621F0B338"
 					type: "item"
-					item: "minecraft:respawn_anchor"
+					item: "minecraft:obsidian"
 				}
 			]
 		}

@@ -79,6 +79,11 @@
 					item: "minecraft:music_disc_pigstep"
 				}
 			]
+			rewards: [{
+				id: "3946C686463CB576"
+				type: "item"
+				item: "minecraft:jukebox"
+			}]
 		}
 		{
 			title: "Chocolate Music Discs"
@@ -162,6 +167,11 @@
 					item: "outer_end:music_disc_unknown_frontier"
 				}
 			]
+			rewards: [{
+				id: "72C103DAB58226A3"
+				type: "item"
+				item: "minecraft:jukebox"
+			}]
 		}
 		{
 			title: "Saplings Pt. I"
@@ -758,6 +768,12 @@
 					}
 				}
 			]
+			rewards: [{
+				id: "23DF4649DF5912A1"
+				type: "item"
+				item: "minecraft:turtle_egg"
+				count: 2
+			}]
 		}
 		{
 			title: "Alex's Armor"
@@ -1692,6 +1708,11 @@
 					item: "forbidden_arcanus:edelwood_squid_bucket"
 				}
 			]
+			rewards: [{
+				id: "105801141445EF73"
+				type: "item"
+				item: "biomesoplenty:watergrass"
+			}]
 		}
 		{
 			x: 2.0d
@@ -1753,6 +1774,18 @@
 					item: "alexsmobs:stradpole_bucket"
 				}
 			]
+			rewards: [
+				{
+					id: "37D953E3AC3384F8"
+					type: "item"
+					item: "tconstruct:magma_cake"
+				}
+				{
+					id: "386D72DEA0E7BF49"
+					type: "item"
+					item: "create:blaze_cake"
+				}
+			]
 		}
 		{
 			title: "Bucket of Critter"
@@ -1776,6 +1809,11 @@
 					item: "forbidden_arcanus:edelwood_chicken_bucket"
 				}
 			]
+			rewards: [{
+				id: "142FDC05DA3B6BFE"
+				type: "item"
+				item: "tconstruct:earth_cake"
+			}]
 		}
 		{
 			title: "Tinkerer's Armor Set"
@@ -1923,6 +1961,12 @@
 					id: "1BD8782BCA0C9285"
 					type: "item"
 					item: "create_confectionery:caramelized_marshmellow_on_a_stick"
+					count: 16
+				}
+				{
+					id: "36CBE1B4C68484F8"
+					type: "item"
+					item: "create:builders_tea"
 					count: 16
 				}
 			]

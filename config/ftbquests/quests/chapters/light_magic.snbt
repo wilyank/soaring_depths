@@ -63,6 +63,11 @@
 					item: "astralsorcery:wand"
 				}
 			]
+			rewards: [{
+				id: "313A71958B7C935A"
+				type: "item"
+				item: "astralsorcery:aquamarine_sand_ore"
+			}]
 		}
 		{
 			title: "Trapping the light"
@@ -225,6 +230,17 @@
 				type: "item"
 				item: "forbidden_arcanus:obsidian_skull"
 			}]
+			rewards: [{
+				id: "4242F10E732E5711"
+				type: "item"
+				item: {
+					id: "minecraft:splash_potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+			}]
 		}
 		{
 			title: "I Fear No Flames No More"
@@ -239,6 +255,11 @@
 				id: "71AAED904B686098"
 				type: "item"
 				item: "forbidden_arcanus:eternal_obsidian_skull"
+			}]
+			rewards: [{
+				id: "48AF16C2B85951DE"
+				type: "item"
+				item: "forbidden_arcanus:arcane_gold_ingot"
 			}]
 		}
 		{
@@ -257,6 +278,11 @@
 				type: "item"
 				title: "Stellarite Piece (Drops from Stella Arcanum)"
 				item: "forbidden_arcanus:stellarite_piece"
+			}]
+			rewards: [{
+				id: "26BA7C2376EB2092"
+				type: "item"
+				item: "forbidden_arcanus:stella_arcanum"
 			}]
 		}
 		{
@@ -1471,6 +1497,11 @@
 				id: "3795718833DCDA11"
 				type: "item"
 				item: "minecraft:respawn_anchor"
+			}]
+			rewards: [{
+				id: "2F79B1149E80E396"
+				type: "item"
+				item: "tconstruct:blaze_head"
 			}]
 		}
 		{

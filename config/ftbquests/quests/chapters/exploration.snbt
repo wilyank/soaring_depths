@@ -50,6 +50,12 @@
 					criterion: ""
 				}
 			]
+			rewards: [{
+				id: "1B8F20D3FD02ADD6"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 16
+			}]
 		}
 		{
 			x: -2.0d
@@ -90,6 +96,11 @@
 				id: "09A446EED25C477D"
 				type: "item"
 				item: "bountiful:bountyboard"
+			}]
+			rewards: [{
+				id: "202F9A1E31312BE5"
+				type: "item"
+				item: "bountiful:decree"
 			}]
 		}
 		{
@@ -180,6 +191,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "4A47FF6CECE95D9F"
+				type: "item"
+				item: "biomesoplenty:magic_boat"
+			}]
 		}
 		{
 			x: 0.0d
@@ -190,6 +206,12 @@
 				id: "0DF185632027C578"
 				type: "item"
 				item: "minecraft:conduit"
+			}]
+			rewards: [{
+				id: "198DBB37374DCE55"
+				type: "item"
+				item: "minecraft:sea_lantern"
+				count: 16
 			}]
 		}
 		{
@@ -236,6 +258,12 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "150B3CE4518BC797"
+				type: "item"
+				item: "minecraft:prismarine_crystals"
+				count: 16
+			}]
 		}
 		{
 			title: "Production of Personnel"
@@ -248,6 +276,12 @@
 				type: "advancement"
 				advancement: "kobolds:kobold_apple_advancement"
 				criterion: ""
+			}]
+			rewards: [{
+				id: "274F6F9279B1DB6F"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 8
 			}]
 		}
 		{
@@ -265,6 +299,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "4E24064DA6725918"
+				type: "item"
+				item: "minecraft:wet_sponge"
 			}]
 		}
 		{
@@ -370,6 +409,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "660DAB3CBD7E3738"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
 			x: 3.5d
@@ -392,6 +436,11 @@
 				type: "item"
 				item: "minecraft:lodestone"
 			}]
+			rewards: [{
+				id: "43C75E689D8214A3"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
 			x: 2.5d
@@ -402,6 +451,11 @@
 				id: "4F0777D56B321091"
 				type: "item"
 				item: "minecraft:netherite_ingot"
+			}]
+			rewards: [{
+				id: "6600CA7DE4E08BBB"
+				type: "item"
+				item: "minecraft:smithing_table"
 			}]
 		}
 		{
@@ -415,6 +469,11 @@
 				title: "Netherite Shulker Box"
 				advancement: "netherite_plus:netherite_plus/netherite_shulker_boxes"
 				criterion: ""
+			}]
+			rewards: [{
+				id: "28988464DF9E0D30"
+				type: "item"
+				item: "minecraft:ancient_debris"
 			}]
 		}
 		{
@@ -433,6 +492,11 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "3DB00AB820D983FA"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
 			x: 1.5d
@@ -450,6 +514,11 @@
 						Damage: 0
 					}
 				}
+			}]
+			rewards: [{
+				id: "1548777C99A5DCBA"
+				type: "item"
+				item: "minecraft:ancient_debris"
 			}]
 		}
 		{
@@ -531,6 +600,20 @@
 				type: "dimension"
 				dimension: "minecraft:the_nether"
 			}]
+			rewards: [
+				{
+					id: "6E1B7554C9382BD2"
+					type: "item"
+					item: "minecraft:nether_gold_ore"
+					count: 4
+				}
+				{
+					id: "65356EF347972743"
+					type: "item"
+					item: "infernalexp:cooked_hogchop"
+					count: 8
+				}
+			]
 		}
 		{
 			title: "Visit the End"
@@ -544,6 +627,11 @@
 				id: "70BD40220EA30855"
 				type: "dimension"
 				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "71270E46FFE8DE3B"
+				type: "item"
+				item: "forbidden_arcanus:chorus_pearl"
 			}]
 		}
 		{
@@ -559,6 +647,11 @@
 				icon: "cataclysm:void_core"
 				structure: "cataclysm:ruined_citadel"
 			}]
+			rewards: [{
+				id: "49DFD7F2AABC143F"
+				type: "item"
+				item: "unactivatedtotems:unactivated_totem"
+			}]
 		}
 		{
 			x: 8.0d
@@ -570,6 +663,11 @@
 				type: "structure"
 				title: "Find an End City"
 				structure: "minecraft:endcity"
+			}]
+			rewards: [{
+				id: "35F30CF1D6A91FE5"
+				type: "item"
+				item: "tconstruct:ender_slime_grass_seeds"
 			}]
 		}
 		{
@@ -658,6 +756,11 @@
 						]
 					}
 				}
+			}]
+			rewards: [{
+				id: "7B9054732446D09D"
+				type: "item"
+				item: "minecraft:firework_rocket"
 			}]
 		}
 		{
@@ -801,6 +904,11 @@
 				type: "item"
 				item: "magicfeather:magicfeather"
 			}]
+			rewards: [{
+				id: "3AD53D5939552D2F"
+				type: "item"
+				item: "minecraft:iron_block"
+			}]
 		}
 		{
 			x: -3.0d
@@ -847,6 +955,11 @@
 				id: "7E342E3F89E498A7"
 				type: "item"
 				item: "akashictome:tome"
+			}]
+			rewards: [{
+				id: "31739FA2EDCA4318"
+				type: "item"
+				item: "minecraft:lectern"
 			}]
 		}
 	]
