@@ -3,6 +3,9 @@
 	#EnderGuardian's Damage.
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianDamage = 16.0
+	#EnderGuardianBlockBreaking radius
+	#Range: 0 ~ 20
+	"EnderGuardianBlockBreaking X" = 15
 	#ruined citadel spawn
 	RuinedcitadelSpawn = true
 	#Guardian's Immune to Long distance attack range.
@@ -16,6 +19,12 @@
 	#EnderGuardian's Health
 	#Range: 0.0 ~ 1000000.0
 	EnderGuardianHealth = 300.0
+	#EnderGuardianBlockBreaking radius
+	#Range: 0 ~ 10
+	"EnderGuardianBlockBreaking Y" = 2
+	#EnderGuardianBlockBreaking radius
+	#Range: 0 ~ 20
+	"EnderGuardianBlockBreaking Z" = 15
 
 ["Netherite Monstrosity"]
 	#soul black smith spawn
@@ -42,11 +51,17 @@
 	"Monstrosity's prevent attacks from far away Range" = 18.0
 
 ["Ender Golem"]
+	#Golem's Health
+	#Range: 0.0 ~ 1000000.0
+	GolemHealth = 150.0
 	#Ender Golem's block breaking ignore the MobGriefing
 	EndergolemBlockBreaking = false
 	#Endergolem's Immune to Long distance attack range.
 	#Range: 1.0 ~ 1000000.0
 	"Endergolem's prevent attacks from far away Range" = 6.0
+	#Golem's Damage.
+	#Range: 0.0 ~ 1000000.0
+	GolemDamage = 10.0
 
 [Etc]
 	#BossMusic(on/off)
