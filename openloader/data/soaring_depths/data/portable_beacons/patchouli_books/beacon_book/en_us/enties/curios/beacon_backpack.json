@@ -1,0 +1,16 @@
+{
+    "name": "item.portable_beacons.beacon_backpack",
+    "icon": "minecraft:beacon",
+    "category": "portable_beacons:curios",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "portable_beacons.entry.beacon_backpack.page.0"
+        },
+        {
+            "type": "patchouli:crafting",
+            "recipe":"portable_beacons:beacon_backpack_0",
+            "text": "portable_beacons.entry.beacon_backpack.page.1"
+        }
+    ]
+}
