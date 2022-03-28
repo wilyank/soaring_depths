@@ -23,8 +23,8 @@ craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
 craftingTable.addShaped("end_portal_frame", 
     <item:minecraft:end_portal_frame>*3, 
     [
-        [_, <item:create:shadow_steel>, _],
-        [<item:eidolon:shadow_gem>,<item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], 
+        [<item:eidolon:shadow_gem>, <item:create:shadow_steel>, <item:eidolon:shadow_gem>],
+        [<item:astralsorcery:resonating_gem> ,<item:forbidden_arcanus:end_crystal_gem>, <item:astralsorcery:resonating_gem>], 
         [<item:infernalexp:glowstone_bricks>, <item:create:refined_radiance>, <item:infernalexp:glowstone_bricks>]
     ]);
 craftingTable.addShaped("end_crystal",

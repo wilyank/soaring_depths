@@ -28,22 +28,22 @@ craftingTable.removeRecipe(<item:storagenetwork:collector>);
 craftingTable.addShaped("storagenetwork_master", 
     <item:storagenetwork:master>, 
     [
-        [<item:storagenetwork:kabel>,<item:create:electron_tube>, <item:storagenetwork:kabel>], 
-        [<item:create:electron_tube>, <item:create:brass_casing>, <item:create:electron_tube>], 
-        [<item:storagenetwork:kabel>, <item:create:electron_tube>,<item:storagenetwork:kabel>]
+        [<item:storagenetwork:kabel>,<item:create:precision_mechanism>, <item:storagenetwork:kabel>], 
+        [<item:create:precision_mechanism>, <item:create:brass_casing>, <item:create:precision_mechanism>], 
+        [<item:storagenetwork:kabel>, <item:create:precision_mechanism>,<item:storagenetwork:kabel>]
     ]);
 craftingTable.addShaped("storagenetwork_inventory", 
     <item:storagenetwork:inventory>, 
     [
         [<item:storagenetwork:kabel>,<item:infernalexp:quartz_glass_pane>, <item:storagenetwork:kabel>], 
-        [<item:infernalexp:quartz_glass_pane>, <item:create:brass_casing>, <item:infernalexp:quartz_glass_pane>], 
+        [<item:infernalexp:quartz_glass_pane>, <item:storagenetwork:master>, <item:infernalexp:quartz_glass_pane>], 
         [<item:storagenetwork:kabel>, <item:infernalexp:quartz_glass_pane>,<item:storagenetwork:kabel>]
     ]);
 craftingTable.addShaped("storagenetwork_collector", 
     <item:storagenetwork:collector>, 
     [
         [<item:storagenetwork:kabel>,<item:create:portable_storage_interface>, <item:storagenetwork:kabel>], 
-        [<item:create:portable_storage_interface>, <item:create:brass_casing>, <item:create:portable_storage_interface>], 
+        [<item:create:portable_storage_interface>, <item:storagenetwork:master>, <item:create:portable_storage_interface>], 
         [<item:storagenetwork:kabel>, <item:create:portable_storage_interface>,<item:storagenetwork:kabel>]
     ]);
 smithing.addRecipe("storagenetwork_request", <item:storagenetwork:request>, <item:storagenetwork:inventory>, <item:minecraft:crafting_table>);
@@ -62,14 +62,7 @@ stoneCutter.addRecipe("storagenetwork_export_cable", <item:storagenetwork:export
 
 // Simple Storage Network's items
 craftingTable.removeRecipe(<item:storagenetwork:inventory_remote>);
-craftingTable.addShaped(
-    "storagenetwork_inventory_remote",
-    <item:storagenetwork:inventory_remote>,
-    [
-        [<item:create:linked_controller>],
-        [<item:storagenetwork:inventory>]
-    ]);
-
+smithing.addRecipe("storagenetwork_inventory_remote", <item:storagenetwork:inventory_remote>, <item:storagenetwork:inventory>, <item:create:linked_controller>);
 craftingTable.removeRecipe(<item:storagenetwork:crafting_remote>);
 smithing.addRecipe("storagenetwork_crafting_remote", <item:storagenetwork:crafting_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:crafting_table>);
 craftingTable.removeRecipe(<item:storagenetwork:collector_remote>);

@@ -114,7 +114,7 @@
 				{
 					id: "40B24C4E460DEA8E"
 					type: "item"
-					title: "Any #forge:cogwheels"
+					title: "Any Cogwheel"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -572,7 +572,7 @@
 			y: 0.0d
 			dependencies: [
 				"530392498F50A2AE"
-				"6FB843E23682C2DA"
+				"0C24E2C35F881265"
 			]
 			dependency_requirement: "one_completed"
 			id: "5160A319C6E43EA0"
@@ -691,9 +691,9 @@
 		}
 		{
 			title: "Advanced Processing"
-			x: 5.5d
+			x: 6.0d
 			y: -2.0d
-			dependencies: ["6FB843E23682C2DA"]
+			dependencies: ["0C24E2C35F881265"]
 			id: "3441145CEBF76F0C"
 			tasks: [
 				{
@@ -1281,6 +1281,26 @@
 					id: "203511F5BC0A9CD1"
 					type: "item"
 					item: "minecraft:gold_block"
+				}
+			]
+		}
+		{
+			title: "The Smart Age"
+			x: 5.0d
+			y: -2.0d
+			subtitle: "Consider automating this"
+			dependencies: ["6FB843E23682C2DA"]
+			id: "0C24E2C35F881265"
+			tasks: [
+				{
+					id: "0208DD61739A3242"
+					type: "item"
+					item: "create:electron_tube"
+				}
+				{
+					id: "68E38E72218C3EA6"
+					type: "item"
+					item: "create:precision_mechanism"
 				}
 			]
 		}

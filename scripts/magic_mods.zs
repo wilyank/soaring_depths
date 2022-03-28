@@ -294,3 +294,49 @@ craftingTable.addShapeless("purifying_soap_tag",
         <tag:items:minecraft:small_flowers>
     ]
 );
+
+<recipetype:create:mixing>.addRecipe("redstone_gold_mixing",
+    "heated",
+    <fluid:tconstruct:molten_signalum>*288,
+    [
+        <item:minecraft:redstone>,
+        <item:minecraft:redstone>,
+        <item:eidolon:soul_shard>
+    ],
+    [
+        <fluid:tconstruct:molten_gold>*288
+    ]
+);
+
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_ingot",
+    <item:tconstruct:ingot_cast>, 
+    <fluid:tconstruct:molten_signalum> * 144, 
+    <item:eidolon:arcane_gold_ingot>, 
+    40, 
+    false, 
+    false
+);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_nugget",
+    <item:tconstruct:nugget_cast>, 
+    <fluid:tconstruct:molten_signalum> * 16, 
+    <item:eidolon:arcane_gold_ingot>, 
+    4, 
+    false, 
+    false
+);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_ingot_sand",
+    <tag:items:tconstruct:casts/single_use/ingot>,
+    <fluid:tconstruct:molten_signalum> * 144, 
+    <item:eidolon:arcane_gold_nugget>, 
+    40, 
+    true, 
+    false
+);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_nugget_sand",
+    <tag:items:tconstruct:casts/single_use/nugget>,
+    <fluid:tconstruct:molten_signalum> * 16, 
+    <item:eidolon:arcane_gold_nugget>, 
+    4, 
+    true, 
+    false
+);

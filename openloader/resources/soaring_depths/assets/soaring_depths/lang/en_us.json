@@ -120,6 +120,11 @@
 
   "item.create.brass_hand": "Bronze Hand",
 
+  "block.tconstruct.molten_signalum_fluid": "Molten Redstone Gold",
+  "fluid.tconstruct.molten_signalum": "Molten Redstone Gold",
+  "fluid.tconstruct.flowing_molten_signalum": "Flowing Molten Redstone Gold",
+  "item.tconstruct.molten_signalum_bucket": "Molten Redstone Gold Bucket",
+
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",
   "item.soaring_depths.leggings": "Soaring Leggings",

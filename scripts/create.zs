@@ -246,44 +246,36 @@ craftingTable.addShaped("deployer",
     ]
 );
 
+// gear addon
+craftingTable.removeByModid("creategearaddon");
 var woodTypes = ["oak", "birch", "jungle", "acacia", "dark_oak", "crimson", "warped"];
 for woodType in woodTypes {
-    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "cogwheel")
-        .transitionTo(BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"))
-        .require(BracketHandlers.getItem("minecraft:" + woodType + "_slab"))
-        .loops(1)
-        .addOutput(BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), 8)
-        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
-        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
-    );
-    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "large_cogwheel")
-        .transitionTo(BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"))
-        .require(BracketHandlers.getItem("minecraft:" + woodType + "_stairs"))
-        .loops(1)
-        .addOutput(BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), 4)
-        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
-        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
-    );
+    stoneCutter.addRecipe(woodType + "_shaftless_cogwheel", BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel") * 2, BracketHandlers.getItem("minecraft:" + woodType + "_slab"));
+    stoneCutter.addRecipe("large_" + woodType + "shaftless_cogwheel", BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), BracketHandlers.getItem("minecraft:" + woodType + "_slab"));
+    stoneCutter.addRecipe(woodType + "_half_shaft_cogwheel", BracketHandlers.getItem("creategearaddon:half_shaft_" + woodType + "_cogwheel"), BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"));
+    stoneCutter.addRecipe("large_" + woodType + "half_shaft_cogwheel", BracketHandlers.getItem("creategearaddon:large_half_shaft_" + woodType + "_cogwheel"), BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"));
+
+    craftingTable.addShapeless("large_" + woodType + "_cogwheel", BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), [BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), <item:create:shaft>]);
+    craftingTable.addShapeless(woodType + "_cogwheel", BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), [BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"), <item:create:shaft>]);
+    <recipetype:create:deploying>.addRecipe(woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel")]);
+    <recipetype:create:deploying>.addRecipe("large_" + woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel")]);
+
 }
 woodTypes = ["cherry", "dead", "fir", "hellbark", "jacaranda", "magic", "mahogany", "palm", "redwood", "umbran", "willow"];
 for woodType in woodTypes {
-    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "cogwheel")
-        .transitionTo(BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"))
-        .require(BracketHandlers.getItem("biomesoplenty:" + woodType + "_slab"))
-        .loops(1)
-        .addOutput(BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), 8)
-        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
-        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
-    );
-    <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("auto_" + woodType + "large_cogwheel")
-        .transitionTo(BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"))
-        .require(BracketHandlers.getItem("biomesoplenty:" + woodType + "_stairs"))
-        .loops(1)
-        .addOutput(BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), 4)
-        .addStep(<recipetype:create:cutting>.factory(), (rb) => rb.duration(20))
-        .addStep(<recipetype:create:deploying>.factory(), (rb) => rb.require(<item:create:shaft>))
-    );
+    stoneCutter.addRecipe(woodType + "_shaftless_cogwheel", BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel") * 2, BracketHandlers.getItem("biomesoplenty:" + woodType + "_slab"));
+    stoneCutter.addRecipe("large_" + woodType + "_shaftless_cogwheel", BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), BracketHandlers.getItem("biomesoplenty:" + woodType + "_slab"));
+    stoneCutter.addRecipe(woodType + "_half_shaft_cogwheel", BracketHandlers.getItem("creategearaddon:half_shaft_" + woodType + "_cogwheel"), BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"));
+    stoneCutter.addRecipe("large_"  + woodType + "_half_shaft_cogwheel", BracketHandlers.getItem("creategearaddon:large_half_shaft_" + woodType + "_cogwheel"), BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"));
+    
+    craftingTable.addShapeless(woodType + "_cogwheel", BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel"), [BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"), <item:create:shaft>]);
+    craftingTable.addShapeless("large_" + woodType + "_cogwheel", BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel"), [BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), <item:create:shaft>]);
+
+    <recipetype:create:deploying>.addRecipe(woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel")]);
+    <recipetype:create:deploying>.addRecipe("large_" + woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel")]);
+
 }
+
 craftingTable.removeRecipe(<item:create:mechanical_press>);
 craftingTable.addShaped("press",
     <item:create:mechanical_press>,
@@ -437,5 +429,65 @@ craftingTable.addShaped("whisk",
         [_, a, _],
         [<tag:items:forge:rods/iron>, a, <tag:items:forge:rods/iron>],
         [_, <tag:items:forge:rods/iron>, _]
+    ]
+);
+
+craftingTable.removeRecipe(<item:create:smart_chute>);
+craftingTable.addShaped("smart_chute",
+    <item:create:smart_chute>,
+    [
+        [_, <tag:items:forge:plates/brass>, _],
+        [<item:create:precision_mechanism>, <item:create:chute>,<item:create:precision_mechanism>],
+        [_, <item:create:electron_tube>, _]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_smart_chute",
+    <item:create:smart_chute>,
+    [
+        [_, <tag:items:forge:plates/brass>, _],
+        [<item:create:precision_mechanism>, <item:create:chute>,<item:create:precision_mechanism>],
+        [_, <item:create:electron_tube>, _]
+    ]
+);
+
+craftingTable.removeRecipe(<item:create:brass_funnel>);
+craftingTable.addShaped("brass_funnel",
+    <item:create:brass_funnel>,
+    [
+        [<tag:items:forge:ingots/brass>, <item:create:electron_tube>, <tag:items:forge:ingots/brass>],
+        [<item:create:precision_mechanism>, <item:minecraft:dried_kelp>,<item:create:precision_mechanism>],
+        [_, <item:minecraft:dried_kelp>, _]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_brass_funnel",
+    <item:create:brass_funnel>,
+    [
+        [<tag:items:forge:ingots/brass>, <item:create:electron_tube>, <tag:items:forge:ingots/brass>],
+        [<item:create:precision_mechanism>, <item:minecraft:dried_kelp>,<item:create:precision_mechanism>],
+        [_, <item:minecraft:dried_kelp>, _]
+    ]
+);
+
+craftingTable.removeRecipe(<item:create:linked_controller>);
+craftingTable.addShaped("linked_controller",
+    <item:create:linked_controller>,
+    [
+        [<item:create:precision_mechanism>, <item:create:redstone_link>, <item:create:precision_mechanism>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("mc_linked_controller",
+    <item:create:linked_controller>,
+    [
+        [<item:create:precision_mechanism>, <item:create:redstone_link>, <item:create:precision_mechanism>]
+    ]
+);
+
+craftingTable.removeRecipe(<item:create:mechanical_crafter>);
+craftingTable.addShaped("mechanical_crafter",
+    <item:create:mechanical_crafter>,
+    [
+        [<item:create:precision_mechanism>, <item:create:electron_tube>, <item:create:precision_mechanism>],
+        [<tag:items:forge:cogwheels>, <item:create:brass_casing>, <tag:items:forge:cogwheels>],
+        [<item:create:precision_mechanism>, <item:minecraft:crafting_table>, <item:create:precision_mechanism>]
     ]
 );
