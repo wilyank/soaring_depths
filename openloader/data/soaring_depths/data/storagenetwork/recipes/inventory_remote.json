@@ -1,0 +1,61 @@
+{
+    "type": "betterendforge:infusion",
+    "input": {
+        "item": "create:linked_controller"
+    },
+    "output": {
+        "id": "storagenetwork:inventory_remote",
+        "Count": 1
+    },
+    "time": 60,
+    "catalysts": [
+        {
+            "item": {
+                "item": "storagenetwork:master"
+            },
+            "index": 0
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 1
+        },
+        {
+            "item": {
+                "item": "minecraft:obsidian"
+            },
+            "index": 2
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 3
+        },
+        {
+            "item": {
+                "item": "minecraft:ender_eye"
+            },
+            "index": 4
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 5
+        },
+        {
+            "item": {
+                "item": "minecraft:obsidian"
+            },
+            "index": 6
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 7
+        }
+    ]
+}

@@ -207,6 +207,11 @@
 					type: "item"
 					item: "create:deployer"
 				}
+				{
+					id: "4004099A923FAE2C"
+					type: "item"
+					item: "createaddition:rolling_mill"
+				}
 			]
 			rewards: [
 				{
@@ -220,6 +225,12 @@
 					type: "item"
 					item: "create:shaft"
 					count: 16
+				}
+				{
+					id: "457FAE99DAA79E3F"
+					type: "item"
+					item: "create:crushed_iron_ore"
+					count: 5
 				}
 			]
 		}
@@ -700,11 +711,6 @@
 					id: "259C33C739DBEEA4"
 					type: "item"
 					item: "create:mechanical_crafter"
-				}
-				{
-					id: "4E46DC3FE1BCD70A"
-					type: "item"
-					item: "createaddition:rolling_mill"
 				}
 				{
 					id: "07685127C5A712F7"
@@ -1303,6 +1309,11 @@
 					item: "create:precision_mechanism"
 				}
 			]
+			rewards: [{
+				id: "5C4CF5C935D6DF2F"
+				type: "item"
+				item: "create:deployer"
+			}]
 		}
 	]
 }

@@ -1,0 +1,61 @@
+{
+  "type": "betterendforge:infusion",
+  "input": {
+      "item": "storagenetwork:inventory_remote"
+  },
+  "output": {
+      "id": "storagenetwork:crafting_remote",
+      "Count": 1
+  },
+  "time": 60,
+  "catalysts": [
+      {
+          "item": {
+              "item": "minecraft:crafting_table"
+          },
+          "index": 0
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 1
+      },
+      {
+          "item": {
+              "item": "minecraft:crafting_table"
+          },
+          "index": 2
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 3
+      },
+      {
+          "item": {
+              "item": "minecraft:crafting_table"
+          },
+          "index": 4
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 5
+      },
+      {
+          "item": {
+              "item": "minecraft:crafting_table"
+          },
+          "index": 6
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 7
+      }
+  ]
+}

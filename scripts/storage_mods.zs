@@ -25,27 +25,21 @@ craftingTable.removeRecipe(<item:storagenetwork:export_kabel>);
 craftingTable.removeRecipe(<item:storagenetwork:exchange>);
 craftingTable.removeRecipe(<item:storagenetwork:collector>);
 
-craftingTable.addShaped("storagenetwork_master", 
+smithing.addRecipe("storagenetwork_master", 
     <item:storagenetwork:master>, 
-    [
-        [<item:storagenetwork:kabel>,<item:create:precision_mechanism>, <item:storagenetwork:kabel>], 
-        [<item:create:precision_mechanism>, <item:create:brass_casing>, <item:create:precision_mechanism>], 
-        [<item:storagenetwork:kabel>, <item:create:precision_mechanism>,<item:storagenetwork:kabel>]
-    ]);
-craftingTable.addShaped("storagenetwork_inventory", 
+    <item:create:rotation_speed_controller>, 
+    <tag:items:forge:chests>
+);
+smithing.addRecipe("storagenetwork_inventory", 
     <item:storagenetwork:inventory>, 
-    [
-        [<item:storagenetwork:kabel>,<item:infernalexp:quartz_glass_pane>, <item:storagenetwork:kabel>], 
-        [<item:infernalexp:quartz_glass_pane>, <item:storagenetwork:master>, <item:infernalexp:quartz_glass_pane>], 
-        [<item:storagenetwork:kabel>, <item:infernalexp:quartz_glass_pane>,<item:storagenetwork:kabel>]
-    ]);
-craftingTable.addShaped("storagenetwork_collector", 
+    <item:storagenetwork:master>, 
+    <item:infernalexp:quartz_glass_pane>
+);
+smithing.addRecipe("storagenetwork_collector", 
     <item:storagenetwork:collector>, 
-    [
-        [<item:storagenetwork:kabel>,<item:create:portable_storage_interface>, <item:storagenetwork:kabel>], 
-        [<item:create:portable_storage_interface>, <item:storagenetwork:master>, <item:create:portable_storage_interface>], 
-        [<item:storagenetwork:kabel>, <item:create:portable_storage_interface>,<item:storagenetwork:kabel>]
-    ]);
+    <item:storagenetwork:master>, 
+    <item:minecraft:hopper>
+);
 smithing.addRecipe("storagenetwork_request", <item:storagenetwork:request>, <item:storagenetwork:inventory>, <item:minecraft:crafting_table>);
 craftingTable.addShaped("storagenetwork_kabel", 
     <item:storagenetwork:kabel>, 
@@ -59,20 +53,6 @@ stoneCutter.addRecipe("storagenetwork_import_cable", <item:storagenetwork:import
 stoneCutter.addRecipe("storagenetwork_import_filter_cable", <item:storagenetwork:import_filter_kabel>, <item:storagenetwork:kabel>);
 stoneCutter.addRecipe("storagenetwork_filter_cable", <item:storagenetwork:filter_kabel>, <item:storagenetwork:kabel>);
 stoneCutter.addRecipe("storagenetwork_export_cable", <item:storagenetwork:export_kabel>, <item:storagenetwork:kabel>);
-
-// Simple Storage Network's items
-craftingTable.removeRecipe(<item:storagenetwork:inventory_remote>);
-smithing.addRecipe("storagenetwork_inventory_remote", <item:storagenetwork:inventory_remote>, <item:storagenetwork:inventory>, <item:create:linked_controller>);
-craftingTable.removeRecipe(<item:storagenetwork:crafting_remote>);
-smithing.addRecipe("storagenetwork_crafting_remote", <item:storagenetwork:crafting_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:crafting_table>);
-craftingTable.removeRecipe(<item:storagenetwork:collector_remote>);
-smithing.addRecipe("storagenetwork_collector_remote", <item:storagenetwork:collector_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:hopper>);
-craftingTable.removeRecipe(<item:storagenetwork:picker_remote>);
-smithing.addRecipe("storagenetwork_picker_remote", <item:storagenetwork:picker_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:ender_pearl>);
-craftingTable.removeRecipe(<item:storagenetwork:builder_remote>);
-smithing.addRecipe("storagenetwork_builder_remote", <item:storagenetwork:builder_remote>, <item:storagenetwork:inventory_remote>, <item:minecraft:ender_chest>);
-
-
 
 // drawer cutting
 craftingTable.removeRecipe(<item:storagedrawers:oak_full_drawers_1>);
@@ -204,7 +184,7 @@ craftingTable.removeRecipe(<item:storagedrawers:controller>);
 <recipetype:create:filling>.addRecipe("drawer_controller",
     <item:storagedrawers:controller>,
     <item:storagedrawers:controller_slave>,
-    <fluid:tconstruct:molten_diamond>*576
+    <fluid:tconstruct:molten_obsidian>*1000
 );
 craftingTable.removeRecipe(<item:storagedrawers:controller_slave>);
 <recipetype:create:filling>.addRecipe("drawer_controller_slave",

@@ -1,25 +1,40 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "astralsorcery:altar",
+  "altar_type": 2,
+  "duration": 400,
+  "starlight": 2800,
   "pattern": [
-    " GE",
-    "LEG",
-    "OL "
+    "___BD",
+    "__BCB",
+    "__DB_",
+    "_A___",
+    "A____"
   ],
   "key": {
-    "E": {
+    "A": {
+      "item": "create:brass_ingot"
+    },
+    "B": {
       "item": "create:refined_radiance"
     },
-    "G": {
-      "tag": "forge:glass_panes/white"
+    "C": {
+      "tag": "forge:glass_panes/colorless"
     },
-    "O": {
-      "tag": "forge:obsidian"
-    },
-    "L": {
-      "tag": "forge:ingots/brass"
+    "D": {
+      "item": "minecraft:obsidian"
     }
   },
-  "result": {
-    "item": "create:wand_of_symmetry"
-  }
+  "output": [
+    {
+      "item": "create:wand_of_symmetry",
+      "count": 1
+    }
+  ],
+  "effects": [
+    "astralsorcery:built_in_effect_constellation_finish",
+    "astralsorcery:built_in_effect_discovery_central_beam",
+    "astralsorcery:altar_default_sparkle",
+    "astralsorcery:built_in_effect_constellation_lines",
+    "astralsorcery:built_in_effect_attunement_sparkle"
+  ]
 }

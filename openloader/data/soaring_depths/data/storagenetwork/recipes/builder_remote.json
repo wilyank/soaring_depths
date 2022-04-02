@@ -1,0 +1,61 @@
+{
+  "type": "betterendforge:infusion",
+  "input": {
+      "item": "storagenetwork:inventory_remote"
+  },
+  "output": {
+      "id": "storagenetwork:builder_remote",
+      "Count": 1
+  },
+  "time": 60,
+  "catalysts": [
+      {
+          "item": {
+              "item": "create:builders_tea"
+          },
+          "index": 0
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 1
+      },
+      {
+          "item": {
+            "item": "create:builders_tea"
+          },
+          "index": 2
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 3
+      },
+      {
+          "item": {
+            "item": "create:builders_tea"
+          },
+          "index": 4
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 5
+      },
+      {
+          "item": {
+            "item": "create:builders_tea"
+          },
+          "index": 6
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 7
+      }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "type": "betterendforge:infusion",
+  "input": {
+      "item": "storagenetwork:inventory_remote"
+  },
+  "output": {
+      "id": "storagenetwork:picker_remote",
+      "Count": 1
+  },
+  "time": 60,
+  "catalysts": [
+      {
+          "item": {
+              "item": "alexsmobs:mimicream"
+          },
+          "index": 0
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 1
+      },
+      {
+          "item": {
+            "item": "alexsmobs:mimicream"
+          },
+          "index": 2
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 3
+      },
+      {
+          "item": {
+            "item": "alexsmobs:mimicream"
+          },
+          "index": 4
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 5
+      },
+      {
+          "item": {
+            "item": "alexsmobs:mimicream"
+          },
+          "index": 6
+      },
+      {
+          "item": {
+              "item": "betterendforge:eternal_crystal"
+          },
+          "index": 7
+      }
+  ]
+}
