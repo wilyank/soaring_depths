@@ -553,17 +553,24 @@
 			y: 5.0d
 			dependencies: ["0989D9B42DA349A8"]
 			id: "33B06FD562AC30CC"
-			tasks: [{
-				id: "538E44BC125ADF54"
-				type: "item"
-				item: {
-					id: "constructionwand:infinity_wand"
-					Count: 1b
-					tag: {
-						wand_options: { }
+			tasks: [
+				{
+					id: "538E44BC125ADF54"
+					type: "item"
+					item: {
+						id: "constructionwand:infinity_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+						}
 					}
 				}
-			}]
+				{
+					id: "5F3A2336374EE2C8"
+					type: "item"
+					item: "constructionwand:core_destruction"
+				}
+			]
 			rewards: [{
 				id: "67554F63094C3141"
 				type: "item"
