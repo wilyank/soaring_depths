@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #X",
+    "#O#",
+    "X# "
+  ],
+  "key": {
+    "O": {
+      "item": "cataclysm:void_core"
+    },
+    "X": {
+      "tag": "forge:storage_blocks/redstone"
+    },
+    "#": {
+      "item": "forbidden_arcanus:dark_matter"
+    }
+  },
+  "result": {
+    "item": "constructionwand:core_destruction"
+  }
+}

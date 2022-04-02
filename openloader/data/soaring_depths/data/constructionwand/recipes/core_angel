@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " #X",
+    "#O#",
+    "X# "
+  ],
+  "key": {
+    "O": {
+      "item": "forbidden_arcanus:pixie_utrem_jar"
+    },
+    "X": {
+      "tag": "forge:storage_blocks/gold"
+    },
+    "#": {
+      "item": "eidolon:sulfur"
+    }
+  },
+  "result": {
+    "item": "constructionwand:core_angel"
+  }
+}
