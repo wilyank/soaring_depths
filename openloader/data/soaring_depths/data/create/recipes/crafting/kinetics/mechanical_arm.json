@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLA",
+    "L  ",
+    "CB "
+  ],
+  "key": {
+    "L": {
+      "tag": "forge:rods/brass"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "steampowered:bronze_cogwheel"
+    },
+    "B": {
+      "item": "create:rotation_speed_controller"
+    }
+  },
+  "result": {
+    "item": "create:mechanical_arm"
+  }
+}

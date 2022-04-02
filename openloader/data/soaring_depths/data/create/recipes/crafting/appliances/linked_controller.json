@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "SPS",
+    " M "
+  ],
+  "key": {
+    "S": {
+      "tag": "minecraft:wooden_buttons"
+    },
+    "P": {
+      "item": "create:redstone_link"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "M": {
+      "item": "create:precision_mechanism"
+    }
+  },
+  "result": {
+    "item": "create:linked_controller"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:gearbox"
+  },
+  "addition": {
+    "item": "minecraft:light_weighted_pressure_plate"
+  },
+  "result": {
+    "item": "create:weighted_ejector"
+  }
+}

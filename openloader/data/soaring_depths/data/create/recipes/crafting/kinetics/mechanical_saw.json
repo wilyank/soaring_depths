@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:gearbox"
+  },
+  "addition": {
+    "item": "minecraft:iron_trapdoor"
+  },
+  "result": {
+    "item": "create:mechanical_saw"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:rotation_speed_controller"
+  },
+  "addition": {
+    "item": "minecraft:redstone_block"
+  },
+  "result": {
+    "item": "create:sequenced_gearshift"
+  }
+}

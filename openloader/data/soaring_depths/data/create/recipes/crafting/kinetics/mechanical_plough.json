@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:gearbox"
+  },
+  "addition": {
+    "tag": "forge:plates/iron"
+  },
+  "result": {
+    "item": "create:mechanical_plough"
+  }
+}

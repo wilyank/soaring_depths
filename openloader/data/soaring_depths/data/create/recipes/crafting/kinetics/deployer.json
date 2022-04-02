@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:brass_casing"
+  },
+  "addition": {
+    "item": "create:brass_hand"
+  },
+  "result": {
+    "item": "create:deployer"
+  }
+}

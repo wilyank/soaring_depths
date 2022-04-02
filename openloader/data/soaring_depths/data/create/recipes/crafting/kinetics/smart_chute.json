@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:chute"
+  },
+  "addition": {
+    "item": "create:electron_tube"
+  },
+  "result": {
+    "item": "create:smart_chute"
+  }
+}

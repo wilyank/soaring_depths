@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "create:gearbox"
+  },
+  "addition": {
+    "item": "forbidden_arcanus:iron_chain"
+  },
+  "result": {
+    "item": "create:mechanical_harvester"
+  }
+}

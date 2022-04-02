@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  C",
+    "SIW"
+  ],
+  "key": {
+    "C": {
+      "item": "create:electron_tube"
+    },
+    "S": {
+      "tag": "forge:plates/brass"
+    },
+    "I": {
+      "tag": "minecraft:planks"
+    },
+    "W": {
+      "tag": "forge:wires/copper"
+    }
+  },
+  "result": {
+    "item": "create:redstone_link",
+    "count": 2
+  }
+}

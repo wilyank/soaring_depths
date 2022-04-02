@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " BBB ",
+    "BWPWB",
+    "BPSPB",
+    "BWPWB",
+    " BBB "
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:ingots/brass"
+    },
+    "W": {
+      "tag": "forge:cogwheels"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "create:flywheel"
+  },
+  "acceptMirrored": false
+}
