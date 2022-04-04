@@ -20,12 +20,12 @@ var _ = <item:minecraft:air>;
 
 // end portal
 craftingTable.removeRecipe(<item:minecraft:end_portal_frame>);
-craftingTable.addShaped("end_portal_frame", 
+<recipetype:create:mechanical_crafting>.addRecipe("end_portal_frame", 
     <item:minecraft:end_portal_frame>*3, 
     [
-        [<item:eidolon:shadow_gem>, <item:create:shadow_steel>, <item:eidolon:shadow_gem>],
-        [<item:astralsorcery:resonating_gem> ,<item:forbidden_arcanus:end_crystal_gem>, <item:astralsorcery:resonating_gem>], 
-        [<item:infernalexp:glowstone_bricks>, <item:create:refined_radiance>, <item:infernalexp:glowstone_bricks>]
+        [<item:astralsorcery:resonating_gem>, <item:create:shadow_steel>, <item:astralsorcery:resonating_gem>],
+        [<item:eidolon:shadow_gem>, <item:forbidden_arcanus:end_crystal_gem>, <item:eidolon:shadow_gem>], 
+        [<item:minecraft:end_stone_bricks>, <item:create:refined_radiance>, <item:minecraft:end_stone_bricks>]
     ]);
 craftingTable.addShaped("end_crystal",
     <item:minecraft:end_crystal>,
@@ -243,16 +243,7 @@ var style = new MCStyle().setColor(11184810);
 <item:forbidden_arcanus:arcane_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.arcane_crystal").setStyle(style));
 <item:astralsorcery:rock_crystal_ore>.addTooltip(MCTextComponent.createTranslationTextComponent("tooltip.soaring_depths.ores.rock_crystal").setStyle(style));
 
-// Force using alloying or mixing for making pewter
-craftingTable.removeRecipe(<item:eidolon:pewter_blend>);
-furnace.removeRecipe(<item:eidolon:pewter_ingot>);
-blastFurnace.removeRecipe(<item:eidolon:pewter_ingot>);
 
-<recipetype:create:mixing>.addRecipe("pewter_mixing",
-    "heated",
-    <item:eidolon:pewter_ingot>*2,
-    [<tag:items:forge:ingots/iron>, <tag:items:forge:ingots/lead>]
-);
 
 // banana milk shake
 <recipetype:create:mixing>.addRecipe("banana_milkshake",

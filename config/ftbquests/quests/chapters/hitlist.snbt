@@ -1,0 +1,10 @@
+{
+	id: "296422F679C470D6"
+	group: "7AA6A42EAAA7D2D9"
+	order_index: 2
+	filename: "hitlist"
+	title: "Hitlist"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

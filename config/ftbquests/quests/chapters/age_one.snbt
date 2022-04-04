@@ -1,0 +1,373 @@
+{
+	id: "2D03918CC01E5D08"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 4
+	filename: "age_one"
+	title: "Age One"
+	icon: "eidolon:unholy_symbol"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Nether Portal"
+			x: 7.0d
+			y: 1.0d
+			shape: "pentagon"
+			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want."]
+			dependencies: [
+				"3A337F67AE8C2404"
+				"249ACC7E4DE11035"
+				"3354660EF57F1DAA"
+			]
+			size: 2.0d
+			id: "10E6D4C22AE81253"
+			tasks: [
+				{
+					id: "09497A008B78F2C8"
+					type: "item"
+					title: "Any Portal Lighter"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "custom_nether_portals:ignition"
+						}
+					}
+				}
+				{
+					id: "7D11FBA032B01DED"
+					type: "item"
+					item: "minecraft:crying_obsidian"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			dependencies: ["384DD3C2DF460AC4"]
+			id: "60FFE55AD53CFE9E"
+			tasks: [
+				{
+					id: "616519656D39AF8B"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "3FE03F90CF21D606"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["16D8E3F5A34AA008"]
+			id: "3A337F67AE8C2404"
+			tasks: [{
+				id: "3E219A6787D714C2"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -0.5d
+			dependencies: [
+				"52CD767C02F6697C"
+				"2B0BA980EF3EEA90"
+			]
+			id: "249ACC7E4DE11035"
+			tasks: [{
+				id: "0E3824351F7BC7CA"
+				type: "item"
+				item: "tconstruct:molten_obsidian_bucket"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			dependencies: ["3D9753D002880F8F"]
+			id: "2B0BA980EF3EEA90"
+			tasks: [{
+				id: "39303F09B409C588"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -2.0d
+			id: "52CD767C02F6697C"
+			tasks: [{
+				id: "2EBF9EE0C7BC63CA"
+				type: "item"
+				item: "minecraft:lava_bucket"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			dependencies: [
+				"14A15876ECE0BB48"
+				"43D634E4887D58CF"
+			]
+			id: "16D8E3F5A34AA008"
+			tasks: [{
+				id: "68F62A16DCE9D9DD"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			description: ["Consult your Astral Tome for more information"]
+			dependencies: [
+				"6451AAD01A45D313"
+				"4FB86EAD82894738"
+			]
+			id: "43D634E4887D58CF"
+			tasks: [
+				{
+					id: "09D8846E1EE77220"
+					type: "item"
+					item: "astralsorcery:altar_discovery"
+				}
+				{
+					id: "551CF87E544DD7EC"
+					type: "item"
+					item: "astralsorcery:wand"
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: -0.5d
+			id: "4FB86EAD82894738"
+			tasks: [{
+				id: "0536668FA20619F2"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+			}]
+			rewards: [{
+				id: "788A1ED47997412E"
+				type: "item"
+				item: "astralsorcery:tome"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -1.5d
+			id: "6451AAD01A45D313"
+			tasks: [{
+				id: "3DB0DC20DE9B2CB3"
+				type: "structure"
+				title: "Find an Ancient Shrine"
+				structure: "worldshape:soaring_depths/ancient_shrine"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.0d
+			dependencies: ["55C11A0A68933F94"]
+			id: "384DD3C2DF460AC4"
+			tasks: [{
+				id: "589E1EEF9F843B59"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -1.0d
+			dependencies: [
+				"789F83A3084BA97A"
+				"617C5121F9ADB018"
+				"72F3EE2793041516"
+			]
+			id: "14A15876ECE0BB48"
+			tasks: [{
+				id: "17DF1D64F5F421B3"
+				type: "item"
+				item: "astralsorcery:rock_crystal_ore"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			description: ["The unbreakable variant is not consumed by Deployers"]
+			dependencies: ["0DD09001010A28A4"]
+			id: "789F83A3084BA97A"
+			tasks: [{
+				id: "6D102DB86A9725FA"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "4725BC9798121ADF"
+				type: "item"
+				item: {
+					id: "eidolon:unholy_symbol"
+					Count: 1b
+					tag: {
+						Unbreakable: 1b
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -3.0d
+			description: ["At the Altar, strange things can happen. Consult your Ars Ecclesia."]
+			dependencies: ["15B8DE43B655B976"]
+			id: "0DD09001010A28A4"
+			tasks: [
+				{
+					id: "337853935246DA6A"
+					type: "item"
+					item: "eidolon:wooden_altar"
+				}
+				{
+					id: "4B72DC484C736F21"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+				{
+					id: "4532C4E4294E6A11"
+					type: "item"
+					item: "eidolon:goblet"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			description: [
+				"Place over a fire or lava to cook a broth."
+				"The Crucible can get tedious to use. You can upgrade to a heated Mixer later on."
+			]
+			dependencies: [
+				"1AED23221D441256"
+				"60FFE55AD53CFE9E"
+				"7395E395EA3029C9"
+			]
+			id: "15B8DE43B655B976"
+			tasks: [{
+				id: "32818450F1F51604"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+			rewards: [{
+				id: "0A98D097254F1970"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+		}
+		{
+			title: "Materials for Engineering"
+			x: 5.5d
+			y: -7.0d
+			id: "55C11A0A68933F94"
+			tasks: [
+				{
+					id: "03185F0E24A35E44"
+					type: "item"
+					item: "create:andesite_cobblestone"
+				}
+				{
+					id: "64C5E28BA2BA3092"
+					type: "item"
+					item: "create:crushed_iron_ore"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: -6.0d
+			id: "1AED23221D441256"
+			tasks: [{
+				id: "779CC6187C42349D"
+				type: "item"
+				item: "create:crushed_lead_ore"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -5.0d
+			id: "3D9753D002880F8F"
+			tasks: [{
+				id: "433C529A206BE214"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			dependencies: ["6E55962772B1E752"]
+			id: "617C5121F9ADB018"
+			tasks: [{
+				id: "2D902D0F2A0BC05E"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			id: "6E55962772B1E752"
+			tasks: [{
+				id: "60020B23A48D9B3C"
+				type: "item"
+				item: "create:crushed_copper_ore"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			dependencies: ["421E5A0F9EAE82FB"]
+			id: "72F3EE2793041516"
+			tasks: [{
+				id: "24CA950BC2A2FC56"
+				type: "item"
+				item: "forbidden_arcanus:purifying_soap"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			id: "421E5A0F9EAE82FB"
+			tasks: [{
+				id: "1766215DF98D3975"
+				type: "item"
+				item: "forbidden_arcanus:arcane_crystal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			description: ["Molten Pewter can be made by mixing Molten Lead with Molten Iron in a Mixer, or by alloying directly in the Smeltery."]
+			dependencies: ["3D9753D002880F8F"]
+			id: "7395E395EA3029C9"
+			tasks: [{
+				id: "3366B0102565B270"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 1.0d
+			subtitle: "Some mining required"
+			id: "3354660EF57F1DAA"
+			tasks: [{
+				id: "6A8043EF504786C6"
+				type: "item"
+				item: "forbidden_arcanus:rune"
+			}]
+		}
+	]
+}

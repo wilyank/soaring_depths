@@ -1,0 +1,38 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "tag": "forge:dyes/orange"
+    },
+    {
+      "tag": "forge:dyes/light_blue"
+    },
+    {
+      "tag": "forge:dyes/yellow"
+    },
+    {
+      "tag": "forge:dyes/lime"
+    },
+    {
+      "tag": "forge:dyes/pink"
+    },
+    {
+      "tag": "forge:dyes/green"
+    },
+    {
+      "tag": "forge:dyes/red"
+    },
+    {
+      "tag": "forge:dyes/white"
+    },
+    {
+      "item": "forbidden_arcanus:obsidian_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:chromatic_compound"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

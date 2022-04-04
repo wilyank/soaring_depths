@@ -1,0 +1,637 @@
+{
+	id: "7EB1BA8D4004421F"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 5
+	filename: "age_two"
+	title: "Age Two"
+	icon: "create:precision_mechanism"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Beginning"
+			x: -1.0d
+			y: 5.0d
+			subtitle: "Crafting Your Way to the End"
+			dependencies: [
+				"0FF7720D0DFB26F4"
+				"1CDDB291EC335FFD"
+				"72907E16519D0906"
+				"205E38CAB0C88FEE"
+				"282C0667E72E7F7C"
+				"1A85E37E31125DAB"
+				"1D65A18CAB5F2B4E"
+			]
+			id: "29B1C48D4F4EC14B"
+			tasks: [
+				{
+					id: "66F550FA7CBC5592"
+					type: "item"
+					item: "minecraft:end_portal_frame"
+					count: 12L
+				}
+				{
+					id: "23A84ED0EC904BAE"
+					type: "item"
+					item: "minecraft:ender_eye"
+					count: 12L
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 2.5d
+			dependencies: ["33D549F55B881DB5"]
+			id: "72907E16519D0906"
+			tasks: [{
+				id: "73B72AF9C81B0A25"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Consider automating this"
+			dependencies: [
+				"4F0224F132D7284B"
+				"11F3BE82FE5A8330"
+				"019809A1F6AD2BD0"
+			]
+			id: "33D549F55B881DB5"
+			tasks: [{
+				id: "19A5C433BE757874"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -2.0d
+			subtitle: "Consider automating this"
+			dependencies: [
+				"0DF4C6D20A4EFB55"
+				"1584E85F731E536C"
+				"4D429809D761B503"
+			]
+			dependency_requirement: "all_started"
+			id: "4F0224F132D7284B"
+			tasks: [{
+				id: "3EA6D4651A6A5BD7"
+				type: "item"
+				item: "create:electron_tube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			dependencies: [
+				"054C550451B1F46D"
+				"33A2A44F43BE208C"
+			]
+			id: "66592747485E8CDE"
+			tasks: [{
+				id: "78B961F267E8604C"
+				type: "item"
+				item: "create:rose_quartz"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.0d
+			description: ["Chromatic Compound can absorb light and transform into Refined Radiance. Either supply a lot of torches, or pass your compound through a Beacon beam."]
+			dependencies: ["4BE5CB11CF487CC8"]
+			id: "205E38CAB0C88FEE"
+			tasks: [{
+				id: "72F9F05686C8221C"
+				type: "item"
+				item: "create:refined_radiance"
+				count: 4L
+			}]
+		}
+		{
+			x: -2.5d
+			y: 4.0d
+			subtitle: "Forged in the Void"
+			dependencies: ["4BE5CB11CF487CC8"]
+			id: "282C0667E72E7F7C"
+			tasks: [{
+				id: "58D0E7A7BA043428"
+				type: "item"
+				item: "create:shadow_steel"
+				count: 4L
+			}]
+		}
+		{
+			x: -4.5d
+			y: 5.0d
+			dependencies: [
+				"5F7786CCAF4F4919"
+				"500DAF682A36DFB2"
+				"1A8908BA5E606B98"
+				"58DA0A254C5F3795"
+			]
+			id: "4BE5CB11CF487CC8"
+			tasks: [{
+				id: "44A756ABF7DCE8DA"
+				type: "item"
+				item: {
+					id: "create:chromatic_compound"
+					Count: 1b
+					tag: { }
+				}
+				count: 8L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: [
+				"1A61E346CB3C57E4"
+				"500DAF682A36DFB2"
+			]
+			dependency_requirement: "one_completed"
+			id: "1CDDB291EC335FFD"
+			tasks: [{
+				id: "2B9E768BAA04D3EC"
+				type: "item"
+				item: "eidolon:shadow_gem"
+				count: 8L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			id: "0FF7720D0DFB26F4"
+			tasks: [{
+				id: "500D7F0BCCB3F28D"
+				type: "item"
+				item: "astralsorcery:resonating_gem"
+				count: 8L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"Mind you, the Starlight Infuser needs a multiblock structure."
+				""
+			]
+			dependencies: [
+				"0FF7720D0DFB26F4"
+				"3998C66DBB806C44"
+				"0F1D3A676D91B1B8"
+			]
+			dependency_requirement: "one_completed"
+			id: "6A7D12ACCD040183"
+			tasks: [{
+				id: "782432CE009D534B"
+				type: "item"
+				item: "astralsorcery:infuser"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 2.0d
+			dependencies: ["1EC5853695BBE61A"]
+			id: "3998C66DBB806C44"
+			tasks: [{
+				id: "01609983E4C6A511"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["1EC5853695BBE61A"]
+			id: "1A85E37E31125DAB"
+			tasks: [{
+				id: "600D0F8A2364BB03"
+				type: "item"
+				item: "minecraft:end_stone"
+				count: 8L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			dependencies: ["50CC57E3B32F9CF3"]
+			id: "1EC5853695BBE61A"
+			tasks: [{
+				id: "203CD1AA7131BA9C"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.5d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "1A61E346CB3C57E4"
+			tasks: [{
+				id: "0D2632FEFF12D54C"
+				type: "item"
+				item: "eidolon:zombie_heart"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			description: ["Don't forget to check your Astral Tome for more information."]
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "50CC57E3B32F9CF3"
+			tasks: [{
+				id: "72753E8172CB5C23"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "0AC1A8984786C0A7"
+			tasks: [{
+				id: "31EDC65CFACC47DB"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			title: "Chromatic Array"
+			x: -5.5d
+			y: 4.0d
+			dependencies: ["0AC1A8984786C0A7"]
+			id: "5F7786CCAF4F4919"
+			tasks: [
+				{
+					id: "27C8691BB79E59B5"
+					type: "item"
+					item: "minecraft:orange_dye"
+				}
+				{
+					id: "1947F0DA2F73744E"
+					type: "item"
+					item: "minecraft:yellow_dye"
+				}
+				{
+					id: "62661DAAFE58E426"
+					type: "item"
+					item: "minecraft:lime_dye"
+				}
+				{
+					id: "068B33E3816A0155"
+					type: "item"
+					item: "minecraft:pink_dye"
+				}
+				{
+					id: "6B76F143DDD91936"
+					type: "item"
+					item: "minecraft:green_dye"
+				}
+				{
+					id: "21CE0C6618178571"
+					type: "item"
+					item: "minecraft:red_dye"
+				}
+				{
+					id: "506E78D94AE3B788"
+					type: "item"
+					item: "minecraft:white_dye"
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "500DAF682A36DFB2"
+			tasks: [{
+				id: "07D796ED0597DEBF"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "1A8908BA5E606B98"
+			tasks: [{
+				id: "4FCE4819775AFA66"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			dependencies: ["25C1BFE9F662D6C4"]
+			id: "2A7A5BB4D3FD58D0"
+			tasks: [{
+				id: "08D7E2369CB295C7"
+				type: "item"
+				item: "minecraft:iron_nugget"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -4.0d
+			dependencies: ["4DBE6071A44AD9D1"]
+			id: "25C1BFE9F662D6C4"
+			tasks: [{
+				id: "4201D7CD96E41A4D"
+				type: "item"
+				item: "minecraft:gravel"
+			}]
+		}
+		{
+			title: "Sandpaper"
+			x: 2.0d
+			y: -3.0d
+			subtitle: "50% Sand, 50% Paper"
+			description: ["Remember, anything with durability can be made unbreakable with an Eternal Stella"]
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "2B1D64A38B885EAF"
+			tasks: [{
+				id: "04902DB3EE5765B0"
+				type: "item"
+				title: "Any Sandpaper"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "create:sandpaper"
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			subtitle: "Consider automating this"
+			description: ["Redstone Dust can be made from the basic materials Cobblestone and Blood. You might need a lot of this stuff!"]
+			dependencies: [
+				"4DBE6071A44AD9D1"
+				"0C0973966AF8006F"
+			]
+			dependency_requirement: "all_started"
+			id: "054C550451B1F46D"
+			tasks: [{
+				id: "5A331351F424E4FD"
+				type: "item"
+				item: "minecraft:redstone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.0d
+			description: ["Nether Quartz can be automated through Piglin bartering or through Soul Sand washing"]
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "33A2A44F43BE208C"
+			tasks: [{
+				id: "240257723E158FEC"
+				type: "item"
+				item: "minecraft:quartz"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "4DBE6071A44AD9D1"
+			tasks: [{
+				id: "1F43AE46099D2908"
+				type: "item"
+				item: "minecraft:cobblestone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -2.0d
+			dependencies: [
+				"66592747485E8CDE"
+				"2B1D64A38B885EAF"
+			]
+			id: "0DF4C6D20A4EFB55"
+			tasks: [{
+				id: "6D71DE0535C387E7"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["054C550451B1F46D"]
+			id: "1584E85F731E536C"
+			tasks: [{
+				id: "0D68053A77209048"
+				type: "item"
+				item: "minecraft:redstone_torch"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -5.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "0C0973966AF8006F"
+			tasks: [{
+				id: "0ACDD0DF0C10A5B9"
+				type: "item"
+				item: "tconstruct:blood_bucket"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -2.0d
+			description: ["Use a Melter or Smeltery to melt the Iron Nuggets."]
+			dependencies: ["2A7A5BB4D3FD58D0"]
+			dependency_requirement: "all_started"
+			id: "4D429809D761B503"
+			tasks: [{
+				id: "1F0ACD24F57F2FA3"
+				type: "item"
+				item: {
+					id: "tconstruct:copper_can"
+					Count: 1b
+					tag: {
+						fluid: "tconstruct:molten_copper"
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			description: ["To avoid the Starlight Infuser from consuming the fluid every time, use a Containment Chalice for the fluid input."]
+			dependencies: ["3605DB34A09AF660"]
+			optional: true
+			id: "0F1D3A676D91B1B8"
+			tasks: [{
+				id: "757A2A363AF695C6"
+				type: "item"
+				item: "astralsorcery:chalice"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			description: ["It is recommended to find a way to get your gold automatically."]
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "11F3BE82FE5A8330"
+			tasks: [{
+				id: "076607FCAC504D89"
+				type: "item"
+				item: "create:golden_sheet"
+			}]
+		}
+		{
+			title: "A Cogwheel and its Brother"
+			x: -3.0d
+			y: 0.0d
+			description: ["While you're at it, why not add some outputs for shafts, casings and gearboxes as well?"]
+			dependencies: [
+				"5378E1B65517AE12"
+				"3676B88E9C354BA0"
+			]
+			id: "019809A1F6AD2BD0"
+			tasks: [
+				{
+					id: "02AFEBEFCFF58835"
+					type: "item"
+					title: "Any Cogwheel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:cogwheels"
+						}
+					}
+				}
+				{
+					id: "02870A9CB1C63B84"
+					type: "item"
+					title: "Any Large Cogwheel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:large_cogwheels"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "Consider automating this"
+			dependencies: [
+				"2A7A5BB4D3FD58D0"
+				"0FE13C4DA6BB5032"
+			]
+			id: "5378E1B65517AE12"
+			tasks: [{
+				id: "10BD5A8F436C43A8"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 0.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "3676B88E9C354BA0"
+			tasks: [{
+				id: "761EAECF25150CD7"
+				type: "item"
+				item: "minecraft:oak_log"
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "0FE13C4DA6BB5032"
+			tasks: [{
+				id: "767F58FC387F6CEE"
+				type: "item"
+				item: "create:andesite_cobblestone"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "1D65A18CAB5F2B4E"
+			tasks: [{
+				id: "6B26ACC20821CDFA"
+				type: "item"
+				item: "forbidden_arcanus:end_crystal_gem"
+				count: 4L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["60034CAED267592C"]
+			optional: true
+			id: "3605DB34A09AF660"
+			tasks: [{
+				id: "1534DAB04AFD498C"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["50CC57E3B32F9CF3"]
+			optional: true
+			id: "60034CAED267592C"
+			tasks: [{
+				id: "012016A89C30A4CE"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 5.0d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "58DA0A254C5F3795"
+			tasks: [{
+				id: "222BB8A5495AD08B"
+				type: "item"
+				item: "forbidden_arcanus:obsidian_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			id: "61F410589E5F8E67"
+			tasks: [{
+				id: "33D6BD3B7EE1601E"
+				type: "dimension"
+				dimension: "minecraft:the_nether"
+			}]
+		}
+	]
+}

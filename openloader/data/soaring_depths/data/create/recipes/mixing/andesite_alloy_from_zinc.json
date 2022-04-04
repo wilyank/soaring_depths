@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:andesite_cobblestone"
+    },
+    {
+      "tag": "forge:nuggets/zinc"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:andesite_alloy"
+    }
+  ]
+}

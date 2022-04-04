@@ -10,7 +10,6 @@
     
     "placement": {
         "offset": 50,
-        "terraform": 0,
         "minY": 0,
         "maxY": 180,
         "type": "surface"

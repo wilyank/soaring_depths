@@ -11,6 +11,27 @@ craftingTable.addShapedMirrored("polished_wood_stairs",
     ]
 );
 
+// Force using alloying or mixing for making pewter
+craftingTable.removeRecipe(<item:eidolon:pewter_blend>);
+furnace.removeRecipe(<item:eidolon:pewter_ingot>);
+blastFurnace.removeRecipe(<item:eidolon:pewter_ingot>);
+
+<recipetype:create:mixing>.addRecipe("heated_pewter_mixing",
+    "heated",
+    <item:eidolon:pewter_ingot>*2,
+    [<tag:items:forge:ingots/iron>, <tag:items:forge:ingots/lead>]
+);
+
+<recipetype:create:mixing>.addRecipe("pewter_mixing",
+    "none",
+    <fluid:tconstruct:molten_pewter>*16,
+    [],
+    [
+        <fluid:tconstruct:molten_iron>*8,
+        <fluid:tconstruct:molten_lead>*8
+    ]
+);
+
 // Astral Sorcery's ores
 <recipetype:create:sequenced_assembly>.addRecipe(<recipetype:create:sequenced_assembly>.builder("rock_crystal_ore")
     .transitionTo(<item:minecraft:diorite>)
@@ -339,4 +360,206 @@ craftingTable.addShapeless("purifying_soap_tag",
     4, 
     true, 
     false
+);
+
+<recipetype:create:mixing>.addRecipe("shadow_gem_mixing",
+    "superheated",
+    <item:eidolon:shadow_gem>,
+    [
+        <tag:items:minecraft:coals>, 
+        <item:minecraft:ghast_tear>, 
+        <item:eidolon:death_essence>*2, 
+        <item:eidolon:soul_shard>*2, 
+        <item:minecraft:diamond>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("death_essence_mixing",
+    "heated",
+    <item:eidolon:death_essence>*4,
+    [
+        <tag:items:minecraft:coals>, 
+        <item:minecraft:rotten_flesh>, 
+        <item:eidolon:zombie_heart>, 
+        <item:minecraft:bone_meal>*2
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("sulfur_mixing",
+    "heated",
+    <item:eidolon:sulfur>*2,
+    [
+        <tag:items:minecraft:coals>, 
+        <item:eidolon:enchanted_ash>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("soul_gem_mixing",
+    "heated",
+    <item:eidolon:lesser_soul_gem>,
+    [
+        <tag:items:forge:dusts/redstone>*2, 
+        <item:minecraft:lapis_lazuli>*2,
+        <item:eidolon:soul_shard>*4,
+        <item:minecraft:quartz> 
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("rotten_flesh_mixing_beef",
+    "heated",
+    <item:minecraft:rotten_flesh>,
+    [
+        <item:minecraft:beef>,
+        <tag:items:forge:mushrooms>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("rotten_flesh_mixing_rabbit",
+    "heated",
+    <item:minecraft:rotten_flesh>,
+    [
+        <item:minecraft:rabbit>,
+        <tag:items:forge:mushrooms>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("rotten_flesh_mixing_chicken",
+    "heated",
+    <item:minecraft:rotten_flesh>,
+    [
+        <item:minecraft:chicken>,
+        <tag:items:forge:mushrooms>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("rotten_flesh_mixing_mutton",
+    "heated",
+    <item:minecraft:rotten_flesh>,
+    [
+        <item:minecraft:mutton>,
+        <tag:items:forge:mushrooms>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("rotten_flesh_mixing_porkchop",
+    "heated",
+    <item:minecraft:rotten_flesh>,
+    [
+        <item:minecraft:porkchop>,
+        <tag:items:forge:mushrooms>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("warped_sprouts_mixing",
+    "heated",
+    <item:eidolon:warped_sprouts>*2,
+    [
+        <item:eidolon:ender_calx>,
+        <item:minecraft:warped_fungus>,
+        <item:minecraft:nether_wart>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("ender_calx_mixing",
+    "heated",
+    <item:eidolon:ender_calx>*2,
+    [
+        <item:minecraft:ender_pearl>,
+        <item:eidolon:enchanted_ash>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("fungus_sprouts_mixing",
+    "heated",
+    <item:eidolon:fungus_sprouts>*2,
+    [
+        <tag:items:forge:mushrooms>,
+        <item:minecraft:bone_meal>,
+        <item:minecraft:wheat_seeds>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("refined_crimson_mixing_roots",
+    "heated",
+    <item:eidolon:crimson_essence>*2,
+    [
+        <item:minecraft:crimson_roots>,
+        <item:minecraft:nether_wart>,
+        <item:eidolon:sulfur>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("refined_crimson_mixing_fungus",
+    "heated",
+    <item:eidolon:crimson_essence>*2,
+    [
+        <item:minecraft:crimson_fungus>,
+        <item:minecraft:nether_wart>,
+        <item:eidolon:sulfur>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("refined_crimson_mixing_vines",
+    "heated",
+    <item:eidolon:crimson_essence>*2,
+    [
+        <item:minecraft:weeping_vines>,
+        <item:minecraft:nether_wart>,
+        <item:eidolon:sulfur>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("gunpowder_mixing",
+    "heated",
+    <item:minecraft:gunpowder>*4,
+    [
+        <item:minecraft:bone_meal>,
+        <item:minecraft:charcoal>,
+        <item:eidolon:sulfur>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
+);
+<recipetype:create:mixing>.addRecipe("polished_planks_mixing",
+    "heated",
+    <item:eidolon:polished_planks>*32,
+    [
+        <tag:items:minecraft:planks>*32,
+        <item:eidolon:enchanted_ash>,
+        <item:eidolon:soul_shard>
+    ],
+    [
+        <fluid:minecraft:water>*1000
+    ]
 );

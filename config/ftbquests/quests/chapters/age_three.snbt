@@ -1,0 +1,11 @@
+{
+	id: "6F3A280EDEE038D9"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 6
+	filename: "age_three"
+	title: "Age Three"
+	icon: "cataclysm:void_core"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+}

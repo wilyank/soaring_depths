@@ -220,5 +220,4 @@ for woodType in woodTypes {
 
     <recipetype:create:deploying>.addRecipe(woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:" + woodType + "_cogwheel")]);
     <recipetype:create:deploying>.addRecipe("large_" + woodType + "_cogwheel_auto", BracketHandlers.getItem("creategearaddon:large_shaftless_" + woodType + "_cogwheel"), <item:create:shaft>, [BracketHandlers.getItem("creategearaddon:large_" + woodType + "_cogwheel")]);
-
 }
