@@ -1824,7 +1824,7 @@
 				{
 					id: "199A6CF7CA56167A"
 					type: "item"
-					title: "Any #tconstruct:modifiable/armor/helmets"
+					title: "Any Tinker Helmet"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1836,7 +1836,7 @@
 				{
 					id: "6F8D339E716C931B"
 					type: "item"
-					title: "Any #tconstruct:modifiable/armor/chestplate"
+					title: "Any Tinker Chestplate"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1848,7 +1848,7 @@
 				{
 					id: "732E38A8169D8774"
 					type: "item"
-					title: "Any #tconstruct:modifiable/armor/leggings"
+					title: "Any Tinker Leggings"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1860,7 +1860,7 @@
 				{
 					id: "30B9E50C2762E303"
 					type: "item"
-					title: "Any #tconstruct:modifiable/armor/boots"
+					title: "Any Tinker boots"
 					item: {
 						id: "itemfilters:tag"
 						Count: 1b
@@ -1968,6 +1968,47 @@
 					type: "item"
 					item: "create:builders_tea"
 					count: 16
+				}
+			]
+		}
+		{
+			title: "Diving Gear Set"
+			x: 13.0d
+			y: -4.0d
+			id: "2C1AC137F6766691"
+			tasks: [
+				{
+					id: "34643FFBB007F4A0"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2B4E03F5FCF9FAEC"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "014D9D4673F26F14"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
 				}
 			]
 		}

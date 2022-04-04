@@ -92,9 +92,9 @@
   "tooltip.soaring_depths.ores.rock_crystal": "Thise ore does not generate in the world",
 
   
-  "description.soaring_depths.xpetrified_orb": "Throw some experience orbs into the ultimate trash can to obtain this solified form of experience.",
-  "description.soaring_depths.corrupti_dust": "Throw on the ground with Dark Matter to create a black hole.",
-  "description.soaring_depths.dark_matter": "Throw on the ground with Corrupti Dust to create a black hole.",
+  "description.soaring_depths.xpetrified_orb": "Throw some experience orbs into a Black Hole to obtain this solified form of experience. Create a Black Hole with Dark Matter and Corrupti Dust.",
+  "description.soaring_depths.corrupti_dust": "Throw on the ground with Dark Matter to create a Black Hole.",
+  "description.soaring_depths.dark_matter": "Throw on the ground with Corrupti Dust to create a Black Hole.",
   "tooltip.forbidden_arcanus.runic_chiseled_polished_darkstone": "Blocks monster spawns in a 25 block radius\n Use Arcane Crystal to activate",
 
   "tooltip.forbidden_arcanus.zombie_arm": "Zombification incoming!",

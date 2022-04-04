@@ -7,5 +7,96 @@
 	icon: "cataclysm:void_core"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: -4.0d
+			y: -0.5d
+			id: "5F9A52FD049C0BAD"
+			tasks: [{
+				id: "02F060A7CB22D1A3"
+				type: "item"
+				item: "betterendforge:ender_shard"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			id: "520CADB9D9117AFA"
+			tasks: [{
+				id: "0BCA1E4EE88A41B0"
+				type: "item"
+				item: "betterendforge:crystal_shards"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -0.5d
+			subtitle: "Off-world Magic"
+			id: "547A59284F3D3FA6"
+			tasks: [
+				{
+					id: "2346CA2FAC0F9B6B"
+					type: "item"
+					item: "betterendforge:infusion_pedestal"
+				}
+				{
+					id: "3CAF4EA0EF13A25C"
+					type: "item"
+					title: "Any Pedestal"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "betterendforge:quartz_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:purpur_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:andesite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:diorite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:granite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:violecite_pedestal"
+									Count: 1b
+								}
+								{
+									id: "betterendforge:flavolite_pedestal"
+									Count: 1b
+								}
+							]
+						}
+					}
+					count: 8L
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			dependencies: [
+				"5F9A52FD049C0BAD"
+				"547A59284F3D3FA6"
+				"520CADB9D9117AFA"
+			]
+			id: "677B2B4DEAF26419"
+			tasks: [{
+				id: "0FE388CCB2C3EEE2"
+				type: "item"
+				item: "betterendforge:eternal_crystal"
+			}]
+		}
+	]
 }

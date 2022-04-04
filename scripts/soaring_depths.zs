@@ -129,48 +129,9 @@ mods.jei.JEI.addInfo(<item:minecraft:soul_sand>, ["Use a Soul Extracter on Soul 
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("gabbro_cobble_liquid_interaction", <item:create:gabbro_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("scoria_cobble_liquid_interaction", <item:create:scoria_cobblestone>, <fluid:minecraft:water>*1000, 0, <fluid:minecraft:lava>*1000, 0, 10);
 
-
-// change how granite is made
-craftingTable.removeRecipe(<item:minecraft:granite>);
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/granite");
-
-craftingTable.addShapeless("granite_cobblestone",
-    <item:create:granite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
-);
-<recipetype:create:mixing>.addRecipe("granite_cobblestone_mixing",
-    "none",
-    <item:create:granite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:create:cinder_flour>]
-);
-
-// change how diorite is made
-craftingTable.removeRecipe(<item:minecraft:diorite>);
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/diorite");
-
-craftingTable.addShapeless("diorite_cobblestone",
-    <item:create:diorite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:minecraft:bone_meal>]
-);
-<recipetype:create:mixing>.addRecipe("diorite_cobblestone_mixing",
-    "none",
-    <item:create:diorite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:minecraft:bone_meal>]
-);
-
-// change how andesite is made
-craftingTable.removeRecipe(<item:minecraft:andesite>);
 <recipetype:tconstruct:casting_basin>.removeByName("tconstruct:smeltery/casting/quartz/andesite");
-
-craftingTable.addShapeless("_cobblestone",
-    <item:create:andesite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:minecraft:clay_ball>]
-);
-<recipetype:create:mixing>.addRecipe("andesite_cobblestone_mixing",
-    "none",
-    <item:create:andesite_cobblestone>,
-    [<item:minecraft:cobblestone>,<item:minecraft:clay_ball>]
-);
 
 craftingTable.addShapeless("darkstone",
     <item:forbidden_arcanus:darkstone>,
@@ -274,6 +235,7 @@ mods.jei.JEI.hideIngredient(<item:mowziesmobs:mob_remover>);
 
 mods.jei.JEI.addDescription(<item:minecraft:kelp>,"Trade with a Wandering Trader or a Kobold to obtain this.");
 mods.jei.JEI.addDescription(<item:minecraft:sugar_cane>,"Trade with a Kobold to obtain this.");
+mods.jei.JEI.addDescription(<item:forbidden_arcanus:stellarite_piece>,"See Stella Arcanum");
 
 
 craftingTable.addShapeless("painted_acacia_wood",

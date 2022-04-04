@@ -47,6 +47,7 @@
 				id: "73B72AF9C81B0A25"
 				type: "item"
 				item: "create:mechanical_crafter"
+				count: 9L
 			}]
 		}
 		{
@@ -125,6 +126,11 @@
 		{
 			x: -4.5d
 			y: 5.0d
+			subtitle: "I Can Taste the Rainbow!"
+			description: [
+				""
+				"Chromatic Compound is not actually edible."
+			]
 			dependencies: [
 				"5F7786CCAF4F4919"
 				"500DAF682A36DFB2"
@@ -162,6 +168,7 @@
 		{
 			x: 0.5d
 			y: 4.0d
+			dependencies: ["6A7D12ACCD040183"]
 			id: "0FF7720D0DFB26F4"
 			tasks: [{
 				id: "500D7F0BCCB3F28D"
@@ -178,7 +185,6 @@
 				""
 			]
 			dependencies: [
-				"0FF7720D0DFB26F4"
 				"3998C66DBB806C44"
 				"0F1D3A676D91B1B8"
 			]
@@ -226,7 +232,7 @@
 		}
 		{
 			x: -2.5d
-			y: 1.5d
+			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["61F410589E5F8E67"]
 			id: "1A61E346CB3C57E4"
@@ -250,7 +256,7 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -6.5d
 			y: 3.0d
 			hide_dependency_lines: true
 			dependencies: ["61F410589E5F8E67"]
@@ -308,6 +314,7 @@
 		{
 			x: -4.0d
 			y: 3.0d
+			description: ["Heating the Basin enables more recipes in the Mixer and Compacting Press"]
 			hide_dependency_lines: true
 			dependencies: ["61F410589E5F8E67"]
 			id: "500DAF682A36DFB2"
@@ -501,6 +508,7 @@
 			title: "A Cogwheel and its Brother"
 			x: -3.0d
 			y: 0.0d
+			subtitle: "Consider automating this"
 			description: ["While you're at it, why not add some outputs for shafts, casings and gearboxes as well?"]
 			dependencies: [
 				"5378E1B65517AE12"
@@ -552,6 +560,7 @@
 		{
 			x: -5.0d
 			y: 0.0d
+			subtitle: "Consider automating this"
 			hide_dependency_lines: true
 			dependencies: ["61F410589E5F8E67"]
 			id: "3676B88E9C354BA0"
@@ -623,6 +632,7 @@
 			}]
 		}
 		{
+			icon: "minecraft:nether_quartz_ore"
 			x: -1.0d
 			y: -6.0d
 			hide_dependency_lines: true
@@ -630,7 +640,21 @@
 			tasks: [{
 				id: "33D6BD3B7EE1601E"
 				type: "dimension"
+				title: "Visit the Nether"
 				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 6.0d
+			description: ["Some flight might come in handy"]
+			dependencies: ["205E38CAB0C88FEE"]
+			optional: true
+			id: "297A32102E156C4C"
+			tasks: [{
+				id: "0C3D092EC4B5551A"
+				type: "item"
+				item: "simpleplanes:plane_workbench"
 			}]
 		}
 	]
