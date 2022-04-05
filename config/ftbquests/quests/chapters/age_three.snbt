@@ -98,5 +98,35 @@
 				item: "betterendforge:eternal_crystal"
 			}]
 		}
+		{
+			x: -3.0d
+			y: 3.0d
+			id: "47E861CA48B2D7FF"
+			tasks: [{
+				id: "1561719A05F4AEB1"
+				type: "item"
+				item: "forbidden_arcanus:arcane_dragon_egg"
+			}]
+		}
+		{
+			x: -5.0d
+			y: 3.0d
+			id: "4E7B142469AA90AB"
+			tasks: [{
+				id: "47AA1B2853F0398E"
+				type: "item"
+				item: "alexsmobs:capsid"
+			}]
+		}
+		{
+			x: -6.0d
+			y: 3.0d
+			id: "21D9D3593013D00A"
+			tasks: [{
+				id: "467439483CA4A4A5"
+				type: "item"
+				item: "alexsmobs:mosquito_larva"
+			}]
+		}
 	]
 }

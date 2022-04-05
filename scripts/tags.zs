@@ -11,7 +11,7 @@ forge_gems.add(<item:eidolon:shadow_gem>);
 <tag:items:forge:lanterns>.add(<item:minecraft:lantern>);
 <tag:items:forge:lanterns>.add(<item:minecraft:soul_lantern>);
 <tag:items:forge:lanterns>.add(<item:infernalexp:glow_lantern>);
-<tag:items:forge:lanterns>.add(<item:endergetic:ender_lantern>);
+// <tag:items:forge:lanterns>.add(<item:endergetic:ender_lantern>);
 <tag:items:forge:lanterns>.add(<item:tconstruct:scorched_lantern>);
 <tag:items:forge:lanterns>.add(<item:tconstruct:seared_lantern>);
 

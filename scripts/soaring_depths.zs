@@ -254,15 +254,6 @@ craftingTable.addShaped("copper_bucket",
         [_, <tag:items:forge:ingots/copper>, _]
     ]
 );
-craftingTable.removeRecipe(<item:mining_helmet:mining_helmet>);
-craftingTable.addShaped("mining_helmet",
-    <item:mining_helmet:mining_helmet>,
-    [
-        [<tag:items:forge:dyes/red>, <tag:items:forge:lanterns>, <tag:items:forge:dyes/red>],
-        [<item:create:andesite_alloy>, <item:create:andesite_alloy>, <item:create:andesite_alloy>],
-        [<item:create:andesite_alloy>, _, <item:create:andesite_alloy>]
-    ]
-);
 
 // crushed ores
 furnace.removeByName("minecraft:iron_ingot");

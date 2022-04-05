@@ -98,7 +98,7 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:golden_orchid_seeds>);
     80
 );
 
-<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:endergetic:cracked_purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 95);
+<recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_failed", <item:minecraft:purpur_block>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 95);
 <recipetype:astralsorcery:liquid_interaction>.addRecipe("shulker_liquid_interaction_success", <entitytype:minecraft:shulker>, <fluid:tconstruct:molten_ender>*1000, 100, <fluid:tconstruct:ender_slime>*1000, 100, 5);
 
 
