@@ -8,6 +8,8 @@ import stdlib.List;
 import crafttweaker.api.util.text.MCTextComponent;
 import crafttweaker.api.util.text.MCStyle;
 
+import mods.angrymobs.AITweaks;
+
 // this scripts does random tweaks and fixes
 
 // remove all stupid sequenced assembly recipes
@@ -520,6 +522,7 @@ craftingTable.addShaped("crossbow",
     ]
 );
 
+AITweaks.addAttackNearestTweak(<entitytype:kobolds:kobold_pirate>, <entitytype:minecraft:player>, 2, true);
 
 // craftingTable.addShapedMirrored("soaring_helmet",
 //     <item:minecraft:diamond_helmet>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [406908201, 698699477, -1315920193, 1024514078], Name: "generic.max_health" as string}, {Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.luck" as string, Operation: 0 as int, UUID: [846493083, -1326429731, -1723277641, -1733768700], Name: "generic.luck" as string}, {Amount: 3 as int, Slot: "head" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [1971215365, -1098363312, -1695515322, -417499965], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "head" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [252407515, -1866905082, -1663024550, -1621122407], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.helmet\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
