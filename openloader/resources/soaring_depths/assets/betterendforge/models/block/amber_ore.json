@@ -1,0 +1,11 @@
+{
+  "credit": "Made by AlleCraft",
+  "parent": "minecraft:block/ore",
+  "textures": {
+    
+    "base": "minecraft:block/end_stone",
+
+    "ore_top": "betterendforge:block/amber_block",
+    "ore_side": "betterendforge:block/amber_block"
+  }
+}
