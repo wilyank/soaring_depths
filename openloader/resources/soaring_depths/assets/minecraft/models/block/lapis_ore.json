@@ -1,0 +1,11 @@
+{
+  "credit": "Made by AlleCraft",
+  "parent": "minecraft:block/ore",
+  "textures": {
+    
+    "base": "forbidden_arcanus:block/darkstone",
+    
+    "ore_top": "minecraft:block/ore_lapis_block",
+    "ore_side": "minecraft:block/ore_lapis_block"
+  }
+}
