@@ -106,11 +106,11 @@
 
   "tooltip.soaring_depths.armor.ignitium": "Too hot to wear",
 
-  "item.eidolon.arcane_gold_ingot": "Redstone Gold Ingot",
-  "item.eidolon.arcane_gold_nugget": "Redstone Gold Nugget",
-  "block.eidolon.arcane_gold_block": "Redstone Gold Block",
-  "eidolon.codex.chapter.arcane_gold": "Redstone Gold",
-  "eidolon.codex.page.arcane_gold.title": "Redstone Gold",
+  "item.eidolon.arcane_gold_ingot": "Red Gold Ingot",
+  "item.eidolon.arcane_gold_nugget": "Red Gold Nugget",
+  "block.eidolon.arcane_gold_block": "Red Gold Block",
+  "eidolon.codex.chapter.arcane_gold": "Red Gold",
+  "eidolon.codex.page.arcane_gold.title": "Red Gold",
   "eidolon.codex.page.arcane_gold": "It is possible to alchemically imbue gold with a small amount of magical energy. The resulting metal is stronger and more magically conductive than mundane gold, and is put to good use in the construction of magic items.",
   "eidolon.codex.page.inlays": "Metal inlay is a simple method for durably inscribing sigils and symbols into magical constructs. While mundane on their own, inlays of pewter and redstone gold appear frequently in magical formulae.",
 
@@ -120,10 +120,10 @@
 
   "item.create.brass_hand": "Bronze Hand",
 
-  "block.tconstruct.molten_signalum_fluid": "Molten Redstone Gold",
-  "fluid.tconstruct.molten_signalum": "Molten Redstone Gold",
-  "fluid.tconstruct.flowing_molten_signalum": "Flowing Molten Redstone Gold",
-  "item.tconstruct.molten_signalum_bucket": "Molten Redstone Gold Bucket",
+  "block.tconstruct.molten_signalum_fluid": "Molten Red Gold",
+  "fluid.tconstruct.molten_signalum": "Molten Red Gold",
+  "fluid.tconstruct.flowing_molten_signalum": "Flowing Molten Red Gold",
+  "item.tconstruct.molten_signalum_bucket": "Molten Red Gold Bucket",
 
 	"item.create.crushed_platinum_ore": "Crushed Starmetal Ore",
 	"item.create.crushed_osmium_ore": "Starmetal Sliver",
