@@ -99,22 +99,6 @@
             "type": "minecraft:tag",
             "name": "forge:cogwheels",
             "expand": true
-          },
-          {
-            "type": "minecraft:item",
-            "name": "endergetic:bolloom_balloon"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "endergetic:red_bolloom_balloon"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "endergetic:white_bolloom_balloon"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "endergetic:black_bolloom_balloon"
           }
         ]
       },

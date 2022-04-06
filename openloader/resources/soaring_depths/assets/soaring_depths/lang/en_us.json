@@ -125,6 +125,9 @@
   "fluid.tconstruct.flowing_molten_signalum": "Flowing Molten Redstone Gold",
   "item.tconstruct.molten_signalum_bucket": "Molten Redstone Gold Bucket",
 
+	"item.create.crushed_platinum_ore": "Crushed Starmetal Ore",
+	"item.create.crushed_osmium_ore": "Starmetal Sliver",
+
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",
   "item.soaring_depths.leggings": "Soaring Leggings",

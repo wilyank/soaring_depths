@@ -270,15 +270,83 @@ furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
 furnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 blastFurnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 
-<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal", [<item:forbidden_arcanus:arcane_crystal>, <item:forbidden_arcanus:arcane_crystal>%20], <item:forbidden_arcanus:arcane_crystal_ore>);
-<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal_dust_crushing", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
-<recipetype:create:milling>.addRecipe("crushed_arcane_crystal_dust_milling", [<item:forbidden_arcanus:arcane_crystal_dust>, <item:forbidden_arcanus:arcane_crystal_dust>%10], <item:forbidden_arcanus:arcane_crystal>);
+var crushed_starmetal_ore = <item:create:crushed_platinum_ore>;
+var starmetal_nugget = <item:create:crushed_osmium_ore>;
+
+<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal", 
+    [
+        <item:forbidden_arcanus:arcane_crystal>, 
+        <item:forbidden_arcanus:arcane_crystal>%20
+    ], 
+    <item:forbidden_arcanus:arcane_crystal_ore>
+);
+<recipetype:create:crushing>.addRecipe("crushed_arcane_crystal_dust_crushing", 
+    [
+        <item:forbidden_arcanus:arcane_crystal_dust>, 
+        <item:forbidden_arcanus:arcane_crystal_dust>%10
+    ], 
+    <item:forbidden_arcanus:arcane_crystal>
+);
+<recipetype:create:milling>.addRecipe("crushed_arcane_crystal_dust_milling", 
+    [
+        <item:forbidden_arcanus:arcane_crystal_dust>, 
+        <item:forbidden_arcanus:arcane_crystal_dust>%10
+    ], 
+    <item:forbidden_arcanus:arcane_crystal>
+);
 
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_copper_ore>);
-<recipetype:create:crushing>.addRecipe("crushed_copper_ore", [<item:create:crushed_copper_ore>, <item:create:crushed_copper_ore>*2 % 30, <item:minecraft:cobblestone> % 12], <tag:items:forge:ores/copper>);
+<recipetype:create:crushing>.addRecipe("crushed_copper_ore", 
+    [
+        <item:create:crushed_copper_ore>, 
+        <item:create:crushed_copper_ore>*2 % 30, 
+        <item:minecraft:cobblestone> % 12
+    ], 
+    <tag:items:forge:ores/copper>
+);
 <recipetype:create:crushing>.removeRecipe(<item:create:crushed_zinc_ore>);
-<recipetype:create:crushing>.addRecipe("crushed_zinc_ore", [<item:create:crushed_zinc_ore>, <item:create:crushed_zinc_ore>*2 % 30, <item:minecraft:cobblestone> % 12], <tag:items:forge:ores/zinc>);
+<recipetype:create:crushing>.addRecipe("crushed_zinc_ore", 
+    [
+        <item:create:crushed_zinc_ore>, 
+        <item:create:crushed_zinc_ore>*2 % 30, 
+        <item:minecraft:cobblestone> % 12
+    ],
+    <tag:items:forge:ores/zinc>
+);
 
+<recipetype:create:crushing>.addRecipe("crushed_starmetal_ore", 
+    [
+        crushed_starmetal_ore, 
+        crushed_starmetal_ore*2 % 30, 
+        <item:minecraft:cobblestone> % 12
+    ], 
+    <item:astralsorcery:starmetal_ore>
+);
+furnace.addRecipe("smelting_crushed_starmetal_ore", <item:astralsorcery:starmetal_ingot>, crushed_starmetal_ore, 0.1, 200);
+blastFurnace.addRecipe("blasting_crushed_starmetal_ore", <item:astralsorcery:starmetal_ingot>, crushed_starmetal_ore, 0.1, 100);
+
+<recipetype:create:splashing>.addRecipe("splashing_crushed_starmetal_ore", 
+    [
+        starmetal_nugget*10, 
+        starmetal_nugget*5 % 50
+    ], 
+    crushed_starmetal_ore
+);
+
+craftingTable.addShapeless("starmetal_ingot_to_nugget",
+    <item:astralsorcery:starmetal_ingot>,
+    [
+        starmetal_nugget, starmetal_nugget, starmetal_nugget,
+        starmetal_nugget, starmetal_nugget, starmetal_nugget,
+        starmetal_nugget, starmetal_nugget, starmetal_nugget
+    ]
+);
+craftingTable.addShapeless("starmetal_nugget_to_ingot",
+    starmetal_nugget*9,
+    [
+        <item:astralsorcery:starmetal_ingot>
+    ]
+);
 
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/gold/ore");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/iron/ore");
