@@ -217,8 +217,6 @@ var style = new MCStyle().setColor(11184810);
 );
 mods.jei.JEI.addItem(<item:minecraft:potion>.withTag({display:{Name:'{"text":"Banana Milk Shake","color":"white","italic":false}'},CustomPotionEffects:[{Id:3,Amplifier:0,Duration:1200},{Id:23,Amplifier:0,Duration:200}],CustomPotionColor:16772611}));
 
-craftingTable.addShaped("banana_pickaxe", <item:eidolon:pewter_blend>, [[<item:alexsmobs:banana>],[<item:minecraft:stick>]]);
-
 // make turtle eggs obtainable
 villagerTrades.addWanderingTrade(1, <item:rubber_duck:rubber_duck_item>, <item:minecraft:turtle_egg>, 4, 2);
 
