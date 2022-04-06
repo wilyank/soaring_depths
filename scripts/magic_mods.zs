@@ -316,6 +316,19 @@ craftingTable.addShapeless("purifying_soap_tag",
     ]
 );
 
+craftingTable.removeRecipe(<item:forbidden_arcanus:eternal_stella>);
+<recipetype:create:mechanical_crafting>.addRecipe("eternal_stella",
+    <item:forbidden_arcanus:eternal_stella>,
+    [
+        [<item:alexsmobs:mimicream>, <item:forbidden_arcanus:stellarite_piece>, <item:alexsmobs:mimicream>],
+        [<item:forbidden_arcanus:xpetrified_orb>, <item:forbidden_arcanus:dark_nether_star>, <item:forbidden_arcanus:xpetrified_orb>],
+        [<item:alexsmobs:mimicream>, <item:forbidden_arcanus:stellarite_piece>, <item:alexsmobs:mimicream>]
+    ]
+);
+
+
+// automating Eidolon
+
 <recipetype:create:mixing>.addRecipe("redstone_gold_mixing",
     "heated",
     <fluid:tconstruct:molten_signalum>*288,
