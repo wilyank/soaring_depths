@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 3,
+          "max": 7
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_nugget"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sand"
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:sandstone"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "name": "soaring_depths:dolmen",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 1,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "rigid",
+          "location": "soaring_depths:dolmen",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  

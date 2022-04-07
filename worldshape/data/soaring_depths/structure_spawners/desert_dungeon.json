@@ -1,19 +1,25 @@
 {
     "template": {
         "type": "pool",
-        "id": "soaring_depths:create_shack"
+        "id": "soaring_depths:dungeons/desert"
     },
 
     "averageSpacing": 30,
     "avoidOthers": true,
     
     "placement": {
-        "offset": 30,
-        "maxY": 220,
+        "offset": 0,
+        "terraform": 0,
         "type": "surface"
     },
 
     "dimensions": [
         "minecraft:overworld"
+    ],
+    "biomes": [
+        "#mesa",
+        "#savanna",
+        "#desert"
     ]
+
 }
