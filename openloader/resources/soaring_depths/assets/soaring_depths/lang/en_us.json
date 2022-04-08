@@ -123,8 +123,15 @@
   "fluid.tconstruct.flowing_molten_signalum": "Flowing Molten Red Gold",
   "item.tconstruct.molten_signalum_bucket": "Molten Red Gold Bucket",
 
-	"item.create.crushed_platinum_ore": "Crushed Starmetal Ore",
-	"item.create.crushed_osmium_ore": "Starmetal Sliver",
+	"item.contenttweaker.crushed_starmetal_ore": "Crushed Starmetal Ore",
+	"item.contenttweaker.starmetal_nugget": "Starmetal Sliver",
+
+  "item.contenttweaker.creeper_essence_bucket": "Creeper Essence Bucket",
+  "item.contenttweaker.skeleton_essence_bucket": "Skeleton Essence Bucket",
+  "item.contenttweaker.wither_skeleton_essence_bucket": "Wither Skeleton Essence Bucket",
+  "item.contenttweaker.enderman_essence_bucket": "Enderman Essence Bucket",
+  "item.contenttweaker.hoglin_essence_bucket": "Hoglin Essence Bucket",
+  "item.contenttweaker.mob_essence_bucket": "Mob Essence Bucket",
 
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",

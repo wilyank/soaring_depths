@@ -268,8 +268,11 @@ furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
 furnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 blastFurnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 
-var crushed_starmetal_ore = <item:create:crushed_platinum_ore>;
-var starmetal_nugget = <item:create:crushed_osmium_ore>;
+var crushed_starmetal_ore = <item:contenttweaker:crushed_starmetal_ore>;
+var starmetal_nugget = <item:contenttweaker:starmetal_nugget>;
+mods.jei.JEI.addItem(crushed_starmetal_ore);
+mods.jei.JEI.addItem(starmetal_nugget);
+
 
 <recipetype:create:crushing>.addRecipe("crushed_arcane_crystal", 
     [
@@ -581,6 +584,50 @@ craftingTable.addShaped("crossbow",
 
 AITweaks.addAttackNearestTweak(<entitytype:kobolds:kobold_pirate>, <entitytype:minecraft:player>, 2, true);
 
+// Armor overhaul
+
+craftingTable.removeRecipe(<item:forbidden_arcanus:draco_arcanus_helmet>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:draco_arcanus_chestplate>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:draco_arcanus_leggings>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:draco_arcanus_boots>);
+
+craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_helmet>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_chestplate>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_leggings>);
+craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_boots>);
+
+<recipetype:create:mechanical_crafting>.addRecipe("draco_arcanus_helmet",
+    <item:forbidden_arcanus:draco_arcanus_helmet>,
+    [
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>],
+        [<item:forbidden_arcanus:dragon_scale>, <item:betterendforge:aeternium_helmet>, <item:forbidden_arcanus:dragon_scale>],
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("draco_arcanus_chestplate",
+    <item:forbidden_arcanus:draco_arcanus_chestplate>,
+    [
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>],
+        [<item:forbidden_arcanus:dragon_scale>, <item:betterendforge:aeternium_chestplate>, <item:forbidden_arcanus:dragon_scale>],
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("draco_arcanus_leggings",
+    <item:forbidden_arcanus:draco_arcanus_leggings>,
+    [
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>],
+        [<item:forbidden_arcanus:dragon_scale>, <item:betterendforge:aeternium_leggings>, <item:forbidden_arcanus:dragon_scale>],
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>]
+    ]
+);
+<recipetype:create:mechanical_crafting>.addRecipe("draco_arcanus_boots",
+    <item:forbidden_arcanus:draco_arcanus_boots>,
+    [
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>],
+        [<item:forbidden_arcanus:dragon_scale>, <item:betterendforge:aeternium_boots>, <item:forbidden_arcanus:dragon_scale>],
+        [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>]
+    ]
+);
 // craftingTable.addShapedMirrored("soaring_helmet",
 //     <item:minecraft:diamond_helmet>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [406908201, 698699477, -1315920193, 1024514078], Name: "generic.max_health" as string}, {Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.luck" as string, Operation: 0 as int, UUID: [846493083, -1326429731, -1723277641, -1733768700], Name: "generic.luck" as string}, {Amount: 3 as int, Slot: "head" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [1971215365, -1098363312, -1695515322, -417499965], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "head" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [252407515, -1866905082, -1663024550, -1621122407], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.helmet\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
 //     [

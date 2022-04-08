@@ -99,8 +99,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: 3.0d
+			x: -4.0d
+			y: 6.5d
 			id: "47E861CA48B2D7FF"
 			tasks: [{
 				id: "1561719A05F4AEB1"
@@ -127,6 +127,272 @@
 				type: "item"
 				item: "alexsmobs:mosquito_larva"
 			}]
+		}
+		{
+			title: "Tyr Armor Set"
+			x: -2.5d
+			y: 8.0d
+			id: "0AF9E119A8745A52"
+			tasks: [
+				{
+					id: "7E33F41D1CE49113"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AS_Amulet_Holder: [I;
+								1798583886
+								273498671
+								-1150088106
+								-867913487
+							]
+						}
+					}
+				}
+				{
+					id: "3E290079973D4493"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0907E4A5B1032672"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60A72F62F156F9F3"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:tyr_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "183A059F81D79EAA"
+				type: "item"
+				item: "minecraft:spawner"
+			}]
+		}
+		{
+			title: "Draco Arcanus Armor Set"
+			x: -2.5d
+			y: 6.0d
+			dependencies: [
+				"05B6A9C547221600"
+				"49CCBEFCD0DB3FB8"
+			]
+			dependency_requirement: "one_started"
+			id: "32B0891D1692C5F2"
+			tasks: [
+				{
+					id: "24AD6ACA68DFB236"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D35A8CF2FA682F9"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5B37D9DD0F6E60F8"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3D1C3072163DD378"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:draco_arcanus_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "6064991C569268E6"
+					type: "item"
+					item: "forbidden_arcanus:draco_arcanus_arrow"
+					count: 64
+				}
+				{
+					id: "11396ABD3D383C42"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+				}
+			]
+		}
+		{
+			title: "Aeternium Armor Set"
+			x: -3.5d
+			y: 5.0d
+			id: "05B6A9C547221600"
+			tasks: [
+				{
+					id: "39DBBFADC211EE70"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "54446640C68BB672"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D8B1B51AB3CD03B"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "673297F5BF5209D6"
+					type: "item"
+					item: {
+						id: "betterendforge:aeternium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "2834C61FED9AF0F5"
+				type: "item"
+				item: "betterendforge:amber_ore"
+				count: 4
+			}]
+		}
+		{
+			title: "Ignitium Armor Set"
+			x: -1.5d
+			y: 5.0d
+			id: "49CCBEFCD0DB3FB8"
+			tasks: [
+				{
+					id: "1F2D30F36BAF7EB3"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2BC4A46A914325D9"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0ACD836D9E678BB7"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "26D3E19FC7957555"
+					type: "item"
+					item: {
+						id: "cataclysm:ignitium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "1C47E7A8EAADD81D"
+					type: "item"
+					item: "minecraft:campfire"
+				}
+				{
+					id: "48F79D20A1346753"
+					type: "item"
+					item: "minecraft:fire_charge"
+				}
+				{
+					id: "1507171C6D7E76DD"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }
