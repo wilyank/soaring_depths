@@ -127,11 +127,17 @@
 	"item.contenttweaker.starmetal_nugget": "Starmetal Sliver",
 
   "item.contenttweaker.creeper_essence_bucket": "Creeper Essence Bucket",
+  "fluid.contenttweaker.creeper_essence": "Creeper Essence",
   "item.contenttweaker.skeleton_essence_bucket": "Skeleton Essence Bucket",
+  "fluid.contenttweaker.skeleton_essence": "Skeleton Essence",
   "item.contenttweaker.wither_skeleton_essence_bucket": "Wither Skeleton Essence Bucket",
+  "fluid.contenttweaker.wither_skeleton_essence": "Wither Skeleton Essence",
   "item.contenttweaker.enderman_essence_bucket": "Enderman Essence Bucket",
+  "fluid.contenttweaker.enderman_essence": "Enderman Essence",
   "item.contenttweaker.hoglin_essence_bucket": "Hoglin Essence Bucket",
+  "fluid.contenttweaker.hoglin_essence": "Hoglin Essence",
   "item.contenttweaker.mob_essence_bucket": "Mob Essence Bucket",
+  "fluid.contenttweaker.mob_essence": "Mob Essence",
 
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",
