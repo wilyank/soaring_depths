@@ -99,8 +99,8 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: 6.5d
+			x: -5.5d
+			y: 5.0d
 			id: "47E861CA48B2D7FF"
 			tasks: [{
 				id: "1561719A05F4AEB1"
@@ -130,8 +130,12 @@
 		}
 		{
 			title: "Tyr Armor Set"
-			x: -2.5d
-			y: 8.0d
+			x: -1.0d
+			y: 7.5d
+			dependencies: [
+				"32B0891D1692C5F2"
+				"465A4190E952DC38"
+			]
 			id: "0AF9E119A8745A52"
 			tasks: [
 				{
@@ -323,6 +327,7 @@
 			title: "Ignitium Armor Set"
 			x: -1.5d
 			y: 5.0d
+			dependencies: ["79BC7DFBF4D4EA9B"]
 			id: "49CCBEFCD0DB3FB8"
 			tasks: [
 				{
@@ -393,6 +398,185 @@
 					}
 				}
 			]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			dependencies: [
+				"65934ECF7572A4D1"
+				"23477E651DBFAD90"
+				"31BF61A0C2A2D75B"
+				"31C4A26BE5AB40E9"
+				"233592A3969D6032"
+			]
+			id: "465A4190E952DC38"
+			tasks: [{
+				id: "5F8C75D16BA7D5BD"
+				type: "item"
+				item: "contenttweaker:mob_essence_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			dependencies: ["79E030995B4556DC"]
+			id: "65934ECF7572A4D1"
+			tasks: [{
+				id: "6CCFF326E69815B3"
+				type: "item"
+				item: "contenttweaker:creeper_essence_bucket"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["62B83970C1A423C3"]
+			id: "23477E651DBFAD90"
+			tasks: [{
+				id: "24864D0A18D48725"
+				type: "item"
+				item: "contenttweaker:skeleton_essence_bucket"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.0d
+			dependencies: ["475DD4D97C9346D5"]
+			id: "31BF61A0C2A2D75B"
+			tasks: [{
+				id: "2E4F4962B62113AC"
+				type: "item"
+				item: "contenttweaker:enderman_essence_bucket"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			dependencies: ["0C7F8F3B73E5ABF5"]
+			id: "31C4A26BE5AB40E9"
+			tasks: [{
+				id: "1F1B8243FDE535EA"
+				type: "item"
+				item: "contenttweaker:wither_skeleton_essence_bucket"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["3073FB05FC635115"]
+			id: "233592A3969D6032"
+			tasks: [{
+				id: "55244AF190EA6CA2"
+				type: "item"
+				item: "contenttweaker:hoglin_essence_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.5d
+			id: "79E030995B4556DC"
+			tasks: [{
+				id: "1FAB8205CC874B0D"
+				type: "kill"
+				icon: {
+					id: "mutantbeasts:creeper_shard"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mutantbeasts:mutant_creeper"
+				value: 1L
+			}]
+		}
+		{
+			x: 1.5d
+			y: 1.5d
+			id: "62B83970C1A423C3"
+			tasks: [{
+				id: "45F9F381E7978322"
+				type: "kill"
+				icon: {
+					id: "mutantbeasts:mutant_skeleton_skull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mutantbeasts:mutant_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 1.5d
+			id: "475DD4D97C9346D5"
+			tasks: [{
+				id: "05E1F9364FE97225"
+				type: "kill"
+				icon: {
+					id: "mutantbeasts:endersoul_hand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mutantbeasts:mutant_enderman"
+				value: 1L
+			}]
+		}
+		{
+			x: 3.5d
+			y: 1.5d
+			id: "0C7F8F3B73E5ABF5"
+			tasks: [{
+				id: "15DB91009308C483"
+				type: "kill"
+				icon: {
+					id: "mutantmore:mutant_wither_skeleton_skull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mutantmore:mutant_wither_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 1.5d
+			id: "3073FB05FC635115"
+			tasks: [{
+				id: "70B0FDA170A1D7DA"
+				type: "kill"
+				icon: "mutantmore:mutant_hoglin_tusk"
+				entity: "mutantmore:mutant_hoglin"
+				value: 1L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			dependencies: ["75D0C29850ABB887"]
+			id: "79BC7DFBF4D4EA9B"
+			tasks: [{
+				id: "5EA97102002AC723"
+				type: "item"
+				item: "cataclysm:ignitium_ingot"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 2.0d
+			id: "75D0C29850ABB887"
+			tasks: [{
+				id: "2737C6763EADB86A"
+				type: "kill"
+				icon: "mutantmore:mutant_blaze_core"
+				entity: "mutantmore:mutant_blaze"
+				value: 1L
+			}]
 		}
 	]
 }

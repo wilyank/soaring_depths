@@ -136,8 +136,13 @@
   "fluid.contenttweaker.enderman_essence": "Enderman Essence",
   "item.contenttweaker.hoglin_essence_bucket": "Hoglin Essence Bucket",
   "fluid.contenttweaker.hoglin_essence": "Hoglin Essence",
+  "item.contenttweaker.spider_pig_essence_bucket": "Spider Pig Essence Bucket",
+  "fluid.contenttweaker.spider_pig_essence": "Spider Pig Essence",
+  "item.contenttweaker.void_worm_essence_bucket": "Void Worm Essence Bucket",
+  "fluid.contenttweaker.void_worm_essence": "Void Worm Essence",
   "item.contenttweaker.mob_essence_bucket": "Mob Essence Bucket",
   "fluid.contenttweaker.mob_essence": "Mob Essence",
+
 
   "item.soaring_depths.helmet": "Soaring Helmet",
   "item.soaring_depths.chestplate": "Soaring Chestplate",

@@ -40,6 +40,18 @@ new FluidBuilder(false, 0x01FFFFFF, <resource:contenttweaker:block/hoglin_essenc
     .viscosity(1300)
     .build("hoglin_essence"
 );
+new FluidBuilder(false, 0x01FFFFFF, <resource:contenttweaker:block/spider_pig_essence_still>, <resource:contenttweaker:block/spider_pig_essence_flow>)
+    .density(1600)
+    .temperature(360)
+    .viscosity(1300)
+    .build("spider_pig_essence"
+);
+new FluidBuilder(false, 0x00000000)
+    .density(1600)
+    .temperature(360)
+    .viscosity(1300)
+    .build("void_worm_essence"
+);
 new FluidBuilder(false, 0x01FFFFFF, <resource:contenttweaker:block/mob_essence_still>, <resource:contenttweaker:block/mob_essence_flow>)
     .density(1600)
     .temperature(360)
