@@ -1,6 +1,7 @@
 {
   "parent" : "item/generated",
   "textures" :
-  {"layer0" : "contenttweaker:item/starmetal_nugget"
+  {
+    "layer0" : "contenttweaker:item/starmetal_nugget"
   }
 }
