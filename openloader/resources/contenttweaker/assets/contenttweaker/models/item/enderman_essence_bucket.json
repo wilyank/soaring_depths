@@ -1,7 +1,5 @@
 {
-  "parent" : "item/generated",
-  "textures" : {
-    "layer0" : "minecraft:item/bucket",
-    "layer1" : "forge:item/mask/bucket_fluid"
-  }
+  "parent": "forge:item/bucket_drip",
+  "loader": "forge:bucket",
+  "fluid": "contenttweaker:enderman_essence"
 }
