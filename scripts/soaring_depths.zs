@@ -628,6 +628,98 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_boots>);
         [<item:betterendforge:eternal_crystal>, <item:forbidden_arcanus:dragon_scale>, <item:betterendforge:eternal_crystal>]
     ]
 );
+
+<recipetype:tconstruct:entity_melting>.addRecipe("spider_pig_melting", 
+    <entitytype:mutantbeasts:spider_pig>, 
+    <fluid:contenttweaker:spider_pig_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("mutant_creeper_melting", 
+    <entitytype:mutantbeasts:mutant_creeper>, 
+    <fluid:contenttweaker:creeper_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("mutant_skeleton_melting", 
+    <entitytype:mutantbeasts:mutant_skeleton>, 
+    <fluid:contenttweaker:skeleton_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("mutant_enderman_melting", 
+    <entitytype:mutantbeasts:mutant_enderman>, 
+    <fluid:contenttweaker:enderman_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("mutant_wither_skeleton_melting", 
+    <entitytype:mutantmore:mutant_wither_skeleton>, 
+    <fluid:contenttweaker:wither_skeleton_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("mutant_hoglin_melting", 
+    <entitytype:mutantmore:mutant_hoglin>, 
+    <fluid:contenttweaker:hoglin_essence>, 
+    1
+);
+<recipetype:tconstruct:entity_melting>.addRecipe("void_worm_melting", 
+    <entitytype:alexsmobs:void_worm>, 
+    <fluid:contenttweaker:void_worm_essence>, 
+    1
+);
+
+<recipetype:tconstruct:alloying>.addRecipe("mob_essence_alloy", 
+    [
+        <fluid:contenttweaker:skeleton_essence>*1000,
+        <fluid:contenttweaker:creeper_essence>*1000,
+        <fluid:contenttweaker:enderman_essence>*1000,
+        <fluid:contenttweaker:hoglin_essence>*1000,
+        <fluid:contenttweaker:wither_skeleton_essence>*1000,
+        <fluid:contenttweaker:void_worm_essence>*1000,
+        <fluid:contenttweaker:spider_pig_essence>*1000
+    ], 
+    <fluid:contenttweaker:mob_essence>*1000,
+    1500
+);
+
+<recipetype:astralsorcery:infusion>.addRecipe("draco_helmet_to_tyr_helmet", 
+    <item:forbidden_arcanus:tyr_helmet>, 
+    <item:forbidden_arcanus:draco_arcanus_helmet>, 
+    <fluid:contenttweaker:mob_essence>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    true
+);
+<recipetype:astralsorcery:infusion>.addRecipe("draco_chestplate_to_tyr_chestplate", 
+    <item:forbidden_arcanus:tyr_chestplate>, 
+    <item:forbidden_arcanus:draco_arcanus_chestplate>, 
+    <fluid:contenttweaker:mob_essence>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    true
+);
+<recipetype:astralsorcery:infusion>.addRecipe("draco_leggings_to_tyr_leggings", 
+    <item:forbidden_arcanus:tyr_leggings>, 
+    <item:forbidden_arcanus:draco_arcanus_leggings>, 
+    <fluid:contenttweaker:mob_essence>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    true
+);
+<recipetype:astralsorcery:infusion>.addRecipe("draco_boots_to_tyr_boots", 
+    <item:forbidden_arcanus:tyr_boots>, 
+    <item:forbidden_arcanus:draco_arcanus_boots>, 
+    <fluid:contenttweaker:mob_essence>, 
+    200, 
+    1, 
+    true, 
+    true, 
+    true
+);
+
 // craftingTable.addShapedMirrored("soaring_helmet",
 //     <item:minecraft:diamond_helmet>.withTag({RepairCost: 20 as int, AttributeModifiers: [{Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.max_health" as string, Operation: 0 as int, UUID: [406908201, 698699477, -1315920193, 1024514078], Name: "generic.max_health" as string}, {Amount: 1 as int, Slot: "head" as string, AttributeName: "generic.luck" as string, Operation: 0 as int, UUID: [846493083, -1326429731, -1723277641, -1733768700], Name: "generic.luck" as string}, {Amount: 3 as int, Slot: "head" as string, AttributeName: "generic.armor" as string, Operation: 0 as int, UUID: [1971215365, -1098363312, -1695515322, -417499965], Name: "generic.armor" as string}, {Amount: 2.5 as double, Slot: "head" as string, AttributeName: "generic.armor_toughness" as string, Operation: 0 as int, UUID: [252407515, -1866905082, -1663024550, -1621122407], Name: "generic.armor_toughness" as string}], display: {Name: "{\"translate\":\"item.soaring_depths.helmet\",\"color\":\"light_purple\",\"bold\":true,\"italic\":false}" as string}}),
 //     [
