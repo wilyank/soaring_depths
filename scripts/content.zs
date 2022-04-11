@@ -46,7 +46,7 @@ new FluidBuilder(false, 0x01FFFFFF, <resource:contenttweaker:block/spider_pig_es
     .viscosity(1300)
     .build("spider_pig_essence"
 );
-new FluidBuilder(false, 0x00000000)
+new FluidBuilder(false, 0x01FFFFFF, <resource:contenttweaker:block/void_worm_essence_still>, <resource:contenttweaker:block/void_worm_essence_flow>)
     .density(1600)
     .temperature(360)
     .viscosity(1300)

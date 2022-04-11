@@ -675,7 +675,7 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_boots>);
         <fluid:contenttweaker:void_worm_essence>*1000,
         <fluid:contenttweaker:spider_pig_essence>*1000
     ], 
-    <fluid:contenttweaker:mob_essence>*1000,
+    <fluid:contenttweaker:mob_essence>*7000,
     1500
 );
 
