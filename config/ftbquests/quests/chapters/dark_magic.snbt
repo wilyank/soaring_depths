@@ -255,7 +255,6 @@
 		{
 			x: 1.5d
 			y: 7.0d
-			dependencies: ["7CACD318ADF849E2"]
 			id: "2924BD54947CF38D"
 			tasks: [{
 				id: "33DCC27186B423A1"
@@ -285,7 +284,6 @@
 		{
 			x: 3.5d
 			y: 7.0d
-			dependencies: ["7CACD318ADF849E2"]
 			id: "4B844CA923B26EAC"
 			tasks: [{
 				id: "1773CD165562311B"
@@ -300,26 +298,8 @@
 			}]
 		}
 		{
-			title: "Unholy Creatures"
-			x: 1.5d
-			y: 8.5d
-			dependencies: ["1E898401F99F390D"]
-			id: "7CACD318ADF849E2"
-			tasks: [{
-				id: "7E085E672B8CD900"
-				type: "item"
-				item: "mutantbeasts:chemical_x"
-			}]
-			rewards: [{
-				id: "4CCA811C52EA17C4"
-				type: "item"
-				item: "forbidden_arcanus:rune_bag"
-			}]
-		}
-		{
 			x: 2.5d
 			y: 10.0d
-			dependencies: ["7CACD318ADF849E2"]
 			id: "2D494F2F0297795A"
 			tasks: [{
 				id: "70634713FAB6BEB7"
@@ -338,7 +318,6 @@
 			title: "The Legacy of Dr. Spencer Black"
 			x: 1.5d
 			y: 10.0d
-			dependencies: ["7CACD318ADF849E2"]
 			id: "6E32F9A83144275D"
 			tasks: [{
 				id: "495FE98566985480"
@@ -356,7 +335,6 @@
 		{
 			x: 3.5d
 			y: 9.5d
-			dependencies: ["7CACD318ADF849E2"]
 			id: "4216EA0568664273"
 			tasks: [{
 				id: "77699D6B319ADADC"
@@ -374,7 +352,6 @@
 		{
 			x: 5.5d
 			y: 10.0d
-			dependencies: ["50DF135EB0EE40F8"]
 			id: "3EB956128D8E865C"
 			tasks: [{
 				id: "0E3AFAF58F376810"
@@ -389,26 +366,8 @@
 			}]
 		}
 		{
-			title: "More Unholy Creatures"
-			x: 4.0d
-			y: 8.5d
-			dependencies: ["7CACD318ADF849E2"]
-			id: "50DF135EB0EE40F8"
-			tasks: [{
-				id: "42DC5D4B4B3B12EF"
-				type: "item"
-				item: "mutantmore:formula_y"
-			}]
-			rewards: [{
-				id: "61E1CE0F7A9BB347"
-				type: "item"
-				item: "forbidden_arcanus:rune_bag"
-			}]
-		}
-		{
 			x: 4.5d
 			y: 7.0d
-			dependencies: ["50DF135EB0EE40F8"]
 			id: "61962EE695CB94DA"
 			tasks: [{
 				id: "57449A9A2509D401"
@@ -425,7 +384,6 @@
 		{
 			x: 4.5d
 			y: 10.0d
-			dependencies: ["50DF135EB0EE40F8"]
 			id: "13118062EEBEF110"
 			tasks: [{
 				id: "7E1EAD611517CA30"
@@ -443,7 +401,6 @@
 		{
 			x: 5.5d
 			y: 7.0d
-			dependencies: ["50DF135EB0EE40F8"]
 			id: "2ABF7C2129D4BA74"
 			tasks: [{
 				id: "252F15F3883A6D43"
@@ -465,23 +422,6 @@
 					count: 64
 				}
 			]
-		}
-		{
-			title: "Better Unholy Creatures"
-			x: 7.5d
-			y: 8.5d
-			dependencies: ["50DF135EB0EE40F8"]
-			id: "1F6A8A60EF0C38E5"
-			tasks: [{
-				id: "1625CB394ABB2691"
-				type: "item"
-				item: "mutantmore:compound_z"
-			}]
-			rewards: [{
-				id: "7078EF3CE61EF7BB"
-				type: "item"
-				item: "forbidden_arcanus:dark_rune_bag"
-			}]
 		}
 		{
 			x: 6.5d

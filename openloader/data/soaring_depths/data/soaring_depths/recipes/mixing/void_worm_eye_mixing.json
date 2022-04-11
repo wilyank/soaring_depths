@@ -1,0 +1,21 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "forbidden_arcanus:arcane_dragon_egg"
+      },
+      {
+        "item": "alexsmobs:void_worm_eye"
+      }
+    ],
+    "results": [
+      {
+        "fluid": "contenttweaker:void_worm_essence",
+        "amount": 1000
+      },
+      {
+          "item": "forbidden_arcanus:arcane_dragon_egg"
+      }
+    ],
+    "heatRequirement": "superheated"
+  }

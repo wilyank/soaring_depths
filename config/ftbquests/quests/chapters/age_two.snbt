@@ -610,6 +610,7 @@
 		{
 			x: 5.0d
 			y: 0.0d
+			description: ["Definetely check out the other things Astral Sorcery has to offer"]
 			dependencies: ["50CC57E3B32F9CF3"]
 			optional: true
 			id: "60034CAED267592C"

@@ -9,8 +9,8 @@
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: -4.0d
-			y: -0.5d
+			x: 11.5d
+			y: -3.5d
 			id: "5F9A52FD049C0BAD"
 			tasks: [{
 				id: "02F060A7CB22D1A3"
@@ -19,8 +19,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -0.5d
+			x: 15.5d
+			y: -3.5d
 			id: "520CADB9D9117AFA"
 			tasks: [{
 				id: "0BCA1E4EE88A41B0"
@@ -29,8 +29,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -0.5d
+			x: 13.5d
+			y: -3.5d
 			subtitle: "Off-world Magic"
 			id: "547A59284F3D3FA6"
 			tasks: [
@@ -84,8 +84,8 @@
 			]
 		}
 		{
-			x: -3.0d
-			y: 1.0d
+			x: 13.5d
+			y: -0.5d
 			dependencies: [
 				"5F9A52FD049C0BAD"
 				"547A59284F3D3FA6"
@@ -99,8 +99,9 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: 5.0d
+			x: 3.5d
+			y: 1.0d
+			dependencies: ["4CC2D1B2ADB04ABE"]
 			id: "47E861CA48B2D7FF"
 			tasks: [{
 				id: "1561719A05F4AEB1"
@@ -109,18 +110,8 @@
 			}]
 		}
 		{
-			x: -5.0d
-			y: 3.0d
-			id: "4E7B142469AA90AB"
-			tasks: [{
-				id: "47AA1B2853F0398E"
-				type: "item"
-				item: "alexsmobs:capsid"
-			}]
-		}
-		{
-			x: -6.0d
-			y: 3.0d
+			x: 7.5d
+			y: -3.5d
 			id: "21D9D3593013D00A"
 			tasks: [{
 				id: "467439483CA4A4A5"
@@ -130,8 +121,9 @@
 		}
 		{
 			title: "Tyr Armor Set"
-			x: -1.0d
-			y: 7.5d
+			x: 3.5d
+			y: 8.0d
+			subtitle: "Protected By Fate"
 			dependencies: [
 				"32B0891D1692C5F2"
 				"465A4190E952DC38"
@@ -197,11 +189,12 @@
 		}
 		{
 			title: "Draco Arcanus Armor Set"
-			x: -2.5d
-			y: 6.0d
+			x: 13.5d
+			y: 4.5d
 			dependencies: [
 				"05B6A9C547221600"
 				"49CCBEFCD0DB3FB8"
+				"677B2B4DEAF26419"
 			]
 			dependency_requirement: "one_started"
 			id: "32B0891D1692C5F2"
@@ -267,8 +260,9 @@
 		}
 		{
 			title: "Aeternium Armor Set"
-			x: -3.5d
-			y: 5.0d
+			x: 11.5d
+			y: -0.5d
+			dependencies: ["5F9A52FD049C0BAD"]
 			id: "05B6A9C547221600"
 			tasks: [
 				{
@@ -325,8 +319,9 @@
 		}
 		{
 			title: "Ignitium Armor Set"
-			x: -1.5d
-			y: 5.0d
+			x: 9.5d
+			y: 3.5d
+			description: ["This armor set might make for a great combination with some fire-related items"]
 			dependencies: ["79BC7DFBF4D4EA9B"]
 			id: "49CCBEFCD0DB3FB8"
 			tasks: [
@@ -400,7 +395,7 @@
 			]
 		}
 		{
-			x: 2.5d
+			x: 3.5d
 			y: 5.0d
 			dependencies: [
 				"65934ECF7572A4D1"
@@ -408,6 +403,8 @@
 				"31BF61A0C2A2D75B"
 				"31C4A26BE5AB40E9"
 				"233592A3969D6032"
+				"0107648BC499A1B8"
+				"100FE7184B783044"
 			]
 			id: "465A4190E952DC38"
 			tasks: [{
@@ -419,7 +416,10 @@
 		{
 			x: 0.5d
 			y: 3.0d
-			dependencies: ["79E030995B4556DC"]
+			dependencies: [
+				"79E030995B4556DC"
+				"47E861CA48B2D7FF"
+			]
 			id: "65934ECF7572A4D1"
 			tasks: [{
 				id: "6CCFF326E69815B3"
@@ -430,7 +430,10 @@
 		{
 			x: 1.5d
 			y: 3.0d
-			dependencies: ["62B83970C1A423C3"]
+			dependencies: [
+				"62B83970C1A423C3"
+				"47E861CA48B2D7FF"
+			]
 			id: "23477E651DBFAD90"
 			tasks: [{
 				id: "24864D0A18D48725"
@@ -441,7 +444,10 @@
 		{
 			x: 2.5d
 			y: 3.0d
-			dependencies: ["475DD4D97C9346D5"]
+			dependencies: [
+				"475DD4D97C9346D5"
+				"47E861CA48B2D7FF"
+			]
 			id: "31BF61A0C2A2D75B"
 			tasks: [{
 				id: "2E4F4962B62113AC"
@@ -450,9 +456,12 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 5.5d
 			y: 3.0d
-			dependencies: ["0C7F8F3B73E5ABF5"]
+			dependencies: [
+				"0C7F8F3B73E5ABF5"
+				"47E861CA48B2D7FF"
+			]
 			id: "31C4A26BE5AB40E9"
 			tasks: [{
 				id: "1F1B8243FDE535EA"
@@ -463,7 +472,10 @@
 		{
 			x: 4.5d
 			y: 3.0d
-			dependencies: ["3073FB05FC635115"]
+			dependencies: [
+				"3073FB05FC635115"
+				"47E861CA48B2D7FF"
+			]
 			id: "233592A3969D6032"
 			tasks: [{
 				id: "55244AF190EA6CA2"
@@ -473,7 +485,8 @@
 		}
 		{
 			x: 0.5d
-			y: 1.5d
+			y: 0.0d
+			dependencies: ["7CACD318ADF849E2"]
 			id: "79E030995B4556DC"
 			tasks: [{
 				id: "1FAB8205CC874B0D"
@@ -491,7 +504,8 @@
 		}
 		{
 			x: 1.5d
-			y: 1.5d
+			y: 0.0d
+			dependencies: ["7CACD318ADF849E2"]
 			id: "62B83970C1A423C3"
 			tasks: [{
 				id: "45F9F381E7978322"
@@ -509,7 +523,8 @@
 		}
 		{
 			x: 2.5d
-			y: 1.5d
+			y: 0.0d
+			dependencies: ["7CACD318ADF849E2"]
 			id: "475DD4D97C9346D5"
 			tasks: [{
 				id: "05E1F9364FE97225"
@@ -526,8 +541,9 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 1.5d
+			x: 5.5d
+			y: 0.0d
+			dependencies: ["50DF135EB0EE40F8"]
 			id: "0C7F8F3B73E5ABF5"
 			tasks: [{
 				id: "15DB91009308C483"
@@ -545,7 +561,8 @@
 		}
 		{
 			x: 4.5d
-			y: 1.5d
+			y: 0.0d
+			dependencies: ["50DF135EB0EE40F8"]
 			id: "3073FB05FC635115"
 			tasks: [{
 				id: "70B0FDA170A1D7DA"
@@ -556,8 +573,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 3.5d
+			x: 8.0d
+			y: 3.0d
 			dependencies: ["75D0C29850ABB887"]
 			id: "79BC7DFBF4D4EA9B"
 			tasks: [{
@@ -567,8 +584,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 2.0d
+			x: 8.0d
+			y: 0.5d
+			dependencies: ["50DF135EB0EE40F8"]
 			id: "75D0C29850ABB887"
 			tasks: [{
 				id: "2737C6763EADB86A"
@@ -576,6 +594,188 @@
 				icon: "mutantmore:mutant_blaze_core"
 				entity: "mutantmore:mutant_blaze"
 				value: 1L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			dependencies: [
+				"47E861CA48B2D7FF"
+				"66659FBF3F719D4D"
+			]
+			id: "0107648BC499A1B8"
+			tasks: [{
+				id: "166333A291B52E65"
+				type: "item"
+				item: "contenttweaker:void_worm_essence_bucket"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.0d
+			id: "100FE7184B783044"
+			tasks: [{
+				id: "71108906F4959C71"
+				type: "item"
+				item: "contenttweaker:spider_pig_essence_bucket"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -3.5d
+			subtitle: "Item elevators"
+			id: "6B7DE10C58C129EA"
+			tasks: [{
+				id: "4B8C274433EF634A"
+				type: "item"
+				item: "alexsmobs:capsid"
+			}]
+		}
+		{
+			title: "Why would you put a worm in a microwave?"
+			x: 8.5d
+			y: -2.5d
+			dependencies: [
+				"6B7DE10C58C129EA"
+				"21D9D3593013D00A"
+			]
+			id: "2A7283CA677F9F22"
+			tasks: [{
+				id: "00367013C60E6CCC"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/mysterious_worm"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Throw that ugly thing away"
+			x: 7.5d
+			y: -1.0d
+			dependencies: ["2A7283CA677F9F22"]
+			id: "0C90BE15A168866A"
+			tasks: [{
+				id: "27250826F6DA75EE"
+				type: "advancement"
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["0C90BE15A168866A"]
+			id: "66659FBF3F719D4D"
+			tasks: [{
+				id: "7F58D9A89E4896C5"
+				type: "kill"
+				entity: "alexsmobs:void_worm"
+				value: 1L
+			}]
+			rewards: [{
+				id: "792F27E38EC56CE5"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_purple_shulker_box"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/void_worm_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Void Worm Crate\",\"color\":\"dark_purple\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Unholy Creatures"
+			x: 1.5d
+			y: -2.0d
+			subtitle: "The Legacy of Dr. Spencer Black"
+			dependencies: [
+				"021444FBBB914587"
+				"65BB84043457E762"
+			]
+			id: "7CACD318ADF849E2"
+			tasks: [{
+				id: "7E085E672B8CD900"
+				type: "item"
+				item: "mutantbeasts:chemical_x"
+			}]
+			rewards: [{
+				id: "4CCA811C52EA17C4"
+				type: "item"
+				item: "forbidden_arcanus:rune_bag"
+			}]
+		}
+		{
+			title: "More Unholy Creatures"
+			x: 5.5d
+			y: -2.0d
+			dependencies: ["7CACD318ADF849E2"]
+			id: "50DF135EB0EE40F8"
+			tasks: [{
+				id: "42DC5D4B4B3B12EF"
+				type: "item"
+				item: "mutantmore:formula_y"
+			}]
+			rewards: [{
+				id: "61E1CE0F7A9BB347"
+				type: "item"
+				item: "forbidden_arcanus:rune_bag"
+			}]
+		}
+		{
+			title: "Better Unholy Creatures"
+			x: 7.0d
+			y: -2.0d
+			dependencies: ["50DF135EB0EE40F8"]
+			id: "1F6A8A60EF0C38E5"
+			tasks: [{
+				id: "1625CB394ABB2691"
+				type: "item"
+				item: "mutantmore:compound_z"
+			}]
+			rewards: [{
+				id: "7078EF3CE61EF7BB"
+				type: "item"
+				item: "forbidden_arcanus:dark_rune_bag"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -0.5d
+			id: "4CC2D1B2ADB04ABE"
+			tasks: [{
+				id: "7CD9C7D43A59E786"
+				type: "kill"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -3.0d
+			description: ["Either find one underground, or corrupt a normal Rune with an activated Runic Tenebris Frame"]
+			dependency_requirement: "one_completed"
+			id: "65BB84043457E762"
+			tasks: [{
+				id: "0D18241694AE1C5A"
+				type: "item"
+				item: "forbidden_arcanus:dark_rune"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			subtitle: "Shrooms"
+			id: "021444FBBB914587"
+			tasks: [{
+				id: "633C8B635EDC7FC4"
+				type: "item"
+				item: "infernalexp:ascus_bomb"
 			}]
 		}
 	]

@@ -124,7 +124,7 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
         <item:minecraft:glass_bottle>
     ],
     [
-        <fluid:tconstruct:molten_pewter> * 144, 
+        <fluid:tconstruct:blood> * 250, 
         <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
     ]
 );
@@ -138,7 +138,7 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
         <item:mutantbeasts:chemical_x>
     ],
     [
-        <fluid:tconstruct:molten_diamond> * 144, 
+        <fluid:tconstruct:molten_diamond> * 16, 
         <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
     ]
 );
@@ -152,7 +152,7 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
         <item:mutantmore:formula_y>
     ],
     [
-        <fluid:tconstruct:molten_debris> * 144, 
+        <fluid:tconstruct:molten_debris> * 16, 
         <fluid:create:potion>.withTag({Bottle: "REGULAR", Potion: "infernalexp:strong_infection"})*250
     ]
 );

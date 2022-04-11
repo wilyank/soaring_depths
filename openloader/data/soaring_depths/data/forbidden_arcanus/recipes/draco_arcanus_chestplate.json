@@ -1,0 +1,61 @@
+{
+    "type": "betterendforge:infusion",
+    "input": {
+        "item": "betterendforge:aeternium_chestplate"
+    },
+    "output": {
+        "id": "forbidden_arcanus:draco_arcanus_chestplate",
+        "Count": 1
+    },
+    "time": 300,
+    "catalysts": [
+        {
+            "item": {
+                "item": "forbidden_arcanus:dragon_scale"
+            },
+            "index": 0
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 1
+        },
+        {
+            "item": {
+                "item": "forbidden_arcanus:dragon_scale"
+            },
+            "index": 2
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 3
+        },
+        {
+            "item": {
+                "item": "forbidden_arcanus:dragon_scale"
+            },
+            "index": 4
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 5
+        },
+        {
+            "item": {
+                "item": "forbidden_arcanus:dragon_scale"
+            },
+            "index": 6
+        },
+        {
+            "item": {
+                "item": "betterendforge:eternal_crystal"
+            },
+            "index": 7
+        }
+    ]
+}

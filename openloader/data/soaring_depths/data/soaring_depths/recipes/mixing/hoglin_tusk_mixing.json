@@ -1,0 +1,21 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "forbidden_arcanus:arcane_dragon_egg"
+      },
+      {
+        "item": "mutantmore:mutant_hoglin_tusk"
+      }
+    ],
+    "results": [
+      {
+        "fluid": "contenttweaker:hoglin_essence",
+        "amount": 1000
+      },
+      {
+          "item": "forbidden_arcanus:arcane_dragon_egg"
+      }
+    ],
+    "heatRequirement": "superheated"
+  }

@@ -1,0 +1,21 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "forbidden_arcanus:arcane_dragon_egg"
+      },
+      {
+        "item": "mutantmore:mutant_wither_skeleton_skull"
+      }
+    ],
+    "results": [
+      {
+        "fluid": "contenttweaker:wither_skeleton_essence",
+        "amount": 1000
+      },
+      {
+          "item": "forbidden_arcanus:arcane_dragon_egg"
+      }
+    ],
+    "heatRequirement": "superheated"
+  }

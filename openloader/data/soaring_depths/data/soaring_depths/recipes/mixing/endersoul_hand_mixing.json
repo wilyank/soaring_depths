@@ -1,0 +1,21 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+      {
+        "item": "forbidden_arcanus:arcane_dragon_egg"
+      },
+      {
+        "item": "mutantbeasts:endersoul_hand"
+      }
+    ],
+    "results": [
+      {
+        "fluid": "contenttweaker:enderman_essence",
+        "amount": 1000
+      },
+      {
+          "item": "forbidden_arcanus:arcane_dragon_egg"
+      }
+    ],
+    "heatRequirement": "superheated"
+  }
