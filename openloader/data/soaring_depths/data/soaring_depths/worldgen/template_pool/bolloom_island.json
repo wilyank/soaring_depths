@@ -1,5 +1,5 @@
 {
-  "name": "soaring_depths:create_shack",
+  "name": "soaring_depths:bolloom_island",
   "fallback": "minecraft:empty",
   "elements": [
     {
@@ -7,7 +7,7 @@
       "element": {
         "element_type": "minecraft:single_pool_element",
         "projection": "rigid",
-        "location": "soaring_depths:create_shack",
+        "location": "soaring_depths:bolloom_island",
         "processors": {
           "processors": [
             {

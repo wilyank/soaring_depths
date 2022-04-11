@@ -1,6 +1,6 @@
 {
     "template": {
-        "type": "single",
+        "type": "pool",
         "id": "soaring_depths:bolloom_island"
     },
 
