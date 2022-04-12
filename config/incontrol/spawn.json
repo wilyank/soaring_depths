@@ -82,5 +82,33 @@
             "perplayer": true
         },
         "result": "allow"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "kobolds:kobold_pirate",
+        "structure": "worldshape:soaring_depths/kobold_ship",
+        "block": [
+            "create:brass_casing",
+            "minecraft:spruce_wood",
+            "minecraft:barrel",
+            "minecraft:spruce_stairs",
+            "minecraft:spruce_planks"
+        ],
+        "helditem": [
+            "minecraft:crossbow",
+            "kobolds:kobold_iron_axe",
+            "kobolds:kobold_iron_sword",
+            "minecraft:trident"
+        ],
+        "armorhelmet": [
+            "minecraft:iron_helmet",
+            "minecraft:chainmail_helmet"
+        ],
+        "result": "allow"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": "kobolds:kobold_pirate",
+        "result": "deny"
     }
 ]
