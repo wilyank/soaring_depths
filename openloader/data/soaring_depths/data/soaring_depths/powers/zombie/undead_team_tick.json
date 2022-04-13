@@ -6,17 +6,12 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "team join undead @e[type=minecraft:zombie]",
+                "command": "team join Undead @e[type=minecraft:zombie]",
                 "permission_level": 4
             },
             {
                 "type": "origins:execute_command",
-                "command": "team join undead @e[type=minecraft:skeleton]",
-                "permission_level": 4
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "team join undead @s",
+                "command": "team join Undead @e[type=minecraft:skeleton]",
                 "permission_level": 4
             }
         ]

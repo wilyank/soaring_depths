@@ -1,0 +1,41 @@
+{
+    "type": "origins:multiple",
+    "light_slowdown": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:brightness",
+            "comparison": ">",
+            "compare_to": 0.6
+        }
+    },
+    "darkness_strength": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": true,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:brightness",
+            "comparison": "<",
+            "compare_to": 0.1
+        }
+    },
+    "name": "Light-afflicted",
+    "description": "Your knees are weak in the light, your arms are strong in the dark."
+}

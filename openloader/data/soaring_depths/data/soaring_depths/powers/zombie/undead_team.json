@@ -5,7 +5,22 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "team add undead",
+                "command": "team add Undead",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team modify Undead friendlyFire false",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team leave @p",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join Undead @p",
                 "permission_level": 4
             }
         ]

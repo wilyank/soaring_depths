@@ -1,1 +1,9 @@
-{}
+{
+    "type": "origins:model_color",
+    "red": 0.5,
+    "green": 1.0,
+    "blue": 0.5,
+    "alpha": 1.0,
+    "name": "A Sickly Green",
+    "description": "You are a pale green color, what with being dead and all."
+}
