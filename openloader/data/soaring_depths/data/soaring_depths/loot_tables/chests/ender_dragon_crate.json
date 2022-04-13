@@ -56,10 +56,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "rubber_duck:rubber_duck_item"
-        },
-        {
-          "type": "minecraft:item",
           "name": "forbidden_arcanus:dragon_scale",
           "functions": [
             {

@@ -42,10 +42,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "rubber_duck:rubber_duck_item"
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
           "functions": [
             {

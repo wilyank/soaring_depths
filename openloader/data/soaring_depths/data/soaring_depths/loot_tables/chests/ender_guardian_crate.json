@@ -122,10 +122,6 @@
           },
           {
             "type": "minecraft:item",
-            "name": "rubber_duck:rubber_duck_item"
-          },
-          {
-            "type": "minecraft:item",
             "name": "minecraft:crying_obsidian",
             "functions": [
               {
