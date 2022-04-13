@@ -1,0 +1,15 @@
+{
+	"powers": [
+        "soaring_depths:kobold/size",
+        "soaring_depths:kobold/speed",
+        "soaring_depths:kobold/tools",
+        "soaring_depths:kobold/night_vision",
+        "soaring_depths:kobold/health",
+        "soaring_depths:villager_scare"
+	],
+	"icon": "kobolds:kobold_iron_pickaxe",
+	"order": 1,
+	"impact": 1,
+	"name": "Kobold",
+	"description": "Nasty little bugger. Small, fast, and nasally humming."
+}

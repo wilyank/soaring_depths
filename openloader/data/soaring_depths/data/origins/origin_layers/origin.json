@@ -1,0 +1,10 @@
+{
+    "replace": true,
+    "origins": [
+        "soaring_depths:kobold",
+        "soaring_depths:piglin",
+        "soaring_depths:enderman",
+        "soaring_depths:zombie"
+    ]
+  }
+  

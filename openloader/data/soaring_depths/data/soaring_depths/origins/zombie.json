@@ -1,0 +1,14 @@
+{
+	"powers": [
+        "soaring_depths:zombie/undead",
+        "soaring_depths:zombie/sunburn",
+        "soaring_depths:zombie/detect_living",
+        "soaring_depths:zombie/undead_team",
+        "soaring_depths:zombie/undead_team_tick"
+	],
+	"icon": "minecraft:rotten_flesh",
+	"order": 1,
+	"impact": 1,
+	"name": "Zombie",
+	"description": "A walking corpse"
+}

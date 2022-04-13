@@ -1,0 +1,76 @@
+{
+	"type": "origins:action_on_callback",
+	"name": "Kobold Sized",
+	"description": "You are only 1.4 meters tall.",
+	"entity_action_chosen": {
+		"type": "origins:and",
+		"actions": [
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:height 0.78"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:width 0.7"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:view_bobbing 0.78"
+		},
+		{
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:projectiles 0.78"
+		}
+		]
+	},
+	"entity_action_added": {
+		"type": "origins:and",
+		"actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:view_bobbing 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:projectiles 0.78"
+            }
+		]
+	},
+	"entity_action_lost": {
+		"type": "origins:execute_command",
+		"command": "scale reset"
+	},
+	"entity_action_removed": {
+		"type": "origins:execute_command",
+		"command": "scale reset"
+	},
+	"entity_action_respawned": {
+		"type": "origins:and",
+		"actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:height 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:width 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:view_bobbing 0.78"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scale set pehkui:projectiles 0.78"
+            }
+		]
+	}
+}

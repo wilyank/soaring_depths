@@ -1,0 +1,10 @@
+{
+    "type": "origins:burn",
+    "interval": 20,
+    "burn_duration": 1,
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "name": "Sunburn",
+    "description": "The sun is a deadly laser"
+}

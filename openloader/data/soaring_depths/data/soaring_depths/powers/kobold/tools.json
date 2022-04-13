@@ -1,0 +1,119 @@
+{
+	"type": "origins:multiple",
+	"name": "Adapted Tools",
+	"description": "Tools of your own kind are more effective in your hands. Kobold iron axes and swords deal 2 more damage, and Kobold iron tools mine a lot faster.",
+	"sword_damage": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "kobolds:kobold_iron_sword"
+				}
+			}
+		}
+	},
+    "axe_damage": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"attribute": "minecraft:generic.attack_damage",
+			"operation": "addition",
+			"value": 2
+		},
+		"condition": {
+			"type": "origins:equipped_item",
+			"equipment_slot": "mainhand",
+			"item_condition": {
+				"type": "origins:ingredient",
+				"ingredient": {
+					"item": "kobolds:kobold_iron_axe"
+				}
+			}
+		}
+	},
+    "axe_mining_speed": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 10
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "kobolds:kobold_iron_axe"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:material",
+                    "material": "wood"
+                }
+            ]
+		}
+	},
+    "pickaxe_mining_speed": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 10
+        },
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "kobolds:kobold_iron_pickaxe"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:material",
+                    "material": "rock"
+                }
+            ]
+        }
+	},
+    "shovel_mining_speed": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 10
+        },
+		"condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "kobolds:kobold_iron_shovel"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:material",
+                    "material": "earth"
+                }
+            ]
+        }
+	}
+}

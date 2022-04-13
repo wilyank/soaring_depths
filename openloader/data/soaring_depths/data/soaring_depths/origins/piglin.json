@@ -1,0 +1,9 @@
+{
+	"powers": [
+	],
+	"icon": "minecraft:gold_nugget",
+	"order": 1,
+	"impact": 1,
+	"name": "Piglin",
+	"description": "Piggy"
+}

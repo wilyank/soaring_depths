@@ -1,0 +1,38 @@
+{   
+    "name": "Hear Heartbeats",
+    "description": "You are able to hear the heartbeats of living creatures in the dark.",
+    "type": "origins:entity_glow",
+    "bientity_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:distance",
+                "comparison": "<=",
+                "compare_to": 16
+            },
+            {
+                "type": "origins:either",
+                "condition": {
+                    "type": "origins:and",
+                    "conditions": [
+                        {
+                            "type": "origins:brightness",
+                            "comparison": "<=",
+                            "compare_to": 0.2
+                        },
+                        {
+                            "type": "origins:entity_group",
+                            "group": "undead",
+                            "invert": true
+                        }
+                    ]
+
+                }
+            }
+        ]
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 0.0,
+    "blue": 0.0
+}

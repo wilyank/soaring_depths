@@ -1,0 +1,14 @@
+{
+    "type": "origins:multiple",
+    "name": "Bugger Off",
+    "description": "When getting away from a trade deal, a Kobold can outrun anything. You are 10% speedier.",
+    "speed": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_base",
+            "value": 0.1
+        }
+    }
+  }
+  
