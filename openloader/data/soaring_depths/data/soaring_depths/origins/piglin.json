@@ -1,7 +1,10 @@
 {
 	"powers": [
+		"soaring_depths:piglin/armor",
+		"soaring_depths:piglin/food",
+		"soaring_depths:piglin/weak_in_overworld"
 	],
-	"icon": "minecraft:gold_nugget",
+	"icon": "minecraft:golden_sword",
 	"order": 1,
 	"impact": 1,
 	"name": "Piglin",

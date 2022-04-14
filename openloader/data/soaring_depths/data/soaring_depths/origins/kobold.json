@@ -3,9 +3,10 @@
         "soaring_depths:kobold/size",
         "soaring_depths:kobold/speed",
         "soaring_depths:kobold/tools",
-        "soaring_depths:kobold/night_vision",
+        "soaring_depths:night_vision",
         "soaring_depths:kobold/health",
-        "soaring_depths:villager_scare"
+        "soaring_depths:kobold/expensive_trades",
+		"soaring_depths:kobold/reset_villager_reputation"
 	],
 	"icon": "kobolds:kobold_iron_pickaxe",
 	"order": 1,

@@ -1,6 +1,6 @@
 {
     "type": "origins:entity_group",
     "group": "undead",
-    "name": "undead",
+    "name": "Undead",
     "description": "You are undead, meaning you take more damage from items enchanted with Smite. Regeneration and poison have no effect on you."
 }

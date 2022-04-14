@@ -1,0 +1,24 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "data modify storage offworld vill set value {Type: \"major_positive\", Value: 500}",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "data modify storage offworld vill.Target set from entity @s UUID",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "execute as @e[type=minecraft:villager] run data modify entity @s Gossips append from storage minecraft:offworld vill",
+                "permission_level": 4
+            }
+        ]
+    },
+    "hidden": true
+}

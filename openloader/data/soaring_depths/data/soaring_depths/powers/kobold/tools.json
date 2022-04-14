@@ -44,21 +44,24 @@
             "operation": "multiply_base",
             "value": 10
         },
-        "conditions": [
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "item": "kobolds:kobold_iron_axe"
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "kobolds:kobold_iron_axe"
+                        }
                     }
+                },
+                {
+                    "type": "origins:using_effective_tool"
                 }
-            },
-            {
-                "type": "origins:using_effective_tool"
-            }
-        ]
+            ]
+		}
 	},
     "pickaxe_mining_speed": {
         "type": "origins:modify_break_speed",
@@ -66,21 +69,24 @@
             "operation": "multiply_base",
             "value": 10
         },
-        "conditions": [
-            {
-                "type": "origins:equipped_item",
-                "equipment_slot": "mainhand",
-                "item_condition": {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "item": "kobolds:kobold_iron_pickaxe"
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "kobolds:kobold_iron_pickaxe"
+                        }
                     }
+                },
+                {
+                    "type": "origins:using_effective_tool"
                 }
-            },
-            {
-                "type": "origins:using_effective_tool"
-            }
-        ]
+            ]
+		}
 	},
     "shovel_mining_speed": {
         "type": "origins:modify_break_speed",
