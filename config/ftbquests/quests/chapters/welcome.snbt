@@ -1,0 +1,20 @@
+{
+	id: "7E592F229664FC79"
+	group: "4C3A2A3D8FDBADEB"
+	order_index: 0
+	filename: "welcome"
+	title: "Welcome"
+	icon: "minecraft:oak_log"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: -3.0d
+		y: -2.0d
+		id: "1D338113DDEE34F7"
+		tasks: [{
+			id: "72BBA196356F6992"
+			type: "checkmark"
+			title: "Left Behind"
+		}]
+	}]
+}

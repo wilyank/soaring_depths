@@ -7,13 +7,7 @@
 #
 # This config creates an OTG overworld using OTG's "Default" preset, and adds a dimension using the "VanillaVistas" preset.
 ---
-ModpackName: "Soaring Depths"
 Overworld:
-  PresetFolderName: "SkylandsLitePlus"
+  PresetFolderName: "Default"
 Dimensions:
-- PresetFolderName: "Default"
-  Seed: -1
-  PortalColor: "gold"
-  PortalMob: "mutantbeasts:spider_pig"
-  PortalIgnitionSource: "cataclysm:gauntlet_of_guard"
-  PortalBlocks: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+- PresetFolderName: "VanillaVistas"

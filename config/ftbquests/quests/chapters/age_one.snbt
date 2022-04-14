@@ -1,7 +1,7 @@
 {
 	id: "2D03918CC01E5D08"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 0
+	order_index: 1
 	filename: "age_one"
 	title: "Age One"
 	icon: "eidolon:unholy_symbol"
@@ -185,6 +185,7 @@
 		{
 			x: 6.5d
 			y: -2.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "52CD767C02F6697C"
 			tasks: [{
 				id: "2EBF9EE0C7BC63CA"
@@ -259,6 +260,7 @@
 		{
 			x: 1.5d
 			y: -0.5d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "4FB86EAD82894738"
 			tasks: [{
 				id: "0536668FA20619F2"
@@ -281,6 +283,7 @@
 		{
 			x: 1.5d
 			y: -1.5d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "6451AAD01A45D313"
 			tasks: [{
 				id: "3DB0DC20DE9B2CB3"
@@ -443,6 +446,7 @@
 			title: "Materials for Engineering"
 			x: 6.0d
 			y: -8.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "55C11A0A68933F94"
 			tasks: [
 				{
@@ -473,6 +477,7 @@
 		{
 			x: 4.5d
 			y: -6.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "1AED23221D441256"
 			tasks: [{
 				id: "779CC6187C42349D"
@@ -496,6 +501,7 @@
 		{
 			x: 8.0d
 			y: -6.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "3D9753D002880F8F"
 			tasks: [{
 				id: "433C529A206BE214"
@@ -538,6 +544,7 @@
 		{
 			x: 3.5d
 			y: -5.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "6E55962772B1E752"
 			tasks: [{
 				id: "60020B23A48D9B3C"
@@ -577,6 +584,7 @@
 		{
 			x: 1.5d
 			y: -3.0d
+			dependencies: ["1D338113DDEE34F7"]
 			id: "421E5A0F9EAE82FB"
 			tasks: [{
 				id: "1766215DF98D3975"
@@ -622,6 +630,7 @@
 			x: 9.0d
 			y: 1.0d
 			subtitle: "Some mining required"
+			dependencies: ["1D338113DDEE34F7"]
 			id: "3354660EF57F1DAA"
 			tasks: [{
 				id: "6A8043EF504786C6"
@@ -641,6 +650,7 @@
 				"Having void instead of oceans means that underwater plants are slightly hard to come by."
 				"Fortunately, the Kobolds seem to have cracked the mystery. Perhaps they are willing to trade? Rumors are, Wandering Traders have contacts as well."
 			]
+			dependencies: ["1D338113DDEE34F7"]
 			id: "7452B72E7137F70D"
 			tasks: [{
 				id: "779C4076EAC545C8"

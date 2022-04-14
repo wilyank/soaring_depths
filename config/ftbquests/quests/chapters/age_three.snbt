@@ -1,7 +1,7 @@
 {
 	id: "6F3A280EDEE038D9"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 2
+	order_index: 3
 	filename: "age_three"
 	title: "Age Three"
 	icon: "cataclysm:void_core"
@@ -1102,21 +1102,6 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 10.0d
-			description: [
-				"Now that you defeated the last boss, your adventure can finally start!"
-				"How will *you* improve this shattered world?"
-			]
-			dependencies: ["258EF6B0DE7F5C52"]
-			id: "704C73009699C606"
-			tasks: [{
-				id: "12D533086C2C2D68"
-				type: "checkmark"
-				title: "Are ya ready kids?"
-			}]
-		}
-		{
 			title: "I Fear No Flames No More"
 			x: 11.5d
 			y: 5.0d
@@ -1212,6 +1197,31 @@
 					}
 				}
 			}]
+		}
+		{
+			title: "Brave New World"
+			x: 3.5d
+			y: 10.0d
+			dependencies: ["258EF6B0DE7F5C52"]
+			id: "47E2DAF271B8D331"
+			tasks: [
+				{
+					id: "542A041371D7D4B4"
+					type: "item"
+					item: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+					count: 10L
+				}
+				{
+					id: "2B10684CE49CA98C"
+					type: "item"
+					item: "cataclysm:gauntlet_of_guard"
+				}
+				{
+					id: "5256956217668F97"
+					type: "dimension"
+					dimension: "otg:default"
+				}
+			]
 		}
 	]
 }
