@@ -688,3 +688,19 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_boots>);
     true, 
     true
 );
+
+<recipetype:create:mixing>.addRecipe("origin_orb_mixing",
+    "none",
+    <item:origins:orb_of_origin>,
+    [
+        <item:alexsmobs:soul_heart>,
+        <item:minecraft:rotten_flesh>,
+        <item:minecraft:porkchop>,
+        <item:kobolds:kobold_block_skull>,
+        <item:minecraft:ender_pearl>,
+        <item:forbidden_arcanus:eternal_stella>
+    ],
+    [
+        <fluid:contenttweaker:mob_essence>*1000
+    ]
+);

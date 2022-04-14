@@ -1,7 +1,7 @@
 {
     "type": "betterendforge:infusion",
     "input": {
-        "item": "betterendforge:ignitium_boots"
+        "item": "cataclysm:ignitium_boots"
     },
     "output": {
         "id": "forbidden_arcanus:draco_arcanus_boots",

@@ -1,7 +1,7 @@
 {
 	id: "2D03918CC01E5D08"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 4
+	order_index: 0
 	filename: "age_one"
 	title: "Age One"
 	icon: "eidolon:unholy_symbol"
@@ -41,10 +41,15 @@
 					count: 4L
 				}
 			]
+			rewards: [{
+				id: "5C7BE4BA3007414B"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
-			x: 5.5d
-			y: -5.0d
+			x: 6.0d
+			y: -6.0d
 			dependencies: ["384DD3C2DF460AC4"]
 			id: "60FFE55AD53CFE9E"
 			tasks: [
@@ -59,6 +64,18 @@
 					item: "create:basin"
 				}
 			]
+			rewards: [
+				{
+					id: "088D29FBF97DFDD7"
+					type: "item"
+					item: "create:gearbox"
+				}
+				{
+					id: "55F9EF1A3F06FD85"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 5.0d
@@ -69,6 +86,11 @@
 				id: "3E219A6787D714C2"
 				type: "item"
 				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+			rewards: [{
+				id: "32263618FB746F82"
+				type: "xp_levels"
+				xp_levels: 1
 			}]
 		}
 		{
@@ -84,6 +106,11 @@
 				type: "item"
 				item: "tconstruct:molten_obsidian_bucket"
 			}]
+			rewards: [{
+				id: "0799843DB5D6C8B4"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 8.0d
@@ -95,6 +122,18 @@
 				type: "item"
 				item: "tconstruct:smeltery_controller"
 			}]
+			rewards: [
+				{
+					id: "22CEA5F4EC6D753F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "4A99A3F03F9AF285"
+					type: "item"
+					item: "tconstruct:rod_cast"
+				}
+			]
 		}
 		{
 			x: 6.5d
@@ -104,6 +143,11 @@
 				id: "2EBF9EE0C7BC63CA"
 				type: "item"
 				item: "minecraft:lava_bucket"
+			}]
+			rewards: [{
+				id: "256321C0F5032DD4"
+				type: "xp_levels"
+				xp_levels: 1
 			}]
 		}
 		{
@@ -119,6 +163,24 @@
 				type: "item"
 				item: "astralsorcery:well"
 			}]
+			rewards: [
+				{
+					id: "6925F03B4CEF379F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "6C58DE6A83A8341C"
+					type: "item"
+					item: {
+						id: "astralsorcery:rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 3.0d
@@ -141,6 +203,11 @@
 					item: "astralsorcery:wand"
 				}
 			]
+			rewards: [{
+				id: "59EBA65FD438CD85"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 1.5d
@@ -151,11 +218,18 @@
 				type: "item"
 				item: "astralsorcery:aquamarine"
 			}]
-			rewards: [{
-				id: "788A1ED47997412E"
-				type: "item"
-				item: "astralsorcery:tome"
-			}]
+			rewards: [
+				{
+					id: "788A1ED47997412E"
+					type: "item"
+					item: "astralsorcery:tome"
+				}
+				{
+					id: "50367233C66458AF"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 1.5d
@@ -167,17 +241,42 @@
 				title: "Find an Ancient Shrine"
 				structure: "worldshape:soaring_depths/ancient_shrine"
 			}]
+			rewards: [{
+				id: "2634CC9855653A5F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
-			x: 5.5d
-			y: -6.0d
+			x: 6.0d
+			y: -7.0d
 			dependencies: ["55C11A0A68933F94"]
 			id: "384DD3C2DF460AC4"
-			tasks: [{
-				id: "589E1EEF9F843B59"
-				type: "item"
-				item: "create:water_wheel"
-			}]
+			tasks: [
+				{
+					id: "589E1EEF9F843B59"
+					type: "item"
+					item: "create:water_wheel"
+				}
+				{
+					id: "5A2BFD23C913FD52"
+					type: "item"
+					item: "minecraft:stonecutter"
+				}
+			]
+			rewards: [
+				{
+					id: "21FDF6DCF534D50F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "382D426A1E1234D7"
+					type: "item"
+					item: "create:andesite_cobblestone"
+					count: 16
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -193,6 +292,11 @@
 				type: "item"
 				item: "astralsorcery:rock_crystal_ore"
 			}]
+			rewards: [{
+				id: "668433C1B1DFF77F"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 4.5d
@@ -206,17 +310,24 @@
 				item: "eidolon:unholy_symbol"
 				consume_items: true
 			}]
-			rewards: [{
-				id: "4725BC9798121ADF"
-				type: "item"
-				item: {
-					id: "eidolon:unholy_symbol"
-					Count: 1b
-					tag: {
-						Unbreakable: 1b
+			rewards: [
+				{
+					id: "4725BC9798121ADF"
+					type: "item"
+					item: {
+						id: "eidolon:unholy_symbol"
+						Count: 1b
+						tag: {
+							Unbreakable: 1b
+						}
 					}
 				}
-			}]
+				{
+					id: "1A77841F6A9FCA76"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -241,6 +352,18 @@
 					item: "eidolon:goblet"
 				}
 			]
+			rewards: [
+				{
+					id: "7BDF19ABA3D79502"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3C7131FA97379133"
+					type: "item"
+					item: "eidolon:pewter_inlay"
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -249,27 +372,30 @@
 				"Place over a fire or lava to cook a broth."
 				"The Crucible can get tedious to use. You can upgrade to a heated Mixer later on."
 			]
-			dependencies: [
-				"1AED23221D441256"
-				"60FFE55AD53CFE9E"
-				"7395E395EA3029C9"
-			]
+			dependencies: ["7395E395EA3029C9"]
 			id: "15B8DE43B655B976"
 			tasks: [{
 				id: "32818450F1F51604"
 				type: "item"
 				item: "eidolon:crucible"
 			}]
-			rewards: [{
-				id: "0A98D097254F1970"
-				type: "item"
-				item: "eidolon:codex"
-			}]
+			rewards: [
+				{
+					id: "0A98D097254F1970"
+					type: "item"
+					item: "eidolon:codex"
+				}
+				{
+					id: "20607930914A00B7"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			title: "Materials for Engineering"
-			x: 5.5d
-			y: -7.0d
+			x: 6.0d
+			y: -8.0d
 			id: "55C11A0A68933F94"
 			tasks: [
 				{
@@ -283,6 +409,19 @@
 					item: "create:crushed_iron_ore"
 				}
 			]
+			rewards: [
+				{
+					id: "35CD91D3659C0BD3"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 3
+				}
+				{
+					id: "240983A148B79801"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 4.5d
@@ -293,16 +432,42 @@
 				type: "item"
 				item: "create:crushed_lead_ore"
 			}]
+			rewards: [
+				{
+					id: "14B2562B2990B800"
+					type: "item"
+					item: "eidolon:lead_ingot"
+					count: 3
+				}
+				{
+					id: "0691C2456D5FC7FF"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 8.0d
-			y: -5.0d
+			y: -6.0d
 			id: "3D9753D002880F8F"
 			tasks: [{
 				id: "433C529A206BE214"
 				type: "item"
 				item: "tconstruct:seared_melter"
 			}]
+			rewards: [
+				{
+					id: "0583215F77F363B3"
+					type: "item"
+					item: "tconstruct:grout"
+					count: 8
+				}
+				{
+					id: "46D6CB64FE9E43FA"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 3.5d
@@ -317,6 +482,11 @@
 				type: "item"
 				item: "create:spout"
 			}]
+			rewards: [{
+				id: "3B770678CA936458"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 3.5d
@@ -327,6 +497,19 @@
 				type: "item"
 				item: "create:crushed_copper_ore"
 			}]
+			rewards: [
+				{
+					id: "009F439814D70B8A"
+					type: "item"
+					item: "create:copper_ingot"
+					count: 3
+				}
+				{
+					id: "4818E4D0518C79A5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
 			x: 2.5d
@@ -338,6 +521,11 @@
 				type: "item"
 				item: "forbidden_arcanus:purifying_soap"
 			}]
+			rewards: [{
+				id: "504CE66AEB015A95"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 1.5d
@@ -348,17 +536,39 @@
 				type: "item"
 				item: "forbidden_arcanus:arcane_crystal"
 			}]
+			rewards: [
+				{
+					id: "60643B688ED1DE40"
+					type: "item"
+					item: "forbidden_arcanus:arcane_crystal_dust"
+					count: 3
+				}
+				{
+					id: "3E77013384A4C2AA"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 		{
-			x: 6.5d
-			y: -4.5d
+			x: 4.5d
+			y: -5.0d
 			description: ["Molten Pewter can be made by mixing Molten Lead with Molten Iron in a Mixer, or by alloying directly in the Smeltery."]
-			dependencies: ["3D9753D002880F8F"]
+			dependencies: [
+				"3D9753D002880F8F"
+				"1AED23221D441256"
+				"60FFE55AD53CFE9E"
+			]
 			id: "7395E395EA3029C9"
 			tasks: [{
 				id: "3366B0102565B270"
 				type: "item"
 				item: "eidolon:pewter_ingot"
+			}]
+			rewards: [{
+				id: "06AAD88C6C99846A"
+				type: "xp_levels"
+				xp_levels: 1
 			}]
 		}
 		{
@@ -370,6 +580,11 @@
 				id: "6A8043EF504786C6"
 				type: "item"
 				item: "forbidden_arcanus:rune"
+			}]
+			rewards: [{
+				id: "39483D86888B8907"
+				type: "xp_levels"
+				xp_levels: 1
 			}]
 		}
 		{
@@ -385,11 +600,18 @@
 				type: "item"
 				item: "minecraft:kelp"
 			}]
-			rewards: [{
-				id: "668568EC765DF3C3"
-				type: "item"
-				item: "minecraft:emerald_ore"
-			}]
+			rewards: [
+				{
+					id: "668568EC765DF3C3"
+					type: "item"
+					item: "minecraft:emerald_ore"
+				}
+				{
+					id: "37C27B88241DF461"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 		}
 	]
 }

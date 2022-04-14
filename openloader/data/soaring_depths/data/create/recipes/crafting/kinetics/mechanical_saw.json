@@ -4,7 +4,7 @@
     "item": "create:gearbox"
   },
   "addition": {
-    "item": "minecraft:iron_trapdoor"
+    "item": "minecraft:stonecutter"
   },
   "result": {
     "item": "create:mechanical_saw"

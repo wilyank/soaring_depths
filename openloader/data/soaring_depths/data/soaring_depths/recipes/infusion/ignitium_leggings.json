@@ -1,7 +1,7 @@
 {
     "type": "betterendforge:infusion",
     "input": {
-        "item": "betterendforge:ignitium_leggings"
+        "item": "cataclysm:ignitium_leggings"
     },
     "output": {
         "id": "forbidden_arcanus:draco_arcanus_leggings",

@@ -1294,23 +1294,6 @@
 			]
 		}
 		{
-			x: -20.0d
-			y: -14.0d
-			id: "54D3BFD7DA5D3294"
-			tasks: [
-				{
-					id: "1B4DAF2F480746FB"
-					type: "item"
-					item: "rubber_duck:rubber_duck_item"
-				}
-				{
-					id: "1AA95C1847D649BC"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
 			x: -24.5d
 			y: -5.0d
 			id: "650D0B62FBDEBF26"

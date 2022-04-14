@@ -1,17 +1,16 @@
 {
 	id: "4761B474D5DB78E1"
-	group: "4C3A2A3D8FDBADEB"
-	order_index: 3
+	group: "7AA6A42EAAA7D2D9"
+	order_index: 2
 	filename: "exploration"
-	title: "Exploration"
+	title: "Useful Tidbits"
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Economist"
-			x: -3.0d
-			y: -3.5d
-			dependencies: ["2A6453F8ACAD32BF"]
+			x: -2.5d
+			y: -4.0d
 			id: "7D5DEFCC6F4B1948"
 			tasks: [
 				{
@@ -58,9 +57,9 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -3.5d
-			dependencies: ["2A6453F8ACAD32BF"]
+			x: 5.5d
+			y: -4.0d
+			dependencies: ["64861ECB79735EBE"]
 			id: "43ACA0B2EFCFB9A6"
 			tasks: [{
 				id: "2E28A65B3F84B320"
@@ -88,9 +87,8 @@
 		}
 		{
 			title: "Just trying to help"
-			x: -1.0d
-			y: -3.5d
-			dependencies: ["2A6453F8ACAD32BF"]
+			x: -4.5d
+			y: -4.0d
 			id: "7EFCAE2177E91260"
 			tasks: [{
 				id: "09A446EED25C477D"
@@ -104,26 +102,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -0.5d
-			dependencies: ["2A6453F8ACAD32BF"]
-			id: "33450A19619CD1CB"
-			tasks: [{
-				id: "0DF185632027C578"
-				type: "item"
-				item: "minecraft:conduit"
-			}]
-			rewards: [{
-				id: "198DBB37374DCE55"
-				type: "item"
-				item: "minecraft:sea_lantern"
-				count: 16
-			}]
-		}
-		{
-			x: -1.0d
-			y: -0.5d
-			dependencies: ["2A6453F8ACAD32BF"]
+			x: 3.5d
+			y: -4.0d
+			dependencies: ["212D08A365DF0C5B"]
 			id: "11BE7DD0E0ED7C32"
 			tasks: [{
 				id: "5CECF22551032B72"
@@ -149,159 +130,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -0.5d
-			dependencies: ["2A6453F8ACAD32BF"]
-			id: "3EB91DD38C059277"
-			tasks: [{
-				id: "3A7B187492911158"
-				type: "item"
-				item: {
-					id: "minecraft:trident"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "150B3CE4518BC797"
-				type: "item"
-				item: "minecraft:prismarine_crystals"
-				count: 16
-			}]
-		}
-		{
-			title: "Production of Personnel"
-			x: -3.0d
-			y: -0.5d
-			dependencies: ["2A6453F8ACAD32BF"]
-			id: "2FED68C632DAE63C"
-			tasks: [{
-				id: "065295CD2CC70504"
-				type: "advancement"
-				advancement: "kobolds:kobold_apple_advancement"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "274F6F9279B1DB6F"
-				type: "item"
-				item: "minecraft:emerald"
-				count: 8
-			}]
-		}
-		{
-			x: -1.0d
-			y: 0.5d
-			dependencies: ["11BE7DD0E0ED7C32"]
-			id: "7E6A0FD32FAA0253"
-			tasks: [{
-				id: "330EB1C38D7BBBAB"
-				type: "item"
-				item: {
-					id: "portable_beacons:bonk_stick"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "4E24064DA6725918"
-				type: "item"
-				item: "minecraft:wet_sponge"
-			}]
-		}
-		{
-			title: "Visit the Overworld"
-			icon: "minecraft:grass_block"
-			disable_toast: true
-			x: -1.5d
-			y: -2.0d
-			shape: "hexagon"
-			size: 1.5d
-			id: "2A6453F8ACAD32BF"
-			tasks: [{
-				id: "31FE8C0FA262B729"
-				type: "dimension"
-				dimension: "minecraft:overworld"
-			}]
-		}
-		{
-			title: "A Terrible Fortress"
-			x: 3.5d
-			y: -3.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "69D1AE70AEE6A509"
-			tasks: [{
-				id: "1E2655FDBE60B0D1"
-				type: "structure"
-				structure: "minecraft:fortress"
-			}]
-		}
-		{
-			title: "Foregone Glory"
-			x: 4.5d
-			y: -3.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "43BE2FC96EE14FCF"
-			tasks: [{
-				id: "48F4908427372155"
-				type: "structure"
-				structure: "minecraft:bastion_remnant"
-			}]
-		}
-		{
-			title: "A Fiery Altar"
-			x: 3.5d
-			y: -4.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "0A8B2AE8D8E56147"
-			tasks: [{
-				id: "10039637971CC508"
-				type: "structure"
-				structure: "infernalexp:strider_altar"
-			}]
-		}
-		{
-			title: "Blackstone Outcrop"
-			x: 4.5d
-			y: -4.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "509833292CEA3E57"
-			tasks: [{
-				id: "7864BFED50BA5A25"
-				type: "structure"
-				structure: "infernalexp:bastion_outpost"
-			}]
-		}
-		{
-			title: "Glowing Ruins"
-			x: 3.5d
-			y: -5.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "28A7D452E5AF7A5B"
-			tasks: [{
-				id: "1F1E14C0FB7D7B1A"
-				type: "structure"
-				structure: "infernalexp:glowstone_canyon_ruin"
-			}]
-		}
-		{
-			title: "Soulless Space"
-			x: 4.5d
-			y: -5.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "3E0D61F2209E2F8C"
-			tasks: [{
-				id: "3CB579CE6EE085C4"
-				type: "structure"
-				structure: "infernalexp:soul_sand_valley_ruin"
-			}]
-		}
-		{
-			x: 3.5d
-			y: -0.5d
+			x: 0.5d
+			y: -1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "6A9B3D23D3F008B9"
 			tasks: [{
@@ -322,8 +152,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: 0.5d
+			x: -0.5d
+			y: -1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "624181FF7C850F5C"
 			tasks: [{
@@ -331,10 +161,15 @@
 				type: "item"
 				item: "netherite_plus:netherite_beacon"
 			}]
+			rewards: [{
+				id: "57457B013EF52234"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
 		}
 		{
-			x: 3.5d
-			y: 1.5d
+			x: -1.5d
+			y: -1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "7E8248CC2A1C5988"
 			tasks: [{
@@ -349,9 +184,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 0.5d
-			dependencies: ["00E4D5A2C3F9A861"]
+			x: -2.0d
+			y: -2.5d
 			id: "4FEFA50D4182C0BB"
 			tasks: [{
 				id: "4F0777D56B321091"
@@ -365,8 +199,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 1.5d
+			x: -3.5d
+			y: -1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "136C3A4F41B1D166"
 			tasks: [{
@@ -383,8 +217,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 0.5d
+			x: -2.5d
+			y: -1.5d
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "43D0ED3A0CA129B1"
 			tasks: [{
@@ -405,8 +239,8 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: -0.5d
+			x: -4.5d
+			y: -1.5d
 			subtitle: "Gone Lavafishin'"
 			dependencies: ["4FEFA50D4182C0BB"]
 			id: "78C170840CFCACE9"
@@ -428,294 +262,9 @@
 			}]
 		}
 		{
-			title: "Prepare for DEATH"
-			icon: {
-				id: "cataclysm:infernal_forge"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: 2.0d
-			y: -3.5d
-			dependencies: ["00E4D5A2C3F9A861"]
-			id: "264C220DE37F34BA"
-			tasks: [{
-				id: "4A784B619F6F06F2"
-				type: "structure"
-				structure: "cataclysm:soul_black_smith"
-			}]
-			rewards: [{
-				id: "00498643AC4C5CD0"
-				type: "item"
-				item: {
-					id: "minecraft:potion"
-					Count: 1b
-					tag: {
-						Potion: "minecraft:long_fire_resistance"
-					}
-				}
-			}]
-		}
-		{
-			icon: {
-				id: "cataclysm:monstrous_helm"
-				Count: 1b
-				tag: {
-					Damage: 0
-				}
-			}
-			x: 1.5d
-			y: -5.0d
-			dependencies: ["264C220DE37F34BA"]
-			id: "7B84CAF2F44CE4AB"
-			tasks: [{
-				id: "676EA4230AD242D2"
-				type: "kill"
-				title: "Through the Fire and the Flames"
-				entity: "cataclysm:netherite_monstrosity"
-				value: 1L
-			}]
-			rewards: [{
-				id: "1EC751D7E58CE231"
-				type: "item"
-				item: {
-					id: "netherite_plus:netherite_red_shulker_box"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							LootTable: "soaring_depths:chests/netherite_monstrosity_crate"
-						}
-						display: {
-							Name: "{\"text\":\"Netherite Monstrosity Crate\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false}"
-						}
-					}
-				}
-			}]
-		}
-		{
-			title: "Visit the Nether"
-			icon: "minecraft:crimson_nylium"
-			x: 2.5d
-			y: -2.0d
-			shape: "hexagon"
-			size: 1.5d
-			id: "00E4D5A2C3F9A861"
-			tasks: [{
-				id: "11A1D73875C1BAB8"
-				type: "dimension"
-				dimension: "minecraft:the_nether"
-			}]
-			rewards: [
-				{
-					id: "6E1B7554C9382BD2"
-					type: "item"
-					item: "minecraft:nether_gold_ore"
-					count: 4
-				}
-				{
-					id: "65356EF347972743"
-					type: "item"
-					item: "infernalexp:cooked_hogchop"
-					count: 8
-				}
-			]
-		}
-		{
-			title: "Visit the End"
-			icon: "betterendforge:chorus_nylium"
-			x: 7.0d
-			y: -2.0d
-			shape: "hexagon"
-			size: 1.5d
-			id: "6A1A37C3500EC4A9"
-			tasks: [{
-				id: "70BD40220EA30855"
-				type: "dimension"
-				dimension: "minecraft:the_end"
-			}]
-			rewards: [{
-				id: "71270E46FFE8DE3B"
-				type: "item"
-				item: "forbidden_arcanus:chorus_pearl"
-			}]
-		}
-		{
-			title: "Prepare for DEATH! pt. 2"
-			x: 8.0d
-			y: -0.5d
-			dependencies: ["6A1A37C3500EC4A9"]
-			id: "744670D1196E8521"
-			tasks: [{
-				id: "7FF92FCDB566E176"
-				type: "structure"
-				title: "Find a Ruined Citadel"
-				icon: "cataclysm:void_core"
-				structure: "cataclysm:ruined_citadel"
-			}]
-			rewards: [{
-				id: "49DFD7F2AABC143F"
-				type: "item"
-				item: "unactivatedtotems:unactivated_totem"
-			}]
-		}
-		{
-			x: 8.0d
-			y: -3.5d
-			dependencies: ["6A1A37C3500EC4A9"]
-			id: "506743E13D35F54F"
-			tasks: [{
-				id: "526D3786ECB43B2F"
-				type: "structure"
-				title: "Find an End City"
-				structure: "minecraft:endcity"
-			}]
-			rewards: [{
-				id: "35F30CF1D6A91FE5"
-				type: "item"
-				item: "tconstruct:ender_slime_grass_seeds"
-			}]
-		}
-		{
-			x: 8.0d
-			y: -5.0d
-			dependencies: ["506743E13D35F54F"]
-			id: "21C4BCE3A2D066D7"
-			tasks: [{
-				id: "6C9C28200F928426"
-				type: "item"
-				item: {
-					id: "minecraft:elytra"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-		}
-		{
-			title: "Upgraded Elytra"
-			x: 7.0d
-			y: -6.0d
-			dependencies: ["21C4BCE3A2D066D7"]
-			id: "0A7DD6E0579E6578"
-			tasks: [{
-				id: "7C347656BF062BCE"
-				type: "item"
-				title: "Any better Elytra"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "alexsmobs:tarantula_hawk_elytra"
-								Count: 1b
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								id: "netherite_plus:netherite_elytra"
-								Count: 1b
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								id: "tconstruct:slime_chestplate"
-								Count: 1b
-								tag: {
-									tic_multipliers: { }
-									tic_stats: {
-										"tconstruct:durability": 672.0f
-										"tconstruct:armor": 0.0f
-									}
-									tic_broken: 0b
-									HideFlags: 3
-									tic_modifiers: [{
-										name: "tconstruct:wings"
-										level: 1s
-									}]
-									Damage: 0
-									tic_volatile_data: {
-										"tconstruct:elyta": 1b
-									}
-									tic_persistent_data: {
-										abilities: 1
-										upgrades: 5
-									}
-								}
-							}
-						]
-					}
-				}
-			}]
-			rewards: [{
-				id: "7B9054732446D09D"
-				type: "item"
-				item: "minecraft:firework_rocket"
-			}]
-		}
-		{
-			x: 9.0d
-			y: 1.0d
-			dependencies: ["744670D1196E8521"]
-			id: "258EF6B0DE7F5C52"
-			tasks: [{
-				id: "2E5615FB1C6A187B"
-				type: "kill"
-				entity: "cataclysm:ender_guardian"
-				value: 1L
-			}]
-			rewards: [{
-				id: "32649759F86494D6"
-				type: "item"
-				item: {
-					id: "minecraft:purple_shulker_box"
-					Count: 1b
-					tag: {
-						BlockEntityTag: {
-							LootTable: "soaring_depths:chests/ender_guardian_crate"
-						}
-						display: {
-							Name: "{\"bold\":true,\"italic\":false,\"text\":\"Ender Guardian Crate\"}"
-						}
-					}
-				}
-			}]
-		}
-		{
-			title: "Kill a Mutant Shulker"
-			x: 9.5d
-			y: -4.5d
-			description: ["A Shulker can be mutated by splashing it with a potent magical substance"]
-			dependencies: ["506743E13D35F54F"]
-			id: "51899DD0864A2493"
-			tasks: [{
-				id: "473F1B3910E650CB"
-				type: "kill"
-				entity: "mutantmore:mutant_shulker"
-				value: 1L
-			}]
-			rewards: [
-				{
-					id: "2525766A8A2B00BA"
-					type: "item"
-					item: "netherite_plus:netherite_shulker_box"
-				}
-				{
-					id: "183A3B1E384B6684"
-					type: "item"
-					item: "mutantmore:compound_z"
-				}
-			]
-		}
-		{
 			title: "Easy Location"
-			x: 6.5d
-			y: -4.5d
-			dependencies: ["506743E13D35F54F"]
+			x: 5.0d
+			y: -1.5d
 			id: "68761DBC823B0E7A"
 			tasks: [{
 				id: "3344A33B29B108D0"
@@ -734,10 +283,9 @@
 		}
 		{
 			title: "Localized Flight Field Apparatus"
-			x: 9.0d
-			y: -6.0d
+			x: 6.0d
+			y: -1.5d
 			description: ["The Magic Feather grants creative flight when within range of an active Beacon"]
-			dependencies: ["21C4BCE3A2D066D7"]
 			id: "17CB36BB7D1A16A9"
 			tasks: [{
 				id: "40344C0434CCD5DA"
@@ -751,9 +299,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -2.5d
-			dependencies: ["2A6453F8ACAD32BF"]
+			x: 4.5d
+			y: -4.0d
 			id: "3864CE7C4C1729D9"
 			tasks: [{
 				id: "5341BCF63069B724"
@@ -786,10 +333,9 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.5d
+			x: -3.5d
+			y: -4.0d
 			subtitle: "A handy binder for your guides"
-			dependencies: ["2A6453F8ACAD32BF"]
 			id: "4294E9EE3F13CC85"
 			tasks: [{
 				id: "7E342E3F89E498A7"
@@ -800,6 +346,371 @@
 				id: "31739FA2EDCA4318"
 				type: "item"
 				item: "minecraft:lectern"
+			}]
+		}
+		{
+			title: "A Builder's Best Frenemy"
+			x: -1.5d
+			y: -4.0d
+			id: "33B06FD562AC30CC"
+			tasks: [
+				{
+					id: "538E44BC125ADF54"
+					type: "item"
+					item: {
+						id: "constructionwand:infinity_wand"
+						Count: 1b
+						tag: {
+							wand_options: { }
+						}
+					}
+				}
+				{
+					id: "5F3A2336374EE2C8"
+					type: "item"
+					item: "constructionwand:core_destruction"
+				}
+				{
+					id: "22D9FFCA46631E15"
+					type: "item"
+					item: "constructionwand:core_angel"
+				}
+			]
+			rewards: [{
+				id: "67554F63094C3141"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+		}
+		{
+			title: "Totems"
+			x: -0.5d
+			y: 0.0d
+			id: "52991EE4099F1253"
+			tasks: [{
+				id: "175BEB40CD021966"
+				type: "item"
+				title: "Any Totem"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "minecraft:totem_of_undying"
+								Count: 1b
+							}
+							{
+								id: "voidtotem:totem_of_void_undying"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -4.5d
+			y: 0.0d
+			description: ["Very useful for the less common ores"]
+			id: "01C22F7A5BC61690"
+			tasks: [
+				{
+					id: "276B79F4B9BB3812"
+					type: "item"
+					item: "astralsorcery:ritual_pedestal"
+				}
+				{
+					id: "35E86DAB66FA4474"
+					type: "item"
+					item: {
+						id: "astralsorcery:attuned_rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellationName: "astralsorcery:mineralis"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 0.0d
+			subtitle: "Unleash your Inner Superhero"
+			id: "4631BCE9BFF79BC6"
+			tasks: [{
+				id: "722596A854DF92F1"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -1.5d
+			id: "5734DDC351517B83"
+			tasks: [{
+				id: "502D79C7192AAC9E"
+				type: "item"
+				item: "portable_beacons:potion_necklace"
+			}]
+			rewards: [{
+				id: "43BD907AAC21E8B2"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			id: "38C9EB37C466B586"
+			tasks: [{
+				id: "14912F7640737754"
+				type: "item"
+				item: "portable_beacons:beacon_backpack_0"
+			}]
+			rewards: [
+				{
+					id: "714AC9B10996F5EC"
+					type: "item"
+					item: "minecraft:sea_lantern"
+					count: 16
+				}
+				{
+					id: "203511F5BC0A9CD1"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			id: "62A36E8F4314F68A"
+			tasks: [
+				{
+					id: "6AF7D1864E7EF12C"
+					type: "item"
+					item: "improvedbackpacks:sewing_table"
+				}
+				{
+					id: "48DC5BA802AC31C3"
+					type: "item"
+					item: "improvedbackpacks:sewing_spool"
+				}
+				{
+					id: "3A97261982D70F7A"
+					type: "item"
+					item: {
+						id: "minecraft:shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "04ED962B8BC20216"
+				type: "item"
+				item: "improvedbackpacks:tiny_pocket"
+			}]
+		}
+		{
+			title: "Smart Storage Drawers"
+			x: -2.5d
+			y: -5.0d
+			shape: "gear"
+			id: "608E8D992CD290B2"
+			tasks: [
+				{
+					id: "3A128698DD0F6D87"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "2260A2F45D31A178"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+				{
+					id: "0753F5B767B3AF9D"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+				}
+				{
+					id: "6C0DC6CB07BEB003"
+					type: "item"
+					title: "Any #storagedrawers:drawers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "storagedrawers:drawers"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5DD128D7247C8E94"
+				type: "item"
+				item: "metalbarrels:gold_barrel"
+			}]
+		}
+		{
+			title: "Toolmaking"
+			x: -4.5d
+			y: -5.0d
+			subtitle: "All a tool shop needs"
+			id: "103BBB9EE1DB0526"
+			tasks: [
+				{
+					id: "510804F3EAF020D6"
+					type: "item"
+					item: "tconstruct:crafting_station"
+				}
+				{
+					id: "3811694A7651E346"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+				{
+					id: "5082E28C3D0B6BA4"
+					type: "item"
+					item: "tconstruct:part_builder"
+				}
+				{
+					id: "42D6F1330E672419"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+				{
+					id: "19CD3DC0581FB684"
+					type: "item"
+					item: "tconstruct:pattern"
+				}
+			]
+			rewards: [{
+				id: "5E8E7E981A11699B"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+		}
+		{
+			title: "Personal Improvement"
+			x: -1.5d
+			y: -5.0d
+			id: "4B592B561F7D8917"
+			tasks: [
+				{
+					id: "0353FBCF87A4FAA8"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F300404AC2C0B9C"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "0C7C01B5042D5089"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00E865782C14DD2A"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0427DB61746D6D7E"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E9E933FB56FCF89"
+					type: "item"
+					item: "create:linked_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "4ECC44817B04CA8E"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "2BFBDBF9B02565DD"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "19E66EE0AFACD88E"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "4F4287EA53BCF60D"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			id: "212D08A365DF0C5B"
+			tasks: [{
+				id: "749DEE4E2987D6B1"
+				type: "structure"
+				title: "Find the Prismarine Vault"
+				icon: "minecraft:prismarine"
+				structure: "worldshape:soaring_depths/prismarine_vault"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			id: "64861ECB79735EBE"
+			tasks: [{
+				id: "6152A72EBF28B5B3"
+				type: "structure"
+				title: "Locate the Andesite Ruins"
+				icon: "betterendforge:andesite_pedestal"
+				structure: "worldshape:soaring_depths/andesite_ruins"
 			}]
 		}
 	]

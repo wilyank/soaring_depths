@@ -1,7 +1,7 @@
 {
 	id: "7EB1BA8D4004421F"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 5
+	order_index: 1
 	filename: "age_two"
 	title: "Age Two"
 	icon: "create:precision_mechanism"
@@ -41,7 +41,7 @@
 		{
 			x: -1.0d
 			y: 2.5d
-			dependencies: ["33D549F55B881DB5"]
+			dependencies: ["19F3B77D40FB3139"]
 			id: "72907E16519D0906"
 			tasks: [{
 				id: "73B72AF9C81B0A25"
@@ -81,6 +81,11 @@
 				id: "3EA6D4651A6A5BD7"
 				type: "item"
 				item: "create:electron_tube"
+			}]
+			rewards: [{
+				id: "7E02FF97DCF66A4D"
+				type: "item"
+				item: "create:brass_hand"
 			}]
 		}
 		{
@@ -396,6 +401,11 @@
 				type: "item"
 				item: "minecraft:redstone"
 			}]
+			rewards: [{
+				id: "36EF4C2255B620D8"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
 		}
 		{
 			x: 1.0d
@@ -409,6 +419,12 @@
 				type: "item"
 				item: "minecraft:quartz"
 			}]
+			rewards: [{
+				id: "06F3D7022ADBCD9E"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 8
+			}]
 		}
 		{
 			x: -2.0d
@@ -420,6 +436,11 @@
 				id: "1F43AE46099D2908"
 				type: "item"
 				item: "minecraft:cobblestone"
+			}]
+			rewards: [{
+				id: "0EED41957F1B2ECD"
+				type: "item"
+				item: "create:mechanical_drill"
 			}]
 		}
 		{
@@ -445,6 +466,12 @@
 				id: "0D68053A77209048"
 				type: "item"
 				item: "minecraft:redstone_torch"
+			}]
+			rewards: [{
+				id: "1DC7AB3B6D92EE02"
+				type: "item"
+				item: "tconstruct:tinkers_bronze_ingot"
+				count: 3
 			}]
 		}
 		{
@@ -569,6 +596,11 @@
 				type: "item"
 				item: "minecraft:oak_log"
 			}]
+			rewards: [{
+				id: "1037E32A4F9529C5"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
 		}
 		{
 			x: -5.0d
@@ -580,6 +612,12 @@
 				id: "767F58FC387F6CEE"
 				type: "item"
 				item: "create:andesite_cobblestone"
+			}]
+			rewards: [{
+				id: "7B6BBA2834466EF7"
+				type: "item"
+				item: "minecraft:clay_ball"
+				count: 64
 			}]
 		}
 		{
@@ -633,19 +671,6 @@
 			}]
 		}
 		{
-			icon: "minecraft:nether_quartz_ore"
-			x: -1.0d
-			y: -6.0d
-			hide_dependency_lines: true
-			id: "61F410589E5F8E67"
-			tasks: [{
-				id: "33D6BD3B7EE1601E"
-				type: "dimension"
-				title: "Visit the Nether"
-				dimension: "minecraft:the_nether"
-			}]
-		}
-		{
 			x: -2.5d
 			y: 6.0d
 			description: ["Some flight might come in handy"]
@@ -656,6 +681,117 @@
 				id: "0C3D092EC4B5551A"
 				type: "item"
 				item: "simpleplanes:plane_workbench"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 6.0d
+			dependencies: ["4BE5CB11CF487CC8"]
+			optional: true
+			id: "395B71E6E88244E6"
+			tasks: [{
+				id: "6BB71137BAD31EBF"
+				type: "item"
+				item: "createaddition:overcharged_alloy"
+			}]
+			rewards: [{
+				id: "6B40BA9BD6608924"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			title: "Electric Planes"
+			x: -2.5d
+			y: 7.0d
+			dependencies: [
+				"395B71E6E88244E6"
+				"297A32102E156C4C"
+			]
+			optional: true
+			id: "516E47A6B726E806"
+			tasks: [
+				{
+					id: "31B8E823DB9DEB18"
+					type: "item"
+					item: "simpleplanes:charging_station"
+				}
+				{
+					id: "7F7FA4099A7D9FC0"
+					type: "item"
+					item: "simpleplanes:electric_engine"
+				}
+			]
+			rewards: [
+				{
+					id: "7CF5BFE655230B1E"
+					type: "item"
+					item: "createaddition:gold_spool"
+					count: 8
+				}
+				{
+					id: "6B1A48184C3DEADC"
+					type: "item"
+					item: "createaddition:connector"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 1.0d
+			dependencies: ["33D549F55B881DB5"]
+			id: "19F3B77D40FB3139"
+			tasks: [{
+				id: "4D9B0654A981F944"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			title: "Basic Storage Network"
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["19F3B77D40FB3139"]
+			dependency_requirement: "one_completed"
+			optional: true
+			id: "5160A319C6E43EA0"
+			tasks: [
+				{
+					id: "7D6E568DF6F7473D"
+					type: "item"
+					item: "storagenetwork:master"
+				}
+				{
+					id: "5BE7555B44079757"
+					type: "item"
+					item: "storagenetwork:inventory"
+				}
+				{
+					id: "355923547DEEC24E"
+					type: "item"
+					item: "storagenetwork:storage_kabel"
+				}
+			]
+			rewards: [{
+				id: "597B5B04D3039D27"
+				type: "item"
+				item: "metalbarrels:diamond_barrel"
+			}]
+		}
+		{
+			icon: "minecraft:nether_quartz_ore"
+			x: -1.0d
+			y: -6.0d
+			hide_dependency_lines: true
+			dependencies: ["10E6D4C22AE81253"]
+			hide: true
+			id: "61F410589E5F8E67"
+			tasks: [{
+				id: "33D6BD3B7EE1601E"
+				type: "dimension"
+				title: "Visit the Nether"
+				dimension: "minecraft:the_nether"
 			}]
 		}
 	]

@@ -1722,5 +1722,59 @@
 				item: "minecraft:diamond_horse_armor"
 			}]
 		}
+		{
+			title: "Warlock Clothes"
+			x: 9.0d
+			y: -4.0d
+			id: "21448F84D0E47669"
+			tasks: [
+				{
+					id: "59FEAF94083B7A09"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EE8C3121563E969"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "162FB8A89C8F12E9"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "176F81D7AC4076E1"
+					type: "item"
+					item: "eidolon:shadow_gem"
+				}
+				{
+					id: "190BB7B055B0C65F"
+					type: "item"
+					item: "eidolon:pewter_ingot"
+					count: 8
+				}
+			]
+		}
 	]
 }

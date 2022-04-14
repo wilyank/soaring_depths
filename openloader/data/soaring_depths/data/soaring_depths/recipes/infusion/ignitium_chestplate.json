@@ -1,7 +1,7 @@
 {
     "type": "betterendforge:infusion",
     "input": {
-        "item": "betterendforge:ignitium_chestplate"
+        "item": "cataclysm:ignitium_chestplate"
     },
     "output": {
         "id": "forbidden_arcanus:draco_arcanus_chestplate",

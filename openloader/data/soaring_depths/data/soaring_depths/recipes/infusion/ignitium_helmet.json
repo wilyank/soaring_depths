@@ -1,7 +1,7 @@
 {
     "type": "betterendforge:infusion",
     "input": {
-        "item": "betterendforge:ignitium_helmet"
+        "item": "cataclysm:ignitium_helmet"
     },
     "output": {
         "id": "forbidden_arcanus:draco_arcanus_helmet",
