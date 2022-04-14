@@ -158,7 +158,9 @@ brewing.removeRecipeByInput(<item:mutantmore:formula_y>);
 );
 
 
-mods.jei.JEI.addInfo(<item:forbidden_arcanus:dark_runestone>, ["Right click with Runestone on an activated Runic Tenebris Core to obtain"]);
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:dark_runestone>, ["Right click with Jasper Ore on an activated Runic Tenebris Core to obtain"]);
+mods.jei.JEI.addInfo(<item:forbidden_arcanus:dark_rune>, ["Right click with a Jasper Gem on an activated Runic Tenebris Core to obtain"]);
+
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:runic_tenebris_frame>, ["Activate with a Dark Nether Star"]);
 
 craftingTable.removeRecipe(<item:forbidden_arcanus:purifying_soap>);

@@ -114,6 +114,12 @@
   "eidolon.codex.page.arcane_gold": "It is possible to alchemically imbue gold with a small amount of magical energy. The resulting metal is stronger and more magically conductive than mundane gold, and is put to good use in the construction of magic items.",
   "eidolon.codex.page.inlays": "Metal inlay is a simple method for durably inscribing sigils and symbols into magical constructs. While mundane on their own, inlays of pewter and red gold appear frequently in magical formulae.",
 
+  "item.forbidden_arcanus.rune": "Jasper Gem",
+  "item.forbidden_arcanus.dark_rune": "Corrupted Jasper Gem",
+  "block.forbidden_arcanus.runestone": "Jasper Ore",
+  "block.forbidden_arcanus.dark_runestone": "Corrupted Jasper Ore",
+
+
   "portable_beacons.entry.beacon_backpack.page.1": "The Beacon Backpack can be upgraded for a higher capacity and range in the Sewing Table.",
 
   "item.create.brass_hand": "Bronze Hand",
