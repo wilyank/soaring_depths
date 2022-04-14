@@ -19,6 +19,7 @@ var prec_mech = <item:create:precision_mechanism>;
 var brass_casing = <item:create:brass_casing>;
 var cogwheels = <tag:items:forge:cogwheels>;
 
+<recipetype:create:cutting>.removeByRegex("create:cutting/stripped_.*");
 
 // fix cast iron large cogwheel recipe
 craftingTable.removeRecipe(<item:steampowered:cast_iron_large_cogwheel>);
