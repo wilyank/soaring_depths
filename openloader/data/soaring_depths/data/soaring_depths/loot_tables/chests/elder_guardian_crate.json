@@ -162,6 +162,19 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": 1,
+        "p": 0.5
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/relic"
+        }
+      ]
     }
   ]
 }

@@ -11,7 +11,7 @@
         "minY": 50,
         "maxY": 150,
         "type": "surface",
-        "terraform": 7
+        "terraform": 8
     },
 
     "dimensions": [

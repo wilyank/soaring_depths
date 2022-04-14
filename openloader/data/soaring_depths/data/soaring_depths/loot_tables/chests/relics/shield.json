@@ -1,0 +1,115 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 9,
+            "name": "minecraft:shield"
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 1,
+            "name": "netherite_plus:netherite_shield"
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.attack_knockback",
+                "name": "",
+                "amount": {
+                  "min": 0.01,
+                  "max": 0.1
+                },
+                "operation": "multiply_total",
+                "slot": "offhand"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.armor",
+                "name": "",
+                "amount": {
+                  "min": 1,
+                  "max": 3
+                },
+                "operation": "addition",
+                "slot": "offhand"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.3
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_name",
+            "name": {
+              "translate": "item.soaring_depths.relic.shield",
+              "bold": true,
+              "italic": false
+            }
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.armor_toughness",
+                "name": "",
+                "amount": {
+                  "min": 0,
+                  "max": 2
+                },
+                "operation": "addition",
+                "slot": "offhand"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.1
+              }
+            ]
+          },
+          {
+            "function": "minecraft:set_attributes",
+            "modifiers": [
+              {
+                "attribute": "minecraft:generic.knockback_resistance",
+                "name": "",
+                "amount": {
+                  "min": 0.01,
+                  "max": 1
+                },
+                "operation": "addition",
+                "slot": "offhand"
+              }
+            ],
+            "conditions": [
+              {
+                "condition": "minecraft:random_chance",
+                "chance": 0.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

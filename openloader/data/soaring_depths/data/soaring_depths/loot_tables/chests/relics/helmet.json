@@ -6,33 +6,43 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 4,
           "name": "minecraft:iron_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
           "name": "minecraft:golden_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 2,
           "name": "minecraft:diamond_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
           "name": "minecraft:chainmail_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 1,
           "name": "minecraft:netherite_helmet"
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
           "name": "minecraft:leather_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:arcane_gold_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:mortem_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "forbidden_arcanus:obsidian_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "eidolon:warlock_hat"
         }
       ],
       "functions": [
@@ -115,6 +125,14 @@
               "slot": "head"
             }
           ]
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": {
+            "translate": "item.soaring_depths.relic.helmet",
+            "bold": true,
+            "italic": false
+          }
         }
       ]
     }

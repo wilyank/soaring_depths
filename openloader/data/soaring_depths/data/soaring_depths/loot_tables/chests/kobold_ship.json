@@ -1,123 +1,163 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
-      {
-        "rolls": {
-          "min": 1,
-          "max": 2
-        },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:iron_axe"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:crossbow"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chainmail_chestplate"
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:enchant_with_levels",
-            "levels": {
-              "min": 0,
-              "max": 30
-            },
-            "treasure": true
-          }
-        ]
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
       },
-      {
-        "rolls": {
-          "min": 3,
-          "max": 7
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe"
         },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:apple"
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:enchant_with_levels",
+          "levels": {
+            "min": 0,
+            "max": 30
           },
-          {
-            "type": "minecraft:item",
-            "name": "steampowered:pressurized_steam_container"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "create:fluid_pipe"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "create:copper_ingot"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "steampowered:bronze_sheet"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "tconstruct:tinkers_bronze_ingot"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:chain"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "grapplemod:grapplinghook"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "improvedbackpacks:medium_pocket"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:arrow"
-          }
-        ],
-        "functions": [
-          {
-            "function": "minecraft:set_count",
-            "count": {
-              "min": 1,
-              "max": 5
-            }
-          }
-        ]
+          "treasure": true
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 7
       },
-      {
-        "rolls": {
-          "type": "minecraft:binomial",
-          "n": 1,
-          "p": 0.7
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:apple"
         },
-        "entries": [
-          {
-            "type": "minecraft:tag",
-            "name": "forge:cogwheels",
-            "expand": true
+        {
+          "type": "minecraft:item",
+          "name": "steampowered:pressurized_steam_container"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:fluid_pipe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:copper_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "steampowered:bronze_sheet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:tinkers_bronze_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chain"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "grapplemod:grapplinghook"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "improvedbackpacks:medium_pocket"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createaddition:iron_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createaddition:copper_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createaddition:gold_rod"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "createaddition:brass_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "create:propeller"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:paper"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "min": 1,
+            "max": 5
           }
-        ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": 1,
+        "p": 0.7
       },
-      {
-        "rolls": {
-          "min": 0,
-          "max": 1
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "forge:cogwheels",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "create:goggles"
         },
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "create:goggles"
-          },
-          {
-            "type": "minecraft:item",
-            "name": "create:wrench"
-          }
-        ]
-      }
-    ]
-  }
-  
+        {
+          "type": "minecraft:item",
+          "name": "create:wrench"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:binomial",
+        "n": 1,
+        "p": 0.1
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:relics/relic"
+        }
+      ]
+    }
+  ]
+}

@@ -1043,15 +1043,18 @@
 			]
 			rewards: [
 				{
-					id: "49DFD7F2AABC143F"
-					type: "item"
-					item: "unactivatedtotems:unactivated_totem"
-				}
-				{
 					id: "0E7851CA3A68D7BA"
 					type: "item"
 					item: "minecraft:golden_apple"
 					count: 4
+				}
+				{
+					id: "004DCC6DB701F964"
+					type: "command"
+					title: "Relict Totem"
+					icon: "unactivatedtotems:unactivated_totem"
+					command: "/loot give @p loot soaring_depths:chests/relics/totem"
+					player_command: false
 				}
 			]
 		}

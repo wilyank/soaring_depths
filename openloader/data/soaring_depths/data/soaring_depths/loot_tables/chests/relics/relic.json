@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/axe"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/sword"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/helmet"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/chestplate"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/leggings"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/boots"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/totem"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/shield"
+        }
+      ]
+    }
+  ]
+}

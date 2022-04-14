@@ -113,6 +113,10 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "soaring_depths:chests/relics/relic"
         }
       ]
     }

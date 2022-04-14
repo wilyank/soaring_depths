@@ -37,6 +37,20 @@
 					count: 12L
 				}
 			]
+			rewards: [{
+				id: "4AE3898FCA7AA3D2"
+				type: "command"
+				title: "Random Relic"
+				icon: {
+					id: "minecraft:golden_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				command: "/loot give @p loot soaring_depths:chests/relics/relic"
+				player_command: false
+			}]
 		}
 		{
 			x: -1.0d

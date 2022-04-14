@@ -41,11 +41,58 @@
 					count: 4L
 				}
 			]
-			rewards: [{
-				id: "5C7BE4BA3007414B"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "5C7BE4BA3007414B"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "12169123AEA8D1CC"
+					type: "command"
+					title: "Relic"
+					icon: {
+						id: "forbidden_arcanus:reinforced_arcane_golden_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+							AttributeModifiers: [
+								{
+									Amount: 7.55518913269043d
+									Slot: "mainhand"
+									AttributeName: "minecraft:generic.attack_damage"
+									Operation: 0
+									UUID: [I;
+										850995084
+										1753105743
+										-1149073246
+										149049834
+									]
+									Name: ""
+								}
+								{
+									Amount: 1.6158514022827148d
+									Slot: "mainhand"
+									AttributeName: "minecraft:generic.attack_speed"
+									Operation: 0
+									UUID: [I;
+										-1993247556
+										504777856
+										-1485308618
+										-1414597664
+									]
+									Name: ""
+								}
+							]
+							display: {
+								Name: "{\"bold\":true,\"italic\":false,\"translate\":\"item.soaring_depths.relic.sword\"}"
+							}
+						}
+					}
+					command: "/loot give @p loot soaring_depths:chests/relics/relic"
+					player_command: false
+				}
+			]
 		}
 		{
 			x: 6.0d
