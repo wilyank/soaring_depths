@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:overworld",
+    "structure": "worldshape:soaring_depths/kobold_cave",
+    "spawn_strategy": "center",
+    "name": "Kobold Tribe",
+    "description": "You spawn in a Kobold cave"
+}

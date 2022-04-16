@@ -1,7 +1,7 @@
 {
 	id: "4761B474D5DB78E1"
 	group: "7AA6A42EAAA7D2D9"
-	order_index: 2
+	order_index: 0
 	filename: "exploration"
 	title: "Useful Tidbits"
 	default_quest_shape: ""
@@ -262,43 +262,6 @@
 			}]
 		}
 		{
-			title: "Easy Location"
-			x: 5.0d
-			y: -1.5d
-			id: "68761DBC823B0E7A"
-			tasks: [{
-				id: "3344A33B29B108D0"
-				type: "item"
-				item: {
-					id: "explorerscompass:explorerscompass"
-					Count: 1b
-					tag: { }
-				}
-			}]
-			rewards: [{
-				id: "6801BDB35886851A"
-				type: "item"
-				item: "minecraft:map"
-			}]
-		}
-		{
-			title: "Localized Flight Field Apparatus"
-			x: 6.0d
-			y: -1.5d
-			description: ["The Magic Feather grants creative flight when within range of an active Beacon"]
-			id: "17CB36BB7D1A16A9"
-			tasks: [{
-				id: "40344C0434CCD5DA"
-				type: "item"
-				item: "magicfeather:magicfeather"
-			}]
-			rewards: [{
-				id: "3AD53D5939552D2F"
-				type: "item"
-				item: "minecraft:iron_block"
-			}]
-		}
-		{
 			x: 4.5d
 			y: -4.0d
 			id: "3864CE7C4C1729D9"
@@ -446,44 +409,6 @@
 				type: "item"
 				item: "astralsorcery:attunement_altar"
 			}]
-		}
-		{
-			x: 4.0d
-			y: -1.5d
-			id: "5734DDC351517B83"
-			tasks: [{
-				id: "502D79C7192AAC9E"
-				type: "item"
-				item: "portable_beacons:potion_necklace"
-			}]
-			rewards: [{
-				id: "43BD907AAC21E8B2"
-				type: "item"
-				item: "minecraft:nether_wart"
-			}]
-		}
-		{
-			x: 3.0d
-			y: -1.5d
-			id: "38C9EB37C466B586"
-			tasks: [{
-				id: "14912F7640737754"
-				type: "item"
-				item: "portable_beacons:beacon_backpack_0"
-			}]
-			rewards: [
-				{
-					id: "714AC9B10996F5EC"
-					type: "item"
-					item: "minecraft:sea_lantern"
-					count: 16
-				}
-				{
-					id: "203511F5BC0A9CD1"
-					type: "item"
-					item: "minecraft:gold_block"
-				}
-			]
 		}
 		{
 			x: -3.5d
@@ -700,6 +625,11 @@
 				icon: "minecraft:prismarine"
 				structure: "worldshape:soaring_depths/prismarine_vault"
 			}]
+			rewards: [{
+				id: "5E44E402CA48AFAB"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
 		}
 		{
 			x: 5.5d
@@ -711,6 +641,11 @@
 				title: "Locate the Andesite Ruins"
 				icon: "betterendforge:andesite_pedestal"
 				structure: "worldshape:soaring_depths/andesite_ruins"
+			}]
+			rewards: [{
+				id: "06AF6AA8159DF1A8"
+				type: "item"
+				item: "minecraft:golden_apple"
 			}]
 		}
 	]

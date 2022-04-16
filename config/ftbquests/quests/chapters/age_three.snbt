@@ -3,8 +3,9 @@
 	group: "4C3A2A3D8FDBADEB"
 	order_index: 3
 	filename: "age_three"
-	title: "Age Three"
+	title: "Chapter Three"
 	icon: "cataclysm:void_core"
+	subtitle: ["Strange Magic"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -23,6 +24,7 @@
 		{
 			x: 13.5d
 			y: 1.5d
+			description: ["Find these in a special biome in the End"]
 			hide_dependency_lines: true
 			dependencies: ["61184ED4B88DB75C"]
 			id: "520CADB9D9117AFA"
@@ -107,6 +109,7 @@
 		{
 			x: 3.5d
 			y: 1.0d
+			description: ["The Arcane Dragon Egg is a powerful catalyst for mutant-related recipes"]
 			dependencies: ["4CC2D1B2ADB04ABE"]
 			id: "47E861CA48B2D7FF"
 			tasks: [{
@@ -118,6 +121,7 @@
 		{
 			x: 7.5d
 			y: -3.5d
+			description: ["...I hope you weren't planning on eating that."]
 			hide_dependency_lines: true
 			dependencies: ["61184ED4B88DB75C"]
 			id: "21D9D3593013D00A"
@@ -405,6 +409,8 @@
 		{
 			x: 3.5d
 			y: 5.0d
+			subtitle: "With All Our Powers Combined"
+			description: [""]
 			dependencies: [
 				"65934ECF7572A4D1"
 				"23477E651DBFAD90"
@@ -703,6 +709,7 @@
 			tasks: [{
 				id: "27250826F6DA75EE"
 				type: "advancement"
+				title: "Throw a baby Void Worm in the Void"
 				advancement: "alexsmobs:alexsmobs/void_worm_summon"
 				criterion: ""
 			}]
@@ -740,6 +747,7 @@
 			x: 1.5d
 			y: -2.0d
 			subtitle: "The Legacy of Dr. Spencer Black"
+			description: ["If you splash creatures with this chemical, there is a chance they will mutate into something horrendous."]
 			dependencies: [
 				"021444FBBB914587"
 				"65BB84043457E762"
@@ -761,6 +769,7 @@
 			title: "More Unholy Creatures"
 			x: 5.5d
 			y: -2.0d
+			description: ["Formula Y is an improved version of Chemical X, capable of transforming more powerful monsters."]
 			dependencies: ["7CACD318ADF849E2"]
 			id: "50DF135EB0EE40F8"
 			tasks: [{
@@ -808,7 +817,7 @@
 		{
 			x: 1.5d
 			y: -4.0d
-			description: ["Either find one underground, or corrupt a normal Jasper Gem with an activated Runic Tenebris Frame"]
+			description: ["Either find one at the bottom of the world, or corrupt a normal Jasper Gem with an activated Runic Tenebris Frame"]
 			hide_dependency_lines: true
 			dependencies: ["61184ED4B88DB75C"]
 			dependency_requirement: "one_completed"
@@ -823,6 +832,7 @@
 			x: 3.0d
 			y: -3.0d
 			subtitle: "Shrooms"
+			description: ["Find them in the Nether"]
 			hide_dependency_lines: true
 			dependencies: ["61184ED4B88DB75C"]
 			id: "021444FBBB914587"
@@ -835,6 +845,7 @@
 		{
 			x: 0.5d
 			y: 6.5d
+			description: ["The Orb of Origin can be used to change where you come from."]
 			dependencies: [
 				"1CB1B50085F9123C"
 				"465A4190E952DC38"
@@ -850,6 +861,7 @@
 		{
 			x: -3.0d
 			y: 5.0d
+			description: ["The Eternal Stella can be used to repair all items in your inventory, to make one item unbreakable or as a crafting ingredient."]
 			dependencies: [
 				"44A59CEE934FA335"
 				"4A585593066A0DDB"
@@ -869,8 +881,7 @@
 		{
 			x: -3.0d
 			y: 3.0d
-			hide_dependency_lines: true
-			dependencies: ["61184ED4B88DB75C"]
+			dependencies: ["1DAB7823595AAD79"]
 			id: "4D07A62258FA0228"
 			tasks: [{
 				id: "132A9584F8B2039B"
@@ -939,8 +950,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 1.5d
+			x: -5.5d
+			y: 2.0d
 			hide_dependency_lines: true
 			dependencies: ["61184ED4B88DB75C"]
 			id: "5BCEA09E3DDF1E9A"
@@ -972,6 +983,7 @@
 			title: "Black Hole Shenanigans"
 			x: 0.0d
 			y: -4.0d
+			description: ["Throwing Dark Matter on the ground with Corrupti Dust creates a Black Hole. This magic anomaly can solidify Experience Orbs."]
 			dependencies: ["446E0356F22ECD93"]
 			id: "4FEB25A536CE27FD"
 			tasks: [
@@ -1031,7 +1043,7 @@
 				{
 					id: "7FF92FCDB566E176"
 					type: "structure"
-					title: "Find a Ruined Citadel"
+					title: "Find a Ruined Citadel in the End"
 					icon: "cataclysm:void_core"
 					structure: "cataclysm:ruined_citadel"
 				}
@@ -1061,6 +1073,7 @@
 		{
 			x: 3.5d
 			y: 8.5d
+			description: ["The Ender Guardian holds the key to activate the portal to the new world"]
 			dependencies: ["744670D1196E8521"]
 			id: "258EF6B0DE7F5C52"
 			tasks: [{
@@ -1091,6 +1104,7 @@
 			icon: "betterendforge:chorus_nylium"
 			x: 3.5d
 			y: -6.0d
+			description: ["The resources from the End are necessary for more advanced methods of production."]
 			dependencies: ["29B1C48D4F4EC14B"]
 			hide: true
 			id: "61184ED4B88DB75C"
@@ -1105,6 +1119,10 @@
 			title: "I Fear No Flames No More"
 			x: 11.5d
 			y: 5.0d
+			description: ["The Obsidian Skull grants you permanent Fire Resistance."]
+			hide_dependency_lines: true
+			dependencies: ["1CB1B50085F9123C"]
+			hide: false
 			optional: true
 			id: "5701A7E232904D61"
 			tasks: [{
@@ -1129,6 +1147,7 @@
 			}
 			x: 10.5d
 			y: 7.5d
+			description: ["The Netherite Monstrosity might be a good way to get some more Netherite."]
 			dependencies: ["264C220DE37F34BA"]
 			optional: true
 			id: "7B84CAF2F44CE4AB"
@@ -1177,7 +1196,7 @@
 				{
 					id: "4A784B619F6F06F2"
 					type: "structure"
-					title: "Find the Soul Blacksmith"
+					title: "Find the Soul Blacksmith in the Nether"
 					structure: "cataclysm:soul_black_smith"
 				}
 				{
@@ -1202,6 +1221,10 @@
 			title: "Brave New World"
 			x: 3.5d
 			y: 10.0d
+			description: [
+				"Where will you go from here? You can stay and be comfortable in the New World, or you can go back to the broken world and make a difference there."
+				"Maybe the old world needs bridges? Airports? Train stations?"
+			]
 			dependencies: ["258EF6B0DE7F5C52"]
 			id: "47E2DAF271B8D331"
 			tasks: [
@@ -1219,9 +1242,135 @@
 				{
 					id: "5256956217668F97"
 					type: "dimension"
+					title: "Visit the New World"
 					dimension: "otg:default"
 				}
 			]
+		}
+		{
+			x: -6.5d
+			y: 5.0d
+			dependencies: ["696DC457714B9832"]
+			id: "38C9EB37C466B586"
+			tasks: [{
+				id: "14912F7640737754"
+				type: "item"
+				item: "portable_beacons:beacon_backpack_0"
+			}]
+			rewards: [
+				{
+					id: "714AC9B10996F5EC"
+					type: "item"
+					item: "minecraft:sea_lantern"
+					count: 16
+				}
+				{
+					id: "203511F5BC0A9CD1"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 5.0d
+			dependencies: ["696DC457714B9832"]
+			id: "5734DDC351517B83"
+			tasks: [{
+				id: "502D79C7192AAC9E"
+				type: "item"
+				item: "portable_beacons:potion_necklace"
+			}]
+			rewards: [{
+				id: "43BD907AAC21E8B2"
+				type: "item"
+				item: "minecraft:nether_wart"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 3.0d
+			dependencies: ["5BCEA09E3DDF1E9A"]
+			id: "696DC457714B9832"
+			tasks: [{
+				id: "572F89978E34E2D3"
+				type: "item"
+				item: "minecraft:beacon"
+			}]
+		}
+		{
+			title: "Localized Flight Field Apparatus"
+			x: -7.5d
+			y: 5.0d
+			description: ["The Magic Feather grants creative flight when within range of an active Beacon"]
+			dependencies: [
+				"696DC457714B9832"
+				"28D58ED647252C14"
+			]
+			id: "17CB36BB7D1A16A9"
+			tasks: [{
+				id: "40344C0434CCD5DA"
+				type: "item"
+				item: "magicfeather:magicfeather"
+			}]
+			rewards: [{
+				id: "3AD53D5939552D2F"
+				type: "item"
+				item: "minecraft:iron_block"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 3.0d
+			dependencies: ["1DAB7823595AAD79"]
+			id: "28D58ED647252C14"
+			tasks: [{
+				id: "5417CA23464E64EF"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -0.5d
+			hide_dependency_lines: true
+			dependencies: ["61184ED4B88DB75C"]
+			id: "1DAB7823595AAD79"
+			tasks: [{
+				id: "2EF909EDB61B0544"
+				type: "structure"
+				title: "Locate End City"
+				icon: "minecraft:shulker_shell"
+				structure: "minecraft:endcity"
+			}]
+		}
+		{
+			title: "Easy Location"
+			x: -5.5d
+			y: 1.0d
+			description: ["The Explorer's Compass is a handy tool that can help you find many structures"]
+			dependencies: ["1DAB7823595AAD79"]
+			id: "68761DBC823B0E7A"
+			tasks: [{
+				id: "3344A33B29B108D0"
+				type: "item"
+				item: {
+					id: "explorerscompass:explorerscompass"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "6801BDB35886851A"
+				type: "item"
+				item: "minecraft:map"
+			}]
 		}
 	]
 }

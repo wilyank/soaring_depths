@@ -1,7 +1,7 @@
 {
 	"type": "origins:multiple",
 	"name": "Adapted Tools",
-	"description": "Golden and Netherite tools are more effective in your hands, dealing more damage and lasting longer.",
+	"description": "Golden and Netherite tools are more effective in your hands, dealing more damage. Netherite tools mine 50% faster.",
 	"sword_damage": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
@@ -87,7 +87,7 @@
 			"item_condition": {
 				"type": "origins:ingredient",
 				"ingredient": {
-					"item": "minecraft:golden_sword"
+					"item": "minecraft:netherite_sword"
 				}
 			}
 		}
@@ -105,7 +105,7 @@
 			"item_condition": {
 				"type": "origins:ingredient",
 				"ingredient": {
-					"item": "minecraft:golden_axe"
+					"item": "minecraft:netherite_axe"
 				}
 			}
 		}
@@ -123,7 +123,7 @@
 			"item_condition": {
 				"type": "origins:ingredient",
 				"ingredient": {
-					"item": "minecraft:golden_shovel"
+					"item": "minecraft:netherite_shovel"
 				}
 			}
 		}
@@ -141,7 +141,7 @@
 			"item_condition": {
 				"type": "origins:ingredient",
 				"ingredient": {
-					"item": "minecraft:golden_hoe"
+					"item": "minecraft:netherite_hoe"
 				}
 			}
 		}
@@ -161,7 +161,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:golden_axe"
+                            "item": "minecraft:netherite_axe"
                         }
                     }
                 },
@@ -186,7 +186,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:golden_pickaxe"
+                            "item": "minecraft:netherite_pickaxe"
                         }
                     }
                 },
@@ -211,7 +211,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:golden_shovel"
+                            "item": "minecraft:netherite_shovel"
                         }
                     }
                 },
@@ -236,7 +236,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:golden_hoe"
+                            "item": "minecraft:netherite_hoe"
                         }
                     }
                 },

@@ -3,8 +3,9 @@
 	group: "4C3A2A3D8FDBADEB"
 	order_index: 2
 	filename: "age_two"
-	title: "Age Two"
+	title: "Chapter Two"
 	icon: "create:precision_mechanism"
+	subtitle: ["To Hell And Back"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -13,6 +14,7 @@
 			x: -1.0d
 			y: 5.0d
 			subtitle: "Crafting Your Way to the End"
+			description: ["The End Portal Frames can be harvested with a Silk Toch Pickaxe in case you misplace one."]
 			dependencies: [
 				"0FF7720D0DFB26F4"
 				"1CDDB291EC335FFD"
@@ -202,6 +204,7 @@
 			description: [
 				"Mind you, the Starlight Infuser needs a multiblock structure."
 				""
+				"It needs 12 buckets of liquid to keep running."
 			]
 			dependencies: [
 				"3998C66DBB806C44"
@@ -223,6 +226,7 @@
 			tasks: [{
 				id: "01609983E4C6A511"
 				type: "item"
+				icon: "contenttweaker:crushed_starmetal_ore"
 				item: "astralsorcery:starmetal_ore"
 			}]
 		}
@@ -241,6 +245,10 @@
 		{
 			x: 3.5d
 			y: 0.5d
+			description: [
+				"This tool can direct the light from a Collector Crystal to a specific block."
+				"(OOC) Due to a bug in Astral Sorcery, Lenses do to work correctly and cannot be used to transmute blocks."
+			]
 			dependencies: ["50CC57E3B32F9CF3"]
 			id: "1EC5853695BBE61A"
 			tasks: [{
@@ -662,7 +670,7 @@
 		{
 			x: 5.0d
 			y: 0.0d
-			description: ["Definetely check out the other things Astral Sorcery has to offer"]
+			description: ["Definetely check out the other things Astral Sorcery has to offer. It might be a good idea to upgrade your starlight crafting altar"]
 			dependencies: ["50CC57E3B32F9CF3"]
 			optional: true
 			id: "60034CAED267592C"
@@ -754,6 +762,7 @@
 		{
 			x: -1.0d
 			y: 1.0d
+			description: ["The basis of all advanced machines"]
 			dependencies: ["33D549F55B881DB5"]
 			id: "19F3B77D40FB3139"
 			tasks: [{
@@ -797,6 +806,7 @@
 			icon: "minecraft:nether_quartz_ore"
 			x: -1.0d
 			y: -6.0d
+			description: ["A Nether Portal grants access to many new materials, such as Quartz, Blazes and an abundance of Lava."]
 			hide_dependency_lines: true
 			dependencies: ["10E6D4C22AE81253"]
 			hide: true

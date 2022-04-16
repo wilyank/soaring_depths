@@ -2,11 +2,12 @@
 	"powers": [
 		"soaring_depths:piglin/armor",
 		"soaring_depths:piglin/food",
-		"soaring_depths:piglin/weak_in_overworld"
+		"soaring_depths:piglin/weak_in_overworld",
+		"soaring_depths:piglin/tools"
 	],
 	"icon": "minecraft:golden_sword",
 	"order": 1,
 	"impact": 1,
 	"name": "Piglin",
-	"description": "Piggy"
+	"description": "Your bastion just figured out how to create one way nether portal at last, and you were sent to destroy the humans living in the overworld. Though, where have they all gone?"
 }

@@ -6,11 +6,12 @@
         "soaring_depths:night_vision",
         "soaring_depths:kobold/health",
         "soaring_depths:kobold/expensive_trades",
-		"soaring_depths:kobold/reset_villager_reputation"
+		"soaring_depths:kobold/reset_villager_reputation",
+		"soaring_depths:kobold/spawn"
 	],
 	"icon": "kobolds:kobold_iron_pickaxe",
 	"order": 1,
 	"impact": 1,
 	"name": "Kobold",
-	"description": "Nasty little bugger. Small, fast, and nasally humming."
+	"description": "The recent disappearance of humans from kobold territory has been quite alarming, and you are too curious for your own good. Perhaps you nasty little bugger can also harness some of the power they once did."
 }

@@ -12,7 +12,7 @@
 	],
 	"icon": "minecraft:rotten_flesh",
 	"order": 1,
-	"impact": 1,
+	"impact": 2,
 	"name": "Zombie",
-	"description": "A walking corpse"
+	"description": "You wake up with a bursting headache, and quite hungry for some raw flesh. The last thing you remember is being under a zombie with no way of escape. How strange to wake up now."
 }

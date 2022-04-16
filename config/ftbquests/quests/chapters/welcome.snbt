@@ -8,13 +8,33 @@
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [{
-		x: -3.0d
-		y: -2.0d
+		icon: "minecraft:oak_sapling"
+		x: 0.0d
+		y: 0.0d
+		shape: "octagon"
+		description: [
+			"You wake up to find the human population suddenly gone. Where have they gone? Whether you want to follow them or not, these quests will guide you to the secrets of magic and engineering that this world is hiding."
+			"Check the checkmark to start Chapter One"
+		]
+		size: 3.0d
 		id: "1D338113DDEE34F7"
 		tasks: [{
 			id: "72BBA196356F6992"
 			type: "checkmark"
-			title: "Left Behind"
+			title: "Start"
 		}]
+		rewards: [
+			{
+				id: "7E28B7B9E4565934"
+				type: "item"
+				item: "minecraft:bread"
+				count: 3
+			}
+			{
+				id: "09A14C7346C6CCAB"
+				type: "item"
+				item: "create:builders_tea"
+			}
+		]
 	}]
 }

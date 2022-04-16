@@ -3,8 +3,9 @@
 	group: "4C3A2A3D8FDBADEB"
 	order_index: 1
 	filename: "age_one"
-	title: "Age One"
+	title: "Chapter One"
 	icon: "eidolon:unholy_symbol"
+	subtitle: ["Digging For Information"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -13,7 +14,7 @@
 			x: 7.0d
 			y: 1.0d
 			shape: "pentagon"
-			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape you want."]
+			description: ["Nether Portals are made out of Crying Obsidian. They can be any shape or size you want."]
 			dependencies: [
 				"3A337F67AE8C2404"
 				"249ACC7E4DE11035"
@@ -50,7 +51,7 @@
 				{
 					id: "12169123AEA8D1CC"
 					type: "command"
-					title: "Relic"
+					title: "Random Relic"
 					icon: {
 						id: "forbidden_arcanus:reinforced_arcane_golden_sword"
 						Count: 1b
@@ -96,8 +97,8 @@
 		}
 		{
 			x: 6.0d
-			y: -6.0d
-			dependencies: ["384DD3C2DF460AC4"]
+			y: -6.5d
+			dependencies: ["0EE94E298A96FE9C"]
 			id: "60FFE55AD53CFE9E"
 			tasks: [
 				{
@@ -127,6 +128,7 @@
 		{
 			x: 5.0d
 			y: 1.0d
+			description: ["Liquid Starlight can be used for many things. This time we need its reactive properties in an Obsidian-Jasper mixture"]
 			dependencies: ["16D8E3F5A34AA008"]
 			id: "3A337F67AE8C2404"
 			tasks: [{
@@ -162,6 +164,7 @@
 		{
 			x: 8.0d
 			y: -2.0d
+			description: ["The Melter can be upgraded to a Smeltery Controller. Refer to the Mighty Smelting guidebook for mor information."]
 			dependencies: ["3D9753D002880F8F"]
 			id: "2B0BA980EF3EEA90"
 			tasks: [{
@@ -178,14 +181,17 @@
 				{
 					id: "4A99A3F03F9AF285"
 					type: "item"
-					item: "tconstruct:rod_cast"
+					item: "tconstruct:mighty_smelting"
 				}
 			]
 		}
 		{
+			title: "Hotter Fuel"
 			x: 6.5d
 			y: -2.0d
+			description: ["Lava is rare now, but when you get access to the lower realm, you will have enough."]
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "52CD767C02F6697C"
 			tasks: [{
 				id: "2EBF9EE0C7BC63CA"
@@ -201,6 +207,7 @@
 		{
 			x: 4.5d
 			y: 0.0d
+			description: ["The Lightwell releases captured starlight in liquid form."]
 			dependencies: [
 				"14A15876ECE0BB48"
 				"43D634E4887D58CF"
@@ -233,7 +240,7 @@
 		{
 			x: 3.0d
 			y: -0.5d
-			description: ["Consult your Astral Tome for more information"]
+			description: ["Light-induced crafting unlocked! Consult your Astral Tome for more information"]
 			dependencies: [
 				"6451AAD01A45D313"
 				"4FB86EAD82894738"
@@ -260,30 +267,27 @@
 		{
 			x: 1.5d
 			y: -0.5d
+			description: ["These blue gems, found in the sand on the bottom of shallow lakes, seem to have absorbed starlight over the years."]
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "4FB86EAD82894738"
 			tasks: [{
 				id: "0536668FA20619F2"
 				type: "item"
 				item: "astralsorcery:aquamarine"
 			}]
-			rewards: [
-				{
-					id: "788A1ED47997412E"
-					type: "item"
-					item: "astralsorcery:tome"
-				}
-				{
-					id: "50367233C66458AF"
-					type: "xp_levels"
-					xp_levels: 1
-				}
-			]
+			rewards: [{
+				id: "50367233C66458AF"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			x: 1.5d
 			y: -1.5d
+			description: ["These white shrines contain magic from a long time ago. This might prove useful."]
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "6451AAD01A45D313"
 			tasks: [{
 				id: "3DB0DC20DE9B2CB3"
@@ -291,15 +295,22 @@
 				title: "Find an Ancient Shrine"
 				structure: "worldshape:soaring_depths/ancient_shrine"
 			}]
-			rewards: [{
-				id: "2634CC9855653A5F"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "2634CC9855653A5F"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "5BA2B693D86C4B6B"
+					type: "item"
+					item: "astralsorcery:tome"
+				}
+			]
 		}
 		{
 			x: 6.0d
-			y: -7.0d
+			y: -8.5d
 			dependencies: ["55C11A0A68933F94"]
 			id: "384DD3C2DF460AC4"
 			tasks: [
@@ -351,7 +362,7 @@
 		{
 			x: 4.5d
 			y: -2.0d
-			description: ["The unbreakable variant is not consumed by Deployers"]
+			description: ["The unbreakable variant of the unholy symbol is not consumed by Deployer application"]
 			dependencies: ["0DD09001010A28A4"]
 			id: "789F83A3084BA97A"
 			tasks: [{
@@ -429,24 +440,19 @@
 				type: "item"
 				item: "eidolon:crucible"
 			}]
-			rewards: [
-				{
-					id: "0A98D097254F1970"
-					type: "item"
-					item: "eidolon:codex"
-				}
-				{
-					id: "20607930914A00B7"
-					type: "xp_levels"
-					xp_levels: 1
-				}
-			]
+			rewards: [{
+				id: "20607930914A00B7"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
 		}
 		{
 			title: "Materials for Engineering"
 			x: 6.0d
-			y: -8.0d
+			y: -9.5d
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
+			hide_text_until_complete: false
 			id: "55C11A0A68933F94"
 			tasks: [
 				{
@@ -475,50 +481,69 @@
 			]
 		}
 		{
+			title: "Materials for Magic"
 			x: 4.5d
 			y: -6.0d
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "1AED23221D441256"
-			tasks: [{
-				id: "779CC6187C42349D"
-				type: "item"
-				item: "create:crushed_lead_ore"
-			}]
-			rewards: [
+			tasks: [
 				{
-					id: "14B2562B2990B800"
+					id: "779CC6187C42349D"
 					type: "item"
-					item: "eidolon:lead_ingot"
-					count: 3
+					item: "create:crushed_lead_ore"
 				}
+				{
+					id: "4D55A31D9FB8BC1B"
+					type: "item"
+					item: "minecraft:rotten_flesh"
+				}
+			]
+			rewards: [
 				{
 					id: "0691C2456D5FC7FF"
 					type: "xp_levels"
 					xp_levels: 1
+				}
+				{
+					id: "0E225BE1C6CDC01F"
+					type: "item"
+					item: "eidolon:codex"
 				}
 			]
 		}
 		{
 			x: 8.0d
 			y: -6.0d
+			description: [
+				"The Melter can melt metals and other materials using solid or liquid fuel."
+				"Refer to the Puny Smelting guide book for more information"
+			]
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "3D9753D002880F8F"
-			tasks: [{
-				id: "433C529A206BE214"
-				type: "item"
-				item: "tconstruct:seared_melter"
-			}]
-			rewards: [
+			tasks: [
 				{
-					id: "0583215F77F363B3"
+					id: "433C529A206BE214"
 					type: "item"
-					item: "tconstruct:grout"
-					count: 8
+					item: "tconstruct:seared_melter"
 				}
+				{
+					id: "597A3420E3082A95"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
+			rewards: [
 				{
 					id: "46D6CB64FE9E43FA"
 					type: "xp_levels"
 					xp_levels: 1
+				}
+				{
+					id: "07FC6EDE48DC6E54"
+					type: "item"
+					item: "tconstruct:puny_smelting"
 				}
 			]
 		}
@@ -545,6 +570,7 @@
 			x: 3.5d
 			y: -5.0d
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "6E55962772B1E752"
 			tasks: [{
 				id: "60020B23A48D9B3C"
@@ -585,6 +611,8 @@
 			x: 1.5d
 			y: -3.0d
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
+			hide_text_until_complete: false
 			id: "421E5A0F9EAE82FB"
 			tasks: [{
 				id: "1766215DF98D3975"
@@ -651,6 +679,7 @@
 				"Fortunately, the Kobolds seem to have cracked the mystery. Perhaps they are willing to trade? Rumors are, Wandering Traders have contacts as well."
 			]
 			dependencies: ["1D338113DDEE34F7"]
+			hide: true
 			id: "7452B72E7137F70D"
 			tasks: [{
 				id: "779C4076EAC545C8"
@@ -669,6 +698,18 @@
 					xp_levels: 1
 				}
 			]
+		}
+		{
+			x: 6.0d
+			y: -7.5d
+			description: ["The basis of all basic machines"]
+			dependencies: ["384DD3C2DF460AC4"]
+			id: "0EE94E298A96FE9C"
+			tasks: [{
+				id: "79B86E222909402A"
+				type: "item"
+				item: "create:gearbox"
+			}]
 		}
 	]
 }
