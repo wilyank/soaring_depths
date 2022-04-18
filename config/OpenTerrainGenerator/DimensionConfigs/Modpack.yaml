@@ -16,4 +16,4 @@ Dimensions:
   PortalColor: "gold"
   PortalMob: "mutantbeasts:spider_pig"
   PortalIgnitionSource: "cataclysm:gauntlet_of_guard"
-  PortalBlocks: "forbidden_arcanus:arcane_chiseled_polished_darkstone"
+  PortalBlocks: "cataclysm:void_stone"

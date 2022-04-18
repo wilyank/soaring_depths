@@ -14,7 +14,7 @@ reducedDebugInfo:false
 snooperEnabled:false
 showSubtitles:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -100,6 +100,12 @@ key_key.hotbar.6:key.keyboard.6
 key_key.hotbar.7:key.keyboard.7
 key_key.hotbar.8:key.keyboard.8
 key_key.hotbar.9:key.keyboard.9
+key_key.origins.primary_active:key.keyboard.g
+key_key.origins.secondary_active:key.keyboard.unknown
+key_key.origins.view_origin:key.keyboard.o
+key_key.ftbchunks.map:key.keyboard.m
+key_key.ftbchunks.minimap.zoomIn:key.keyboard.equal
+key_key.ftbchunks.minimap.zoomOut:key.keyboard.minus
 key_key.enchdesc.show:key.keyboard.left.shift
 key_key.boththrow.desc:key.mouse.right
 key_key.leftthrow.desc:key.keyboard.unknown
