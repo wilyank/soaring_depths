@@ -7,6 +7,7 @@ import crafttweaker.api.item.MCItemDefinition;
 import stdlib.List;
 import crafttweaker.api.util.text.MCTextComponent;
 import crafttweaker.api.util.text.MCStyle;
+import crafttweaker.api.entity.AttributeOperation;
 
 import mods.angrymobs.AITweaks;
 
@@ -704,3 +705,142 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:tyr_boots>);
         <fluid:contenttweaker:mob_essence>*1000
     ]
 );
+
+# do some global attribute modifier magic to 'fix' armor protection values
+
+<item:minecraft:leather_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 0.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:leather_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:leather_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:leather_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 0.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:minecraft:golden_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:golden_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:golden_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:golden_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:minecraft:chainmail_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:chainmail_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:chainmail_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:chainmail_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:minecraft:iron_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:iron_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:iron_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:iron_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:minecraft:turtle_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+
+<item:minecraft:diamond_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:diamond_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:diamond_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:diamond_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:minecraft:diamond_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:diamond_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:diamond_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:diamond_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+
+<item:minecraft:netherite_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 3, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:netherite_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:netherite_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:netherite_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 3, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:minecraft:netherite_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:minecraft:netherite_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:minecraft:netherite_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:minecraft:netherite_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:betterendforge:thallasium_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:thallasium_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:thallasium_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:thallasium_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:betterendforge:terminite_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 3, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:terminite_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:terminite_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:terminite_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:betterendforge:crystalite_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:crystalite_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:crystalite_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:crystalite_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:betterendforge:crystalite_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:crystalite_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:crystalite_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:crystalite_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:betterendforge:aeternium_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:aeternium_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:aeternium_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:aeternium_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:betterendforge:aeternium_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:betterendforge:aeternium_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:betterendforge:aeternium_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:betterendforge:aeternium_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:alexsmobs:frontier_cap>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:alexsmobs:spiked_turtle_shell>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+
+<item:alexsmobs:crocodile_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:alexsmobs:crocodile_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+
+<item:alexsmobs:emu_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 0, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:alexsmobs:emu_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+
+<item:alexsmobs:centipede_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 3, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+
+<item:alexsmobs:roadrunner_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+
+<item:cataclysm:ignitium_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:cataclysm:ignitium_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:cataclysm:ignitium_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:cataclysm:ignitium_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 3.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:cataclysm:ignitium_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:cataclysm:ignitium_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:cataclysm:ignitium_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:cataclysm:ignitium_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:eidolon:warlock_hat>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:eidolon:warlock_cloak>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:eidolon:warlock_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:forbidden_arcanus:mortem_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 0.5, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:mortem_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:mortem_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:mortem_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 0.5, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:forbidden_arcanus:arcane_gold_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:arcane_gold_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:arcane_gold_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 1.5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:arcane_gold_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 1, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:forbidden_arcanus:arcane_gold_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:arcane_gold_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:arcane_gold_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:arcane_gold_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 1, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+
+<item:forbidden_arcanus:obsidian_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 0, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:obsidian_shoulder_pads>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armr Modifier", 0, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:obsidian_knee_pads>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 0, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:obsidian_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 0, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+
+<item:forbidden_arcanus:draco_arcanus_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:draco_arcanus_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:draco_arcanus_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 5, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:draco_arcanus_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:forbidden_arcanus:draco_arcanus_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 2, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:draco_arcanus_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 2, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:draco_arcanus_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 2, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:draco_arcanus_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 2, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:forbidden_arcanus:tyr_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:tyr_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 6, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:tyr_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Modifier", 6, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:tyr_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Modifier", 4, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+<item:forbidden_arcanus:tyr_helmet>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "2ad3f246-fee1-4e67-b886-69fd380bb150", "Armor Toughness", 3, AttributeOperation.ADDITION, [<equipmentslottype:head>]);
+<item:forbidden_arcanus:tyr_chestplate>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Toughness", 3, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
+<item:forbidden_arcanus:tyr_leggings>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "d8499b04-0e66-4726-ab29-64469d734e0d", "Armor Toughness", 3, AttributeOperation.ADDITION, [<equipmentslottype:legs>]);
+<item:forbidden_arcanus:tyr_boots>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor_toughness>, "845db27c-c624-495f-8c9f-6020a9a58b6b", "Armor Toughness", 3, AttributeOperation.ADDITION, [<equipmentslottype:feet>]);
+
+<item:create:copper_backtank>.addGlobalAttributeModifier(<attribute:minecraft:generic.armor>, "9f3d476d-c118-4544-8365-64846904b48e", "Armor Modifier", 2.5, AttributeOperation.ADDITION, [<equipmentslottype:chest>]);
