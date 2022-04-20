@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_player_spawn",
+    "dimension": "minecraft:overworld",
+    "structure": "worldshape:soaring_depths/ruined_house",
+    "spawn_strategy": "center",
+    "name": "From Down Under",
+    "description": "You spawn in a ruined house."
+}
