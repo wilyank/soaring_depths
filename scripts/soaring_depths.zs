@@ -589,6 +589,8 @@ craftingTable.addShaped("crossbow",
 <recipetype:create:crushing>.addRecipe("crushing_amber_ore", [<item:betterendforge:raw_amber>, <item:betterendforge:raw_amber> % 50], <item:betterendforge:amber_ore>);
 <recipetype:create:milling>.addRecipe("milling_amber_ore", [<item:betterendforge:raw_amber>, <item:betterendforge:raw_amber> % 50], <item:betterendforge:amber_ore>);
 
+<recipetype:create:milling>.addRecipe("milling_gravel", [<item:minecraft:sand>, <item:minecraft:flint> % 10, <item:minecraft:clay_ball> % 5], <item:minecraft:gravel>);
+
 
 AITweaks.addAttackNearestTweak(<entitytype:kobolds:kobold_pirate>, <entitytype:minecraft:player>, 2, true);
 
