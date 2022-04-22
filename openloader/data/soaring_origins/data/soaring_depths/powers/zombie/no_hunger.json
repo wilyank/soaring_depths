@@ -1,15 +1,8 @@
 {
-    "type": "origins:action_over_time",
-    "interval": 20,
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:clear_effect",
-                "effect": "minecraft:hunger"
-            }
-        ]
-    },
+    "type": "origins:effect_immunity",
+    "effects": [
+        "minecraft:hunger"
+    ],
     "name": "Used to Hunger",
     "description": "You are used to hunger, so eating rotten flesh poses no problems."
 }

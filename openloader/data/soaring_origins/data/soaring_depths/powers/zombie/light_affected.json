@@ -9,7 +9,7 @@
         "effect": {
             "effect": "minecraft:slowness",
             "is_ambient": true,
-            "show_particles": true,
+            "show_particles": false,
             "show_icon": true
         },
         "condition": {
@@ -27,7 +27,7 @@
         "effect": {
             "effect": "minecraft:strength",
             "is_ambient": true,
-            "show_particles": true,
+            "show_particles": false,
             "show_icon": true
         },
         "condition": {

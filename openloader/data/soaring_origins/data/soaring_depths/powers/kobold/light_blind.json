@@ -1,0 +1,15 @@
+{
+    "type": "origins:shader",
+    "shader": "minecraft:shaders/post/blur.json",
+    "condition": {
+        "type": "origins:in_block",
+        "block_condition": {
+            "type": "origins:light_level",
+            "light_type": "sky",
+            "comparison": ">",
+            "compare_to": 10
+        }
+    },
+    "name": "Light blind",
+    "description": "Your vision is blurry in the sunlight."
+}

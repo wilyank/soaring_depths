@@ -3,9 +3,9 @@
     "modifier": {
         "name": "Max health decrease",
         "attribute": "minecraft:generic.max_health",
-        "value": -4,
+        "value": -6,
         "operation": "addition"
     },
     "name": "Less Health",
-    "description": "You have two hearts' worth less health."
+    "description": "You have three hearts' worth less health."
 }

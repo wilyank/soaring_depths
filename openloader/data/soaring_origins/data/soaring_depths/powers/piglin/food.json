@@ -1,55 +1,27 @@
 {
-    "name": "Fratricide",
-    "description": "You cannot eat pork.",
-    "type": "origins:modify_food",
+    "type": "origins:prevent_item_use",
     "item_condition": {
-        "type": "origins:or",
-        "conditions": [
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:or",
+          "conditions": [
             {
-                "type": "origins:ingredient",
-                "ingredient": {
+              "type": "origins:ingredient",
+              "ingredient": {
                 "item": "minecraft:porkchop"
-                }
+              }
             },
             {
                 "type": "origins:ingredient",
                 "ingredient": {
-                "item": "minecraft:cooked_porkchop"
-                } 
-            }
-        ]
-        
-    },
-    "food_modifier": {
-        "name": "No food from porkchop",
-        "operation": "multiply_base",
-        "value": -1.0
-    },
-    "saturation_modifier": {
-        "name": "No saturation from porkchop",
-        "operation": "multiply_base",
-        "value": -1.0
-    },
-    "entity_action": {
-        "type": "origins:and",
-        "actions": [
-            {
-                "type": "origins:apply_effect",
-                "effect": {
-                    "effect": "minecraft:nausea",
-                    "duration": 40,
-                    "amplifier": 0
+                  "item": "minecraft:cooked_porkchop"
                 }
-            },
-            {
-                "type": "origins:apply_effect",
-                "effect": {
-                    "effect": "minecraft:poison",
-                    "duration": 40,
-                    "amplifier": 0
-                }
-            }
-        ]
-        
-    }
-}
+              }
+          ]
+        }
+      ]
+    },
+    "name": "No Cannibal",
+    "description": "You cannot eat the meat of a pig."
+  }

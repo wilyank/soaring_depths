@@ -38,3 +38,12 @@ forge_gems.add(<item:forbidden_arcanus:dark_rune>);
 
 <tag:items:forge:plates>.add(<item:steampowered:bronze_sheet>);
 <tag:items:forge:plates/bronze>.add(<item:steampowered:bronze_sheet>);
+
+<tag:items:origins:meat>.add(<item:outer_end:stalker_meat>);
+<tag:items:origins:meat>.add(<item:outer_end:cooked_stalker_meat>);
+<tag:items:origins:meat>.add(<item:alexsmobs:kangaroo_meat>);
+<tag:items:origins:meat>.add(<item:alexsmobs:cooked_kangaroo_meat>);
+<tag:items:origins:meat>.add(<item:forbidden_arcanus:bat_wing>);
+<tag:items:origins:meat>.add(<item:forbidden_arcanus:tentacle>);
+<tag:items:origins:meat>.add(<item:forbidden_arcanus:cooked_tentacle>);
+

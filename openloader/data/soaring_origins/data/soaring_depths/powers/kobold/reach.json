@@ -1,0 +1,34 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "name": "Decreased Reach block reach",
+      "attribute": {
+        "name": "reach-entity-attributes:reach",
+        "platform": "fabric"
+      },
+      "value": -1,
+      "operation": "addition"
+    },
+    {
+      "name": "Decreased Reach entity reach",
+      "attribute": {
+        "name": "reach-entity-attributes:attack_range",
+        "platform": "fabric"
+      },
+      "value": -1,
+      "operation": "addition"
+    },
+    {
+      "name": "Decreased Reach forge",
+      "attribute": {
+        "name": "forge:reach_distance",
+        "platform": "forge"
+      },
+      "value": -1,
+      "operation": "addition"
+    }
+  ],
+    "name": "Short Arms",
+    "description": "Your reach distance is decreased by 1 block."
+  }
