@@ -60,9 +60,9 @@
             "minecraft:zombie_villager" 
         ],
         "mincount": {
-          "amount": 50,
+          "amount": 30,
           "hostile": true,
-          "perplayer": true
+          "perchunk": true
         },
         "result": "deny"
     },
