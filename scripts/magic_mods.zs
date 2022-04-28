@@ -330,7 +330,7 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:eternal_stella>);
 
 
 // automating Eidolon
-<recipetype:tconstruct:melting>.removeByName("materialis:smeltery/melting/metal/arcane_gold_inlay");
+// <recipetype:tconstruct:melting>.removeByName("materialis:smeltery/melting/metal/arcane_gold_inlay");
 
 <recipetype:tconstruct:melting>.addMeltingRecipe("red_gold_ingot_melting", 
     <tag:items:forge:ingots/red_gold>, 

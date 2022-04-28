@@ -41,7 +41,7 @@ forge_gems.add(<item:forbidden_arcanus:dark_rune>);
 
 
 <tag:items:forge:plates>.add(<item:steampowered:bronze_sheet>);
-<tag:items:forge:plates/bronze>.add(<item:steampowered:bronze_sheet>);
+<tag:items:forge:plates/silicon_bronze>.add(<item:steampowered:bronze_sheet>);
 
 <tag:items:origins:meat>.add(<item:outer_end:stalker_meat>);
 <tag:items:origins:meat>.add(<item:outer_end:cooked_stalker_meat>);

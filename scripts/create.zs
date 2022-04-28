@@ -41,7 +41,7 @@ craftingTable.addShaped("cast_iron_large_cogwheel",
 );
 
 // fix bronze machines being crafted with brass
-s = <tag:items:forge:plates/bronze>;
+s = <tag:items:forge:plates/silicon_bronze>;
 i = <tag:items:forge:ingots/silicon_bronze>;
 
 // bronze sheet
