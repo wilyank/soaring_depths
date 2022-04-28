@@ -83,17 +83,17 @@ craftingTable.addShaped("xpetrified_block",
 
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:arcane_gold_nugget>, ["Can be grown from Golden Orchid Seeds."]);
 craftingTable.removeRecipe(<item:forbidden_arcanus:golden_orchid_seeds>);
-<recipetype:create:mixing>.addRecipe("golden_orchid_seeds", 
-    "heated",
-    <item:forbidden_arcanus:golden_orchid_seeds>,
-    [
-        <tag:items:forge:seeds>,
-        <item:forbidden_arcanus:arcane_gold_nugget>*8
-    ]    
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("golden_orchid_seeds",
+    <tag:items:forge:seeds>,
+    <fluid:materialis:molten_arcane_gold> * 144, 
+    <item:forbidden_arcanus:golden_orchid_seeds>, 
+    40, 
+    true, 
+    false
 );
 <recipetype:tconstruct:melting>.addMeltingRecipe("golden_orchid_seeds_melting", 
     <item:forbidden_arcanus:golden_orchid_seeds>, 
-    <fluid:tconstruct:molten_gold>*16, 
+    <fluid:materialis:molten_arcane_gold>*16, 
     700, 
     80
 );
@@ -330,8 +330,39 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:eternal_stella>);
 
 
 // automating Eidolon
+<recipetype:tconstruct:melting>.removeByName("materialis:smeltery/melting/metal/arcane_gold_inlay");
 
-<recipetype:create:mixing>.addRecipe("redstone_gold_mixing",
+<recipetype:tconstruct:melting>.addMeltingRecipe("red_gold_ingot_melting", 
+    <tag:items:forge:ingots/red_gold>, 
+    <fluid:tconstruct:molten_signalum> * 144, 
+    670, 
+    280
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("red_gold_nugget_melting", 
+    <tag:items:forge:nuggets/red_gold>, 
+    <fluid:tconstruct:molten_signalum> * 144, 
+    670, 
+    10
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("red_gold_block_melting", 
+    <tag:items:forge:storage_blocks/red_gold>,
+    <fluid:tconstruct:molten_signalum> * 1296, 
+    670, 
+    840
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("red_gold_inlay_melting", 
+    <tag:items:forge:inlays/red_gold>, 
+    <fluid:tconstruct:molten_signalum> * 288, 
+    670, 
+    280
+);
+<recipetype:tconstruct:melting>.addMeltingRecipe("arcane_gold_dragon_scale_melting", 
+    <item:forbidden_arcanus:golden_dragon_scale>, 
+    <fluid:materialis:molten_arcane_gold> * 576, 
+    670, 
+    280
+);
+<recipetype:create:mixing>.addRecipe("red_gold_mixing",
     "heated",
     <fluid:tconstruct:molten_signalum>*288,
     [
@@ -344,23 +375,40 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:eternal_stella>);
     ]
 );
 
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_ingot",
-    <item:tconstruct:ingot_cast>, 
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("red_gold_block",
+    <item:minecraft:air>,
+    <fluid:tconstruct:molten_signalum> * 1296, 
+    <item:eidolon:arcane_gold_block>, 
+    160, 
+    false, 
+    false
+);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("red_gold_ingot",
+    <tag:items:tconstruct:casts/multi_use/ingot>,
     <fluid:tconstruct:molten_signalum> * 144, 
     <item:eidolon:arcane_gold_ingot>, 
     40, 
     false, 
     false
 );
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_nugget",
-    <item:tconstruct:nugget_cast>, 
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("golden_dragon_scale",
+    <item:forbidden_arcanus:dragon_scale>,
+    <fluid:materialis:molten_arcane_gold> * 576, 
+    <item:forbidden_arcanus:golden_dragon_scale>, 
+    80, 
+    true, 
+    false
+);
+
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("red_gold_nugget",
+    <tag:items:tconstruct:casts/multi_use/ingot>,
     <fluid:tconstruct:molten_signalum> * 16, 
-    <item:eidolon:arcane_gold_ingot>, 
+    <item:eidolon:arcane_gold_nugget>, 
     4, 
     false, 
     false
 );
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_ingot_sand",
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("red_gold_ingot_sand",
     <tag:items:tconstruct:casts/single_use/ingot>,
     <fluid:tconstruct:molten_signalum> * 144, 
     <item:eidolon:arcane_gold_nugget>, 
@@ -368,7 +416,7 @@ craftingTable.removeRecipe(<item:forbidden_arcanus:eternal_stella>);
     true, 
     false
 );
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("redstone_gold_nugget_sand",
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("red_gold_nugget_sand",
     <tag:items:tconstruct:casts/single_use/nugget>,
     <fluid:tconstruct:molten_signalum> * 16, 
     <item:eidolon:arcane_gold_nugget>, 

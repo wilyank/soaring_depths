@@ -46,13 +46,21 @@ i = <tag:items:forge:ingots/silicon_bronze>;
 
 // bronze sheet
 <recipetype:create:pressing>.addRecipe("bronze_sheet", [<item:steampowered:bronze_sheet>], i);
-<recipetype:tconstruct:casting_table>.addItemCastingRecipe("cast_bronze_sheet", 
-    <item:tconstruct:plate_cast>, 
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("bronze_sheet_casting", 
+    <tag:items:tconstruct:casts/multi_use/plate>, 
     <fluid:tconstruct:molten_tinkers_bronze> * 144, 
     <item:steampowered:bronze_sheet>, 
     40, 
     false, 
     false
+);
+<recipetype:tconstruct:casting_table>.addItemCastingRecipe("bronze_sheet_sand_casting", 
+    <tag:items:tconstruct:casts/single_use/plate>,
+    <fluid:tconstruct:molten_tinkers_bronze> * 144, 
+    <item:steampowered:bronze_sheet>, 
+    40, 
+    false, 
+    true
 );
 
 // small bronze cogwheel

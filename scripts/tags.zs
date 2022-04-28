@@ -31,9 +31,13 @@ forge_gems.add(<item:forbidden_arcanus:dark_rune>);
 // fix Eidolon and Forbidden and Arcanus having wildly different ingots with the same name. Renaming is done in the lang files
 <tag:items:forge:ingots/arcane_gold>.remove(<item:eidolon:arcane_gold_ingot>);
 <tag:items:forge:storage_blocks/arcane_gold>.remove(<item:eidolon:arcane_gold_block>);
+<tag:items:forge:nuggets/arcane_gold>.remove(<item:eidolon:arcane_gold_nugget>);
+<tag:items:forge:inlays/arcane_gold>.remove(<item:eidolon:gold_inlay>);
 
 <tag:items:forge:ingots/red_gold>.add(<item:eidolon:arcane_gold_ingot>);
 <tag:items:forge:storage_blocks/red_gold>.add(<item:eidolon:arcane_gold_block>);
+<tag:items:forge:nuggets/red_gold>.add(<item:eidolon:arcane_gold_nugget>);
+<tag:items:forge:inlays/red_gold>.add(<item:eidolon:gold_inlay>);
 
 
 <tag:items:forge:plates>.add(<item:steampowered:bronze_sheet>);

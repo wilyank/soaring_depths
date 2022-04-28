@@ -269,6 +269,9 @@ furnace.removeByName("forbidden_arcanus:arcane_crystal_from_smelting");
 furnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 blastFurnace.removeRecipe(<item:forbidden_arcanus:arcane_crystal_dust>);
 
+// remove a weird crafting recipe that should have never existed
+furnace.removeByName("charcoalblock:charcoal_block_smelting");
+
 var crushed_starmetal_ore = <item:contenttweaker:crushed_starmetal_ore>;
 var starmetal_nugget = <item:contenttweaker:starmetal_nugget>;
 mods.jei.JEI.addItem(crushed_starmetal_ore);
@@ -349,6 +352,22 @@ craftingTable.addShapeless("starmetal_nugget_to_ingot",
         <item:astralsorcery:starmetal_ingot>
     ]
 );
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("starmetal_nugget_casting",
+    <tag:items:tconstruct:casts/multi_use/nugget>,
+    <fluid:materialis:molten_starmetal>*16,
+    starmetal_nugget,
+    1,
+    false,
+    false
+);
+<recipetype:tconstruct:casting_basin>.addItemCastingRecipe("starmetal_nugget_sand_casting",
+    <tag:items:tconstruct:casts/single_use/nugget>,
+    <fluid:materialis:molten_starmetal>*16,
+    starmetal_nugget,
+    1,
+    true,
+    false
+);
 
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/gold/ore");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/iron/ore");
@@ -359,11 +378,15 @@ craftingTable.addShapeless("starmetal_nugget_to_ingot",
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/diamond/ore");
 <recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/emerald/ore");
 
+<recipetype:tconstruct:melting>.removeByName("materialis:smeltery/melting/metal/starmetal/ore");
+
+
 <recipetype:tconstruct:melting>.addOreMeltingRecipe("iron_ore", <item:create:crushed_iron_ore>, <fluid:tconstruct:molten_iron> * 144, 800, 440, [<fluid:tconstruct:molten_copper> * 48]);
 <recipetype:tconstruct:melting>.addOreMeltingRecipe("gold_ore", <item:create:crushed_gold_ore>, <fluid:tconstruct:molten_gold> * 144, 700, 420, [<fluid:tconstruct:molten_copper> * 48]);
 <recipetype:tconstruct:melting>.addOreMeltingRecipe("zinc_ore", <item:create:crushed_zinc_ore>, <fluid:tconstruct:molten_zinc> * 144, 420, 340, [<fluid:tconstruct:molten_copper> * 48]);
 <recipetype:tconstruct:melting>.addOreMeltingRecipe("copper_ore", <item:create:crushed_copper_ore>, <fluid:tconstruct:molten_copper> * 144, 500, 360, [<fluid:tconstruct:molten_gold> * 16]);
 <recipetype:tconstruct:melting>.addOreMeltingRecipe("lead_ore", <item:create:crushed_lead_ore>, <fluid:tconstruct:molten_lead> * 144, 330, 320, [<fluid:tconstruct:molten_gold> * 48]);
+<recipetype:tconstruct:melting>.addOreMeltingRecipe("starmetal_ore", crushed_starmetal_ore, <fluid:materialis:molten_starmetal> * 144, 750, 440, [<fluid:astralsorcery:liquid_starlight> * 100]);
 
 <recipetype:create:filling>.addRecipe("auto_redstone",
     <item:minecraft:redstone>,
