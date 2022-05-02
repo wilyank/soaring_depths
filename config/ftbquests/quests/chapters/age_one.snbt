@@ -1,11 +1,11 @@
 {
 	id: "2D03918CC01E5D08"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 1
+	order_index: 0
 	filename: "age_one"
 	title: "Chapter One"
 	icon: "eidolon:unholy_symbol"
-	subtitle: ["Digging For Information"]
+	subtitle: ["The Dawn of an Age"]
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -190,7 +190,6 @@
 			x: 6.5d
 			y: -2.0d
 			description: ["Lava is rare now, but when you get access to the lower realm, you will have enough."]
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "52CD767C02F6697C"
 			tasks: [{
@@ -268,7 +267,6 @@
 			x: 1.5d
 			y: -0.5d
 			description: ["These blue gems, found in the sand on the bottom of shallow lakes, seem to have absorbed starlight over the years."]
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "4FB86EAD82894738"
 			tasks: [{
@@ -286,7 +284,6 @@
 			x: 1.5d
 			y: -1.5d
 			description: ["These white shrines contain magic from a long time ago. This might prove useful."]
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "6451AAD01A45D313"
 			tasks: [{
@@ -450,7 +447,6 @@
 			title: "Materials for Engineering"
 			x: 6.0d
 			y: -9.5d
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			hide_text_until_complete: false
 			id: "55C11A0A68933F94"
@@ -484,7 +480,6 @@
 			title: "Materials for Magic"
 			x: 4.5d
 			y: -6.0d
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "1AED23221D441256"
 			tasks: [
@@ -519,7 +514,6 @@
 				"The Melter can melt metals and other materials using solid or liquid fuel."
 				"Refer to the Puny Smelting guide book for more information"
 			]
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "3D9753D002880F8F"
 			tasks: [
@@ -569,7 +563,6 @@
 		{
 			x: 3.5d
 			y: -5.0d
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "6E55962772B1E752"
 			tasks: [{
@@ -610,7 +603,6 @@
 		{
 			x: 1.5d
 			y: -3.0d
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			hide_text_until_complete: false
 			id: "421E5A0F9EAE82FB"
@@ -658,7 +650,6 @@
 			x: 9.0d
 			y: 1.0d
 			subtitle: "Some mining required"
-			dependencies: ["1D338113DDEE34F7"]
 			id: "3354660EF57F1DAA"
 			tasks: [{
 				id: "6A8043EF504786C6"
@@ -678,7 +669,6 @@
 				"Having void instead of oceans means that underwater plants are slightly hard to come by."
 				"Fortunately, the Kobolds seem to have cracked the mystery. Perhaps they are willing to trade? Rumors are, Wandering Traders have contacts as well."
 			]
-			dependencies: ["1D338113DDEE34F7"]
 			hide: true
 			id: "7452B72E7137F70D"
 			tasks: [{
@@ -709,6 +699,327 @@
 				id: "79B86E222909402A"
 				type: "item"
 				item: "create:gearbox"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			id: "212D08A365DF0C5B"
+			tasks: [{
+				id: "749DEE4E2987D6B1"
+				type: "structure"
+				title: "Find the Prismarine Vault"
+				icon: "minecraft:prismarine"
+				structure: "worldshape:soaring_depths/prismarine_vault"
+			}]
+			rewards: [{
+				id: "5E44E402CA48AFAB"
+				type: "item"
+				item: "minecraft:golden_carrot"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["212D08A365DF0C5B"]
+			id: "11BE7DD0E0ED7C32"
+			tasks: [{
+				id: "5CECF22551032B72"
+				type: "kill"
+				entity: "minecraft:elder_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6B86B6BFB4913A99"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/elder_guardian_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"dark_aqua\",\"text\":\"Elder Guardian Crate\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: 1.5d
+			id: "3864CE7C4C1729D9"
+			tasks: [{
+				id: "5341BCF63069B724"
+				type: "kill"
+				icon: {
+					id: "mowziesmobs:ice_crystal"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "mowziesmobs:frostmaw"
+				value: 1L
+			}]
+			rewards: [{
+				id: "520CDA63FB9B99B9"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/frostmaw_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"white\",\"text\":\"Frostmaw Crate\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 1.5d
+			dependencies: ["64861ECB79735EBE"]
+			id: "43ACA0B2EFCFB9A6"
+			tasks: [{
+				id: "2E28A65B3F84B320"
+				type: "kill"
+				icon: "mowziesmobs:wrought_helmet"
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				value: 1L
+			}]
+			rewards: [{
+				id: "450C83D4B42B07EF"
+				type: "item"
+				item: {
+					id: "minecraft:barrel"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/wroughtnaut_crate"
+						}
+						display: {
+							Name: "{\"bold\":true,\"italic\":false,\"color\":\"dark_gray\",\"text\":\"Ferrous Wroughtnaut Crate\"}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: 0.5d
+			id: "64861ECB79735EBE"
+			tasks: [{
+				id: "6152A72EBF28B5B3"
+				type: "structure"
+				title: "Locate the Andesite Ruins"
+				icon: "betterendforge:andesite_pedestal"
+				structure: "worldshape:soaring_depths/andesite_ruins"
+			}]
+			rewards: [{
+				id: "06AF6AA8159DF1A8"
+				type: "item"
+				item: "minecraft:golden_apple"
+			}]
+		}
+		{
+			title: "Toolmaking"
+			x: 11.0d
+			y: -7.0d
+			subtitle: "All a tool shop needs"
+			id: "103BBB9EE1DB0526"
+			tasks: [
+				{
+					id: "510804F3EAF020D6"
+					type: "item"
+					item: "tconstruct:crafting_station"
+				}
+				{
+					id: "3811694A7651E346"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+				{
+					id: "5082E28C3D0B6BA4"
+					type: "item"
+					item: "tconstruct:part_builder"
+				}
+				{
+					id: "42D6F1330E672419"
+					type: "item"
+					item: "tconstruct:part_chest"
+				}
+				{
+					id: "19CD3DC0581FB684"
+					type: "item"
+					item: "tconstruct:pattern"
+				}
+			]
+			rewards: [{
+				id: "5E8E7E981A11699B"
+				type: "item"
+				item: "minecraft:cobblestone"
+				count: 64
+			}]
+		}
+		{
+			x: 12.0d
+			y: -7.0d
+			id: "62A36E8F4314F68A"
+			tasks: [
+				{
+					id: "6AF7D1864E7EF12C"
+					type: "item"
+					item: "improvedbackpacks:sewing_table"
+				}
+				{
+					id: "48DC5BA802AC31C3"
+					type: "item"
+					item: "improvedbackpacks:sewing_spool"
+				}
+				{
+					id: "3A97261982D70F7A"
+					type: "item"
+					item: {
+						id: "minecraft:shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "04ED962B8BC20216"
+				type: "item"
+				item: "improvedbackpacks:tiny_pocket"
+			}]
+		}
+		{
+			title: "Economist"
+			x: 12.5d
+			y: -6.0d
+			id: "7D5DEFCC6F4B1948"
+			tasks: [
+				{
+					id: "19B066E659154685"
+					type: "advancement"
+					title: "Trade with a Kobold"
+					advancement: "kobolds:kobold_trader_advancement"
+					criterion: ""
+				}
+				{
+					id: "44F40C7247CD223D"
+					type: "advancement"
+					title: "Trade with a Villager or Wandering Trader"
+					advancement: "minecraft:adventure/trade"
+					criterion: ""
+				}
+				{
+					id: "28AB3A9D4CBD968B"
+					type: "advancement"
+					title: "Trade with a Kobold Engineer"
+					advancement: "kobolds:kobold_engineer_advancement"
+					criterion: ""
+				}
+				{
+					id: "746D3FEB6B136B86"
+					type: "advancement"
+					title: "Trade with a Kobold Enchanter"
+					advancement: "kobolds:kobold_enchanter_advancement"
+					criterion: ""
+				}
+				{
+					id: "0894C0E1CF3FB666"
+					type: "advancement"
+					title: "Cure a Zombie Villager"
+					advancement: "minecraft:story/cure_zombie_villager"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "1B8F20D3FD02ADD6"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 16
+			}]
+		}
+		{
+			x: 11.5d
+			y: -6.0d
+			subtitle: "A handy binder for your guides"
+			id: "4294E9EE3F13CC85"
+			tasks: [{
+				id: "7E342E3F89E498A7"
+				type: "item"
+				item: "akashictome:tome"
+			}]
+			rewards: [{
+				id: "31739FA2EDCA4318"
+				type: "item"
+				item: "minecraft:lectern"
+			}]
+		}
+		{
+			title: "Just trying to help"
+			x: 10.5d
+			y: -6.0d
+			id: "7EFCAE2177E91260"
+			tasks: [{
+				id: "09A446EED25C477D"
+				type: "item"
+				item: "bountiful:bountyboard"
+			}]
+			rewards: [{
+				id: "202F9A1E31312BE5"
+				type: "item"
+				item: "bountiful:decree"
+			}]
+		}
+		{
+			title: "Smart Storage Drawers"
+			x: 9.0d
+			y: -0.5d
+			shape: "gear"
+			dependencies: ["2B0BA980EF3EEA90"]
+			id: "608E8D992CD290B2"
+			tasks: [
+				{
+					id: "3A128698DD0F6D87"
+					type: "item"
+					item: "storagedrawers:controller"
+				}
+				{
+					id: "2260A2F45D31A178"
+					type: "item"
+					item: "storagedrawers:controller_slave"
+				}
+				{
+					id: "0753F5B767B3AF9D"
+					type: "item"
+					item: "storagedrawers:compacting_drawers_3"
+				}
+				{
+					id: "6C0DC6CB07BEB003"
+					type: "item"
+					title: "Any #storagedrawers:drawers"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "storagedrawers:drawers"
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "5DD128D7247C8E94"
+				type: "item"
+				item: "metalbarrels:gold_barrel"
 			}]
 		}
 	]

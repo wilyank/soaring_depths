@@ -1,7 +1,7 @@
 {
 	id: "5A87B67153E29FC0"
 	group: "7AA6A42EAAA7D2D9"
-	order_index: 2
+	order_index: 1
 	filename: "automation_checklist"
 	title: "Automation Checklist"
 	icon: "create:cogwheel"
@@ -10,8 +10,8 @@
 	quests: [
 		{
 			title: "Cobblestone"
-			x: -17.5d
-			y: -7.5d
+			x: -14.5d
+			y: -6.5d
 			id: "1F1D5B9D7E798C28"
 			tasks: [
 				{
@@ -514,7 +514,7 @@
 		}
 		{
 			x: -15.5d
-			y: -7.5d
+			y: -6.5d
 			id: "234BB44DBB76701B"
 			tasks: [
 				{
@@ -524,23 +524,6 @@
 				}
 				{
 					id: "3529C42E87BCE530"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -15.5d
-			y: -6.5d
-			id: "6ECBABF02CAA3EC6"
-			tasks: [
-				{
-					id: "27C494526F4AACB6"
-					type: "item"
-					item: "minecraft:granite"
-				}
-				{
-					id: "0ED0F07CCA8F472D"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -575,23 +558,6 @@
 				}
 				{
 					id: "49083233E85626F6"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -14.5d
-			y: -6.5d
-			id: "1CB9717123B30D02"
-			tasks: [
-				{
-					id: "28FE86D6A447871E"
-					type: "item"
-					item: "create:gabbro"
-				}
-				{
-					id: "2913AC971F832157"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -675,8 +641,8 @@
 			]
 		}
 		{
-			x: -14.5d
-			y: -7.5d
+			x: -16.5d
+			y: -3.5d
 			id: "64DBB67895300F8A"
 			tasks: [
 				{
@@ -737,23 +703,6 @@
 				}
 				{
 					id: "1308AAA7FE5842E7"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -16.5d
-			y: -3.5d
-			id: "4E1284F5C5887609"
-			tasks: [
-				{
-					id: "2E409A6DEE314F50"
-					type: "item"
-					item: "minecraft:blackstone"
-				}
-				{
-					id: "2410842ED8F02585"
 					type: "checkmark"
 					title: "Automated"
 				}
@@ -1186,23 +1135,6 @@
 				}
 				{
 					id: "05AEBB4B5FF2E568"
-					type: "checkmark"
-					title: "Automated"
-				}
-			]
-		}
-		{
-			x: -16.5d
-			y: -7.5d
-			id: "5FD4B2BD7A1263D6"
-			tasks: [
-				{
-					id: "4B2117D2A14D3077"
-					type: "item"
-					item: "minecraft:basalt"
-				}
-				{
-					id: "07A5C6BE53015367"
 					type: "checkmark"
 					title: "Automated"
 				}

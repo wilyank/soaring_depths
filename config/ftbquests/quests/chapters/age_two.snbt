@@ -1,7 +1,7 @@
 {
 	id: "7EB1BA8D4004421F"
 	group: "4C3A2A3D8FDBADEB"
-	order_index: 2
+	order_index: 1
 	filename: "age_two"
 	title: "Chapter Two"
 	icon: "create:precision_mechanism"
@@ -219,7 +219,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 2.5d
 			y: 2.0d
 			dependencies: ["1EC5853695BBE61A"]
 			id: "3998C66DBB806C44"
@@ -243,7 +243,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 3.0d
 			y: 0.5d
 			description: [
 				"This tool can direct the light from a Collector Crystal to a specific block."
@@ -669,7 +669,7 @@
 		}
 		{
 			x: 5.0d
-			y: 0.0d
+			y: 0.5d
 			description: ["Definetely check out the other things Astral Sorcery has to offer. It might be a good idea to upgrade your starlight crafting altar"]
 			dependencies: ["50CC57E3B32F9CF3"]
 			optional: true
@@ -816,6 +816,370 @@
 				type: "dimension"
 				title: "Visit the Nether"
 				dimension: "minecraft:the_nether"
+			}]
+		}
+		{
+			title: "I Fear No Flames No More"
+			x: 3.5d
+			y: 5.0d
+			description: ["The Obsidian Skull grants you permanent Fire Resistance."]
+			hide_dependency_lines: false
+			dependencies: [
+				"1CB1B50085F9123C"
+				"6A7D12ACCD040183"
+			]
+			hide: false
+			optional: true
+			id: "5701A7E232904D61"
+			tasks: [{
+				id: "71AAED904B686098"
+				type: "item"
+				item: "forbidden_arcanus:eternal_obsidian_skull"
+			}]
+			rewards: [{
+				id: "48AF16C2B85951DE"
+				type: "item"
+				item: "forbidden_arcanus:arcane_gold_ingot"
+			}]
+		}
+		{
+			title: "Prepare for DEATH"
+			icon: {
+				id: "cataclysm:infernal_forge"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 6.0d
+			dependencies: ["5701A7E232904D61"]
+			dependency_requirement: "one_started"
+			optional: true
+			id: "264C220DE37F34BA"
+			tasks: [
+				{
+					id: "4A784B619F6F06F2"
+					type: "structure"
+					title: "Find the Soul Blacksmith in the Nether"
+					structure: "cataclysm:soul_black_smith"
+				}
+				{
+					id: "08F24E948FFBA3F5"
+					type: "item"
+					item: "minecraft:respawn_anchor"
+				}
+			]
+			rewards: [{
+				id: "00498643AC4C5CD0"
+				type: "item"
+				item: {
+					id: "minecraft:potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			title: "Through the Fire and the Flames"
+			icon: {
+				id: "cataclysm:monstrous_helm"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 3.5d
+			y: 7.0d
+			description: ["The Netherite Monstrosity might be a good way to get some more Netherite."]
+			dependencies: ["264C220DE37F34BA"]
+			optional: true
+			id: "7B84CAF2F44CE4AB"
+			tasks: [{
+				id: "676EA4230AD242D2"
+				type: "kill"
+				entity: "cataclysm:netherite_monstrosity"
+				value: 1L
+			}]
+			rewards: [{
+				id: "1EC751D7E58CE231"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_red_shulker_box"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							LootTable: "soaring_depths:chests/netherite_monstrosity_crate"
+						}
+						display: {
+							Name: "{\"text\":\"Netherite Monstrosity Crate\",\"color\":\"dark_red\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			subtitle: "Unleash your Inner Superhero"
+			dependencies: ["50CC57E3B32F9CF3"]
+			optional: true
+			id: "4631BCE9BFF79BC6"
+			tasks: [{
+				id: "722596A854DF92F1"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			description: ["Very useful for the less common ores"]
+			dependencies: ["50CC57E3B32F9CF3"]
+			optional: true
+			id: "01C22F7A5BC61690"
+			tasks: [
+				{
+					id: "276B79F4B9BB3812"
+					type: "item"
+					item: "astralsorcery:ritual_pedestal"
+				}
+				{
+					id: "35E86DAB66FA4474"
+					type: "item"
+					item: {
+						id: "astralsorcery:attuned_rock_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								constellationName: "astralsorcery:mineralis"
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Personal Improvement"
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["33D549F55B881DB5"]
+			id: "4B592B561F7D8917"
+			tasks: [
+				{
+					id: "0353FBCF87A4FAA8"
+					type: "item"
+					item: {
+						id: "create:extendo_grip"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3F300404AC2C0B9C"
+					type: "item"
+					item: {
+						id: "create:copper_backtank"
+						Count: 1b
+						tag: {
+							Air: 900
+						}
+					}
+				}
+				{
+					id: "0C7C01B5042D5089"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00E865782C14DD2A"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0427DB61746D6D7E"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E9E933FB56FCF89"
+					type: "item"
+					item: "create:linked_controller"
+				}
+			]
+			rewards: [
+				{
+					id: "4ECC44817B04CA8E"
+					type: "item"
+					item: "minecraft:minecart"
+				}
+				{
+					id: "2BFBDBF9B02565DD"
+					type: "item"
+					item: "create:cart_assembler"
+				}
+				{
+					id: "19E66EE0AFACD88E"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "4F4287EA53BCF60D"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 5.5d
+			hide_dependency_lines: true
+			dependencies: ["61F410589E5F8E67"]
+			id: "4FEFA50D4182C0BB"
+			tasks: [{
+				id: "4F0777D56B321091"
+				type: "item"
+				item: "minecraft:netherite_ingot"
+			}]
+			rewards: [{
+				id: "6600CA7DE4E08BBB"
+				type: "item"
+				item: "minecraft:smithing_table"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 6.0d
+			subtitle: "Gone Lavafishin'"
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "78C170840CFCACE9"
+			tasks: [{
+				id: "09972B42FA0CEAF6"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_fishing_rod"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1548777C99A5DCBA"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 7.0d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "136C3A4F41B1D166"
+			tasks: [{
+				id: "4237874799D4FCA3"
+				type: "advancement"
+				title: "Netherite Shulker Box"
+				advancement: "netherite_plus:netherite_plus/netherite_shulker_boxes"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "28988464DF9E0D30"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 7.0d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "43D0ED3A0CA129B1"
+			tasks: [{
+				id: "741605D5ED6279C7"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_trident"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "3DB00AB820D983FA"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 7.0d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "7E8248CC2A1C5988"
+			tasks: [{
+				id: "2676F7FC12E916E8"
+				type: "item"
+				item: "minecraft:lodestone"
+			}]
+			rewards: [{
+				id: "43C75E689D8214A3"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 7.0d
+			dependencies: ["4FEFA50D4182C0BB"]
+			id: "6A9B3D23D3F008B9"
+			tasks: [{
+				id: "48D58D5A27945C6B"
+				type: "item"
+				item: {
+					id: "netherite_plus:netherite_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "660DAB3CBD7E3738"
+				type: "item"
+				item: "minecraft:ancient_debris"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			id: "12D82D966376CFBD"
+			tasks: [{
+				id: "49ABF9451F2B4609"
+				type: "advancement"
+				title: "Wither"
+				advancement: "minecraft:nether/summon_wither"
+				criterion: ""
 			}]
 		}
 	]

@@ -69,6 +69,42 @@
     {
         "dimension": "minecraft:overworld",
         "mob": [
+            "minecraft:skeleton",
+            "minecraft:zombie",
+            "minecraft:creeper",
+            "minecraft:spider",
+            "minecraft:stray",
+            "minecraft:husk",
+            "minecraft:enderman",
+            "eidolon:wraith",
+            "eidolon:zombie_brute",
+            "minecraft:witch",
+            "minecraft:zombie_villager" 
+        ],
+        "maxspawndist": 32,
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": [
+            "minecraft:skeleton",
+            "minecraft:zombie",
+            "minecraft:creeper",
+            "minecraft:spider",
+            "minecraft:stray",
+            "minecraft:husk",
+            "minecraft:enderman",
+            "eidolon:wraith",
+            "eidolon:zombie_brute",
+            "minecraft:witch",
+            "minecraft:zombie_villager" 
+        ],
+        "minlight": 3,
+        "result": "deny"
+    },
+    {
+        "dimension": "minecraft:overworld",
+        "mob": [
             "minecraft:sheep",
             "minecraft:cow",
             "minecraft:chicken",
