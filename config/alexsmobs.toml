@@ -15,7 +15,7 @@
 	#Whether wild raccoons steal food from chests.
 	raccoonStealFromChests = true
 	#Whether mimicream can be used to duplicate items.
-	mimicreamRepair = true
+	mimicreamRepair = false
 	#List of items that seagulls cannot take from players.
 	seagullStealingBlacklist = []
 	#Whether acacia blossoms should drop from blocks tagged with #alexsmobs:drops_acacia_blossoms
@@ -55,7 +55,7 @@
 	#Whether to disable certain aspects of the Lava Vision Potion. Enable if issues with shaders persist.
 	shadersCompat = false
 	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobs:warped_toad"
-	warpedMoscoMobTriggers = [""]
+	warpedMoscoMobTriggers = ["alexsmobs:warped_toad","minecraft:mooshroom"]
 	#1 out of this number chance for leaves to drop a banana when broken. Fortune is automatically factored in
 	#Range: > 0
 	bananaChance = 200
