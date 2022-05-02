@@ -3,16 +3,16 @@
 [spawn_config]
 	#
 	#Controls how rarely a Husk gets replaced with a Mutant Husk when spawning, usually set to 100
-	"Mutant Husk Spawn Chance" = 100
+	"Mutant Husk Spawn Chance" = 0
 	#
 	#Controls how rarely a Blaze gets replaced with a Mutant Blaze when spawning, usually set to 75
-	"Mutant Blaze Spawn Chance" = 75
+	"Mutant Blaze Spawn Chance" = 0
 	#
 	#Controls how rarely a Hoglin gets replaced with a Mutant Hoglin when spawning, usually set to 75
-	"Mutant Hoglin Spawn Chance" = 75
+	"Mutant Hoglin Spawn Chance" = 0
 	#
 	#Controls how rarely a Wither Skeleton gets replaced with a Mutant Wither Skeleton when spawning, usually set to 75
-	"Mutant Wither Skeleton Spawn Chance" = 75
+	"Mutant Wither Skeleton Spawn Chance" = 0
 
 #Appearance Configs:
 [look_config]

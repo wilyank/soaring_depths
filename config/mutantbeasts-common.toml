@@ -13,7 +13,7 @@
 	#Example - "minecraft", "midnight"
 	#You can see a mod's ID by clicking the 'Mods' button on the main screen and clicking on the mod's name on the left
 	#Requires game restart
-	biomeWhitelist = ["minecraft"]
+	biomeWhitelist = []
 	#Mutant Enderman spawn weight
 	#Requires game restart
 	#Range: 0 ~ 100
