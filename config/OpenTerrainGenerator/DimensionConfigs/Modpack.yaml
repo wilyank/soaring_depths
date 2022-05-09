@@ -10,10 +10,3 @@
 ModpackName: "Soaring Depths"
 Overworld:
   PresetFolderName: "SkylandsLitePlus"
-Dimensions:
-- PresetFolderName: "Default"
-  Seed: -1
-  PortalColor: "gold"
-  PortalMob: "mutantbeasts:spider_pig"
-  PortalIgnitionSource: "cataclysm:gauntlet_of_guard"
-  PortalBlocks: "cataclysm:void_stone"
