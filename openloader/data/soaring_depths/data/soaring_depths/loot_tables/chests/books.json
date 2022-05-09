@@ -1,0 +1,20 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:written_book",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{pages:['{\"text\":\"When the world began, there was an egg. The egg was smol. The egg grew until it cracked and through the cracks crept a purple crocodile. The egg shell melted and formed a river. The crocodile drank from the river and was refreshed. The crocodile spoke. \"}','{\"text\":\"It said: \\\\\"Takah Tookah.\\\\\" This created a mighty wind and the wind was blowing for many days. The strong wind swept up the river and it waxed to an ocean. Then the wind grew tired and went to sleep. The crocodile swam in the ocean. It saw a fish and ate it.\"}','{\"text\":\"The fish in the stomach of the crocodile swam in circles until the crodile started spinning. This made the crocodile motion sick and it threw up. The acidic vomit melted a part of the river and this created the clouds. The clouds rose and rose until they could no longer \"}','{\"text\":\"rise. Snow fell from the clouds that killed all living things by its coldness. Only the fish in the crocodile\\'s stomach survived.\\\\nThe fish laid its eggs in the stomach and died. After many ages the fish eggs hatched. By this time the snow had melted. This had caused a great flood.\"}','{\"text\":\"From the first egg crept a caterpillar. She became the mother of all cockroaches, musquitos and caterpillars.\\\\nFrom the second egg crept a chicken. She went on to birth all lobsters and sheep.\\\\nThe third egg, a tiger, the father of all cats and dogs.\"}','{\"text\":\"The fourth, a banana.\\\\nThe fifth, a baboon. It was stupid so it died.\\\\nThe sixth egg yielded to a gorilla and a raccoon.\\\\nThe seventh egg hatched and a spruce tree sprang up from it. This tree bored a hole through the dead crocodile\\'s belly, setting the other creatures free. \"}','{\"text\":\"The tiger was feeling hungry and ate the chicken. However, at the setting of the sun, the bones of the chicken again grew flesh and the chicken lived. At sunrise, the tiger once more was hungry and ate the chicken. And in the evening the chicken lived again.\"}'],title:Croc,author:\"Croshgrob the Kobold\"}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
