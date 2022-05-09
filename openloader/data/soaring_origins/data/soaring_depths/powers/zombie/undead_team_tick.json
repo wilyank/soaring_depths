@@ -11,6 +11,16 @@
             },
             {
                 "type": "origins:execute_command",
+                "command": "team join Undead @e[type=minecraft:zombie_villager]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "team join Undead @e[type=eidolon:zombie_brute]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
                 "command": "team join Undead @e[type=minecraft:skeleton]",
                 "permission_level": 4
             }

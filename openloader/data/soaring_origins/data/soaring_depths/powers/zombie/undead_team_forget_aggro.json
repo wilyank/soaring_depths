@@ -1,0 +1,9 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "team join Undead"
+    },
+    "interval": 12000,
+    "hidden": true
+}

@@ -9,7 +9,11 @@
 		"soaring_depths:zombie/leech",
 		"soaring_depths:zombie/hostile_village",
 		"soaring_depths:zombie/reset_villager_reputation",
-		"soaring_depths:zombie/spawn"
+		"soaring_depths:zombie/spawn",
+		"soaring_depths:zombie/undead_team",
+		"soaring_depths:zombie/undead_team_tick",
+		"soaring_depths:zombie/undead_team_aggro",
+		"soaring_depths:zombie/undead_team_forget_aggro"
 	],
 	"icon": "minecraft:rotten_flesh",
 	"order": 1,

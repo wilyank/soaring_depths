@@ -1,0 +1,10 @@
+{
+    "type": "origins:self_action_on_hit",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "team leave @s",
+        "permission_level": 4
+    },
+    "cooldown": 1,
+    "hidden": true
+}
