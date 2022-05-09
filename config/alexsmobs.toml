@@ -55,7 +55,7 @@
 	#Whether to disable certain aspects of the Lava Vision Potion. Enable if issues with shaders persist.
 	shadersCompat = false
 	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobs:warped_toad"
-	warpedMoscoMobTriggers = ["alexsmobs:warped_toad","minecraft:mooshroom"]
+	warpedMoscoMobTriggers = ["alexsmobs:warped_toad", "minecraft:mooshroom"]
 	#1 out of this number chance for leaves to drop a banana when broken. Fortune is automatically factored in
 	#Range: > 0
 	bananaChance = 200
