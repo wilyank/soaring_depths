@@ -54,10 +54,13 @@
             "minecraft:stray",
             "minecraft:husk",
             "minecraft:enderman",
+            "minecraft:slime",
             "eidolon:wraith",
             "eidolon:zombie_brute",
             "minecraft:witch",
-            "minecraft:zombie_villager" 
+            "minecraft:zombie_villager",
+            "tconstruct:earth_slime",
+            "tconstruct:sky_slime"
         ],
         "mincount": {
           "amount": 30,
@@ -76,10 +79,13 @@
             "minecraft:stray",
             "minecraft:husk",
             "minecraft:enderman",
+            "minecraft:slime",
             "eidolon:wraith",
             "eidolon:zombie_brute",
             "minecraft:witch",
-            "minecraft:zombie_villager" 
+            "minecraft:zombie_villager",
+            "tconstruct:earth_slime",
+            "tconstruct:sky_slime"
         ],
         "maxspawndist": 32,
         "result": "deny"
@@ -97,7 +103,7 @@
             "eidolon:wraith",
             "eidolon:zombie_brute",
             "minecraft:witch",
-            "minecraft:zombie_villager" 
+            "minecraft:zombie_villager"
         ],
         "minlight": 3,
         "result": "deny"
