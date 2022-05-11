@@ -1170,17 +1170,5 @@
 				item: "minecraft:ancient_debris"
 			}]
 		}
-		{
-			x: 6.0d
-			y: 4.5d
-			id: "12D82D966376CFBD"
-			tasks: [{
-				id: "49ABF9451F2B4609"
-				type: "advancement"
-				title: "Wither"
-				advancement: "minecraft:nether/summon_wither"
-				criterion: ""
-			}]
-		}
 	]
 }
