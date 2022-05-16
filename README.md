@@ -1,118 +1,31 @@
 # soaring_depths
 a Minecraft modpack based around immersive tech and magic in a Skylands world.  
 Minecraft version: 1.16.5
+[Curseforge page](https://www.curseforge.com/minecraft/modpacks/soaring_depths)
 
-Mod list:
-- Just Enough Resources (JER) (by way2muchnoise)
-- Shutup Experimental Settings! (by Corgi_Taco)
-- Portable Beacons (by Feaseron)
-- Create (by simibubi)
-- Polymorph (Forge) (by TheIllusiveC4)
-- InsaneLib (by Insane96MCP)
-- Queen Bee (by CerbonXD)
-- Simple Storage Network (by Lothrazar)
-- In Control! (by McJty)
-- Cosmetic Armor Reworked (by LainMI)
-- Collective (Forge) (by Serilum)
-- FTB Library (Forge) (by FTB)
-- FTB Teams (Forge) (by FTB)
-- Open Loader (by DarkhaxDev)
-- Not Enough Crashes (Forge) (by NatanFudge)
-- CookieCore (by Ephys)
-- Blueprint (by TeamAbnormals)
-- Repurposed Structures (Forge) (by telepathicgrunt)
-- Magic Feather (by Ephys)
-- Spawn Normalization (by Shadows_of_Fire)
-- Simple Planes (Forge) (by przemykomo)
-- Skin Layers 3D (Fabric/Forge) (by tr9zw)
-- Rubber Duck (by Salvadormg15)
-- Flywheel (by jozufozu)
-- End Portal Recipe (Forge) (by Serilum)
-- Better Advancements (by way2muchnoise)
-- MmmMmmMmmMmm (Target Dummy) (by MehVahdJukaar)
-- Bookshelf (by DarkhaxDev)
-- Void Totem (by Affehund)
-- L_Ender 's Cataclysm (by mcl_ender)
-- Worldshape (by simibubi)
-- Sky Villages [Forge] (by y4z0n)
-- Infernal Expansion (by InfernalStudios)
-- Forbidden and Arcanus (by cesar_zorak)
-- Eidolon (by elucent_)
-- Construction Wand (by ThetaDev)
-- The Endergetic Expansion (by TeamAbnormals)
-- Open Terrain Generator (OTG) (by team_otg)
-- OTG: Skylands (by team_otg)
-- Armor Toughness Bar (by tfarecnim)
-- Curious Elytra (Forge) (by TheIllusiveC4)
-- Curios API (Forge) (by TheIllusiveC4)
-- ConnectedTexturesMod (by tterrag1098)
-- CraftTweaker (by Jaredlll08)
-- Metal Barrels (by tfarecnim)
-- Macaw's Bridges (by sketch_macaw)
-- Mutant More (by alexandersfunandgames)
-- AutoRegLib (by Vazkii)
-- Babel (by thenatekirby)
-- Architectury API (Forge) (by shedaniel)
-- Better 3D Ores [ Glow Ores : Emissive Textures ] (by AlleCraft)
-- Mantle (by mDiyo)
-- Create gear addon (by xaros74)
-- Valhelsia Core (by ValhelsiaTeam)
-- Biomes O' Plenty (by Forstride)
-- Controlling (by Jaredlll08)
-- Improved Backpacks (by DreenDexTwitch)
-- Just Enough Piglin Bartering (by thenatekirby)
-- Netherite Plus Mod (by OroArmor)
-- Enchantment Descriptions (by DarkhaxDev)
-- FTB Quests (Forge) (by FTB)
-- Macaw's Bridges - Biome O' Plenty (by samlegamer_)
-- Lootr (by Noobanidus)
-- Just Enough Effect Descriptions (JEED) (by MehVahdJukaar)
-- Advancement Frames (by MehVahdJukaar)
-- Kotlin for Forge (by thedarkcolour)
-- AppleSkin (by squeek502)
-- Created Simple Planes (by mortuus_art)
-- Simple Shops (by wolforce)
-- Kobolds! (by Jusey1z)
-- Fast Leaf Decay (by olafskiii)
-- Bountiful (Forge) (by ejektaflex)
-- Just Enough Items (JEI) (by mezz)
-- Progressive Bosses (by Insane96MCP)
-- Cloth Config API (Forge) (by shedaniel)
-- Created Simple Storage Network (by makzzin)
-- The Outer End (by BlueDuckYT)
-- Mutant Beasts (by Chumbanotz)
-- Mowzie's Mobs (by bobmowzie)
-- Overloaded Armor Bar (by tfarecnim)
-- Caelus API (Forge) (by TheIllusiveC4)
-- Not Enough Animations (by tr9zw)
-- Create Crafts & Additions (by MRHminer)
-- Patchouli (by Vazkii)
-- TRansliterationLib (by tr9zw)
-- Create: Steam Powered (by yuesha_yc)
-- Shield Corrections (by D3SG4MER24)
-- Alex's Mobs (by sbom_xela)
-- Create Confectionery (by Furti_Two)
-- ObserverLib (by HellFirePvP)
-- CreateTweaker (by Jaredlll08)
-- Decorative Blocks (by stohun)
-- Miner's Helmet (by ModdingLegacy)
-- Akashic Tome (by Vazkii)
-- Storage Drawers (by Texelsaur)
-- Clumps (by Jaredlll08)
-- GeckoLib (by ThanosGecko)
-- Inventory HUD+ (by dmitrylovin)
-- Macaw's Lights and Lamps (by sketch_macaw)
-- Grappling Hook Mod (by yyonne)
-- Explorer's Compass (by Chaosyr)
-- Citadel (by sbom_xela)
-- Macaw's Fences and Walls (by sketch_macaw)
-- Nature's Compass (by Chaosyr)
-- Antique Atlas (by Hunternif)
-- Item Filters (Forge) (by LatvianModder)
-- Astral Sorcery (by HellFirePvP)
-- JEITweaker (by Jaredlll08)
-- Unactivated Totems (by shadow_x_666)
-- Jade 🔍 (by Snownee_)
-- BetterEnd (Forge) (by Beethoven92)
-- Sound Filters (by Tmtravlr)
-- Tinkers Construct (by mDiyo)
+This modpack is made by [Feaseron](https://www.curseforge.com/members/feaseron/projects), with art and structures by [herrschanana](https://www.curseforge.com/members/herrschanana/projects).
+
+Includes hundreds of custom crafting recipes, four origins, thirteen custom structures, boss fights and much more.
+
+Magic and technology are intimately intertwined to provide an encompassing exerperience.
+
+Progress through a broken world by machines and magic to construct a Nether Portal. Obtaining Nether materials will allow you to access smarter machines and more potent magic.
+Craft an End Portal and explore the vast alien world of the End. Decide how you will improve the shattered overworld with your otherworldly powers of flight, construction and destruction.
+
+Origins:
+- Human: business as usual
+- Zombie: Burns in sunlight, friendly with undead mobs.
+- Kobold: Smaller, Faster, Stronger. Not accustomed to light, though.
+- Piglin: Weaker in the Overworld, with a love of Gold and Netherite.
+- Enderman: Tall, hydrophobic and can teleport around.
+
+
+Mods:
+The key mods in this pack are Create, Astral Sorcery, OTG: Skylands, Alex's Mobs and Biomes 'O Plenty.
+See the mod list [here](modlist.html).
+
+Full project description can be found [here](description.md).
+
+Credits:
+- Witch Hut structure by [Maisa](https://www.planetminecraft.com/project/wizard-tower-4151252/)
+- Steampunk Wizard Tower structure by [Benevolent Demon](https://www.planetminecraft.com/project/steampunk-wizard-tower/)
