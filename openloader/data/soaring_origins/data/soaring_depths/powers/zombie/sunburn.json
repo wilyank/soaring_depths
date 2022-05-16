@@ -1,10 +1,59 @@
 {
-    "type": "origins:burn",
-    "interval": 20,
-    "burn_duration": 1,
-    "condition": {
-        "type": "origins:exposed_to_sun"
+    "type": "origins:multiple",
+    "burn": {
+        "type": "origins:burn",
+        "interval": 20,
+        "burn_duration": 1,
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:light_level",
+                "light_type": "sky",
+                "comparison": ">=",
+                "compare_to": 14
+            }    
+        }
+    },
+    "light_slowdown": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:slowness",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:in_block",
+            "block_condition": {
+                "type": "origins:light_level",
+                "light_type": "sky",
+                "comparison": ">=",
+                "compare_to": 10
+            }    
+        }
+    },
+    "darkness_strength": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": -3,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 20,
+        "effect": {
+            "effect": "minecraft:strength",
+            "is_ambient": true,
+            "show_particles": false,
+            "show_icon": true
+        },
+        "condition": {
+            "type": "origins:brightness",
+            "comparison": "<",
+            "compare_to": 0.1
+        }
     },
     "name": "Sunburn",
-    "description": "The sun is a deadly laser"
+    "description": "Sunlight is dangerous for your health."
 }

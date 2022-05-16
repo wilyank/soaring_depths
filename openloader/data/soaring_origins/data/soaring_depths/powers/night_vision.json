@@ -1,6 +1,5 @@
 {
     "type": "origins:night_vision",
     "name": "Night Vision",
-    "description": "You can see perfectly in the dark",
-    "strength": 0.5
+    "description": "You can see perfectly in the dark"
 }
