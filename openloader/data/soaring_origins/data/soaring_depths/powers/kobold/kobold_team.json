@@ -5,22 +5,17 @@
         "actions": [
             {
                 "type": "origins:execute_command",
-                "command": "team add Undead",
+                "command": "team add Kobolds",
                 "permission_level": 4
             },
             {
                 "type": "origins:execute_command",
-                "command": "/team modify Undead prefix \"\u00A78[Undead]\u0020\"",
+                "command": "/team modify Kobolds prefix \"\u00A71[Kobold]\u0020\"",
                 "permission_level": 4
             },
             {
                 "type": "origins:execute_command",
-                "command": "team modify Undead friendlyFire false",
-                "permission_level": 4
-            },
-            {
-                "type": "origins:execute_command",
-                "command": "team join Undead @p",
+                "command": "team join Kobolds @p",
                 "permission_level": 4
             },
             {

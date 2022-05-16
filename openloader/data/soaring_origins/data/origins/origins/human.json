@@ -1,0 +1,10 @@
+{
+	"icon": {
+		"item": "minecraft:player_head"
+	},
+    "powers": [
+        "soaring_depths:human/human_team"
+    ],
+	"order": 0,
+	"impact": 0
+}

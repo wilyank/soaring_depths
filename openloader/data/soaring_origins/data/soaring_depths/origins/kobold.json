@@ -10,11 +10,12 @@
 		"soaring_depths:kobold/spawn",
 		"soaring_depths:kobold/light_blind",
 		"soaring_depths:kobold/reach",
-		"origins:carnivore"
+		"origins:carnivore",
+		"soaring_depths:kobold/kobold_team"
 	],
 	"icon": "kobolds:kobold_iron_pickaxe",
 	"order": 1,
-	"impact": 1,
+	"impact": 2,
 	"name": "Kobold",
 	"description": "The recent disappearance of humans from kobold territory has been quite alarming, and you are too curious for your own good. Perhaps you nasty little bugger can also harness some of the power they once did."
 }

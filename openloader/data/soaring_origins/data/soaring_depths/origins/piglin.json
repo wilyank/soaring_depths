@@ -3,7 +3,9 @@
 		"soaring_depths:piglin/armor",
 		"soaring_depths:piglin/food",
 		"soaring_depths:piglin/weak_in_overworld",
-		"soaring_depths:piglin/tools"
+		"soaring_depths:piglin/tools",
+		"soaring_depths:piglin/piglin_team"
+
 	],
 	"icon": "minecraft:golden_sword",
 	"order": 1,

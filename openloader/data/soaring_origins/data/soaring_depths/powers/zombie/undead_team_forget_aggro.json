@@ -4,6 +4,6 @@
         "type": "origins:execute_command",
         "command": "team join Undead"
     },
-    "interval": 12000,
+    "interval": 1200,
     "hidden": true
 }

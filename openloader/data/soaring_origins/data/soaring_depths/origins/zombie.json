@@ -11,13 +11,12 @@
 		"soaring_depths:zombie/spawn",
 		"soaring_depths:zombie/undead_team",
 		"soaring_depths:zombie/undead_team_tick",
-		"soaring_depths:zombie/undead_team_aggro",
 		"soaring_depths:zombie/undead_team_forget_aggro",
 		"soaring_depths:zombie/spawn_at_night"
 	],
 	"icon": "minecraft:rotten_flesh",
 	"order": 1,
-	"impact": 2,
+	"impact": 3,
 	"name": "Zombie",
 	"description": "You wake up with a bursting headache, and quite hungry for some raw flesh. The last thing you remember is being under a zombie with no way of escape. How strange to wake up now."
 }

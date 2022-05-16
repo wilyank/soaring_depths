@@ -6,13 +6,14 @@
 		"origins:extra_reach",
 		"origins:ender_particles",
 		"origins:damage_from_potions",
-        "soaring_depths:enderman/size"
+        "soaring_depths:enderman/size",
+		"soaring_depths:enderman/ender_team"
 	],
 	"icon": {
 		"item": "minecraft:ender_pearl"
 	},
 	"order": 1,
-	"impact": 2,
+	"impact": 3,
     "name": "Enderman",
 	"description": "Tall and slender ghosts from the End"
 }
