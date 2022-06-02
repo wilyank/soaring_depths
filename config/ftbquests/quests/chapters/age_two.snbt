@@ -270,7 +270,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 4.5d
 			y: -1.0d
 			description: ["Don't forget to check your Astral Tome for more information."]
 			hide_dependency_lines: true
@@ -528,7 +528,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 3.5d
 			y: 3.0d
 			description: ["To avoid the Starlight Infuser from consuming the fluid every time, use a Containment Chalice for the fluid input."]
 			dependencies: ["3605DB34A09AF660"]
@@ -656,8 +656,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 1.5d
+			x: 4.0d
+			y: 2.0d
 			dependencies: ["60034CAED267592C"]
 			optional: true
 			id: "3605DB34A09AF660"
@@ -668,7 +668,7 @@
 			}]
 		}
 		{
-			x: 5.0d
+			x: 4.0d
 			y: 0.5d
 			description: ["Definetely check out the other things Astral Sorcery has to offer. It might be a good idea to upgrade your starlight crafting altar"]
 			dependencies: ["50CC57E3B32F9CF3"]
@@ -921,11 +921,10 @@
 			}]
 		}
 		{
-			x: 7.0d
+			x: 6.0d
 			y: 0.5d
 			subtitle: "Unleash your Inner Superhero"
 			dependencies: ["50CC57E3B32F9CF3"]
-			optional: true
 			id: "4631BCE9BFF79BC6"
 			tasks: [{
 				id: "722596A854DF92F1"
@@ -934,11 +933,10 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 5.0d
 			y: 0.5d
 			description: ["Very useful for the less common ores"]
 			dependencies: ["50CC57E3B32F9CF3"]
-			optional: true
 			id: "01C22F7A5BC61690"
 			tasks: [
 				{
