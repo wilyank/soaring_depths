@@ -30,6 +30,16 @@
             }
         ]
     },
+    "entity_action_lost": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "team leave @p",
+                "permission_level": 4
+            }
+        ]
+    },
     "execute_when_orb": true,
     "hidden": true
 }
