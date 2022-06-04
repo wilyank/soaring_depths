@@ -27,3 +27,7 @@ Credits:
 - Witch Hut structure by [Maisa](https://www.planetminecraft.com/project/wizard-tower-4151252/)
 - Steampunk Wizard Tower structure by [Benevolent Demon](https://www.planetminecraft.com/project/steampunk-wizard-tower/)
 - Original Nether Portal data pack by [Vanilla Tweaks](https://vanillatweaks.net/)
+
+Acknowledgements:
+- Thanks to [Misode](https://github.com/misode) for making an awesome data pack generator
+- Thanks to [simibubi](https://github.com/simibubi) for providing Worldshape examples in his Create: Above & Beyond modpack
