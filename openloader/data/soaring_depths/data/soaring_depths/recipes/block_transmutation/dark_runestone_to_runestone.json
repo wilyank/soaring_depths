@@ -1,0 +1,20 @@
+{
+    "type": "astralsorcery:block_transmutation",
+    "input": [
+      {
+        "block": "forbidden_arcanus:dark_runestone",
+        "display": {
+          "item": "forbidden_arcanus:dark_runestone",
+          "count": 1
+        }
+      }
+    ],
+    "output": {
+      "block": "forbidden_arcanus:runestone"
+    },
+    "display": {
+      "item": "forbidden_arcanus:runestone",
+      "count": 1
+    },
+    "starlight": 200.0
+  }

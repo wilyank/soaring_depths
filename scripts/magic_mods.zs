@@ -45,13 +45,6 @@ blastFurnace.removeRecipe(<item:eidolon:pewter_ingot>);
 );
 smithing.addRecipe("unbreakable_symbol", <item:eidolon:unholy_symbol>.withTag({Unbreakable: 1 as byte}), <item:eidolon:unholy_symbol>, <item:minecraft:obsidian>);
 
-<recipetype:astralsorcery:block_transmutation>.addRecipe("arcane_crystal_ore_discidia", 
-    <blockstate:forbidden_arcanus:arcane_crystal_ore>, 
-    <blockstate:forbidden_arcanus:arcane_polished_darkstone>, 
-    true, 
-    200
-);
-
 // information on how to get xpetrified orb
 
 mods.jei.JEI.addDescription(
@@ -73,12 +66,6 @@ craftingTable.addShaped("xpetrified_block",
         [<item:forbidden_arcanus:xpetrified_orb>, <item:forbidden_arcanus:xpetrified_orb>],
         [<item:forbidden_arcanus:xpetrified_orb>, <item:forbidden_arcanus:xpetrified_orb>]
     ]    
-);
-<recipetype:astralsorcery:block_transmutation>.addRecipe("stella_arcanum",
-    <blockstate:forbidden_arcanus:stella_arcanum>,
-    <blockstate:forbidden_arcanus:xpetrified_ore>,
-    true,
-    200
 );
 
 mods.jei.JEI.addInfo(<item:forbidden_arcanus:arcane_gold_nugget>, ["Can be grown from Golden Orchid Seeds."]);

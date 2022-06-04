@@ -1,0 +1,20 @@
+{
+    "type": "astralsorcery:block_transmutation",
+    "input": [
+      {
+        "block": "forbidden_arcanus:arcane_polished_darkstone",
+        "display": {
+          "item": "forbidden_arcanus:arcane_polished_darkstone",
+          "count": 1
+        }
+      }
+    ],
+    "output": {
+      "block": "forbidden_arcanus:arcane_crystal_ore"
+    },
+    "display": {
+      "item": "forbidden_arcanus:arcane_crystal_ore",
+      "count": 1
+    },
+    "starlight": 400.0
+  }

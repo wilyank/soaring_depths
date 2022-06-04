@@ -1,0 +1,20 @@
+{
+    "type": "astralsorcery:block_transmutation",
+    "input": [
+      {
+        "block": "forbidden_arcanus:xpetrified_ore",
+        "display": {
+          "item": "forbidden_arcanus:xpetrified_ore",
+          "count": 1
+        }
+      }
+    ],
+    "output": {
+      "block": "forbidden_arcanus:stella_arcanum"
+    },
+    "display": {
+      "item": "forbidden_arcanus:stella_arcanum",
+      "count": 1
+    },
+    "starlight": 1000.0
+  }
