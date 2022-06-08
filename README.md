@@ -1,7 +1,7 @@
 # soaring_depths
 a Minecraft modpack based around immersive tech and magic in a Skylands world.  
 Minecraft version: 1.16.5
-[Curseforge page](https://www.curseforge.com/minecraft/modpacks/soaring_depths)
+[Curseforge page](https://www.curseforge.com/minecraft/modpacks/soaring-depths)
 
 This modpack is made by [Feaseron](https://www.curseforge.com/members/feaseron/projects), with art and structures by [herrschanana](https://www.curseforge.com/members/herrschanana/projects).
 
