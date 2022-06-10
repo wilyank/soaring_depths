@@ -5,13 +5,29 @@
         "interval": 20,
         "burn_duration": 1,
         "condition": {
-            "type": "origins:in_block",
-            "block_condition": {
-                "type": "origins:light_level",
-                "light_type": "sky",
-                "comparison": ">=",
-                "compare_to": 14
-            }    
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:light_level",
+                        "light_type": "sky",
+                        "comparison": ">=",
+                        "compare_to": 14
+                    }
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 2000
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": "<=",
+                    "compare_to": 11834
+                }
+            ]
+                
         }
     },
     "light_slowdown": {
